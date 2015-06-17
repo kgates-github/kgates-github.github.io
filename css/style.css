@@ -1,0 +1,73 @@
+body {
+  font: 24px Helvetica Neue; Open Sans, Sans-Serif;
+}
+.header-01 {
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 78px;
+}
+.header-04 {
+  font-size: 36px;
+}
+.header-05 {
+  font-weight: bold;
+}
+.subhead-01 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.small-01 {
+  font-size: 18px;
+}
+.small-02 {
+  font-size: 14px;
+}
+ .small-02 a {
+  color:#333;
+}
+.margin-top-xlg {
+  margin-top: 130px;
+}
+.margin-top-lg {
+  margin-top: 110px;
+}
+.margin-top-medium-lg {
+  margin-top: 80px;
+}
+.margin-top-medium {
+  margin-top: 50px;
+}
+.margin-top-medium-sm {
+  margin-top: 35px;
+}
+.margin-top-sm {
+  margin-top: 20px;
+}
+.margin-top-xsm {
+  margin-top: 5px;
+}
+span.pill {
+  margin-right:4px;
+  background-color: #ddd;
+  color:#333;
+  font-size:14px;
+  font-weight: 300;
+  padding:4px 8px 4px 8px;
+  line-height: 28px;
+}
+.view-project {
+  background-color:#333;
+  color: #fff;
+  display: block; 
+  width: 100%;
+}
+.caption {
+  font-size: 18px;
+  font-style: italic;
+  color:#999;
+}
+.columned {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+}
