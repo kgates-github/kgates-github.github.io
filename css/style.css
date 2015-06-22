@@ -1,9 +1,9 @@
 body {
-  font: 24px Helvetica Neue; Open Sans, Sans-Serif;
+  font: 18px Helvetica Neue; Open Sans, Sans-Serif;
 }
 .header-01 {
   font-size: 72px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 78px;
 }
 .header-04 {
@@ -13,6 +13,9 @@ body {
   font-weight: bold;
 }
 .subhead-01 {
+  font-size: 24px;
+}
+.subhead-01-bold {
   font-size: 24px;
   font-weight: bold;
 }
@@ -60,6 +63,9 @@ span.pill {
   color: #fff;
   display: block; 
   width: 100%;
+}
+.italic {
+  font-style: italic;
 }
 .caption {
   font-size: 18px;
