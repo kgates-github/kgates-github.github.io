@@ -1,6 +1,11 @@
 body {
   font: 18px Helvetica Neue; Open Sans, Sans-Serif;
 }
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .header-01 {
   font-size: 72px;
   font-weight: 500;
@@ -11,6 +16,14 @@ body {
 }
 .header-05 {
   font-weight: bold;
+}
+a {
+  color:#000;
+  cursor:pointer;
+}
+a:hover {
+  color:#333;
+  cursor:pointer;
 }
 .subhead-01 {
   font-size: 24px;
@@ -38,7 +51,7 @@ body {
   margin-top: 80px;
 }
 .margin-top-medium {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 .margin-top-medium-sm {
   margin-top: 35px;
@@ -49,8 +62,12 @@ body {
 .margin-top-xsm {
   margin-top: 5px;
 }
+.label-gr {
+  text-align: center;
+}
 span.pill {
   margin-right:4px;
+  margin-bottom:4px;
   background-color: #ddd;
   color:#333;
   font-size:14px;
@@ -76,4 +93,48 @@ span.pill {
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   -moz-column-count: 2; /* Firefox */
   column-count: 2;
+}
+
+carousel-image {
+  /*display:block;
+  margin-left:auto;
+  margin-right:auto;*/
+}
+.carousel-control.left, .carousel-control.right {
+  background-image: none !important;
+  background: none !important; 
+  filter: progid:none !important;
+}
+.carousel-control {
+  color: #666;
+  opacity: 1;
+}
+.carousel-caption {
+  position: static;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  color: #333;
+  text-align: center;
+  text-shadow: none !important; 
+  font-style:italic;
+  height: 110px;
+}
+#howItWorksCarousel .carousel-indicators {
+  position: absolute;
+  bottom: 90px;
+}
+#explorationCarousel .carousel-indicators {
+  position: absolute;
+  bottom: 0px;
+}
+.carousel-indicators li {
+  background: #ccc;
+}
+.carousel-indicators .active {
+    background: #666;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  margin: auto;
 }
