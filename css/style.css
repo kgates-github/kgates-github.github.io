@@ -1,6 +1,9 @@
 body {
   font: 18px Helvetica Neue; Open Sans, Sans-Serif;
 }
+li {
+  margin: 16px 0;
+}
 img.center {
   display: block;
   margin-left: auto;
@@ -88,6 +91,13 @@ span.pill {
   font-size: 18px;
   font-style: italic;
   color:#999;
+}
+.caption.padded {
+  padding-left:20%;
+  padding-right:20%;
+}
+.caption.centered {
+  text-align:center;
 }
 .columned {
   -webkit-column-count: 2; /* Chrome, Safari, Opera */

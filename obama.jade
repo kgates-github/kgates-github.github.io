@@ -155,10 +155,73 @@ block content
       div.header-01 Campaign headquarters put the kibosh on our project. We were stopped in our tracks.
 
   div.row.margin-top-medium
-    div.margin-top-sm Everything could have easily ended at this point. Rather than give up, I went back and re-evaluated the data sets we hadn't used, and came up with a new solution. It detected the user's location and displayed the president's accomplishments across all of the campaign's policy areas. The digital director at headquarters liked the new direction, and gave us the green light.
+    div.col-md-12
+      div.margin-top-sm Everything could have easily ended at this point. Rather than give up, I went back and re-evaluated the data sets we hadn't used, and came up with a new solution. It detected the user's location and displayed the president's accomplishments across all of the campaign's policy areas. The digital director at headquarters liked the new direction, and gave us the green light.
 
+  div.row.margin-top-medium
+    div.col-md-12
+      div.subhead-01-bold A NEW DIRECTION
+      div.margin-top-sm Due to time constraints, I skipped wire framing and worked directly with the prototype we had started.
+      div.margin-top-sm Leveraging Google's mapping API, we were able to detect user location and populate the UI with locally-focused talking points. Since some data was geocoded by latitude and longitude, and others by county and state codes, we built the underlying codebase to sort out what information to display at what zoom level.
 
+  hr
 
+  div.row.margin-top-medium-sm
+    div.col-md-4
+      img(src="images/obama/IPhone_5_prototype.png", style="display:block; margin-left:auto; margin-right:auto;").img-responsive
+    div.col-md-8
+      img(src="images/obama/IPad_3_prototype.png" style="display:block; margin-left:auto; margin-right:auto;").img-responsive
+  div.row
+    div.col-md-12.margin-top-sm.caption.padded.centered
+      | Using Twitter's Bootstrap UI framework, I was able to simultaneously design for tablets and phones, helping us keep to a very tight timeline.
+  hr
+
+  div.row.margin-top-medium
+    div.col-md-12(style="text-align:center;")
+      div.header-01 By running development in parallel, we designed for all screen sizes and solved edge-case problems swiftly.
+  
+  div.row.margin-top-medium-lg
+    div.col-md-12
+      img(src="images/obama/edge_case.png", style="display:block; margin-left:auto; margin-right:auto; border:1px solid #ccc; padding:10px 10px 50px 10px").img-responsive
+
+  div.row
+    div.col-md-12.margin-top-sm.caption.padded.centered
+      | Edge case: Many zipcodes are in multiple counties. When a user's zip code is in more than one county, they are prompted to select from a menu. One zip code in Virginia, shown above, is in four counties.
+
+  div.row.margin-top-medium
+    div.col-md-12
+      div.subhead-01-bold FINAL DESIGN REFINEMENT
+
+  div.row.margin-top-sm
+    div.col-md-12
+      img(src="images/obama/early-version.png").img-responsive
+
+  div.row
+    div.col-md-12.margin-top-sm.caption.padded.centered
+      | An early version with all the working components. The app detects where the user is located and supplies talking points relevant to them across key policy areas.
+
+  div.row.margin-top-medium
+    div.col-md-12
+      img(src="images/obama/ohio.png").img-responsive
+  div.row
+    div.col-md-12.margin-top-sm.caption.padded.centered
+      | The final version of the app zoomed in on northern Ohio. 
+
+  div.row.margin-top-medium
+    div.col-md-12
+      div.subhead-01-bold SUCCESS
+      div.margin-top-sm The final weeks of the campaign were total chaos. Despite this, we managed to launch Project Atlas the morning of October 1st. Later that day, the campaign sent the URL out on Obama's Twitter account, where it reached the president's 42 million followers. 
+
+  div.row.margin-top-medium
+    div.col-md-12(style="text-align:center;")
+      div.header-01 We launched on Obama's Twitter account five weeks before election day.
+
+  div.row.margin-top-medium
+    div.col-md-12
+      img(src="images/obama/obama-twitter.png", style="display:block; margin-left:auto; margin-right:auto; border:1px solid #ccc; padding:10px;").img-responsive
+  div.row
+    div.col-md-12.margin-top-sm.caption.centered
+      | Project Atlas was sent out to Obama's 42 million Twitter followers five weeks before election day.
 
   div.row.margin-top-xlg
   div.col-md-6
