@@ -2,8 +2,32 @@
   $('#howItWorksCarousel').carousel({
     interval:false
   });
-  $('#explorationCarousel').carousel({
-    interval:3000
+  
+  var Cycler = function(container, delay) {
+    this.container = container
+    var self = this;
+
+    setTimeout(function() {
+      setInterval(function() {
+        self.cycle();
+      }, 2000);
+    }, delay);
+  }
+
+  Cycler.prototype.cycle = function() {
+    var active = this.container.children('.active');
+    var next = (active.next().length > 0) ? active.next() : this.container.children('img:first');
+    next.css('z-index',2);
+
+    active.fadeOut(800,function() {
+      active.css('z-index',1).show().removeClass('active');
+      next.css('z-index',3).addClass('active');
+    });
+    
+  }
+
+  $(".img-cycler").each(function(i) {
+    new Cycler($(this), i * 500);
   });
  
 });</script><link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/style.css" rel="stylesheet"><link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,700" rel="stylesheet" type="text/css"><style>carousel-image {

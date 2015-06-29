@@ -29,9 +29,9 @@ block content
   div.row.margin-top-medium
     div.col-md-12(style="")
       div.subhead-01-bold CHALLENGE
-      div.margin-top-sm.columned 
-        p From research conducted at the campaign's Chicago headquarters, we knew that many voters respond favorably to talking points about Obama's first term, but only when it's about their own community. 
-
+      div.margin-top-sm 
+        | From research conducted at the campaign's Chicago headquarters, we knew that many voters respond favorably to talking points about Obama's first term, but only when it's about their own community. 
+      div.margin-top-sm 
         p Created for the Obama 2012 campaign, Project Atlas is an app that makes Obama's accomplishments engaging and relevant to voters at a local level. The application does this by detecting user location and offering county-level information about improvements to health care, taxes, clean energy, and more.
 
   div.row.margin-top-medium
@@ -50,17 +50,17 @@ block content
          
         div.carousel-inner(role="listbox")
           div.item.active
-            img(src="images/obama/concept_01.png", style="padding: 0px 180px 20px 180px;").img-responsive
+            img(src="images/obama/concept_01.png").img-responsive.img-carousel
             div.carousel-caption
               div(style="color:#999; padding-left:20%; padding-right:20%;")
                 | A voter in Orlando Florida sees a tweet from Obama with a link inviting them to check out a map. They click it.
           div.item
-            img(src="images/obama/concept_02.png", style="padding: 0px 180px 20px 180px;").img-responsive
+            img(src="images/obama/concept_02.png").img-responsive.img-carousel
             div.carousel-caption
               div(style="color:#999; padding-left:20%; padding-right:20%;") The app detects the user's location. In this case, the user is in Orange County, Florida.
 
           div.item
-            img(src="images/obama/concept_03.png", style="padding: 0px 180px 20px 180px;").img-responsive
+            img(src="images/obama/concept_03.png").img-responsive.img-carousel
             div.carousel-caption
               div(style="color:#999; padding-left:20%; padding-right:20%;") The app compiles a custom webpage about Obama's accomplishments across key policy areas, all tailored to Orange County, Florida.
         
@@ -86,47 +86,38 @@ block content
       div.margin-top-sm I set up a geospatial database, and started making maps. I made a lot: children gaining health care; renewable energy investments; tax savings, and many more. 
 
 
+  
+
   div.row.margin-top-medium
-    div.col-md-12(style="text-align:center;")
-      div.caption-header
-        strong Map design explorations:
-      div#explorationCarousel.carousel.slide(data-ride="carousel")
-        ol.carousel-indicators
-          li(data-target="#explorationCarousel", data-slide-to="0").active
-          li(data-target="#explorationCarousel", data-slide-to="1")
-          li(data-target="#explorationCarousel", data-slide-to="2")
-          li(data-target="#explorationCarousel", data-slide-to="3")
-          li(data-target="#explorationCarousel", data-slide-to="4")
-          li(data-target="#explorationCarousel", data-slide-to="5")
-          li(data-target="#explorationCarousel", data-slide-to="6")
-         
-        div.carousel-inner(role="listbox")
-          div.item.active
-            img(src="images/obama/exploration-01.png", style="padding: 0px 180px 20px 180px;")
-          div.item
-            img(src="images/obama/exploration-02.png", style="padding: 0px 180px 20px 180px;").img-responsive
-          div.item
-            img(src="images/obama/exploration-03.png", style="padding: 0px 180px 20px 180px;").img-responsive
-          div.item
-            img(src="images/obama/exploration-04.png", style="padding: 0px 180px 20px 180px;").img-responsive
-          div.item
-            img(src="images/obama/exploration-05.png", style="padding: 0px 180px 20px 180px;").img-responsive
-          div.item
-            img(src="images/obama/exploration-06.png", style="padding: 0px 180px 20px 180px;").img-responsive
+    div.col-md-4.col-sm-4.img-cycler
+      img(src="images/obama/exploration-01.png").img-responsive.img-fadable.active
+      img(src="images/obama/exploration-02.png").img-responsive.img-fadable
+      img(src="images/obama/exploration-03.png").img-responsive.img-fadable
+      img(src="images/obama/exploration-04.png").img-responsive.img-fadable
+    div.col-md-4.col-sm-4.img-cycler
+      img(src="images/obama/exploration-02.png").img-responsive.img-fadable.active
+      img(src="images/obama/exploration-03.png").img-responsive.img-fadable
+      img(src="images/obama/exploration-04.png").img-responsive.img-fadable
+      img(src="images/obama/exploration-01.png").img-responsive.img-fadable
+    div.col-md-4.col-sm-4.img-cycler
+      img(src="images/obama/exploration-03.png").img-responsive.img-fadable.active
+      img(src="images/obama/exploration-04.png").img-responsive.img-fadable
+      img(src="images/obama/exploration-01.png").img-responsive.img-fadable
+      img(src="images/obama/exploration-02.png").img-responsive.img-fadable
+      
+  div.row
+    div.col-md-12.margin-top-sm.caption.padded.centered
+      | Some early concept explorations made with data the campaign provided.
+  //-
+    div.row.margin-top-medium 
+      div.col-md-4.col-sm-4  
+        img(src="images/obama/exploration-04.png").img-responsive
+      div.col-md-4.col-sm-4
+        img(src="images/obama/exploration-05.png").img-responsive
+      div.col-md-4.col-sm-4   
+        img(src="images/obama/exploration-06.png").img-responsive
              
-      div.carousel-caption
-        div(style="color:#999; padding-left:20%; padding-right:20%;") Some examples of maps I created while exploring government data.
-
-      div
-        a.left.carousel-control(href="#explorationCarousel", role="button", data-slide="prev")
-          span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
-          span.sr-only Previous
-
-        a.right.carousel-control(href="#explorationCarousel", role="button", data-slide="next")
-          span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
-          span.sr-only Next
-
-  div.row.margin-top-sm
+  div.row.margin-top-medium
     div.col-md-12
       div.subhead-01-bold WIREFRAMES
       div.margin-top-sm Our stakeholders liked the direction of a recovery-themed map I created, which used data about the 2009 stimulus bill. The first wireframes showed stimulus projects color-coded by category. These categories corresponded to the campaign's core policy areas: education, energy, health and infrastructure. Since most of the data was uncategorized, we mobilized volunteers to label about 2,000 projects. 
@@ -178,7 +169,7 @@ block content
 
   div.row.margin-top-medium
     div.col-md-12(style="text-align:center;")
-      div.header-01 By running development in parallel, we designed for all screen sizes and solved edge-case problems swiftly.
+      div.header-01 By running development in parallel, we designed for all screen sizes simultaneously, and solved UX problems swiftly.
   
   div.row.margin-top-medium-lg
     div.col-md-12
@@ -198,7 +189,7 @@ block content
 
   div.row
     div.col-md-12.margin-top-sm.caption.padded.centered
-      | An early version with all the working components. The app detects where the user is located and supplies talking points relevant to them across key policy areas.
+      | An early version with all the working components and UX design completed. The app detects where the user is located and supplies talking points relevant to them across key policy areas.
 
   div.row.margin-top-medium
     div.col-md-12
@@ -214,17 +205,15 @@ block content
 
   div.row.margin-top-medium
     div.col-md-12(style="text-align:center;")
-      div.header-01 We launched on Obama's Twitter account five weeks before election day.
+      div.header-01 Project Atlas launched on Obama's Twitter account five weeks before election day.
 
   div.row.margin-top-medium
     div.col-md-12
       img(src="images/obama/obama-twitter.png", style="display:block; margin-left:auto; margin-right:auto; border:1px solid #ccc; padding:10px;").img-responsive
-  div.row
-    div.col-md-12.margin-top-sm.caption.centered
-      | Project Atlas was sent out to Obama's 42 million Twitter followers five weeks before election day.
-
+  
   div.row.margin-top-xlg
   div.col-md-6
+
 
 
 

@@ -9,11 +9,49 @@ img.center {
   margin-left: auto;
   margin-right: auto;
 }
+
+img.img-carousel {
+  padding: 0px 180px 20px 180px;
+}
+
+.img-cycler {
+  position: relative;
+  height:250px;
+}
+
+.img-fadable {
+  position: absolute;
+}
+
+.img-fadable.active {
+  z-index: 10;
+}
+
+.img-fadable.queued {
+  z-index: 0;
+}
+
 .header-01 {
   font-size: 72px;
   font-weight: 500;
   line-height: 78px;
 }
+
+@media(max-width:767px){
+  img.img-carousel {
+    padding: 0px 20px 20px 20px;
+  }
+  .header-01 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+  }
+}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}
+
+
 .header-04 {
   font-size: 36px;
 }
