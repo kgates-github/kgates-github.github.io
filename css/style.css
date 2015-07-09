@@ -121,6 +121,7 @@ span.pill {
   color: #fff;
   display: block; 
   width: 100%;
+  padding:20px;
 }
 .italic {
   font-style: italic;

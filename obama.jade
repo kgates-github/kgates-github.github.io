@@ -27,12 +27,16 @@ block content
 
 
   div.row.margin-top-medium
-    div.col-md-12(style="")
+    div.col-md-6
       div.subhead-01-bold CHALLENGE
       div.margin-top-sm 
         | From research conducted at the campaign's Chicago headquarters, we knew that many voters respond favorably to talking points about Obama's first term, but only when it's about their own community. 
       div.margin-top-sm 
-        p Created for the Obama 2012 campaign, Project Atlas is an app that makes Obama's accomplishments engaging and relevant to voters at a local level. The application does this by detecting user location and offering county-level information about improvements to health care, taxes, clean energy, and more.
+        p Project Atlas is an app that makes Obama's accomplishments engaging and relevant to voters at a local level. It does this by detecting user location and offering county-level information about improvements to health care, taxes, clean energy, and more.
+    div.col-md-6
+      div.subhead-01-bold MY ROLE
+      div.margin-top-sm Based in the San Francisco Technology Field Office, I led the ideation, wireframing and ran weekly presentations to campaign headquarters. In addition, I led the dev team, wrangled data, coordinated the efforts of more than a dozen volunteers, and wrote a good portion of the JavaScript and CSS.
+
 
   div.row.margin-top-medium
     div.col-md-12(style="text-align:center;")
@@ -52,17 +56,17 @@ block content
           div.item.active
             img(src="images/obama/concept_01.png").img-responsive.img-carousel
             div.carousel-caption
-              div(style="color:#999; padding-left:20%; padding-right:20%;")
+              div(style="color:#999; padding-left:30%; padding-right:30%;")
                 | A voter in Orlando Florida sees a tweet from Obama with a link inviting them to check out a map. They click it.
           div.item
             img(src="images/obama/concept_02.png").img-responsive.img-carousel
             div.carousel-caption
-              div(style="color:#999; padding-left:20%; padding-right:20%;") The app detects the user's location. In this case, the user is in Orange County, Florida.
+              div(style="color:#999; padding-left:30%; padding-right:30%;") The app detects the user's location. In this case, the user is in Orange County, Florida.
 
           div.item
             img(src="images/obama/concept_03.png").img-responsive.img-carousel
             div.carousel-caption
-              div(style="color:#999; padding-left:20%; padding-right:20%;") The app compiles a custom webpage about Obama's accomplishments across key policy areas, all tailored to Orange County, Florida.
+              div(style="color:#999; padding-left:30%; padding-right:30%;") The app compiles a custom webpage about Obama's accomplishments across key policy areas, all tailored to Orange County, Florida.
         
       div
         a.left.carousel-control(href="#howItWorksCarousel", role="button", data-slide="prev")
@@ -73,41 +77,40 @@ block content
           span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
           span.sr-only Next
 
-  div.row.margin-top-sm
-    div.col-md-12
-      div.subhead-01-bold MY ROLE
-      div.margin-top-sm Based in the San Francisco Technology Field Office, I led the ideation, wireframing and ran weekly presentations to campaign headquarters. In addition, I led the dev team, coordinated the efforts of more than a dozen volunteers, and wrote a good portion of the JavaScript and CSS.
-
+  
   div.row.margin-top-medium
-    div.col-md-12
+    div.col-md-6
       div.subhead-01-bold CONCEPT DEVELOPMENT
       div.margin-top-sm 
-      | The campaign provided us with several data sets they us to use. With the research findings in mind, I set out to get a better understanding of what stories might be found in the data. Ultimately, my goal was to come up with ideas to pitch to our stakeholders. 
-      div.margin-top-sm I set up a geospatial database, and started making maps. I made a lot: children gaining health care; renewable energy investments; tax savings, and many more. 
-
-
-  
-
-  div.row.margin-top-medium
-    div.col-md-4.col-sm-4.img-cycler
-      img(src="images/obama/exploration-01.png").img-responsive.img-fadable.active
-      img(src="images/obama/exploration-02.png").img-responsive.img-fadable
-      img(src="images/obama/exploration-03.png").img-responsive.img-fadable
-      img(src="images/obama/exploration-04.png").img-responsive.img-fadable
-    div.col-md-4.col-sm-4.img-cycler
-      img(src="images/obama/exploration-02.png").img-responsive.img-fadable.active
-      img(src="images/obama/exploration-03.png").img-responsive.img-fadable
-      img(src="images/obama/exploration-04.png").img-responsive.img-fadable
-      img(src="images/obama/exploration-01.png").img-responsive.img-fadable
-    div.col-md-4.col-sm-4.img-cycler
-      img(src="images/obama/exploration-03.png").img-responsive.img-fadable.active
-      img(src="images/obama/exploration-04.png").img-responsive.img-fadable
-      img(src="images/obama/exploration-01.png").img-responsive.img-fadable
-      img(src="images/obama/exploration-02.png").img-responsive.img-fadable
+      | In the beginning, all we had  was a set of spreadsheets about the President's domestic policies. With the research findings in mind, I set out to better understand the shape of the data and what stories it might reveal. Ultimately, my goal was to come up with ideas to pitch to our stakeholders. 
+      div.margin-top-sm I set up a geospatial database, loaded the data into it, and started making maps. I made a lot: children gaining health care; renewable energy investments; tax savings, and many more. 
+    div.col-md-6
+      div.img-cycler
+        img(src="images/obama/exploration-01.png").img-responsive.img-fadable.active
+        img(src="images/obama/exploration-02.png").img-responsive.img-fadable
+        img(src="images/obama/exploration-03.png").img-responsive.img-fadable
+        img(src="images/obama/exploration-04.png").img-responsive.img-fadable
+        img(src="images/obama/exploration-05.png").img-responsive.img-fadable
+        img(src="images/obama/exploration-06.png").img-responsive.img-fadable
       
-  div.row
-    div.col-md-12.margin-top-sm.caption.padded.centered
-      | Some early concept explorations made with data the campaign provided.
+  //-
+    div.row.margin-top-medium
+      div.col-md-4.col-sm-4.img-cycler
+        img(src="images/obama/exploration-01.png").img-responsive.img-fadable.active
+        img(src="images/obama/exploration-02.png").img-responsive.img-fadable
+        
+      div.col-md-4.col-sm-4.img-cycler
+        img(src="images/obama/exploration-03.png").img-responsive.img-fadable.active
+        img(src="images/obama/exploration-04.png").img-responsive.img-fadable
+      div.col-md-4.col-sm-4.img-cycler
+        img(src="images/obama/exploration-05.png").img-responsive.img-fadable.active
+        img(src="images/obama/exploration-06.png").img-responsive.img-fadable
+   
+      
+    div.row
+      div.col-md-6.margin-top-sm.caption
+      div.col-md-6.margin-top-sm.caption
+        | Some early concept explorations made with data the campaign provided.
   //-
     div.row.margin-top-medium 
       div.col-md-4.col-sm-4  
@@ -169,7 +172,7 @@ block content
 
   div.row.margin-top-medium
     div.col-md-12(style="text-align:center;")
-      div.header-01 By running development in parallel, we designed for all screen sizes simultaneously, and solved UX problems swiftly.
+      div.header-01 By running development in parallel, we designed for all screen sizes simultaneously, and caught difficult UX problems early.
   
   div.row.margin-top-medium-lg
     div.col-md-12
