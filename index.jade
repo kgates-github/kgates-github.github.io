@@ -8,22 +8,16 @@ html
     title Kevin Gates Portfolio
   body
     div.container
-      div.row
-        div.col-md-12
-          div.header-05.margin-top-medium(style="font-size:24px; margin-top:60px;")
-            | Kevin Gates 
-            br
-            span(style="font-weight: 400") Product design portfolio
-            div.margin-top-xsm.small-02(style="font-size:14px; font-weight:400;")
-              a(href='https://www.linkedin.com/in/kevingatesproduct') Linkedin
-
+      include ./top-nav.jade
+      
       div.row
         div.col-md-12.header-04.margin-top-medium-lg
-          | I bring a diverse set of skills to product design: concept development, research, wireframing, prototyping, project management, data visualization, and programming. I've worked for Google, R/GA, and Obama for America.
+          | I bring a diverse set of skills to product design: concept development, research, wireframing, prototyping, project management, data visualization, and programming. 
+          div.margin-top-sm I've worked for Google, R/GA, and Obama for America.
 
       div.row.margin-top-lg
         div.col-md-6
-          div.header-01
+          div.header-01.tall
             | Obama for America: 
             br
             | Project Atlas
@@ -37,9 +31,8 @@ html
 
       div.row.margin-top-xlg
         div.col-md-6
-          div.header-01
-            div Rx 
-            div Treatment
+          div.header-01.tall
+            div Rx Treatment
             div Flow
           div.margin-top-sm
             | A data visualization tool, generated entirely with patient data, for exploring a longitudinal view of diabetes treatments
@@ -51,10 +44,8 @@ html
 
       div.row.margin-top-xlg
         div.col-md-6
-          div.header-01
-            div Seeing 
-            div the
-            div Air
+          div.header-01.tall
+            div Seeing the Air
           div.margin-top-sm
             | A winning entry in a data visualization competition sponsored by Swissnex, Gray Area and Lift
           
