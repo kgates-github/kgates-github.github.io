@@ -53,9 +53,9 @@ Google
 Business Intelligence Developer
 March 2004 - May 2010
 
-At Google, I was part of a three-person team that designed the company’s early sales reporting platform. In 2006, I accepted an offer to join the business intelligence team in London, which in 2009 became Google’s global sales analytics team. 
+At Google, I was part of a three-person team that designed the company's early sales reporting platform. In 2006, I accepted an offer to join the business intelligence team in London, which in 2009 became Google’s global sales analytics team. 
 
-- Designed and built early sales reporting tools used throughout Google’s rapid global expansion.
+- Designed and built early sales reporting tools used throughout Google's rapid global expansion.
 - Sat in on sales teams to observe how they use data, translated observations into goals, and goals into features.
 - Regularly presented to director and VP-level executives.
 - Internal transfer to European headquarters in London, UK.
