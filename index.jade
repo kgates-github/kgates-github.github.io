@@ -7,14 +7,16 @@ html
     link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,500,700', rel='stylesheet', type='text/css')
     title Kevin Gates Portfolio
   body
+    
+    include ./top-nav.jade
     div.container
-      include ./top-nav.jade
-      
       div.row
-        div.col-md-12.header-04.margin-top-medium-lg
+        div.col-md-12.margin-top-medium
           | I bring a diverse set of skills to product design: concept development, research, wireframing, prototyping, project management, data visualization, and programming. I've worked for Google, R/GA, and Obama for America.
 
-      div.row.margin-top-lg
+      hr.margin-top-medium
+
+      div.row.margin-top-medium
         div.col-md-6
           div.tall
             div.header-01
@@ -29,7 +31,9 @@ html
         div.col-md-6
           img(src='images/obama/concept_03_plain.png').img-responsive
 
-      div.row.margin-top-xlg
+      hr.margin-top-medium
+
+      div.row.margin-top-medium
         div.col-md-6
           div.tall
             div.header-01
@@ -43,7 +47,9 @@ html
         div.col-md-6
           img(src='images/rx/tree_traversal.gif').img-responsive
 
-      div.row.margin-top-xlg
+      hr.margin-top-sm
+
+      div.row.margin-top-medium
         div.col-md-6
           div.tall
             div.header-01

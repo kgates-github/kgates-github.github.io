@@ -1,5 +1,5 @@
 body {
-  font: 18px Helvetica Neue; Open Sans, Sans-Serif;
+  font: 18px Helvetica; Arial, Sans-Serif;
 }
 .tall {
   min-height:40px;
@@ -41,9 +41,9 @@ img.img-carousel {
 }
 
 .header-01 {
-  font-size: 72px;
-  font-weight: 500;
-  line-height: 78px;
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 74px;
 }
 
 .header-04 {
@@ -184,47 +184,15 @@ carousel-image {
 
 @media(max-width:767px) {
   
-  img.img-carousel {
-    padding: 0px 0px 0px 0px;
-  }
-  .header-01 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 58px;
-  }
 }
 @media(min-width:768px) {
   
-  img.img-carousel {
-    padding: 0px 0px 0px 0px;
-  }
-  .header-01 {
-    font-size: 58px;
-    font-weight: bold;
-    line-height: 68px;
-  }
 }
 @media(min-width:992px) {
   
-  img.img-carousel {
-    padding: 0px 0px 0px 0px;
-  }
-  .header-01 {
-    font-size: 72px;
-    font-weight: 500;
-    line-height: 78px;
-  }
 }
 @media(min-width:1200px) {
   
-  img.img-carousel {
-    padding: 0px 0px 0px 0px;
-  }
-  .header-01 {
-    font-size: 72px;
-    font-weight: 500;
-    line-height: 78px;
-  }
 }
 
 
