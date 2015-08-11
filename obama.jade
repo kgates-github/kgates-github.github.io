@@ -44,7 +44,7 @@ block content
 
   div.row.margin-top-medium
     div.col-md-12(style="text-align:center;")
-      div.caption-header.subhead-01-bold
+      div.caption-header.subhead-01-bold.italic
         strong How it works:
       div#howItWorksCarousel.carousel.slide(data-ride="carousel").margin-top-sm
         ol.carousel-indicators
@@ -54,20 +54,14 @@ block content
          
         div.carousel-inner(role="listbox")
           div.item.active
-            img(src="images/obama/concept_01.png").img-responsive.img-carousel
-            div.carousel-caption
-              div(style="color:#999; padding-left:30%; padding-right:30%;")
-                | A voter in Orlando Florida sees a tweet from Obama with a link inviting them to check out a map. They click it.
+            img(src="images/obama/concept_01_note.png").img-responsive.img-carousel
+            
           div.item
-            img(src="images/obama/concept_02.png").img-responsive.img-carousel
-            div.carousel-caption
-              div(style="color:#999; padding-left:30%; padding-right:30%;") The app detects the user's location. In this case, the user is in Orange County, Florida.
-
+            img(src="images/obama/concept_02_note.png").img-responsive.img-carousel
+            
           div.item
-            img(src="images/obama/concept_03.png").img-responsive.img-carousel
-            div.carousel-caption
-              div(style="color:#999; padding-left:30%; padding-right:30%;") The app compiles a custom webpage about Obama's accomplishments across key policy areas, all tailored to Orange County, Florida.
-        
+            img(src="images/obama/concept_03_note.png").img-responsive.img-carousel
+              
       div
         a.left.carousel-control(href="#howItWorksCarousel", role="button", data-slide="prev")
           span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
