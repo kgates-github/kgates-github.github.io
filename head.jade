@@ -7,6 +7,10 @@ head
       $('#howItWorksCarousel').carousel({
         interval:false
       });
+
+      $('.img-carousel').on('click', function() {
+        $('#howItWorksCarousel').carousel('next');
+      });
       
       var Cycler = function(container, delay) {
         this.container = container
