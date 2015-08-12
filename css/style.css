@@ -5,6 +5,9 @@ body {
 .container {
   max-width: 940px;
 }
+.nav-right {
+  text-align:right; 
+}
 .tall {
   min-height:40px;
 }
@@ -187,10 +190,14 @@ carousel-image {
 }
 
 @media(max-width:767px) {
-  
+  .nav-right {
+    text-align:left; 
+  }
 }
 @media(min-width:768px) {
-  
+  .nav-right {
+    text-align:right; 
+  }
 }
 @media(min-width:992px) {
   
