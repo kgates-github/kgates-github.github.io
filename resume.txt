@@ -41,7 +41,7 @@ Obama for America
 Deputy, San Francisco Technology Field Office
 February 2012 - November 2012
 
-I volunteered for the 2012 Obama campaign, where I led the concepting, design and development for one of the campaign’s voter-facing apps. The app was released through President Obama’s Twitter account, where it reached 42 million followers.
+I volunteered for the 2012 Obama campaign, where I led the concepting, design and development for one of the campaign's voter-facing apps. The app was released through President Obama's Twitter account, where it reached 42 million followers.
 
 - Led team of three, and coordinated the work of 10+ volunteers.
 - Analyzed government data using geospatial tools and translated them into concepts and mocks.
@@ -53,7 +53,7 @@ Google
 Business Intelligence Developer
 March 2004 - May 2010
 
-At Google, I was part of a three-person team that designed the company's early sales reporting platform. In 2006, I accepted an offer to join the business intelligence team in London, which in 2009 became Google’s global sales analytics team. 
+At Google, I was part of a three-person team that designed the company's early sales reporting platform. In 2006, I accepted an offer to join the business intelligence team in London, which in 2009 became Google's global sales analytics team. 
 
 - Designed and built early sales reporting tools used throughout Google's rapid global expansion.
 - Sat in on sales teams to observe how they use data, translated observations into goals, and goals into features.
