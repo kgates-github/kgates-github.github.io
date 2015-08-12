@@ -1,5 +1,6 @@
 body {
-  font: 18px Helvetica, Arial, Sans-Serif;
+  font-size: 18px;
+  font-family: Helvetica Neue, arial, sans-serif;
   line-height: 1.4em;
 }
 hr {
@@ -54,13 +55,14 @@ img.img-carousel {
 }
 
 .header-01 {
-  font-size: 70px;
+  font-size: 64px;
   font-weight: 400;
-  line-height: 72px;
+  line-height: 66px;
 }
 
 .header-04 {
-  font-size: 36px;
+  font-size: 48px;
+  line-height: 50px;
 }
 .header-05 {
   font-weight: bold;
@@ -124,11 +126,11 @@ span.pill {
   line-height: 28px;
 }
 .view-project {
-  background-color:#333;
+  background-color:#cc0000;
   color: #fff;
   display: block; 
   width: 100%;
-  padding:20px;
+  padding:30px;
 }
 .italic {
   font-style: italic;

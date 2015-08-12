@@ -1,25 +1,18 @@
 doctype html
 meta(name="viewport", content="width=device-width, initial-scale=1")
 html
-  head
-    link(href="css/bootstrap.min.css", rel="stylesheet")
-    link(href="css/style.css", rel="stylesheet")
-    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,500,700', rel='stylesheet', type='text/css')
-    title Kevin Gates Portfolio
+  include ./head.jade
   body
     
-    include ./top-nav.jade
+    include ./nav.jade
+    
     div.container
-      div.row
-        div.col-md-12.margin-top-medium
-          | I bring a diverse set of skills to product design: concept development, research, wireframing, prototyping, project management, data visualization, and programming. I've worked for Google, R/GA, and Obama for America.
-
-      hr.margin-top-medium
-
-      div.row
-        div.col-md-12.bold PROJECTS
-
-      div.row.margin-top-medium
+      //-
+        div.row.margin-top-sm
+        div.col-md-12
+          div.margin-top-sm I bring a diverse set of skills to product design: concept development, research, wireframing, prototyping, project management, data visualization, and programming. I've worked for Google, R/GA, and Obama for America.
+    
+      div.row.margin-top-medium-sm
         div.col-md-6
           div.tall
             div.header-01
@@ -27,15 +20,25 @@ html
               br
               | Project Atlas
             div.margin-top-sm
-              | An app designed to make President Obama's accomplishments engaging and relevant to voters at a local level
+              | I led the design and development for one of the Obama campaign's voter-facing apps. The app makes the President's accomplishments engaging and relevant to voters at a local level. It was released through the official White House Twitter account, where it reached 42 million followers.
             
           div.margin-top-sm(style="clear:both;")
-            // a(type="button", href="obama.html").btn.btn-default.btn-lg.view-project See design process
+            //-
+              a(type="button", href="obama.html").btn.btn-default.btn-lg.view-project 
+                | Read more
+                span.glyphicon.glyphicon-chevron-right(aria-hidden="true", style="padding-left:4px;")
+            
             a(href="obama.html", style="color:#cc0000; text-decoration:underline; font-weight:bold;") 
-              | See design process 
+              | Read more 
               span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
         div.col-md-6
-          img(src='images/obama/concept_03_plain.png').img-responsive
+          div.img-cycler
+            //img(src="images/obama/exploration-01.png").img-responsive.img-fadable.active
+            img(src="images/obama/exploration-02.png").img-responsive.img-fadable.active
+            img(src="images/obama/exploration-03.png").img-responsive.img-fadable
+            img(src="images/obama/exploration-04.png").img-responsive.img-fadable
+            img(src="images/obama/exploration-05.png").img-responsive.img-fadable
+            img(src="images/obama/exploration-06.png").img-responsive.img-fadable
 
       hr.margin-top-medium
 
@@ -43,14 +46,13 @@ html
         div.col-md-6
           div.tall
             div.header-01
-              div Rx Treatment
-              div Flow
+              div Rx Treatment Flow
             div.margin-top-sm
-              | A data visualization tool, generated entirely with patient data, for exploring a longitudinal view of diabetes treatments
+              | I was a data visualization engineer for the Informatics team at a Peter Thiel-funded startup. I led the concept development, design and build of data visualization tool, generated entirely with patient data, for exploring a longitudinal view of diabetes treatments.
             
           div.margin-top-sm(style="clear:both;")
             a(href="treatment.html", style="color:#cc0000; text-decoration:underline; font-weight:bold;") 
-              | See design process 
+              | Read more 
               span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
         div.col-md-6
           img(src='images/rx/tree_traversal.gif').img-responsive
@@ -61,11 +63,9 @@ html
         div.col-md-6
           div.tall
             div.header-01
-              div Seeing the 
-                br
-                | Air
+              div Seeing the Air
             div.margin-top-sm
-              | A winning entry in a data visualization competition sponsored by Swissnex, Gray Area and Lift
+              | Seeing the Air is a winning entry in a data visualization competition sponsored by Swissnex, Gray Area and Lift. Competing against 75 teams under a tight deadline, I then led the wireframing, visual design and front-end programming.
             
           div.margin-top-sm(style="clear:both;")
             a(href="http://www.seeingtheair.com/city/Boston/", style="color:#cc0000; text-decoration:underline; font-weight:bold;") 
