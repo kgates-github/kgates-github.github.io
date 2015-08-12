@@ -16,6 +16,9 @@ html
 
       hr.margin-top-medium
 
+      div.row
+        div.col-md-12.bold PROJECTS
+
       div.row.margin-top-medium
         div.col-md-6
           div.tall
@@ -27,7 +30,10 @@ html
               | An app designed to make President Obama's accomplishments engaging and relevant to voters at a local level
             
           div.margin-top-medium-sm(style="clear:both;")
-            a(type="button", href="obama.html").btn.btn-default.btn-lg.view-project See design process
+            // a(type="button", href="obama.html").btn.btn-default.btn-lg.view-project See design process
+            a(href="obama.html", style="color:#cc0000; text-decoration:underline; font-weight:bold;") 
+              | See design process 
+              span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
         div.col-md-6
           img(src='images/obama/concept_03_plain.png').img-responsive
 
@@ -43,7 +49,9 @@ html
               | A data visualization tool, generated entirely with patient data, for exploring a longitudinal view of diabetes treatments
             
           div.margin-top-medium-sm(style="clear:both;")
-            a(type="button", href="treatment.html").btn.btn-default.btn-lg.view-project See design process
+            a(href="tratment.html", style="color:#cc0000; text-decoration:underline; font-weight:bold;") 
+              | See design process 
+              span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
         div.col-md-6
           img(src='images/rx/tree_traversal.gif').img-responsive
 
@@ -53,17 +61,21 @@ html
         div.col-md-6
           div.tall
             div.header-01
-              div Seeing the Air
+              div Seeing the 
+                br
+                | Air
             div.margin-top-sm
               | A winning entry in a data visualization competition sponsored by Swissnex, Gray Area and Lift
             
           div.margin-top-sm(style="clear:both;")
-            a(type="button", href="http://www.seeingtheair.com/city/Boston/").btn.btn-default.btn-lg.view-project See project
+            a(href="http://www.seeingtheair.com/city/Boston/", style="color:#cc0000; text-decoration:underline; font-weight:bold;") 
+              | Go to project website 
+              span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+            //a(type="button", href="http://www.seeingtheair.com/city/Boston/").btn.btn-default.btn-lg.view-project See project
         div.col-md-6
           img(src='images/seeingtheair/area.png').img-responsive
 
-      div.row.margin-top-xlg
-        div.col-md-6
+    include ./footer.jade
 
 
 

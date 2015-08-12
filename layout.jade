@@ -2,10 +2,11 @@ doctype html
 meta(name="viewport", content="width=device-width, initial-scale=1")
 html
   include ./head.jade
-  include ./top-nav.jade
   body
+    include ./top-nav.jade
+  
     div.container
       block content
 
-      block footer
+    include ./footer.jade
         

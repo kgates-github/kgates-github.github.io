@@ -5,6 +5,9 @@ body {
 .container {
   max-width: 940px;
 }
+.bold {
+  font-weight: bold;
+}
 .nav-right {
   text-align:right; 
 }
