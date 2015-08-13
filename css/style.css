@@ -58,6 +58,13 @@ img.img-carousel {
   font-size: 64px;
   font-weight: 400;
   line-height: 66px;
+  font-weight: bold;
+}
+
+.header-02 {
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 38px;
 }
 
 .header-04 {
@@ -139,6 +146,7 @@ span.pill {
   font-size: 18px;
   font-style: italic;
   color:#999;
+  line-height: 1.3em;
 }
 .caption.padded {
   padding-left:20%;
