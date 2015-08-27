@@ -9,20 +9,22 @@ html
     div.container
       //-
         div.row.margin-top-sm
-        div.col-md-12
-          div.margin-top-sm I bring a diverse set of skills to product design: concept development, research, wireframing, prototyping, project management, data visualization, and programming. I've worked for Google, R/GA, and Obama for America.
-    
-      div.row.margin-top-medium-sm
+        div.col-md-2
+        div.col-md-8
+          div.margin-top-sm Drawing on experience from working for Google, R/GA, and Obama for America, I bring a diverse set of skills to product design: concept development, wireframing, prototyping, project management, data visualization, and programming.
+        div.col-md-2
+      
+      //hr.margin-top-medium
+
+      div.row.margin-top-medium
         div.col-md-6
           div.tall
             div.header-02
-              | Obama for America: 
-              br
-              | Project Atlas
+              | Obama for America: Project Atlas
             div.margin-top-sm
-              | I led the design and development for one of the Obama campaign's voter-facing apps. It was released through the President's Twitter account, where it reached 42 million followers.
+              | I led the concepting, wireframing and development for one of the Obama campaign's voter-facing apps. It was released through the President's Twitter account, where it reached 42 million followers.
             
-          div.margin-top-sm(style="clear:both;")
+          div.margin-top-medium-sm(style="clear:both;")
             //-
               a(type="button", href="obama.html").btn.btn-default.btn-lg.view-project 
                 | Read more
@@ -33,7 +35,8 @@ html
               span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
         div.col-md-6
           div.img-cycler(style="margin-top:0px; min-height:300px;")
-            //img(src="images/obama/exploration-01.png").img-responsive.img-fadable.active
+            //img(src="images/obama/desktop_display_florida.png").img-responsive.img-fadable.active
+            //img(src="images/obama/ohio.png").img-responsive.img-fadable.active
             img(src="images/obama/exploration-02.png").img-responsive.img-fadable.active
             img(src="images/obama/exploration-03.png").img-responsive.img-fadable
             img(src="images/obama/exploration-04.png").img-responsive.img-fadable
@@ -48,10 +51,10 @@ html
             div.header-02
               div Rx Treatment Flow
             div.margin-top-sm
-              | I was a data visualization engineer for the Informatics team at a Peter Thiel-funded startup. I led the concept development, design and build of data visualization tool, generated entirely with patient data, for exploring a longitudinal view of diabetes treatments.
+              | I was a data visualization engineer for the Informatics team at a Peter Thiel-funded startup. I led the concept development, design and build of data visualization tool, generated entirely with patient data, for exploring diabetes treatments.
             
-          div.margin-top-sm(style="clear:both;")
-            a(href="treatment.html", style="color:#cc0000; text-decoration:underline; font-weight:bold;") 
+          div.margin-top-medium-sm(style="clear:both;")
+            a(href="treatment.html", style="color:#cc0000; text-decoration:underline; font-weight:bold; margin-top:8px;") 
               | Read more 
               span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
         div.col-md-6
@@ -67,10 +70,17 @@ html
             div.margin-top-sm
               | Seeing the Air is a winning entry in a data visualization competition sponsored by Swissnex, Gray Area and Lift. Competing against 75 teams under a tight deadline, I led the wireframing, visual design and front-end programming.
             
-          div.margin-top-sm(style="clear:both;")
-            a(href="http://www.seeingtheair.com/city/Boston/", style="color:#cc0000; text-decoration:underline; font-weight:bold;") 
-              | Go to project website 
+          div.margin-top-medium-sm(style="clear:both;")
+            a(href="http://www.seeingtheair.com/city/Boston/", style="color:#cc0000; text-decoration:underline; font-weight:bold; margin-top:8px;") 
+              | Go to seeingtheair.com 
               span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+          div.margin-top-xsm
+            a(href="https://github.com/kgates-github/datacanvas/tree/master/webapp/app/static/coffeescripts", style="color:#cc0000; text-decoration:underline; font-weight:bold; margin-top:8px;") 
+              | See sourcecode on GitHub 
+              span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+
+
+            
             //a(type="button", href="http://www.seeingtheair.com/city/Boston/").btn.btn-default.btn-lg.view-project See project
         div.col-md-6
           img(src='images/seeingtheair/area.png', style="margin-top:10px;").img-responsive
