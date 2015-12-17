@@ -143,8 +143,8 @@ span.pill {
   font-style: italic;
 }
 .caption {
-  font-size: 18px;
-  font-style: italic;
+  font-size: 14px;
+  /*font-style: italic;*/
   color:#999;
   line-height: 1.3em;
 }
@@ -184,7 +184,7 @@ carousel-image {
   color: #333;
   text-align: center;
   text-shadow: none !important; 
-  font-style:italic;
+  /*font-style:italic;*/
   height: 110px;
 }
 #howItWorksCarousel .carousel-indicators {
