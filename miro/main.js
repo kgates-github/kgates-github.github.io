@@ -14,8 +14,13 @@ rtb.onReady(() => {
           let stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
           
           stickers.forEach(function (sticker) {
-            console.log(sticker.id);
+            console.log(sticker.);
           })
+
+          stickers.map(sticker => ({
+            width: 300,
+            height: 100,
+          }))
           
 
           // Delete selected stickers
