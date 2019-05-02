@@ -12,14 +12,12 @@ rtb.onReady(() => {
 
           // Filter stickers from selected widgets
           let stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
-
-          // Delete selected stickers
-          //await rtb.board.widgets.deleteById(stickers.map(sticker => sticker.id))
+          console.log(stickers)
 
           // Create shapes from selected stickers
           await rtb.board.widgets.update(stickers.map(sticker => ({
             id: sticker.id,
-            scale: 0.44
+            scale: 1
           })))
 
           // Show success message
