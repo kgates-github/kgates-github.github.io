@@ -3,7 +3,7 @@ rtb.onReady(() => {
     extensionPoints: {
       bottomBar: {
         title: 'Sticker to shapes',
-        svgIcon: '<circle cx="12" cy="12" r="9" fill="#00ff00" fill-rule="evenodd" stroke="00ff00" stroke-width="2"/>',
+        svgIcon: '<circle cx="12" cy="12" r="9" fill="#0000ff" fill-rule="evenodd" stroke="0000ff" stroke-width="2"/>',
         positionPriority: 1,
         onClick: async () => {
 
