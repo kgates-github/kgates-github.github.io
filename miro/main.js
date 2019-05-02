@@ -12,6 +12,7 @@ rtb.onReady(() => {
 
           // Filter stickers from selected widgets
           let stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
+          console.log(stickers)
 
           // Delete selected stickers
           await rtb.board.widgets.deleteById(stickers.map(sticker => sticker.id))
@@ -33,3 +34,4 @@ rtb.onReady(() => {
     }
   })
 })
+// 48d3f0dc-5697-4d7f-96fb-05a6fcadeb67
