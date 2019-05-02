@@ -12,19 +12,16 @@ rtb.onReady(() => {
 
           // Filter stickers from selected widgets
           let stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
-          //stickers.forEach(sticker =>
-            //sticker.scale = 1
-          //)
+          stickers.forEach(sticker =>
+            sticker.scale = 0.3
+          )
 
 
 
           // Delete selected stickers
          // await rtb.board.widgets.deleteById(stickers.map(sticker => sticker.id))
 
-          // Create shapes from selected stickers
-          await rtb.board.widgets.update(stickers.map(sticker => ({
-            scale: 1,
-          })))
+         
 
           // Show success message
           rtb.showNotification('Stickers has been converted')
