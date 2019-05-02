@@ -25,7 +25,8 @@ rtb.onReady(() => {
             text: sticker.text,
             x: sticker.x,
             y: sticker.y,
-            scale: 2
+            scale: 1,
+            style: sticker.style
           })))
 
           // Show success message
