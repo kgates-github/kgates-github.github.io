@@ -32,7 +32,7 @@ rtb.onReady(() => {
           //})))
 
           // Show success message
-          rtb.showNotification('Stickers has been converted')
+          rtb.showNotification('Stickers resized')
         }
       }
     }
