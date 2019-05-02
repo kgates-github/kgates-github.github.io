@@ -14,26 +14,17 @@ rtb.onReady(() => {
           let stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
           
           stickers.forEach(function (sticker) {
-            console.log(sticker);
-            sticker.bounds.width = 300;
-            sticker.bounds.height = 100;
+            console.log("!", sticker);
           })
-
-         
-          
 
           // Delete selected stickers
           //await rtb.board.widgets.deleteById(stickers.map(sticker => sticker.id))
 
           // Create shapes from selected stickers
-          //await rtb.board.widgets.create(stickers.map(sticker => ({
-            //type: 'shape',
-            //text: sticker.text,
-            //x: sticker.x,
-            //y: sticker.y,
-            //width: sticker.bounds.width,
-            //height: sticker.bounds.height,
-          //})))
+          rtb.board.widgets.update(stickers.map(sticker => ({
+            width: sticker.bounds.width,
+            height: sticker.bounds.height,
+          })))
 
           // Show success message
           rtb.showNotification('Stickers resized')
