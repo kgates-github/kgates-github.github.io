@@ -13,10 +13,11 @@ rtb.onReady(() => {
           // Filter stickers from selected widgets
           let stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
           
-          stickers[0].bounds.width = 340;
+          //stickers[0].bounds.width = 340;
 
           stickers.forEach(function (sticker) {
-            console.log("!", sticker);
+            console.log(sticker);
+            sticker.bounds.width = 340;
           })
 
           // Show success message
