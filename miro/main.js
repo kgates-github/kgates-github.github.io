@@ -19,7 +19,7 @@ rtb.onReady(() => {
           // Create shapes from selected stickers
           await rtb.board.widgets.update(stickers.map(sticker => ({
             id: sticker.id,
-            scale: 1
+            scale: min
           })))
 
           // Show success message
