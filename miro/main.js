@@ -21,9 +21,9 @@ rtb.onReady(() => {
           //await rtb.board.widgets.deleteById(stickers.map(sticker => sticker.id))
 
           // Create shapes from selected stickers
-          rtb.board.widgets.update(stickers.map(sticker => ({
-            width: sticker.bounds.width,
-            height: sticker.bounds.height,
+          await rtb.board.widgets.update(stickers.map(sticker => ({
+            width: 100,
+            height: 500,
           })))
 
           // Show success message
