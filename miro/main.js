@@ -15,12 +15,11 @@ rtb.onReady(() => {
           
           stickers.forEach(function (sticker) {
             console.log(sticker.bounds);
+            sticker.bounds.width = 300;
+            sticker.bounds.height = 100;
           })
 
-          stickers.map(sticker => ({
-            width: 300,
-            height: 100,
-          }))
+         
           
 
           // Delete selected stickers
