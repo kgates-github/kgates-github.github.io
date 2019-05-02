@@ -22,7 +22,7 @@ rtb.onReady(() => {
             text: sticker.text,
             x: sticker.x,
             y: sticker.y,
-            width: 380,
+            width: "380",
             height: sticker.bounds.height,
           })))
 
