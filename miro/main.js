@@ -3,7 +3,7 @@ rtb.onReady(() => {
     extensionPoints: {
       bottomBar: {
         title: 'Sticker to shapes',
-        svgIcon: '<circle cx="12" cy="12" r="9" fill="#0000ff" fill-rule="evenodd" stroke="0000ff" stroke-width="2"/>',
+        svgIcon: '<circle cx="12" cy="12" r="9" fill="#ffcc00" fill-rule="evenodd" stroke="ffcc00" stroke-width="2"/>',
         positionPriority: 1,
         onClick: async () => {
 
@@ -21,10 +21,10 @@ rtb.onReady(() => {
           //await rtb.board.widgets.deleteById(stickers.map(sticker => sticker.id))
 
           // Create shapes from selected stickers
-          await stickers.map(sticker => ({
+          await stickers.update({
             width: 100,
             height: 500,
-          }))
+          })
 
           // Show success message
           rtb.showNotification('Stickers resized')
