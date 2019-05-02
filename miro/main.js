@@ -19,17 +19,17 @@ rtb.onReady(() => {
           
 
           // Delete selected stickers
-          await rtb.board.widgets.deleteById(stickers.map(sticker => sticker.id))
+          //await rtb.board.widgets.deleteById(stickers.map(sticker => sticker.id))
 
           // Create shapes from selected stickers
-          await rtb.board.widgets.create(stickers.map(sticker => ({
+          //await rtb.board.widgets.create(stickers.map(sticker => ({
             //type: 'shape',
             //text: sticker.text,
             //x: sticker.x,
             //y: sticker.y,
-            width: sticker.bounds.width,
-            height: sticker.bounds.height,
-          })))
+            //width: sticker.bounds.width,
+            //height: sticker.bounds.height,
+          //})))
 
           // Show success message
           rtb.showNotification('Stickers has been converted')
