@@ -14,12 +14,12 @@ rtb.onReady(() => {
           // Filter stickers from selected widgets
           let stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
           const min = Math.min(...stickers.map(s => s.scale))
-          console.log(min, stickers)
-
+          const avg = stickers.map(s => s.scale).reduce((a, b) => a + b) / stickers.length
+          
           // Create shapes from selected stickers
           await rtb.board.widgets.update(stickers.map(sticker => ({
             id: sticker.id,
-            scale: min
+            scale: avg
           })))
 
           // Show success message
