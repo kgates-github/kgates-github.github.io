@@ -1,3 +1,4 @@
+
 rtb.onReady(() => {
   rtb.initialize({
     extensionPoints: {
@@ -12,7 +13,8 @@ rtb.onReady(() => {
 
           // Filter stickers from selected widgets
           let stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
-          console.log(stickers)
+          const min = Math.min(...stickers.map(s => s.scale))
+          console.log(min, stickers)
 
           // Create shapes from selected stickers
           await rtb.board.widgets.update(stickers.map(sticker => ({
