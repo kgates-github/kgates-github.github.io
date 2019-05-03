@@ -5,12 +5,12 @@ rtb.onReady(() => {
 })
 
 const resizeButton = document.getElementById('resizeButton')
+var selectedWidgets = null
 console.log(resizeButton)
-let selectedWidgets = null
 
 async function getWidget() {
   // Get selected widgets
-  let selectedWidgets = await rtb.board.selection.get()
+  selectedWidgets = await rtb.board.selection.get()
 }
 
 resizeButton.onclick = (e) => {
@@ -19,6 +19,7 @@ resizeButton.onclick = (e) => {
 }
 
 async function setSize() {
+  let selectedWidgets = await rtb.board.selection.get()
   // Filter stickers from selected widgets
   let stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
   const scales = stickers.map(s => s.scale)
