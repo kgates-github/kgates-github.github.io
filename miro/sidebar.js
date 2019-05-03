@@ -4,27 +4,27 @@ rtb.onReady(() => {
   getWidget()
 })
 
-// Get html elements for tip and text container
-const tipElement = document.getElementById('tip')
-const widgetTextElement = document.getElementById('widget-text')
+const resizeButton = document.getElementById('resizeButton')
 
 async function getWidget() {
+  resizeButton.onclick = (e) =>// Create shapes from selected stickers
+    await rtb.board.widgets.update(stickers.map(sticker => ({
+      id: sticker.id,
+      scale: min
+    })))
+
+    // Show success message
+    rtb.showNotification('Stickers have been resized')
+
   // Get selected widgets
-  let widgets = await rtb.board.selection.get()
+  let selectedWidgets = await rtb.board.selection.get()
 
-  // Get first widget from selected widgets
-  let text = widgets[0].text
-
-  // Check that widget has text field
-  if (typeof text === 'string') {
-
-    // hide tip and show text in sidebar
-    tipElement.style.opacity = '0'
-    widgetTextElement.value = text
-  } else {
-
-    // show tip and clear text in sidebar
-    tipElement.style.opacity = '1'
-    widgetTextElement.value = ''
-  }
+  // Filter stickers from selected widgets
+  let stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
+  const scales = stickers.map(s => s.scale)
+  const min = Math.min(...scales)
+  const max = Math.max(...scales)
+  const avg = scales.reduce((a, b) => a + b) / stickers.length
 }
+
+
