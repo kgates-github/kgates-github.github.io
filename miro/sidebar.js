@@ -5,23 +5,25 @@ rtb.onReady(() => {
 })
 
 const resizeButton = document.getElementById('resizeButton')
+const tip = document.getElementById('tip')
+
 var selectedWidgets = null
 console.log(resizeButton)
 
 async function getWidget() {
   // Get selected widgets
   selectedWidgets = await rtb.board.selection.get()
+  if (selectedWidgets.length) tip.style.display = 'none';
+  else tip.style.display = 'block';
 }
 
 resizeButton.onclick = (e) => {
-  console.log("!", this)
   setSize()
 }
 
 async function setSize() {
-  let selectedWidgets = await rtb.board.selection.get()
   // Filter stickers from selected widgets
-  let stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
+  stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
   const scales = stickers.map(s => s.scale)
   const min = Math.min(...scales)
   const max = Math.max(...scales)
