@@ -5,6 +5,7 @@ rtb.onReady(() => {
 })
 
 const resizeButton = document.getElementById('resizeButton')
+console.log(resizeButton)
 let selectedWidgets = null
 
 async function getWidget() {
