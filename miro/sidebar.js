@@ -14,7 +14,11 @@ async function getWidget() {
 }
 
 resizeButton.onclick = (e) => {
-  console.log(this)
+  console.log("!", this)
+  setSize()
+}
+
+async function setSize() {
   // Filter stickers from selected widgets
   let stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
   const scales = stickers.map(s => s.scale)
