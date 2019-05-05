@@ -5,7 +5,7 @@ rtb.onReady(() => {
     extensionPoints: {
       bottomBar: {
         title: 'Sticker resizer',
-        svgIcon: '<rect x="8.5" y="42.5" width="27" height="27" transform="rotate(-90 8.5 42.5)" stroke="black" stroke-width="3"/><rect x="8.5" y="42.5" width="12" height="12" transform="rotate(-90 8.5 42.5)" stroke="black" stroke-width="3"/><path d="M43.5 9C43.5 8.17157 42.8284 7.5 42 7.5H28.5C27.6716 7.5 27 8.17157 27 9C27 9.82843 27.6716 10.5 28.5 10.5H40.5V22.5C40.5 23.3284 41.1716 24 42 24C42.8284 24 43.5 23.3284 43.5 22.5V9ZM9.06066 44.0607L43.0607 10.0607L40.9393 7.93934L6.93934 41.9393L9.06066 44.0607Z" fill="black"/>',
+        svgIcon: '<rect x="6" y="25" width="15.1429" height="15.1429" transform="rotate(-90 6 25)" stroke="black" stroke-width="2"/><rect x="6" y="25" width="6.57143" height="6.57143" transform="rotate(-90 6 25)" stroke="black" stroke-width="2"/><path d="M26 6.00002C26 5.44773 25.5523 5.00002 25 5.00002H16C15.4477 5.00002 15 5.44773 15 6.00002C15 6.5523 15.4477 7.00002 16 7.00002H24V15C24 15.5523 24.4477 16 25 16C25.5523 16 26 15.5523 26 15V6.00002ZM6.27854 26.1357L25.7071 6.70712L24.2929 5.29291L4.86432 24.7215L6.27854 26.1357Z" fill="black"/>',
         positionPriority: 1,
         onClick: async () => {
           rtb.board.ui.openLeftSidebar('sidebar.html')
