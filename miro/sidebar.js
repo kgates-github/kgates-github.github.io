@@ -6,9 +6,7 @@ rtb.onReady(() => {
 
 const resizeButton = document.getElementById('resizeButton')
 const tip = document.getElementById('tip')
-
 var selectedWidgets = null
-console.log(resizeButton)
 
 async function getWidget() {
   // Get selected widgets
@@ -24,6 +22,8 @@ resizeButton.onclick = (e) => {
 async function setSize() {
   // Filter stickers from selected widgets
   stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
+  console.log(stickers)
+  
   const scales = stickers.map(s => s.scale)
   const min = Math.min(...scales)
   const max = Math.max(...scales)
