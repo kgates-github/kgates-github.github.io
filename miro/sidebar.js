@@ -16,19 +16,24 @@ async function getWidget() {
 }
 
 resizeButton.onclick = (e) => {
-  setSize()
+  resize()
 }
 
-async function setSize() {
+async function resize() {
   // Filter stickers from selected widgets
   let stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
-  // Only change square stickers
-  stickers = stickers.filter(s => s.bounds.height / s.bounds.width > 1.0)
- 
-  stickers.forEach(s => {
-    console.log(s)
-  })
+  // Separate square and rect stickers
+  const squareStickers = stickers.filter(s => s.bounds.height / s.bounds.width > 1.0)
+  const rectStickers = stickers.filter(s => s.bounds.height / s.bounds.width < 1.0)
   
+  setSize(squareStickers)
+  setSize(rectStickers)
+
+  // Show success message
+  rtb.showNotification('Stickers have been resized')
+}
+
+async function setSize(stickers) {
   const scales = stickers.map(s => s.scale)
   const min = Math.min(...scales)
   const max = Math.max(...scales)
@@ -38,7 +43,4 @@ async function setSize() {
     id: sticker.id,
     scale: min
   })))
-
-  // Show success message
-  rtb.showNotification('Stickers have been resized')
 }
