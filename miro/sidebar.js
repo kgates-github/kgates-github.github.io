@@ -21,12 +21,14 @@ resizeButton.onclick = (e) => {
 
 async function setSize() {
   // Filter stickers from selected widgets
-  stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
+  let stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
+  // Only change square stickers
+  stickers = stickers.filter(s => s.bounds.height / s.bounds.width > 1.0)
+ 
   stickers.forEach(s => {
-    console.log(s, s.bounds.height / s.bounds.width)
+    console.log(s)
   })
-  //console.log(stickers[0].bounds.height)
-
+  
   const scales = stickers.map(s => s.scale)
   const min = Math.min(...scales)
   const max = Math.max(...scales)
