@@ -1,47 +1,65 @@
 rtb.onReady(() => {
+  const hues = 11; // Number of base hues (e.g., red, grean, yellow)
+  const shades = 7; // Number of shades of each hue
+  var bg;
+  var base_hue = 0;
+  var h_inc = Math.floor(360/hues);
+  var text = "";
+  const text_colors = {'dark': "#000000", 'light': "#ffffff"}
+  var ids = [];
+  i = 0;
+  
+  hue = base_hue;
+
+  for (var h = 0; h < hues; h++) {
+    var row = document.createElement("div")
+    row.classList.add("flex-container");
+    document.getElementById("palette").appendChild(row);
+
+    bg = (h == hues-1) ? tinycolor("hsl(" + hue + ", 0%, 85%)") : 
+        tinycolor("hsl(" + hue + ", 45%, 85%)");
+
+    for (var l = 0; l < shades; l++) {
+        var daube = document.createElement("div")
+        daube.classList.add("daube");
+        daube.style.backgroundColor = bg.toHexString();
+        daube.style.color = bg.isDark() ? text_colors['light'] : text_colors['dark'];
+        daube.innerHTML = text
+        var id = "fc_" + i;
+        daube.id = id;
+
+        row.appendChild(daube);
+        bg.darken(10);
+        ids.push(id);
+        daube.onclick = function() {
+            setColor(this.style.backgroundColor);
+        }
+        i++;
+    }
+    hue += h_inc;
+  }
+
   // subscribe on user selected widgets
   rtb.addListener(rtb.enums.event.SELECTION_UPDATED, getWidget)
-  const resizeButton = document.getElementById('resizeButton')
   const tip = document.getElementById('tip')
   var selectedWidgets = null
-  getWidget()
-})
-
-resizeButton.onclick = (e) => {
-  resize()
 }
 
-async function getWidget() {
-  // Get selected widgets
+async function setColor(color) {
   selectedWidgets = await rtb.board.selection.get()
   if (selectedWidgets.length) tip.style.display = 'none';
   else tip.style.display = 'block';
-  resize()
-}
-
-async function resize() {
-  // Filter stickers from selected widgets
+  
   let stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
-  
-  // Separate square and rect stickers
-  const squareStickers = stickers.filter(s => s.bounds.height / s.bounds.width > 1.0)
-  const rectStickers = stickers.filter(s => s.bounds.height / s.bounds.width < 1.0)
-  
-  setSize(squareStickers)
-  setSize(rectStickers)
 
-  // Show success message
-  rtb.showNotification('Stickers have been resized')
-}
-
-async function setSize(stickers) {
-  const scales = stickers.map(s => s.scale)
-  const min = Math.min(...scales)
-  const max = Math.max(...scales)
-  const avg = scales.reduce((a, b) => a + b) / stickers.length
- 
   await rtb.board.widgets.update(stickers.map(sticker => ({
     id: sticker.id,
-    scale: min
+    backgroundColor: color
   })))
+
+  // Show success message
+  rtb.showNotification('New color applied')
 }
+  
+
+
