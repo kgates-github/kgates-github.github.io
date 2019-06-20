@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="https://realtimeboard.com/app/static/rtb.uikit.css">
     <script src="https://realtimeboard.com/app/static/rtb.sdk.1.1.js"></script>
-
     <style>
         .rtb-sidebar-caption {
             font-size: 14px;
@@ -18,36 +17,81 @@
             margin: 20px 0 0 26px;
         }
 
-        .slidecontainer {
-          margin: 20px 0 0 26px;
-          width: 90%; /* Width of the outside container */
+        #palette {
+            padding: 24px 0 0 24px;
         }
 
-        /* The slider itself */
-        .slider {
-          width: 90%; /* Full-width */
+        .flex-container {
+          display: flex;
+          flex-direction: row;
+          width:100%;
+        }
+
+        .daube {
+            width:30px; 
+            height:30px; 
+            margin:0px 3px 3px 0px;
+            padding:4px;
+            font-size: 11px;
+            font-family: Arial;
+            color:#333;
+            float:left;
+            cursor:pointer;
         }
 
     </style>
 </head>
-
 <body>
 <div style="height:100%;">
-    <div class="rtb-sidebar-caption">Sticker Resizer</div>
-    <div style="height:30px;">
-        <div class="tip" id="tip">
-            Select stickers you want to resize
-        </div>
-    </div>
-    <svg width="90%" height="70%"><svg>
-    <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="1" class="slider" id="myRange">
-    </div>
-    
-    <div class="tip" style="align-items:right; position:absolute; bottom:30px; width:90%;">
-        <button id="resizeButton" style="font-size:18px; width:90%; height:40px;">Resize</button>
-    </div>
+    <div class="rtb-sidebar-caption">Advanced Colour Palette</div>
+    <div id="random"></div>
+    <div id="palette"></div>
 </div>
-<script src="sidebar.js"></script>
+<script type='text/javascript' src='bower_components/tinycolor/tinycolor.js'></script>
+<script>
+    window.onload = function(e) {
+        const hues = 11; // Number of base hues (e.g., red, grean, yellow)
+        const shades = 7; // Number of shades of each hue
+        var bg;
+        var base_hue = 0;
+        var h_inc = Math.floor(360/hues);
+        var text = "";
+        const text_colors = {'dark': "#000000", 'light': "#ffffff"}
+        var ids = [];
+        i = 0;
+        
+        hue = base_hue;
+
+        for (var h = 0; h < hues; h++) {
+            var row = document.createElement("div")
+            row.classList.add("flex-container");
+            document.getElementById("palette").appendChild(row);
+
+            bg = (h == hues-1) ? tinycolor("hsl(" + hue + ", 0%, 85%)") : 
+                tinycolor("hsl(" + hue + ", 45%, 85%)");
+
+            for (var l = 0; l < shades; l++) {
+                var daube = document.createElement("div")
+                daube.classList.add("daube");
+                daube.style.backgroundColor = bg.toHexString();
+                daube.style.color = bg.isDark() ? text_colors['light'] : text_colors['dark'];
+                daube.innerHTML = text
+                var id = "fc_" + i;
+                daube.id = id;
+
+                row.appendChild(daube);
+                bg.darken(10);
+                ids.push(id);
+                daube.onclick = function() {
+                    console.log(this.style.backgroundColor, this.style.color)
+                }
+
+                i++
+            }
+            hue += h_inc;
+        }
+    }
+</script>
+<!--<script src="sidebar.js"></script>-->
 </body>
 </html>

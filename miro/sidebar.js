@@ -1,27 +1,28 @@
 rtb.onReady(() => {
   // subscribe on user selected widgets
   rtb.addListener(rtb.enums.event.SELECTION_UPDATED, getWidget)
+  const resizeButton = document.getElementById('resizeButton')
+  const tip = document.getElementById('tip')
+  var selectedWidgets = null
   getWidget()
 })
 
-const resizeButton = document.getElementById('resizeButton')
-const tip = document.getElementById('tip')
-var selectedWidgets = null
+resizeButton.onclick = (e) => {
+  resize()
+}
 
 async function getWidget() {
   // Get selected widgets
   selectedWidgets = await rtb.board.selection.get()
   if (selectedWidgets.length) tip.style.display = 'none';
   else tip.style.display = 'block';
-}
-
-resizeButton.onclick = (e) => {
   resize()
 }
 
 async function resize() {
   // Filter stickers from selected widgets
   let stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
+  
   // Separate square and rect stickers
   const squareStickers = stickers.filter(s => s.bounds.height / s.bounds.width > 1.0)
   const rectStickers = stickers.filter(s => s.bounds.height / s.bounds.width < 1.0)
