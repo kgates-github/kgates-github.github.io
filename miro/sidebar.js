@@ -59,7 +59,7 @@ rtb.onReady(() => {
 
     await rtb.board.widgets.update(stickers.map(sticker => ({
       id: sticker.id,
-      backgroundColor: color
+      style: { stickerBackgroundColor: color }
     })))
 
     // Show success message
