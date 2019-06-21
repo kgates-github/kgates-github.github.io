@@ -55,9 +55,6 @@ rtb.onReady(() => {
 
   async function setColor(color) {
     selectedWidgets = await rtb.board.selection.get()
-    if (selectedWidgets.length) tip.style.display = 'none';
-    else tip.style.display = 'block';
-    
     let stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
 
     await rtb.board.widgets.update(stickers.map(sticker => ({
