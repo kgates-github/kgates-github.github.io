@@ -18,13 +18,16 @@ rtb.onReady(() => {
 
     bg = (h == hues-1) ? tinycolor("hsl(" + hue + ", 0%, 85%)") : 
       tinycolor("hsl(" + hue + ", 45%, 85%)");
+    borderColor = (h == hues-1) ? tinycolor("hsl(" + hue + ", 0%, 85%)") : 
+      tinycolor("hsl(" + hue + ", 45%, 85%)");
 
     for (var l = 0; l < shades; l++) {
       var daube = document.createElement("div")
       daube.classList.add("daube");
       daube.style.backgroundColor = bg.toHexString();
+      daube.style.borderColor = borderColor.darken(10).toHexString();
       daube.style.color = bg.isDark() ? text_colors['light'] : text_colors['dark'];
-      daube.innerHTML = text
+      //daube.innerHTML = text
       var id = "fc_" + i;
       daube.id = id;
 
@@ -39,34 +42,36 @@ rtb.onReady(() => {
     hue += h_inc;
   }
 
-  // subscribe on user selected widgets
+  // Subscribe on user selected widgets
   rtb.addListener(rtb.enums.event.SELECTION_UPDATED, getWidget);
   const tip = document.getElementById('tip');
   var selectedWidgets = null;
+
+
+  async function getWidget() {
+    // Get selected widgets
+    selectedWidgets = await rtb.board.selection.get()
+    if (selectedWidgets.length) tip.style.display = 'none';
+    else tip.style.display = 'block';
+  }
+
+  async function setColor(color) {
+    selectedWidgets = await rtb.board.selection.get()
+    if (selectedWidgets.length) tip.style.display = 'none';
+    else tip.style.display = 'block';
+    
+    let stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
+
+    await rtb.board.widgets.update(stickers.map(sticker => ({
+      id: sticker.id,
+      backgroundColor: color
+    })))
+
+    // Show success message
+    rtb.showNotification('New color applied')
+  }
+
 });
-
-async function getWidget() {
-  // Get selected widgets
-  selectedWidgets = await rtb.board.selection.get()
-  if (selectedWidgets.length) tip.style.display = 'none';
-  else tip.style.display = 'block';
-}
-
-async function setColor(color) {
-  selectedWidgets = await rtb.board.selection.get()
-  if (selectedWidgets.length) tip.style.display = 'none';
-  else tip.style.display = 'block';
-  
-  let stickers = selectedWidgets.filter(widget => widget.type === 'STICKER')
-
-  await rtb.board.widgets.update(stickers.map(sticker => ({
-    id: sticker.id,
-    backgroundColor: color
-  })))
-
-  // Show success message
-  rtb.showNotification('New color applied')
-}
   
 
 
