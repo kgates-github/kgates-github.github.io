@@ -40,10 +40,17 @@ rtb.onReady(() => {
   }
 
   // subscribe on user selected widgets
-  rtb.addListener(rtb.enums.event.SELECTION_UPDATED, getWidget)
-  const tip = document.getElementById('tip')
-  var selectedWidgets = null
-})
+  rtb.addListener(rtb.enums.event.SELECTION_UPDATED, getWidget);
+  const tip = document.getElementById('tip');
+  var selectedWidgets = null;
+});
+
+async function getWidget() {
+  // Get selected widgets
+  selectedWidgets = await rtb.board.selection.get()
+  if (selectedWidgets.length) tip.style.display = 'none';
+  else tip.style.display = 'block';
+}
 
 async function setColor(color) {
   selectedWidgets = await rtb.board.selection.get()
