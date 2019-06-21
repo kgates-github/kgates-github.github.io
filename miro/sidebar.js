@@ -51,8 +51,6 @@ rtb.onReady(() => {
   async function getWidget() {
     // Get selected widgets
     selectedWidgets = await rtb.board.selection.get()
-    if (selectedWidgets.length) tip.style.display = 'none';
-    else tip.style.display = 'block';
   }
 
   async function setColor(color) {
