@@ -5,5 +5,6 @@ body {
 
 .header {
 	font-size: 0.66em;
-	color:'#ff0000';
+	font-weight: 'medium';
+	color:#ff0000;
 }
