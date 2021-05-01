@@ -1,7 +1,0 @@
-
-ffmpeg -i Intro_movie.mov -r 10 -vcodec png out-static-%03d.png 
-time convert -verbose -layers Optimize \> out-static*.png  GIF:- > intro.gif 
-
-
-ffmpeg -i %02d.png -r 1 output.mov
-ffmpeg -i output.mov -r 1 output.gif
