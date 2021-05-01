@@ -1,10 +1,40 @@
 body {
 	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
+	font-size: 18pt;
+	padding:20px;
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 950px; /* or 950px */
 }
 
 .header {
 	font-size: 0.66em;
-	font-weight: 'medium';
-	color:#ff0000;
+	font-weight: 500;
+	color:#D26D6A;
+	padding:4px;
+}
+
+.top-nav {
+	font-size: 0.66em;
+	font-weight: 400;
+	color:#D26D6A;
+	margin-left:20px;
+	
+}
+
+.top-nav-on {
+	font-weight: 500;
+	padding-bottom:4px;
+	border-bottom: 3px solid #D26D6A;
+}
+
+.headline-light {
+	margin-top:200px;
+	font-size: 1.5em;
+	font-weight: 400;
+	color:#444;
+	line-height:1.33;
 }
