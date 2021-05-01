@@ -1,4 +1,9 @@
 body {
 	font-family: 'Roboto', sans-serif;
-	font-size: 180px;
+	font-size: 18px;
+}
+
+.header {
+	font-size: 0.66em;
+	color:'#ff0000';
 }
