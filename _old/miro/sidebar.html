@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://realtimeboard.com/app/static/rtb.uikit.css">
+    <script src="https://realtimeboard.com/app/static/rtb.sdk.1.1.js"></script>
+    <style>
+        .rtb-sidebar-caption {
+            font-size: 14px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.8);
+            padding: 24px 0 0 24px;
+        }
+
+        .tip {
+            color: #333;
+            margin: 20px 0 0 26px;
+        }
+
+        #palette {
+            margin-top:100px;
+            padding: 24px 0 0 24px;
+        }
+
+        .flex-container {
+          display: flex;
+          flex-direction: row;
+          width:100%;
+        }
+
+        .daube {
+            width:22px; 
+            height:22px; 
+            margin:0px 8px 8px 0px;
+            padding:4px;
+            font-size: 11px;
+            font-family: Arial;
+            color:#333;
+            float:left;
+            cursor:pointer;
+            border-radius: 20px;
+            border-width: 1px;
+            border-style: solid;
+        }
+
+    </style>
+</head>
+<body>
+<div style="height:100%;">
+    <div class="rtb-sidebar-caption">Advanced Colour Palette</div>
+    <div id="random"></div>
+    <div id="palette"></div>
+</div>
+<script type='text/javascript' src='bower_components/tinycolor/tinycolor.js'></script>
+<script src="sidebar.js"></script>
+</body>
+</html>

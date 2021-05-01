@@ -1,0 +1,229 @@
+extends ./layout.jade
+
+block content
+  div.row.margin-top-medium-lg
+    div.col-md-12(style="text-align:center;")
+      div.header-01 
+        | Obama for America:
+        br
+        | Project Atlas
+      div.margin-top-sm.subhead-01 
+        | An app designed to make President Obama's accomplishments
+        br
+        | engaging and relevant to voters at a local level
+      
+  div.row.margin-top-medium-lg
+    div.col-md-12(style="text-align:center;")
+      img(src='images/obama/desktop_display_florida.png').img-responsive
+      br
+      span.caption Screen shot of Project Atlas zoomed in on Florida.
+
+
+  div.row.margin-top-medium
+    div.col-md-6
+      div.subhead-01-bold CHALLENGE
+      div.margin-top-sm 
+        | From research conducted at the campaign's Chicago headquarters, we knew that many voters respond favorably to talking points about Obama's first term, but only when it's about their own community. 
+      div.margin-top-sm 
+        p Project Atlas is an app that makes Obama's accomplishments engaging and relevant to voters at a local level. It does this by detecting user location and offering county-level information about improvements to health care, taxes, clean energy, and more.
+    div.col-md-6
+      div.subhead-01-bold MY ROLE
+      div.margin-top-sm Based in the San Francisco Technology Field Office, I led the ideation, wireframing and ran weekly presentations to campaign headquarters. In addition, I led the dev team, wrangled data, coordinated the efforts of more than a dozen volunteers, and wrote a good portion of the JavaScript and CSS.
+
+
+  div.row.margin-top-medium
+    div.col-md-12(style="text-align:center;")
+      div.header-01 Making the president's achievements relevant to the user's location is key.
+
+  div.row.margin-top-medium
+    div.col-md-12(style="text-align:center;")
+      div.caption-header.subhead-01-bold.italic
+        strong How it works:
+      div#howItWorksCarousel.carousel.slide(data-ride="carousel").margin-top-sm
+        ol.carousel-indicators
+          li(data-target="#howItWorksCarousel", data-slide-to="0").active
+          li(data-target="#howItWorksCarousel", data-slide-to="1")
+          li(data-target="#howItWorksCarousel", data-slide-to="2")
+         
+        div.carousel-inner(role="listbox")
+          div.item.active
+            img(src="images/obama/concept_01_note.png").img-responsive.img-carousel
+            
+          div.item
+            img(src="images/obama/concept_02_note.png").img-responsive.img-carousel
+            
+          div.item
+            img(src="images/obama/concept_03_note.png").img-responsive.img-carousel
+      //-       
+        div
+          a.left.carousel-control(href="#howItWorksCarousel", role="button", data-slide="prev")
+            span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+            span.sr-only Previous
+
+          a.right.carousel-control(href="#howItWorksCarousel", role="button", data-slide="next")
+            span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+            span.sr-only Next
+
+  div.row.margin-top-medium
+    div.col-md-12(style="text-align:center;")
+      div.header-01 In the beginning, all we had were large, unprocessed government data sets.
+
+  div.row.margin-top-medium-lg
+    div.col-md-6
+      div.subhead-01-bold CONCEPT DEVELOPMENT
+      div.margin-top-sm 
+      |  With campaign-provided data at hand and research findings in mind, I set out to better understand the shape of the data and what stories it might reveal. Ultimately, my goal was to come up with ideas to pitch to our stakeholders. 
+      div.margin-top-sm I set up a geospatial database#[sup 1] and started making maps. I made a lot: children gaining health care; renewable energy investments; tax savings, and many more. 
+
+      div.margin-top-sm.caption #[sup 1] PostgreSQL, PostGIS and QuantumGIS
+    div.col-md-6
+      div.img-cycler
+        img(src="images/obama/exploration-01.png").img-responsive.img-fadable.active
+        img(src="images/obama/exploration-02.png").img-responsive.img-fadable
+        img(src="images/obama/exploration-03.png").img-responsive.img-fadable
+        img(src="images/obama/exploration-04.png").img-responsive.img-fadable
+        img(src="images/obama/exploration-05.png").img-responsive.img-fadable
+        img(src="images/obama/exploration-06.png").img-responsive.img-fadable
+      
+  //-
+    div.row.margin-top-medium
+      div.col-md-4.col-sm-4.img-cycler
+        img(src="images/obama/exploration-01.png").img-responsive.img-fadable.active
+        img(src="images/obama/exploration-02.png").img-responsive.img-fadable
+        
+      div.col-md-4.col-sm-4.img-cycler
+        img(src="images/obama/exploration-03.png").img-responsive.img-fadable.active
+        img(src="images/obama/exploration-04.png").img-responsive.img-fadable
+      div.col-md-4.col-sm-4.img-cycler
+        img(src="images/obama/exploration-05.png").img-responsive.img-fadable.active
+        img(src="images/obama/exploration-06.png").img-responsive.img-fadable
+   
+      
+    div.row
+      div.col-md-6.margin-top-sm.caption
+      div.col-md-6.margin-top-sm.caption
+        | Some early concept explorations made with data the campaign provided.
+  //-
+    div.row.margin-top-medium 
+      div.col-md-4.col-sm-4  
+        img(src="images/obama/exploration-04.png").img-responsive
+      div.col-md-4.col-sm-4
+        img(src="images/obama/exploration-05.png").img-responsive
+      div.col-md-4.col-sm-4   
+        img(src="images/obama/exploration-06.png").img-responsive
+             
+  div.row.margin-top-medium
+    div.col-md-12
+      div.subhead-01-bold WIREFRAMES
+      div.margin-top-sm Our stakeholders liked the direction of a recovery-themed map I created, which used data about the 2009 stimulus bill. The first wireframes showed stimulus projects color-coded by category. These categories corresponded to the campaign's core policy areas: education, energy, health and infrastructure. Since most of the data was uncategorized, we mobilized volunteers to label about 2,000 projects. 
+
+  div.row.margin-top-sm
+    div.col-md-6
+      img(src="images/obama/wireframe-01.png", style="border:1px solid #ccc;").img-responsive
+      div.caption.margin-top-xsm The first wireframes I created show the top five recovery projects per state. Projects are color-coded to correspond to campaign themes: education, energy, health and infrastructure. The maps were created using real data.
+
+    div.col-md-6
+      img(src="images/obama/wireframe-02.png", style="border:1px solid #ccc;").img-responsive
+      div.caption.margin-top-xsm As the user zooms in, more and more projects are revealed. At each zoom level, the most relevant projects are highlighted in the inset at the left.
+
+
+  div.row.margin-top-medium
+    div.col-md-12
+      | Once we had some sample data to work with, the engineers and I started writing code. We planned to have a simple prototype running in a week. Things were moving along. So far, so good.
+
+  div.row.margin-top-medium
+    div.col-md-12
+      div.subhead-01-bold PIVOT
+      div.margin-top-sm In July, things abruptly changed for the worse. Just as the recovery map concept started to take shape, the Romney campaign attacked the stimulus bill. The Obama campaign banned the mention of it. The project was stopped in its tracks.
+
+  div.row.margin-top-medium
+    div.col-md-12(style="text-align:center;")
+      div.header-01 Campaign headquarters put the kibosh on our project. We were stopped in our tracks.
+
+  div.row.margin-top-medium
+    div.col-md-12
+      div.margin-top-sm Everything could have easily ended at this point. Rather than give up, I went back and re-evaluated the data sets we hadn't used, and came up with a new solution. It detected the user's location and displayed the president's accomplishments across all of the campaign's policy areas. The digital director at headquarters liked the new direction, and gave us the green light.
+
+  div.row.margin-top-medium
+    div.col-md-12
+      div.subhead-01-bold A NEW DIRECTION
+      div.margin-top-sm Due to time constraints, I skipped wire framing and worked directly with the prototype we had started.
+      div.margin-top-sm Leveraging Google's mapping API, we were able to detect user location and populate the UI with locally-focused talking points. Since some data was geocoded by latitude and longitude, and others by county and state codes, we built the underlying codebase to sort out what information to display at what zoom level.
+
+  hr
+
+  div.row.margin-top-medium-sm
+    div.col-md-4
+      img(src="images/obama/IPhone_5_prototype.png", style="display:block; margin-left:auto; margin-right:auto;").img-responsive
+    div.col-md-8
+      img(src="images/obama/IPad_3_prototype.png" style="display:block; margin-left:auto; margin-right:auto;").img-responsive
+  div.row
+    div.col-md-12.margin-top-sm.caption.padded.centered
+      | Using Twitter's Bootstrap UI framework, I was able to simultaneously design for tablets and phones, helping us keep to a very tight timeline.
+  hr
+
+  div.row.margin-top-medium
+    div.col-md-12(style="text-align:center;")
+      div.header-01 By running development in parallel, we caught UX problems early.
+  
+  div.row.margin-top-medium-lg
+    div.col-md-12
+      img(src="images/obama/edge_case.png", style="display:block; margin-left:auto; margin-right:auto; border:1px solid #ccc; padding:10px 10px 50px 10px").img-responsive
+
+  div.row
+    div.col-md-12.margin-top-sm.caption.padded.centered
+      | Edge case: Many zipcodes are in multiple counties. When a user's zip code is in more than one county, they are prompted to select from a menu. One zip code in Virginia, shown above, is in four counties.
+
+  div.row.margin-top-medium
+    div.col-md-12
+      div.subhead-01-bold FINAL DESIGN REFINEMENT
+
+  div.row.margin-top-sm
+    div.col-md-12
+      img(src="images/obama/early-version.png").img-responsive
+
+  div.row
+    div.col-md-12.margin-top-sm.caption.padded.centered
+      | An early version with all the working components and UX design completed. The app detects where the user is located and supplies talking points relevant to them across key policy areas.
+
+  div.row.margin-top-medium
+    div.col-md-12
+      img(src="images/obama/ohio.png").img-responsive
+  div.row
+    div.col-md-12.margin-top-sm.caption.padded.centered
+      | The final version of the app zoomed in on northern Ohio. 
+
+  div.row.margin-top-medium
+    div.col-md-12
+      div.subhead-01-bold SUCCESS
+      div.margin-top-sm The final weeks of the campaign were total chaos. Despite this, we managed to launch Project Atlas the morning of October 1st. Later that day, the campaign sent the URL out on Obama's Twitter account, where it reached the president's 42 million followers. 
+
+  div.row.margin-top-medium
+    div.col-md-12(style="text-align:center;")
+      div.header-01 Project Atlas launched on Obama's Twitter account, where it reached the President's 42 million followers.
+
+  div.row.margin-top-medium
+    div.col-md-12
+      img(src="images/obama/obama-twitter.png", style="display:block; margin-left:auto; margin-right:auto; border:1px solid #ccc; padding:10px;").img-responsive
+  
+  div.row.margin-top-xlg
+  div.col-md-6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

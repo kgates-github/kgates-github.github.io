@@ -1,0 +1,39 @@
+html, body      { font-family: 'Arial', 'Open Sans', 'San-Serif'; font-weight:300; background: #eee; height:100%; font-size: 12px; color: #000; } 
+
+a, h1, h2       { color: #666; }
+h1, h2          { margin: 10px 0px 0px 0px; font-weight:300;}
+h1              { font-size:28px; }
+h2              { font-size:16px; }
+
+.header { font-size: 14px; }
+
+.page           { margin: auto; width: 1100px;
+                  padding-left: 26px; padding-right: 26px; background: white; min-height:100%; padding-top:20px;}
+
+.error          { background: #f0d6d6; padding: 0.5em; }
+
+.node circle {
+  cursor: pointer;
+  stroke:#666;
+  opacity:1.0;
+}
+
+.node text {
+  cursor: pointer;
+  font-weight:400;
+}
+
+.node .rootnodelabel {
+	font-size:28px;
+}
+
+path.link {
+  fill: none;
+  stroke: #ccc;
+  opacity:0.2;
+}
+
+.extent {
+	fill: #999;
+	opacity:0.2;
+}
