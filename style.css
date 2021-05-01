@@ -10,11 +10,16 @@ body {
   max-width: 950px; /* or 950px */
 }
 
-.header {
+.nav-header {
 	font-size: 0.66em;
 	font-weight: 500;
 	color:#D26D6A;
-	padding:4px;
+}
+
+.header {
+	font-weight: 500;
+	color:#D26D6A;
+	padding-bottom:12px;
 }
 
 .top-nav {
@@ -32,7 +37,7 @@ body {
 }
 
 .headline-light {
-	margin-top:200px;
+	margin:150px 0px 150px 0px;
 	font-size: 1.5em;
 	font-weight: 400;
 	color:#444;
