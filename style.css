@@ -1,7 +1,6 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 18pt;
-	padding:20px;
 }
 
 .container-fluid {
@@ -42,4 +41,8 @@ body {
 	font-weight: 400;
 	color:#444;
 	line-height:1.33;
+}
+
+.bg-medium {
+	background-color: #eee;
 }
