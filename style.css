@@ -13,13 +13,14 @@ body {
 	font-size: 0.66em;
 	font-weight: 700;
 	color:#D26D6A;
+	padding-bottom:4px;
 }
 
 .top-nav {
 	font-size: 0.66em;
 	font-weight: 400;
 	color:#D26D6A;
-	margin-left:24px;
+	
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -116,7 +117,9 @@ mark.highlight {
 	background: none; /*#ffee88;*/
 }
 
+@media (min-width: 576px) {
 
+}
 
 
 
