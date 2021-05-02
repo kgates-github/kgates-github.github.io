@@ -73,21 +73,20 @@ a:active  { color: #333; }
 	background-color: #F3F3F3;
 }
 
+p.regular-md {
+	line-height: 1.5;
+	font-size: 0.66em
+}
+
 p.center-lg {
 	margin-left: auto;
   margin-right: auto;
-  width: 615px;
+  max-width: 615px;
   line-height: 1.5;
   font-weight: 400;
 }
 
-p.regular-md {
-	margin-left: auto;
-  margin-right: auto;
-  width: 615px;
-  line-height: 1.5;
-  font-weight: 400;
-}
+
 
 
 
