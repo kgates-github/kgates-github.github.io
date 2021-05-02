@@ -51,7 +51,7 @@ a:active  { color: #333; }
 	margin:130px 0px 150px 0px;
 	font-size: 1.5em;
 	font-weight: 400;
-	color:#444;
+	color:#222;
 	line-height:1.37;
 }
 
@@ -66,7 +66,7 @@ a:active  { color: #333; }
 	margin:130px 0px 50px 0px;
 	font-size: 2.25em;
 	font-weight: 700;
-	color:#444;
+	color:#222;
 	line-height:1.2;
 	text-align: center;
 }
@@ -74,7 +74,7 @@ a:active  { color: #333; }
 .headline-heavy {
 	font-size: 2.25em;
 	font-weight: 700;
-	color:#444;
+	color:#222;
 	line-height:1.2;
 }
 
@@ -110,7 +110,10 @@ p.center-lg {
 	line-height:1.1;
 	text-align: center;
 	max-width:450;
+}
 
+mark.highlight {
+	background: none; /*#ffee88;*/
 }
 
 
