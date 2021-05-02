@@ -54,6 +54,13 @@ a:active  { color: #333; }
 	line-height:1.37;
 }
 
+.section-header {
+	font-size: 0.66em;
+	font-weight: 500;
+	color:#D26D6A;
+	border-top: 1px solid #ccc
+}
+
 .headline-center-heavy {
 	margin:130px 0px 50px 0px;
 	font-size: 2.25em;
@@ -80,7 +87,7 @@ a:active  { color: #333; }
 	background-color: #F3F3F3;
 }
 
-p.regular-md {
+.regular-md {
 	line-height: 1.8em;
 	font-size: 0.66em
 }
@@ -103,6 +110,8 @@ p.center-lg {
 	text-align: center;
 	max-width:450;
 }
+
+
 
 
 
