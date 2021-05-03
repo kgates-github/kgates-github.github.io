@@ -20,7 +20,7 @@ body {
 	font-size: 0.66em;
 	font-weight: 400;
 	color:#D26D6A;
-	
+	flex:1;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -49,7 +49,7 @@ a:active  { color: #333; }
 }
 
 .headline-light {
-	margin:130px 0px 150px 0px;
+	margin:130px 0px 130px 0px;
 	font-size: 1.5em;
 	font-weight: 400;
 	color:#222;
