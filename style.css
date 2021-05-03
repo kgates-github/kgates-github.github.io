@@ -98,7 +98,7 @@ a:active  { color: #333; }
 }
 
 p.regular-lg {
-	line-height: 1.8em;
+	line-height: 1.7em;
 	/*font-size: 0.66em
 	max-width: 700px;
 	margin-left: auto;
@@ -106,7 +106,7 @@ p.regular-lg {
 }
 
 p.regular-md {
-	line-height: 1.8em
+	line-height: 1.7em
 	/*line-height: 1.8em;
 	font-size: 0.66em
 	max-width: 700px;
@@ -118,7 +118,7 @@ p.center-lg {
 	margin-left: auto;
   margin-right: auto;
   max-width: 650px;
-  line-height: 1.8em;
+  line-height: 1.7em;
   font-weight: 400;
   text-align: center;
 }
