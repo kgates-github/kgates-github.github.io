@@ -23,6 +23,7 @@ body {
 	flex:1;
 	text-decoration: none;
 	cursor: pointer;
+	padding-left: 4px;
 }
 
 a { text-decoration: none; }
