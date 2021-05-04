@@ -7,6 +7,14 @@ ul {
   
 }
 
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
@@ -95,6 +103,16 @@ a:active  { color: #333; }
 	font-size: 0.66em;
 	font-weight: 400;
 	color:#666;
+}
+
+.blockquote {
+	margin:100px 0px 100px 0px;
+	font-family: 'Garamund', serif; 
+	font-size: 1.5em;
+	font-weight: 500;
+	color:#D26D6A;
+	line-height:1.5 !important;
+	text-align: center;
 }
 
 .bg-medium {
