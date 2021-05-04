@@ -115,6 +115,18 @@ a:active  { color: #333; }
 	text-align: center;
 }
 
+.blockquote:before, .blockquote:after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 1px;
+    background: #aaa;
+}
+
+.blockquote:before, .blockquote:after {
+    margin: 1.5rem auto;
+}
+
 .bg-medium {
 	background-color: #F3F3F3;
 }
