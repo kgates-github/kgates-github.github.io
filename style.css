@@ -3,6 +3,10 @@ body {
 	font-size: 18pt;
 }
 
+ul {
+  
+}
+
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
@@ -58,8 +62,8 @@ a:active  { color: #333; }
 }
 
 .section-header {
-	font-size: 0.66em;
-	font-weight: 500;
+	font-size: 1.0em;
+	font-weight: 400;
 	color:#D26D6A;
 	border-top: 1px solid #ccc
 }
