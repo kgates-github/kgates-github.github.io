@@ -15,6 +15,10 @@ p {
     margin-inline-end: 0px;
 }
 
+h4 {
+	font-weight: 700;
+}
+
 .interstitial {
   background-color:#eee;
   padding: 300px 0px 300px 0px;
