@@ -127,6 +127,14 @@ a:active  { color: #333; }
     margin: 1.5rem auto;
 }
 
+.ideogram-sm {
+	height:100px;
+}
+
+.ideogram-md {
+	height:130px;
+}
+
 .bg-medium {
 	background-color: #F3F3F3;
 }
