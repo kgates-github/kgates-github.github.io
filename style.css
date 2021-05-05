@@ -17,10 +17,18 @@ p {
 
 .interstitial {
   background-color:#eee;
+  padding: 300px 0px 300px 0px;
+}
+
+.interstitial-header {
+	font-size: 1.5em;
+	font-weight: 400;
+	color:#222;
+	line-height:1.2;
+	text-align: center;
 }
 
 .interstitial-headline {
-  margin:300px 0px 300px 0px;
 	font-size: 3.33em;
 	font-weight: 500;
 	color:#222;
@@ -87,6 +95,12 @@ a:active  { color: #333; }
 	font-weight: 400;
 	color:#D26D6A;
 	border-top: 1px solid #ccc
+}
+
+.section-header-no-border {
+	font-size: 1.0em;
+	font-weight: 400;
+	color:#D26D6A;
 }
 
 .headline-center-heavy {
