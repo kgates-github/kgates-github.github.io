@@ -15,6 +15,19 @@ p {
     margin-inline-end: 0px;
 }
 
+.interstitial {
+  background-color:#eee;
+}
+
+.interstitial-headline {
+  margin:300px 0px 300px 0px;
+	font-size: 3.33em;
+	font-weight: 500;
+	color:#222;
+	line-height:1.2;
+	text-align: center;
+}
+
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
