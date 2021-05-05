@@ -106,12 +106,13 @@ a:active  { color: #333; }
 }
 
 .blockquote {
-	margin:20px 0px 20px 0px;
+	margin: 20px auto 20px auto;
+	width: 80%;
 	font-family: 'Garamund', serif; 
 	font-size: 1.5em;
 	font-weight: 500;
-	color:#D26D6A;
-	line-height:1.5 !important;
+	color: #D26D6A;
+	line-height: 1.5 !important;
 	text-align: center;
 }
 
