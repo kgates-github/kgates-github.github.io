@@ -21,6 +21,12 @@ h4 {
 	font-weight: 700;
 }
 
+/* Rules for sizing the icon. */
+
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-72 { font-size: 72px; }
+.material-icons.md-104 { font-size: 104px; }
+
 .full-width {
   margin-left: -15px;
   margin-right: -15px;
