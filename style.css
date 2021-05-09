@@ -27,7 +27,7 @@ h4 {
 .material-icons.md-72 { font-size: 72px; }
 .material-icons.md-104 { font-size: 104px; }
 
-p:first-child:first-letter {
+.drop-cap p:first-child:first-letter {
   float: left;
   font-size: 4em;
   font-weight:500;
