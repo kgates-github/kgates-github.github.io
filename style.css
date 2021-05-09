@@ -27,14 +27,33 @@ h4 {
 .material-icons.md-72 { font-size: 72px; }
 .material-icons.md-104 { font-size: 104px; }
 
+p:first-child:first-letter {
+  float: left;
+  font-size: 4em;
+  font-weight:500;
+  line-height: 1em;
+  padding-top: 0px;
+  padding-right: 9px;
+  padding-left: 3px;
+}
+
 .p-xl {
-	padding-top: 150px;
-	padding-bottom: 150px;
+	padding-top: 120px;
+	padding-bottom: 120px;
 }
 
 .full-width {
   margin-left: -15px;
   margin-right: -15px;
+}
+
+.two-columns {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
 }
 
 .interstitial {
