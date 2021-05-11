@@ -99,20 +99,20 @@ h4 {
 .nav-header {
 	font-size: 0.66em;
 	font-weight: 700;
-	color:#D26D6A;
+	color:#CC5B4C;
 	padding-bottom:0px;
 }
 .nav-subheader {
 	font-size: 0.66em;
 	font-weight: 300;
-	color:#D26D6A;
+	color:#CC5B4C;
 	padding-bottom:4px;
 }
 
 .top-nav {
 	font-size: 0.66em;
 	font-weight: 400;
-	color:#D26D6A;
+	color:#CC5B4C;
 	flex:1;
 	text-decoration: none;
 	cursor: pointer;
@@ -125,34 +125,34 @@ a:visited { color: #333; }
 a:hover   { color: #333; }
 a:active  { color: #333; }
 
-.top-nav a:link    { color: #D26D6A; }
-.top-nav a:visited { color: #D26D6A; }
-.top-nav a:hover   { color: #D26D6A; }
-.top-nav a:active  { color: #D26D6A; }
+.top-nav a:link    { color: #CC5B4C; }
+.top-nav a:visited { color: #CC5B4C; }
+.top-nav a:hover   { color: #CC5B4C; }
+.top-nav a:active  { color: #CC5B4C; }
 
 .top-nav-on {
 	font-weight: 500;
 	padding-bottom:4px;
-	border-bottom: 3px solid #D26D6A;
+	border-bottom: 3px solid #CC5B4C;
 }
 
 .header {
 	font-size: 0.66em;
 	font-weight: 500;
-	color:#D26D6A;
+	color:#CC5B4C;
 }
 
 .section-header {
 	font-size: 1.0em;
 	font-weight: 400;
-	color:#D26D6A;
+	color:#CC5B4C;
 	border-top: 1px solid #ccc
 }
 
 .section-header-no-border {
 	font-size: 1.0em;
 	font-weight: 400;
-	color:#D26D6A;
+	color:#CC5B4C;
 }
 
 .headline-center-heavy {
@@ -198,7 +198,7 @@ a:active  { color: #333; }
 	font-family: 'Garamund', serif; 
 	font-size: 2.25em;
 	font-weight: 500;
-	color: #D26D6A;
+	color: #CC5B4C;
 	line-height: 1.3 !important;
 	text-align: center;
 }
