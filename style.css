@@ -265,8 +265,16 @@ mark.highlight {
 	background: none; /*#ffee88;*/
 }
 
-@media (min-width: 576px) {
+@media screen and (max-width: 992px) {
+   .card-image {
+    display: none !important;
+  }
+}
 
+@media screen and (min-width: 992px) {
+   .card-image {
+    display: flex !important;
+  }
 }
 
 
