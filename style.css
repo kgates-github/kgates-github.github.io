@@ -1,6 +1,6 @@
 html, body {
 	font-family: 'Roboto', sans-serif;
-	font-size: 18pt;
+	font-size: 16pt;
 	margin:0px !important;
 	padding:0px !important;
   max-width: 100%;
@@ -21,6 +21,7 @@ h4 {
 .material-icons.md-48 { font-size: 48px; }
 .material-icons.md-72 { font-size: 72px; }
 .material-icons.md-104 { font-size: 104px; }
+.material-icons.md-152 { font-size: 152px; }
 
 .drop-cap:first-child:first-letter {
  /*float: left;
@@ -96,6 +97,14 @@ h4 {
   padding-right: 1em;
 }
 
+.container-fluid-content-01 {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 600px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 .nav-header {
 	font-size: 0.66em;
 	font-weight: 700;
@@ -113,10 +122,11 @@ h4 {
 	font-size: 0.66em;
 	font-weight: 400;
 	color:#CC5B4C;
-	flex:1;
 	text-decoration: none;
 	cursor: pointer;
-	padding-left: 12px;
+	padding-left: 20px !important;
+	/*background-color: #ccc;*/
+	margin-top: 0px !important;
 }
 
 a { text-decoration: none; }
@@ -134,6 +144,7 @@ a:active  { color: #333; }
 	font-weight: 500;
 	padding-bottom:4px;
 	border-bottom: 3px solid #CC5B4C;
+	margin-bottom: 30px;
 }
 
 .header {
@@ -165,9 +176,9 @@ a:active  { color: #333; }
 }
 
 .headline-heavy {
-	font-size: 2.25em;
-	font-weight: 700;
-	color:#222;
+	font-size: 3.0em;
+	font-weight: 900;
+	color:#494949;
 	line-height:1.2;
 }
 
@@ -229,6 +240,7 @@ a:active  { color: #333; }
 
 p.regular-lg {
 	line-height: 1.7em;
+	color:#494949;
 	/*font-size: 0.66em
 	max-width: 700px;
 	margin-left: auto;
@@ -261,19 +273,42 @@ p.center-lg {
 	margin-right: auto;
 }
 
+.round-button {
+	background-color: #333; 
+	color:white !important; 
+	font-size: 0.66em; 
+	display:block;
+	width: 150px !important;
+	text-align: center;
+	padding: 8px 0px 8px 0px; 
+	border-radius: 15px;
+}
+
 mark.highlight {
 	background: none; /*#ffee88;*/
 }
 
-@media screen and (max-width: 992px) {
-   .card-image {
+@media screen and (max-width: 768px) {
+  .card-image {
     display: none !important;
   }
 }
 
-@media screen and (min-width: 992px) {
-   .card-image {
+@media screen and (min-width: 768px) {
+  .card-image {
     display: flex !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card-image {
+    width:350px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card-image {
+    
   }
 }
 
