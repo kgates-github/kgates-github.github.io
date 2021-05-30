@@ -20,7 +20,7 @@
 
   <!-- Modal -->
   <div class="modal fade" 
-    style="background-color: rgba(50, 50, 50, 0.8); backdrop-filter: blur(5px);"
+    style="background-color: rgba(50, 50, 50, 0.9); backdrop-filter: blur(5px);"
     id="exampleModal" 
     tabindex="-1" 
     aria-labelledby="exampleModalLabel" 
@@ -29,9 +29,9 @@
     <div class="modal-dialog modal-dialog-centered modal-lg" style="background-color: transparent;">
       <div class="modal-content" style="background-color: transparent; border:none; text-align: right;">
 
-        <div style="display:flex; flex-direction: horizontal;">
+        <div style="display:flex; flex-direction: horizontal; height:80px">
           <div style="width:50px;"></div>
-          <div style="flex: 1; text-align: center; color:#ccc; align-content: center;">How it Works</div>
+          <div style="flex: 1; text-align: center; color:#ccc; align-content: middle; padding-top:8px;">How it Works</div>
           <div style="width:50px;">
             <a tabindex="-1" role="button" 
                data-bs-dismiss="modal"
@@ -47,7 +47,9 @@
           data-bs-keyboard="true"  
           data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" 
+            data-bs-target="#carouselExampleCaptions" 
+            data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
@@ -55,8 +57,8 @@
           <div class="carousel-item active" style="background-color: transparent;">
             <img src="images/console-05.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block" 
-              style=" position: relative; left: 0; top: 0; background-color: transparent; height:300px;">
-              <div class="headline-medium pb-2 text-extra-light" style="text-align: left;">
+              style=" position: relative; left:0; top:0; background-color: transparent; height:300px;">
+              <div class="headline-light pb-2 text-extra-light" style="text-align: left;">
                 No hassles.
               </div>
               <div class="regular-lg pb-2 text-light" style="text-align: left;">
@@ -68,16 +70,24 @@
             <img src="images/console-05.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block"
               style=" position: relative; left: 0; top: 0; background-color: transparent; height:300px;">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+              <div class="headline-light pb-2 text-extra-light" style="text-align: left;">
+                Expert-knowledge baked into the UI.
+              </div>
+              <div class="regular-lg pb-2 text-light" style="text-align: left;">
+                This manifests itself in may ways. In this case, HTTP request metrics that work in concert are clustered together and stacked vertically so operators can see correllations.
+              </div>
             </div>
           </div>
           <div class="carousel-item" style="background-color: transparent;">
             <img src="images/console-05.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block"
               style=" position: relative; left: 0; top: 0; background-color: transparent; height:300px;">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+              <div class="headline-light pb-2 text-extra-light" style="text-align: left;">
+                No hassles.
+              </div>
+              <div class="regular-lg pb-2 text-light" style="text-align: left;">
+                When a customer installs HealthWatch, everything is automatically up and running and they can immediatly see the overall health of their platform. No tediuous configuration is needed.
+              </div>
             </div>
           </div>
         </div>
