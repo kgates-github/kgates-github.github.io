@@ -20,14 +20,28 @@
 
   <!-- Modal -->
   <div class="modal fade" 
-    style="background-color: rgba(20, 20, 20, 0.6); backdrop-filter: blur(5px);"
+    style="background-color: rgba(50, 50, 50, 0.8); backdrop-filter: blur(5px);"
     id="exampleModal" 
     tabindex="-1" 
     aria-labelledby="exampleModalLabel" 
     aria-hidden="true">
 
     <div class="modal-dialog modal-dialog-centered modal-lg" style="background-color: transparent;">
-      <div class="modal-content" style="background-color: transparent;">
+      <div class="modal-content" style="background-color: transparent; border:none; text-align: right;">
+
+        <div style="display:flex; flex-direction: horizontal;">
+          <div style="width:50px;"></div>
+          <div style="flex: 1; text-align: center; color:#ccc; align-content: center;">How it Works</div>
+          <div style="width:50px;">
+            <a tabindex="-1" role="button" 
+               data-bs-dismiss="modal"
+               aria-disabled="true"
+            >
+              <span class="material-icons md-48" style="color:#999;">close</span>
+            </a>
+          </div>
+        </div>
+
         <div id="carouselExampleCaptions" class="carousel slide" 
           data-bs-interval="false"
           data-bs-keyboard="true"  
@@ -42,8 +56,12 @@
             <img src="images/console-05.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block" 
               style=" position: relative; left: 0; top: 0; background-color: transparent; height:300px;">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+              <div class="headline-medium pb-2 text-extra-light" style="text-align: left;">
+                No hassles.
+              </div>
+              <div class="regular-lg pb-2 text-light" style="text-align: left;">
+                When a customer installs HealthWatch, everything is automatically up and running and they can immediatly see the overall health of their platform. No tediuous configuration is needed.
+              </div>
             </div>
           </div>
           <div class="carousel-item" style="background-color: transparent;">
@@ -185,9 +203,9 @@
           <div class="pb-5">
             <div class="mt-auto">
               <a href="healthwatch.html" tabindex="-1" role="button" 
-              class="bold-5 round-button large-button"
-              data-bs-toggle="modal" data-bs-target="#exampleModal"
-              aria-disabled="true">See how it works</a>
+                class="bold-5 round-button large-button"
+                data-bs-toggle="modal" data-bs-target="#exampleModal"
+                aria-disabled="true">See how it works</a>
             </div>
           </div>
           <div class="regular-lg pb-4 text-light">
