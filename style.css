@@ -220,6 +220,14 @@ p.center-lg {
   text-align: center;
 }
 
+.pullquote {
+	color: #CC5B4C;
+	font-family: 'Garamund', serif;
+	font-size: 1.5em;
+	font-weight: 700;
+	text-align: center;
+}
+
 .caption {
 	font-size: 0.66em;
 	font-weight: 400;
