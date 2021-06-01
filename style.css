@@ -177,6 +177,13 @@ a:active  { color: #333; }
 	line-height:1.2;
 }
 
+.headline-small {
+	font-size: 1.5em;
+	font-weight: 500;
+	color:#575757;
+	line-height:1.2;
+}
+
 .headline-light {
 	/*margin:120px 30px 120px 30px;*/
 	font-size: 1.5em;
