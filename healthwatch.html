@@ -33,20 +33,12 @@
       justify-content: center; 
       display: flex; 
       height:100%;
-      padding-left:10px;
+      
       flex-direction: column;">
-      <div style="height:80px">
-         <!--<a tabindex="-1" role="button" 
-           data-bs-dismiss="modal"
-           aria-disabled="true">
-          <span class="material-icons md-72" style="color:#999;">close</span>
-        </a>-->
-      </div>
+      <div style="height:80px"></div>
       <div style="flex:1; align-items: center; justify-content: center; display: flex; flex-direction: column;">
         <a tabindex="-1" role="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <div style="background-color:none; border-radius: 50px; width:250px height:250px;">
-            <span class="material-icons arrow" style="color:#666;">arrow_back</span>
-          </div>
+          <span class="material-icons arrow" style="color:#666;">arrow_back</span>
         </a>
       </div>
       <div style="height:80px"></div>
@@ -58,20 +50,18 @@
       justify-content: center; 
       display: flex; 
       height:100%;
-      padding-right:10px;
+      
       flex-direction: column;">
       <div style="height:80px">
          <a tabindex="-1" role="button" 
            data-bs-dismiss="modal"
            aria-disabled="true">
-          <span class="material-icons md-72" style="color:#666;">close</span>
+          <span class="material-icons" style="font-size:72px; color:#666; padding:10px;">close</span>
         </a>
       </div>
       <div style="flex:1; align-items: center; justify-content: center; display: flex; flex-direction: column;">
         <a tabindex="-1" role="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <div style="background-color:none; border-radius: 50px; width:250px height:250px;">
-            <span class="material-icons arrow" style="color:#666;">arrow_forward</span>
-          </div>
+          <span class="material-icons arrow" style="color:#666;">arrow_forward</span>
         </a>
       </div>
       <div style="height:80px"></div>
@@ -442,7 +432,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:120px;">
+  <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:120px;">
     <div class="row gx-3 pb-5">
       <div class="col-md p-3 pullquote">
         “How do we even monitor this thing in the first place? What are the key metrics?” 
@@ -456,8 +446,61 @@
       
     </div>
   </div>
-</div>
 
+<!----------------------------------------------->
+
+<div class="bg-light-gray">
+  <div class="container-fluid-content-01 pb-5">
+    <section class="row">
+      <div class="col-md section-header-no-border pb-4">
+        Strategy
+      </div>
+    </section>
+    <div class="row">
+      <div class="col-md">
+
+        <div class="headline-medium pb-4">
+          We adopted a three-pronged strategy
+        </div>
+
+        <div class="regular-lg pb-4">
+          <div class="bold-5">Define KPIs</div>
+          A lot of monitoring know-how was in the heads of our field and R&D engineers. The PM consolidated and documented this know-how in the form of KPIs.
+        </div>
+        <div class="regular-lg pb-4">
+          <div class="bold-5">Design a GUI</div>
+          We used the KPIs as a basis for a UI that would be exemplar of how to visualize and organize metrics. This ended up being a two-way street as some of our designs defined KPIs.
+        </div>
+        <div class="regular-lg pb-4">
+          <div class="bold-5">Provide an API</div>
+          We knew that our customers will eventually create custom solutions, so we made our metrics available by API.
+        </div>
+        <div class="regular-lg pb-4">
+          Around this time, we started thinking about how we might fit in the market: Advanced users will just use the API, but those new to the platform might benefit from an opinionated GUI that would be a bridge for them as they got up and running.
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:120px;">
+    <div class="row gx-3">
+      <div class="col-md">
+        <img src="images/healthwatch-07.png" class="img-fluid center-block d-block mx-auto"> 
+        <div class="caption p-3">This diagram conveys how when users gain experience, they’ll move over to using the API.</div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="container-fluid-content-02" style="max-width: 800px; padding-bottom:120px;">
+      <div class="row gx-3">
+        <div class="col-md p-3 pullquote">
+          “The last thing we want is the end user telling us about problems with our applications.”
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
 
 <!----------------------------------------------->
 
