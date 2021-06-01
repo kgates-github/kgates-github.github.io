@@ -268,9 +268,17 @@ p.center-lg {
 	display: flex !important;
 }
 
+.arrow {
+	font-size: 104px; 
+}
+
 @media screen and (max-width: 768px) {
   .card-image {
     display: none !important;
+  }
+
+  .arrow {
+  	font-size: 72px; 
   }
 }
 
@@ -289,6 +297,18 @@ p.center-lg {
 @media screen and (min-width: 992px) {
   .card-image {
     
+  }
+  .arrow {
+  	font-size: 104px; 
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-image {
+    
+  }
+  .arrow {
+  	font-size: 152px; 
   }
 }
 
