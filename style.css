@@ -135,6 +135,12 @@ a:active  { color: #333; }
 .top-nav a:hover   { color: #CC5B4C; }
 .top-nav a:active  { color: #CC5B4C; }
 
+.url-link {
+	color: #0872D3 !important;
+	text-decoration: underline !important;
+}
+
+
 .top-nav-on {
 	font-weight: 500;
 	padding-bottom:4px;
