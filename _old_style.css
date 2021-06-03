@@ -77,7 +77,7 @@ h4 {
   margin-right: auto;
   margin-left: auto;
   max-width: 900px;
-  overflow-x:hidden !important;
+ 
 }
 
 .container-fluid-content-01 {
@@ -88,7 +88,7 @@ h4 {
   padding-bottom: 120px;
   padding-left: 1em;
   padding-right: 1em;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 
 .container-fluid-content-02 {
@@ -101,7 +101,7 @@ h4 {
 
 .nav-header {
 	font-size: 0.66em;
-	font-weight: 700;
+	font-weight: 500;
 	color:#CC5B4C;
 	padding-bottom:0px;
 }
@@ -141,7 +141,7 @@ a:active  { color: #333; }
 
 
 .top-nav-on {
-	font-weight: 700;
+	font-weight: 500;
 	padding-bottom:4px;
 	border-bottom: 3px solid #CC5B4C;
 	margin-bottom: 30px;

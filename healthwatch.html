@@ -8,9 +8,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
     <title>Kevin Gates, Product Design Portfolio</title>
   </head>
@@ -69,99 +69,69 @@
 
     <div class="modal-dialog modal-dialog-centered modal-lg" style="background-color: transparent;">
       <div class="modal-content" style="background-color: transparent; border:none; text-align: right;">
-            <div style="display:flex; flex-direction: row; height:80px">
-              <div style="flex: 1; text-align: center; color:#ccc; align-content: center; padding-top:8px;">
-                How it Works
+        <div style="display:flex; flex-direction: row; height:80px">
+          <div style="flex: 1; text-align: center; color:#ccc; align-content: center; padding-top:8px;">
+            How it Works
+          </div>
+        </div>
+        <div id="carouselExampleCaptions" class="carousel slide" 
+          data-bs-interval="false"
+          data-bs-keyboard="true"  
+          data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" 
+            data-bs-target="#carouselExampleCaptions" 
+            data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" style="background-color: transparent;">
+          <div class="carousel-item active" style="background-color: transparent;">
+            <img src="images/console-05.png" class="d-block w-100"  alt="image">
+            <div class="carousel-caption d-none d-md-block" 
+              style=" position: relative; left:0; top:0; background-color: transparent; height:300px;">
+              <div class="headline-light pb-2 text-extra-light" style="text-align: left; font-weight: 700;">
+                No hassles.
               </div>
-            </div>
-            <div id="carouselExampleCaptions" class="carousel slide" 
-              data-bs-interval="false"
-              data-bs-keyboard="true"  
-              data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" 
-                data-bs-target="#carouselExampleCaptions" 
-                data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner" style="background-color: transparent;">
-              <div class="carousel-item active" style="background-color: transparent;">
-                <img src="images/console-05.png" class="d-block w-100"  alt="image">
-                <div class="carousel-caption d-none d-md-block" 
-                  style=" position: relative; left:0; top:0; background-color: transparent; height:300px;">
-                  <div class="headline-light pb-2 text-extra-light" style="text-align: left; font-weight: 700;">
-                    No hassles.
-                  </div>
-                  <div class="regular-lg pb-2 text-light" style="text-align: left;">
-                    When a customer installs HealthWatch, everything is automatically up and running. No tediuous configuration is needed; they can immediatly see the overall health of their platform. 
-                  </div>
-                </div>
+              <div class="regular-lg pb-2 text-light" style="text-align: left;">
+                When a customer installs HealthWatch, everything is automatically up and running. No tediuous configuration is needed; they can immediatly see the overall health of their platform. 
               </div>
-              <div class="carousel-item" style="background-color: transparent;">
-                <img src="images/console-05.png" class="d-block w-100" alt="image">
-                <div class="carousel-caption d-none d-md-block"
-                  style=" position: relative; left: 0; top: 0; background-color: transparent; height:300px;">
-                  <div class="headline-light pb-2 text-extra-light" style="text-align: left;">
-                    Expert-knowledge baked into the UI.
-                  </div>
-                  <div class="regular-lg pb-2 text-light" style="text-align: left;">
-                    This manifests itself in may ways. In this case, HTTP request metrics that work in concert are clustered together and stacked vertically so operators can see correllations.
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item" style="background-color: transparent;">
-                <img src="images/console-05.png" class="d-block w-100" alt="image">
-                <div class="carousel-caption d-none d-md-block"
-                  style=" position: relative; left: 0; top: 0; background-color: transparent; height:300px;">
-                  <div class="headline-light pb-2 text-extra-light" style="text-align: left;">
-                    No hassles.
-                  </div>
-                  <div class="regular-lg pb-2 text-light" style="text-align: left;">
-                    When a customer installs HealthWatch, everything is automatically up and running and they can immediatly see the overall health of their platform. No tediuous configuration is needed.
-                  </div>
-                </div>
-              </div>
-              
             </div>
           </div>
-       
-
-    </div>
-   </div>
-  </div>
-      <!--
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      <div class="modal-content" style="background-color:none;">
-        
-        
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="carousel-item" style="background-color: transparent;">
+            <img src="images/console-05.png" class="d-block w-100" alt="image">
+            <div class="carousel-caption d-none d-md-block"
+              style=" position: relative; left: 0; top: 0; background-color: transparent; height:300px;">
+              <div class="headline-light pb-2 text-extra-light" style="text-align: left;">
+                Expert-knowledge baked into the UI.
+              </div>
+              <div class="regular-lg pb-2 text-light" style="text-align: left;">
+                This manifests itself in may ways. In this case, HTTP request metrics that work in concert are clustered together and stacked vertically so operators can see correllations.
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-color: transparent;">
+            <img src="images/console-05.png" class="d-block w-100" alt="image">
+            <div class="carousel-caption d-none d-md-block"
+              style=" position: relative; left: 0; top: 0; background-color: transparent; height:300px;">
+              <div class="headline-light pb-2 text-extra-light" style="text-align: left;">
+                No hassles.
+              </div>
+              <div class="regular-lg pb-2 text-light" style="text-align: left;">
+                When a customer installs HealthWatch, everything is automatically up and running and they can immediatly see the overall health of their platform. No tediuous configuration is needed.
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-        
-
       </div>
-      -->
+    </div>
+  </div>
+</div>
    
 
   <!--***********************************************-->
  
-  <div class="container-fluid overflow-hidden">
+  <div class="container-fluid overflow-hidden" >
 
     <div class="row">
       <div class="col pt-0">
@@ -180,27 +150,27 @@
       </div>
     </div>
   </div>
-	  
+    
   <div class="container-fluid-content-01 overflow-hidden pt-5">
-  	<div class="row gx-3 mt-5 mb-4" style="max-width: 500px;">
-	    <div class="col">
+    <div class="row gx-3 mt-5 mb-4" style="max-width: 500px;">
+      <div class="col">
         <div class='headline-heavy mb-2'>A Fool's Errand</div>
-  		</div>
-  	</div>
+      </div>
+    </div>
 
-  	<div class="row gx-4">
-  		<div class="col-md">
-	    	<p class="regular-lg pb-2">
-  				When the HealthWatch project kicked off in 2017, it was just a product manager and me.
-        <p> 
-        <p class="regular-lg pb-2">
+    <div class="row">
+      <div class="col-md">
+        <div class="regular-lg pb-4">
+          When the HealthWatch project kicked off in 2017, it was just a product manager and me.
+        </div> 
+        <div class="regular-lg pb-4">
           Senior management had tasked us with coming up with an out-of-the-box data dashboard for monitoring Pivotal Cloud Foundry, an operating system for cloud platforms like Amazon’s AWS. 
-        <p> 
-        <p class="regular-lg pb-0">
+        </div> 
+        <div class="regular-lg pb-4">
           Neither of us thought it was a viable concept. At least on the surface. During an early stake holder interview, a marketing director let us know that our product was “a fool’s errand”.
-        <p> 
-  		</div>
-  	</div>
+        </div> 
+      </div>
+    </div>
   </div>
 
   <div class="bg-light-gray">
@@ -212,23 +182,19 @@
       </section>
       <div class="row">
         <div class="col-md">
-          <div class="regular-lg pb-4 bold-5">
-            An Unvalidated Concept
-          </div>
+          
           <div class="regular-lg pb-4">
+            <div class="bold-5">An Unvalidated Concept</div>
             Our assignment was to build an out-of-the-box platform monitoring tool, but we didn’t yet have a clear understanding of the customer problems it would address. On top of that, the market was crowded with entrenched players, many of whom were dedicated to the domain. 
           </div>
-          <div class="regular-lg pb-4 bold-5">
-            My Role
-          </div>
+          
           <div class="regular-lg pb-4">
+            <div class="bold-5">My Role</div>
             I drove the overall design process for about a year. I shared reseach responsibilites with the PM, but led co-creation, rapid prototyping, usability testing and validation. 
           </div>
-          <div class="regular-lg pb-4 bold-5">
-            Collaborators
-          </div>
           <div class="regular-lg pb-0">
-            I worked closely with the PM and engineers at first, as I was the lone designer first several months. Later on, two other designers joined the project on temporary rotations. By enlarge, I worked remotely from San Francisco, while the rest of the team was based in Denver.
+            <div class="bold-5">Collaborators</div>
+            I worked closely with the PM and engineers at first, as I was the lone designer first several months. Later on, two designers joined the project on temporary rotations. By enlarge, I worked remotely from San Francisco, while the rest of the team was based in Denver.
           </div>
         
         </div>
@@ -1074,15 +1040,15 @@
     </div>
   </div>
 
-<!--
-  <div class="container-fluid-content-02" style="max-width: 900px; ">
+
+  <div class="container-fluid-content-02" style="max-width: 900px; margin-bottom: 120px">
     <div class="row">
       <div class="col-md pb-4">
-        <img src="images/healthwatch-17.png" class="img-fluid" alt="image">
+        
       </div>
     </div>
   </div>
--->
+
 
 <!--***********************************************-->
 
