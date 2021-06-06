@@ -62,22 +62,26 @@ h4 {
   background-color: #eee;
   margin-left: -25px;
   margin-right: -25px;
+  padding-left: 25px;
+  padding-right: 25px;
   overflow-x: hidden;
 }
 
 .bg-dark-gray {
-  background-color: #494949;
+  background-color: #333;
   margin-left: -25px;
   margin-right: -25px;
+  padding-left: 25px;
+  padding-right: 25px;
   overflow-x: hidden;
 }
 
 .text-light {
-	color:#ccc !important;
+	color:#999 !important;
 }
 
 .text-extra-light {
-	color:#fff !important;
+	color:#ccc !important;
 }
 
 
