@@ -69,11 +69,7 @@
 
     <div class="modal-dialog modal-dialog-centered modal-lg" style="background-color: transparent;">
       <div class="modal-content" style="background-color: transparent; border:none; text-align: right;">
-        <div style="display:flex; flex-direction: row; height:80px">
-          <div style="flex: 1; text-align: center; color:#ccc; align-content: center; padding-top:8px;">
-            How it Works
-          </div>
-        </div>
+        
         <div id="carouselExampleCaptions" class="carousel slide" 
           data-bs-interval="false"
           data-bs-keyboard="true"  
@@ -86,40 +82,47 @@
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner" style="background-color: transparent;">
+
           <div class="carousel-item active" style="background-color: transparent;">
-            <img src="images/console-05.png" class="d-block w-100"  alt="image">
+            <img src="images/healthwatch-02-01.png" class="d-block w-100"  alt="image">
             <div class="carousel-caption d-none d-md-block" 
               style=" position: relative; left:0; top:0; background-color: transparent; height:300px;">
-              <div class="headline-light pb-2 text-extra-light" style="text-align: left; font-weight: 700;">
+              <div class="headline-medium pb-2 text-extra-light" style="text-align: left; font-weight: 700;">
                 No hassles.
               </div>
-              <div class="regular-lg pb-2 text-light" style="text-align: left;">
-                When a customer installs HealthWatch, everything is automatically up and running. No tediuous configuration is needed; they can immediatly see the overall health of their platform. 
+              <div class="regular-lg pb-4 text-light" style="text-align: left;">
+                When a customer installs HealthWatch, everything is automatically up and running. No tediuous configuration is needed. 
               </div>
+              <div class="caption pt-0">Visual design by Justin Roozeboom</div>
             </div>
           </div>
+
           <div class="carousel-item" style="background-color: transparent;">
-            <img src="images/console-05.png" class="d-block w-100" alt="image">
+            <img src="images/healthwatch-02-02.png" class="d-block w-100" alt="image">
             <div class="carousel-caption d-none d-md-block"
               style=" position: relative; left: 0; top: 0; background-color: transparent; height:300px;">
-              <div class="headline-light pb-2 text-extra-light" style="text-align: left;">
-                Expert-knowledge baked into the UI.
+              <div class="headline-medium pb-2 text-extra-light" style="text-align: left;">
+                Expert-knowledge is baked in.
               </div>
-              <div class="regular-lg pb-2 text-light" style="text-align: left;">
-                This manifests itself in may ways. In this case, HTTP request metrics that work in concert are clustered together and stacked vertically so operators can see correllations.
+              <div class="regular-lg pb-4 text-light" style="text-align: left;">
+                Out of thousands of metrics, we surface the ones you really need. This example shows users what they need to know about incoming HTTP traffic.
               </div>
+              <div class="caption pt-0">Visual design by Justin Roozeboom</div>
             </div>
           </div>
+
           <div class="carousel-item" style="background-color: transparent;">
-            <img src="images/console-05.png" class="d-block w-100" alt="image">
+            <img src="images/healthwatch-02-03.png" class="d-block w-100" alt="image">
             <div class="carousel-caption d-none d-md-block"
               style=" position: relative; left: 0; top: 0; background-color: transparent; height:300px;">
-              <div class="headline-light pb-2 text-extra-light" style="text-align: left;">
-                No hassles.
+              <div class="headline-medium pb-2 text-extra-light" style="text-align: left;">
+                Automated testing.
               </div>
-              <div class="regular-lg pb-2 text-light" style="text-align: left;">
-                When a customer installs HealthWatch, everything is automatically up and running and they can immediatly see the overall health of their platform. No tediuous configuration is needed.
+              <div class="regular-lg pb-4 text-light" style="text-align: left;">
+                HealthWatch exercises key functionality and reports back how well it is working. This saves users from needing to learn arcane metrics to infer the health of functionality.
               </div>
+              <div class="caption pt-0">Visual design by Justin Roozeboom</div>
+
             </div>
           </div>
         </div>
@@ -359,6 +362,7 @@
         <div class="regular-lg pb-0">
           It was painful for our users: Upgrades are the worst possible time to not have insight into the platform’s health.
         </div>
+
       </div>
     </div>
   </div>
@@ -428,7 +432,7 @@
     <div class="row gx-3">
       <div class="col-md">
         <img src="images/healthwatch-06.png" class="img-fluid center-block d-block mx-auto" alt="image"> 
-        <div class="caption p-3">Our affinity map grouped findings into themes, <br>such as “product-market fit” and “learning process”.</div>
+        <div class="caption pt-3">Our affinity map grouped findings into themes, such as “product-market fit” and “learning process”.</div>
       </div>
       
     </div>
@@ -544,14 +548,14 @@
 <div class="container-fluid-content-02" style="max-width: 1200px;">
   <div class="row">
     <div class="col-md">
-      <img src="images/healthwatch-09.png" class="img-fluid center-block d-block mx-auto" alt="image"> 
+      <img src="images/healthwatch-09.png" class="img-fluid" alt="image"> 
       <div class="caption p-3">Our journey map captured the non-linear nature of the user experience. 
         It also conveyed that we were part of a larger ecosystem.</div>
     </div>
   </div>
 </div>
 
-<div class="container-fluid-content-01 pb-5">
+<div class="container-fluid-content-01">
   <div class="row">
       <div class="col-md">
         <div class="headline-small pb-4">
@@ -561,7 +565,7 @@
         <div class="regular-lg pb-4"> 
           The essence of the user experience goes something like this: When there is a potential issue with Cloud Foundry, our users go on a journey through an constellation of alerts, dashboards, and Slack conversations. They pick up bits of information from one source, make a decision, then go on to another to get the next thing they are looking for, all-the-while continuously updating their mental model of the overall system.
         </div>
-        <div class="regular-lg pb-4">
+        <div class="regular-lg pb-0">
           Eventually, like a doctor considering a patient’s symptoms, they form a hypothosis about the actual problem and formulate possible solutions. 
         </div>
     </div>
@@ -766,9 +770,6 @@
   </div>
 </div>
 
-  
- 
-
 </div>
 
 <!--***********************************************-->
@@ -808,7 +809,7 @@
         <div class="regular-lg pb-4">
           The way it works is every five minutes, an automated process pushes a tiny app onto the platform. HealthWatch then tests it so see if the app is healthy and shows the results in the form of stoplights that are either green, yellow or red.
         </div>
-        <div class="regular-lg pb-4">
+        <div class="regular-lg pb-5">
           It was simple by design, but it took a few iterations to to finesse the UI and underlying logic.
         </div>
 
@@ -818,8 +819,9 @@
 
   <div class="container-fluid-content-02" style="max-width: 900px; ">
     <div class="row">
-      <div class="col-md pb-4">
+      <div class="col-md pb-5">
         <img src="images/healthwatch-15.png" class="img-fluid" alt="image">
+        <div class="caption pt-1">Initial sketches by the PM, engineers and me.</div>
       </div>
     </div>
   </div>
@@ -830,7 +832,7 @@
         <div class="regular-lg pb-4">
           The sketches above are from a design studio I ran with the PM, engineers and myself. Our heads seemed to be in the same place. 
         </div>
-        <div class="regular-lg pb-4">
+        <div class="regular-lg pb-5">
           The expert panel liked the version that showed history: When a user gets back from lunch, and something is failing, they will want to know how long there has been a problem.
         </div>
       </div>
@@ -839,8 +841,9 @@
 
   <div class="container-fluid-content-02" style="max-width: 900px; ">
     <div class="row">
-      <div class="col-md pb-4">
+      <div class="col-md pb-5">
         <img src="images/healthwatch-16.png" class="img-fluid">
+        <div class="caption pt-3" style="max-width: 500px;">Wireframes expanding on inital sketches. These went through several feedback sessions. (Last panel by Justin Roozeboom)</div>
       </div>
     </div>
   </div>
