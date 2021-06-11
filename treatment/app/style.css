@@ -7,8 +7,9 @@ h2              { font-size:16px; }
 
 .header { font-size: 14px; }
 
-.page           { margin: auto; width: 1100px;
-                  padding-left: 26px; padding-right: 26px; background: white; min-height:100%; padding-top:20px;}
+.page           { margin: auto; width: 900px;
+                  padding-left: 26px; padding-right: 26px; 
+                  background: white; min-height:100%; padding-top:20px;}
 
 .error          { background: #f0d6d6; padding: 0.5em; }
 
