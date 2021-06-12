@@ -892,18 +892,18 @@
         <div class="headline-small pb-4">
           The design was not just UI work. We also defined the underlying logic.
         </div>
-        <div class="regular-lg pb-4">
+        <div class="regular-lg pb-5">
           In order to define the stoplight logic, we had to take a number of things into account:
         </div>
-        <div class="regular-lg pb-4">
+        <div class="regular-lg pb-5">
           <div class="bold-5">A failed test isn’t necessarily an emergency</div>
           Cloud Foundry is self-correcting. A failed test might be the result of an upgrade or some other temporary cause. The trick is you want to show a red stop light when there is a real problem and not a false alarm. 
         </div>
-        <div class="regular-lg pb-4">
+        <div class="regular-lg pb-5">
           <div class="bold-5">Tests are interdependent</div>
           For example, if the “start app” test fails, you can’t see if it is emitting logs because the app doen’t exist.
         </div>
-        <div class="regular-lg pb-4">
+        <div class="regular-lg pb-5">
           <div class="bold-5">Several tests run concurrently</div> 
           HealthWatch runs three test simutaneously. We had to interpret sequential failures versus concurent failures. We were concerned that since random test failures (one or two per hour) might be over represented with concurency.
         </div>
