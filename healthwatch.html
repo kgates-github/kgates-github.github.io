@@ -636,7 +636,7 @@
   <div class="container-fluid-content-01 pb-5">
     <section class="row">
       <div class="col-md section-header-no-border pb-4">
-        Rapid Prototyping
+        Collaboration
       </div>
     </section>
     <div class="row">
@@ -697,54 +697,6 @@
     </div>
   </div>
   -->
-
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:0px;">
-    <div class="row">
-      <div class="col-md">
-        <div class="headline-small pb-4">
-          Learning to love being wrong
-        </div>
-        <div class="regular-lg pb-4">
-          Here's an example of how the expert advisory panel affected our approach to designing for router health metrics:
-        </div>
-      </div>
-    </div>
-  </div>
-
-   <div class="container-fluid-content-02 pb-4" style="max-width: 900px;">
-    <div class="row">
-      <div class="col-md pt-4 pb-4">
-        <img src="images/healthwatch-23.png" class="img-fluid center-block d-block mx-auto" alt="image">
-        <div class="caption pt-3">
-            The evolution of our router health panel. (Last panel by Justin Roozeboom.)
-        </div>
-      </div> 
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px;">
-    <div class="row">
-      <div class="col-md">
-        <div class="regular-lg pb-4">
-          The first panel above was our initial attempt at a router health design. It did not go over well. 
-          One of the panel members said, "I don't like anything about this."
-        </div>
-        <div class="regular-lg pb-4">
-          We quickly learned what we got wrong: We focused too much on router CPU and tried to force everything into 
-          a stoplight visualization.
-        </div>
-        <div class="regular-lg pb-4">
-          Operators want to first understand how much traffic is flowing through the routers and whether 
-          there are any trends up or down. They then want to get an idea of how responsive requests are. If there is a potential problem, operators would want to know
-          if there is a change in the number of errors, which tend to have a steady-state rate at scale. Only after that,
-          CPU usage becomes relevant.
-        </div>
-        <div class="regular-lg pb-4">
-          Our sketches and wireframes took these insights into account, and we eventually got to the final design, on the right. 
-        </div>
-      </div>
-    </div>
-  </div>
 
   <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px;">
     <div class="row">
@@ -827,23 +779,84 @@
   <div class="container-fluid-content-01" style="padding-bottom:60px">
     <section class="row">
       <div class="col-md section-header-no-border pb-4">
-        Emergent Design
+        Rapid Prototyping
       </div>
     </section>
     <div class="row">
       <div class="col-md">
          <div class="headline-medium pb-5">
-          Letting designs emerge as we iterated and learned
+          Learning to love being wrong
         </div>
+
         <div class="regular-lg pb-0">
+          Here's an example of how the expert advisory panel affected our approach to designing for router health metrics:
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <div class="container-fluid-content-02 pb-4" style="max-width: 900px;">
+    <div class="row">
+      <div class="col-md pb-4">
+        <img src="images/healthwatch-23.png" class="img-fluid center-block d-block mx-auto" alt="image">
+        <div class="caption pt-3">
+            The evolution of our router health panel. (Last panel by Justin Roozeboom.)
+        </div>
+      </div> 
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px;">
+    <div class="row">
+      <div class="col-md">
+        <div class="regular-lg pb-4">
+          The first panel above was our initial attempt at a router health design. It did not go over well. 
+          One of the panel members said, "I don't like anything about this."
+        </div>
+        <div class="regular-lg pb-4">
+          <img src="images/healthwatch-23-01.png" class="img-fluid center-block d-block mx-auto" alt="image">
+          <div class="caption pt-3">
+            R.I.P. router panel design #1. Born: March 15, 2017. Died: March 16, 2017.
+          </div>
+        </div>
+        <div class="regular-lg pb-4">
+          We quickly learned what we got wrong: We focused too much on router CPU and tried to force everything into 
+          a stoplight visualization.
+        </div>
+        <div class="regular-lg pb-4">
+          Operators want to first understand how much traffic is flowing through the routers and whether 
+          there are any trends up or down. They then want to get an idea of how responsive requests are. 
+        </div>
+        <div class="regular-lg pb-4">
+          <img src="images/healthwatch-23-02.png" class="img-fluid center-block d-block mx-auto" alt="image">
+          <div class="caption pt-3">
+              R.I.P. router panel design #2.
+          </div>
+        </div> 
+        <div class="regular-lg pb-4">
+          Our sketches and wireframes took these insights into account. The throughput chart at top went over well, as did the CPU usage at the bottom. The middle charts tried to show distributions of latency and CPU, but generally confused everyone.
+        </div>
+        <div class="regular-lg pb-4">
+          <img src="images/healthwatch-23-03.png" class="img-fluid center-block d-block mx-auto" alt="image">
+          <div class="caption pt-3">
+              R.I.P. router panel design #3.
+          </div>
+        </div> 
+        <div class="regular-lg pb-4">
+          If there is a change in throughput, operators would want to know if there is a change in the number of errors, which tend to have a steady-state rate at scale. We added a chart showing errors at thee bottom. We still clung to trying to show CPU as a distribution, but it did not pass muster.
+        </div>
+         <div class="regular-lg pb-4">
           Take the CLI command line health panel. It answers the question, “Can developers get their code up on the platform?” and much more.
         </div>
       </div>
     </div>
   </div>
 
+
   <div class="container-fluid-content-02" style="max-width: 750px;">
     <div class="row">
+
       <div class="regular-lg pb-4">
         <img src="images/healthwatch-14.png" class="img-fluid" alt="image">
         <div class="caption p-3">
