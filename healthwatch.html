@@ -777,7 +777,7 @@
     </section>
     <div class="row">
       <div class="col-md">
-         <div class="headline-medium pb-5" style="width:400px;">
+        <div class="headline-medium pb-5" style="width:400px;">
           Learning to love being wrong
         </div>
 
@@ -788,8 +788,7 @@
     </div>
   </div>
 
-
-   <div class="container-fluid-content-02 pb-4" style="max-width: 900px;">
+  <div class="container-fluid-content-02 pb-4" style="max-width: 900px;">
     <div class="row">
       <div class="col-md pb-4">
         <img src="images/healthwatch-23.png" class="img-fluid center-block d-block mx-auto" alt="image">
@@ -839,8 +838,28 @@
               R.I.P. router panel design #3.
           </div>
         </div> 
-        <div class="regular-lg pb-4">
+        <div class="regular-lg pb-5">
           Next we learned that if there is a change in throughput, operators would want to know if there is a change in the number of errors, which tend to have a steady-state rate at scale. We added a chart showing errors at thee bottom. We still clung to trying to show CPU as a distribution, but it did not pass muster.
+        </div>
+        <div class="regular-lg pb-3">
+          <div class="bold-5">Interpreting signals</div>
+        </div>
+         <div class="regular-lg pb-4">
+          Through our iterative design process, we learned how to group metrics together. Metrics are like hieroglyphs 
+          &mdash; meanings are often interpreted by combining several together.
+        </div>
+
+        <div class="regular-lg pb-4">
+          <img src="images/healthwatch-23-04.png" class="img-fluid center-block d-block mx-auto" alt="image">
+        </div> 
+        <div class="regular-lg pb-4">
+          When there is a drop in traffic (top arrow), the operator will want to know if it cooresponds to an increase in errors (bottom arrow). That would mean there is likely a problem and not a natural decrease in traffic.
+        </div>
+        <div class="regular-lg pb-4">
+          <img src="images/healthwatch-23-05.png" class="img-fluid center-block d-block mx-auto" alt="image">
+        </div> 
+        <div class="regular-lg pb-2">
+          When there is an increase in traffic (top arrow), the operator will want to know if the routers are handling the load. This is where router CPU usage (bottom arrow) comes into play.
         </div>
         <!--
          <div class="regular-lg pb-4">
