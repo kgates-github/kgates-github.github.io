@@ -139,7 +139,7 @@
                 Historical data
               </div>
               <div class="regular-lg pb-4 text-light" style="text-align: left;">
-                Historic data helps operators answer the question, “Did anything interesting happen when I was away?” The view above shows 24 hours of automated test results.
+                Historic data helps operators answer the question, “What happened when I was away?” The view above shows 24 hours of automated test results.
               </div>
               <div class="caption pt-2 text-light" style="position:absolute; bottom:0px">Visual design by Justin Roozeboom</div>
             </div>
@@ -293,7 +293,7 @@
 <!--***********************************************-->
 
   <div class="bg-light-gray">
-    <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:0px;">
+    <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:60px;">
       <section class="row">
         <div class="col-md section-header-no-border pb-4">
           Design Roadmapping
@@ -307,7 +307,7 @@
           <div class="regular-lg pb-4">
             At the onset, we had a lot of questions and not a lot of time. I was meeting with the PM everyday, and during our discussions we started capturing questions we were asking ourselves. 
           </div>
-          <div class="regular-lg pb-4">
+          <div class="regular-lg pb-0">
             Our questions ranged from, “Is the product viable?” to, “Should we base our product on an open source solution?” We then started brainstorming design process ideas that might help answer those questions. 
           </div>
 
@@ -642,7 +642,7 @@
 <!--***********************************************-->
 
 <div class="bg-light-gray">
-  <div class="container-fluid-content-01 pb-5">
+  <div class="container-fluid-content-01" style="padding-bottom:60px;">
     <section class="row">
       <div class="col-md section-header-no-border pb-4">
         Collaboration
@@ -1034,7 +1034,6 @@
   <div class="container-fluid-content-02" style="max-width: 600px; padding-top:0px;">
     <div class="row">
       <div class="col-md">
-        
         <div class="regular-lg pb-5">
           We conducted several activities to garner feedback.
         </div>
@@ -1044,27 +1043,6 @@
         <div class="regular-lg pb-5">
           We conducted weekly check in session with the cloud ops team in Dublin. In these sessions, they walked us through scenarios where they used HealthWatch. We got a lot of usability feedback, but also validated that the app helped them get through unexpected problems, such as failed upgrades.
         </div>
-        <div class="headline-small pb-4">
-          Dot voting
-        </div>
-        <div class="regular-lg pb-4">
-          Once the operations team had been using HealthWatch for several weeks, we had four team member independently tell us what metrics they would remove from the main dashboard and why.
-        </div>
-        <div class="regular-lg pb-4">
-          This got us to declutter and move about 25 percent of the main dashboard to deep dive views.
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02" style="max-width: 750px; padding-top:0px;">
-    <div class="row">
-      <div class="col-md pb-5">
-        <img src="images/healthwatch-19.png" class="img-fluid p-1" style="border: 2px solid #ccc;" alt="image">
-        <div class="caption pt-2">
-          Alpha testers voted metrics off the island.
-        </div>
       </div>
     </div>
   </div>
@@ -1073,10 +1051,10 @@
     <div class="row">
       <div class="col-md">
         <div class="headline-small pb-4">
-          User-informed layout
+          Closed card sort
         </div>
         <div class="regular-lg pb-5">
-          After dot voting, we gave operations team members workbooks in the Google Draw app that contained movable metrics panels. We then asked them to arrange the dashboard the way they would like it. 
+          Once the operations team had been using HealthWatch for several weeks, we gave operations team members workbooks in Google Draw that contained movable metrics panels. We then asked them to arrange the dashboard the way they would like it. 
         </div>
       </div>
     </div>
@@ -1109,18 +1087,45 @@
         <img src="images/healthwatch-21.png" class="img-fluid" alt="image">
       </div>
     </div>
-    <div class="row">
-      <div class="col-md pb-4" style="text-align: center;">
+    <div class="row pb-5">
+      <div class="col-md" style="text-align: center;">
         <div class="bold-5">End-user Impact</div> 
         End users affected. Generally urgent.
       </div>
-      <div class="col-md pb-4" style="text-align: center;">
+      <div class="col-md" style="text-align: center;">
         <div class="bold-5">Developer Impact</div> 
         Not as urgent as end-user impact, but potentially important. 
       </div>
-      <div class="col-md pb-4" style="text-align: center;">
+      <div class="col-md" style="text-align: center;">
         <div class="bold-5">Platform Impact</div> 
         Underlying VMs and other platform infrastructure.
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-top:0px;">
+    <div class="row">
+      <div class="col-md">
+        <div class="headline-small pb-4">
+          Dot voting
+        </div>
+        <div class="regular-lg pb-4">
+          After the card sort, we had team members independently tell us what metrics they would remove from the main dashboard and why.
+        </div>
+        <div class="regular-lg pb-5">
+          This got us to declutter and move about 25 percent of the main dashboard to deep dive views.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 750px; padding-top:0px;">
+    <div class="row">
+      <div class="col-md">
+        <img src="images/healthwatch-19.png" class="img-fluid p-1" style="border: 2px solid #ccc;" alt="image">
+        <div class="caption pt-2">
+          Alpha testers voted metrics off the island.
+        </div>
       </div>
     </div>
   </div>
