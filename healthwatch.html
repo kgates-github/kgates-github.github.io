@@ -230,7 +230,7 @@
           <div class="pb-5">
             <div class="mt-auto">
               <a href="healthwatch.html" tabindex="-1" role="button" 
-                class="bold-5 round-button large-button"
+                class="round-button large-button"
                 data-bs-toggle="modal" data-bs-target="#exampleModal"
                 aria-disabled="true">
                 <div style="display:flex; flex-direction: row; justify-content: center; align-items: center;">
@@ -244,7 +244,7 @@
             </div>
           </div>
           <div class="regular-lg pb-4 text-light">
-            Fast forward eight months. HealthWatch was unveiled in December 2017. Despite our initial misgivings, we had found a direction that worked. 
+            Fast forward eight months. HealthWatch was unveiled in December 2017. Despite our initial misgivings, we found a direction that worked. 
           </div>
           <div class="regular-lg pb-4 text-light">
             The path getting there was not easy. It involved a highly iterative design process. Low fidelity, co-creation and continuous feedback were part of our daily lives. There are many iterations and many layers of experience belying the design.
@@ -408,8 +408,8 @@
     <div class="row">
       <div class="col-md">
 
-        <div class="headline-medium pb-5">
-          Wandering into urgency 
+        <div class="headline-medium pb-5" style="width:400px;">
+          Wandering into an urgent problem 
         </div>
         <div class="regular-lg pb-4">
           We weren’t more than a week into interviewing when we realized there was an urgent problem: When customers upgraded the platform, their monitoring dashboards broke. That’s because when Pivotal’s component teams released new versions, they would change metric endpoints without documenting the changes.
@@ -582,14 +582,15 @@
         <div class="headline-medium pb-5" style="max-width: 400px">
           Thinking outside of the screen
         </div>
+        <!--
         <div class="headline-medium pb-5">
           <img src="images/healthwatch-08.png" class="img-fluid center-block d-block mx-auto" alt="image"> 
         </div>
-
+        -->
         <div class="regular-lg pb-4"> 
           In a previous life in the business intelligence world, I learned an interesting perspective on data dashboard design: Dashboards don’t tell the whole story. 
         </div>
-        <div class="regular-lg pb-4">
+        <div class="regular-lg pb-5">
           Instead, when a user looks at a data dashboard, they look for new information and use it to update their mental model of the whole system. They then make an assessment of the system based on this new state. The essence of the user experience is all in the head.
         </div>
         <div class="headline-small pb-4">
@@ -620,7 +621,7 @@
         </div>
         
         <div class="regular-lg pb-4"> 
-          The essence of the user experience goes something like this: 
+          The essence of the platform troubleshooting user experience goes something like this: 
         </div>
         <Ul>
           <li class="pb-4">
@@ -848,20 +849,43 @@
         <div class="regular-lg pb-3">
           <div class="bold-5">Interpreting signals</div>
         </div>
-         <div class="regular-lg pb-5">
+        <div class="regular-lg pb-0">
           Through our iterative design process, we learned how to group metrics together. Metrics are like hieroglyphs 
           &mdash; meanings are often interpreted by combining several together.
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="regular-lg pb-4">
-          <img src="images/healthwatch-23-04.png" class="img-fluid center-block d-block mx-auto" alt="image">
-        </div> 
-        <div class="regular-lg pb-5">
+  <div class="container-fluid-content-02 pb-4" style="max-width: 900px;">
+    <div class="row">
+      <div class="col-md">
+        <img src="images/healthwatch-23-04.png" class="img-fluid center-block d-block mx-auto" alt="image">
+      </div> 
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px;">
+    <div class="row">
+      <div class="col-md">
+        <div class="regular-lg pb-0">
           When there is a drop in traffic (top arrow), the operator will want to know if it cooresponds to an increase in errors (bottom arrow). That would mean there is likely a problem and not a natural decrease in traffic.
         </div>
-        <div class="regular-lg pb-4">
-          <img src="images/healthwatch-23-05.png" class="img-fluid center-block d-block mx-auto" alt="image">
-        </div> 
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02 pb-4" style="max-width: 900px;">
+    <div class="row">
+      <div class="col-md">
+        <img src="images/healthwatch-23-05.png" class="img-fluid center-block d-block mx-auto" alt="image">
+      </div> 
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px;">
+    <div class="row">
+      <div class="col-md">
         <div class="regular-lg pb-2">
           When there is an increase in traffic (top arrow), the operator will want to know if the routers are handling the load. This is where router CPU usage (bottom arrow) comes into play.
         </div>
@@ -1014,12 +1038,15 @@
         <div class="regular-lg pb-4">
           Pivotal’s cloud operations team in Ireland agreed to be the first to use HealthWatch in a production environment. That team hosted a SaaS product called Pivotal Tracker, an agile project management tool  which has several hundred-thousand active users.
         </div>
+        <div class="regular-lg pb-5">
+          We conducted several activities to garner feedback.
+        </div>
       </div>
     </div>
   </div>
   <div class="container-fluid-content-02" style="max-width: 750px; padding-top:0px;">
     <div class="row">
-      <div class="col-md pb-4">
+      <div class="col-md pb-5">
         <img src="images/healthwatch-18.png" class="img-fluid" alt="image">
         <div class="caption p-2">
           HealthWatch on a wall-mounted display in Pivot’s Dublin office. Operators should be able to tell if the platform is healthy from 20 to 30 feet away.
@@ -1031,9 +1058,7 @@
   <div class="container-fluid-content-02" style="max-width: 600px; padding-top:0px;">
     <div class="row">
       <div class="col-md">
-        <div class="regular-lg pb-5">
-          We conducted several activities to garner feedback.
-        </div>
+        
          <div class="headline-small pb-4">
           Weekly checkins
         </div>
@@ -1129,6 +1154,7 @@
 </div>
 
 
+
 <!--***********************************************-->
 
 
@@ -1140,11 +1166,26 @@
     </section>
     <div class="row">
       <div class="col-md">
-         <div class="headline-medium pb-5">
-          The PM, engineering lead and I were awarded a U.S. Patent for our work.
+        <div class="headline-medium pb-5">
+          Going to market
+        </div>
+        <div class="regular-lg pb-5">
+          Bringing HealthWatch to market wasn’t easy. The design process had many ups and downs, but we got through it.
+        </div>
+        <div class="headline-small pb-4">
+          Measurable Outcomes
+        </div>
+        <div class="regular-lg pb-4">
+          Measurable outcomes in the enterprise world are tricky. Measurable outcomes should be leading indicators that keep everyone honest, but in the enterprise, uptake of products is slow and indicators tend to be lagging &mdash; Pivotal's sales cycles are about 18 months.
+        </div>
+        <div class="regular-lg pb-5">
+          We came up with a leading indicator: Five given customers will install our closed beta and give us three one-hour feedback sessions. This tests whether customers are willing to "pay" for the product. It also builds in customer feedback.
+        </div> 
+        <div class="headline-small pb-4">
+          U.S. Patent No. US20190188107A1
         </div>
         <div class="regular-lg pb-0">
-          Bringing HealthWatch to market wasn’t easy. The design process had many ups and downs, but we got through it.  About one year after our GA (generally available) release, I shared a U.S. patent with the PM and engineering lead.
+          About one year after our GA (generally available) release, I shared a U.S. patent with the PM and engineering lead.
         </div>
       </div>
     </div>
