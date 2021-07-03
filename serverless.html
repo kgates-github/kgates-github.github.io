@@ -101,13 +101,22 @@
       </section>
       <div class="row">
         <div class="col-md">
+          <div class="headline-medium pb-5">The GUI as a deal breaker</div>
+
           <div class="regular-lg pb-4">
-            <div class="bold-5">GUI as a deal breaker</div>
-            GUIs are not nice-to-haves for many of our Fortune 500 customers, as they tend not to allow their developers direct access to tools. In addition, we felt we were trailing competitors. IBM, Google and others were already providing proprietary GUIs ontop of KNative. 
+            GUIs are not nice-to-haves for many of our Fortune 500 customers, as they tend not to allow their developers direct access to tools. 
+          </div>
+          <!--
+          <div class="regular-lg pb-4">
+            In addition, we felt we were trailing competitors. IBM, Google and others were already providing proprietary GUIs ontop of KNative. 
+          </div>
+          -->
+          <div class="regular-lg pb-4">
+            Once we realized we needed to redesign the GUI from the ground up, we decided to make make it propritary. We thought we might even create something differentiating from our competitors.
           </div>
           <div class="regular-lg pb-4">
             <div class="bold-5">My Role</div>
-            As design lead, I drove the overall approach to design. I worked closely with a PM, planning workshops, conducting user interviews, rapid prototyping, and creating wireframes. 
+            As design lead, I drove the overall approach to design. I worked closely with a PM in planning workshops, conducting user interviews, and rapid prototyping. 
           </div>
           <div class="regular-lg pb-0">
             <div class="bold-5">Collaborators</div>
@@ -139,7 +148,7 @@
               Demand for serverless technology is well-established and growing. In particular, demand is largely for hosted serverless solutions, which is the market we were entering.
             </div>
             <div class="regular-lg pb-5">
-               According to the 
+              According to the 
               <a style="color:#0066cc; text-decoration: underline;" href="https://www.cncf.io/wp-content/uploads/2020/11/CNCF_Survey_Report_2020.pdf">
               2020 Cloud Native Computing Foundation (CNCF) survey</a>, 30% of organizations polled have production apps running on serverless and another 35% are considering it. The CNCF "fully expect this growth to continue".
               In addition, 82% of organizations who are using serverless are either using hosted serverless solutions.
@@ -209,6 +218,26 @@
         <div class="headline-medium pb-5">
           Targeting user skill levels
         </div>
+        <div class="regular-lg pb-5">
+          For most large-scale enterprises, 97 to 99% of developers are early-career or contractors, and don’t have skills in managing and configuring cloud-based infrastructure [1].
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 1000px; padding-bottom:0px;">
+    <div class="row pb-5">
+      <div class="col-md">
+        <img src="images/serverless-04.png" class="img-fluid" alt="image">
+        <div class="caption pt-2" style="width:1200px;">This matrix shows how we targeted users by skill level, and who by definition should be the largest user cohort. Our goal is to get users from the left column to the middle column with little friction.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:0px;">
+    <div class="row">
+      <div class="col-md">
+        <!--
         <div class="regular-lg pb-4">
           There are two primary user roles who would benefit most from value serverless technology provides:
         </div>
@@ -220,36 +249,33 @@
            <div class="bold-5">App Operators</div>
           App operators are app developers with additional responsibilities such as pushing apps onto production environments, traffic splitting and rolling back versions. 
         </div>
-        <div class="headline-small pb-5">
-          Skill-level targeting framework
+        -->
+        <div class="headline-small pb-4">
+          Strategy
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:0px;">
-    <div class="row pb-5">
-      <div class="col-md">
-        <img src="images/serverless-04.png" class="img-fluid" alt="image">
-        <div class="caption pt-2" style="width:1200px;">This matrix shows how we targeted users by skill level, and who by definition should be the largest user cohort. Our goal is to get users from the left column to the middle column with little friction.</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px;">
-    <div class="row">
-      <div class="col-md">
-        <div class="regular-lg pb-4">
-          <div class="bold-5">Strategy</div>
-          For most large-scale enterprises, 97 to 99% of developers and app operators are early-career or contractors, and don’t have skills in managing and configuring cloud-based infrastructure [1].
-        </div>
-        <div class="regular-lg pb-4">
+       
+        <div class="regular-lg pb-0">
           <b>Lower barriers to adoption to allow scale:</b>  
           Enable developers and operators who are new to serverless to deploy to the technology regardless of their expertise in cloud infrastructure. This will allow serverless benefits to scale. 
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:60px; padding-top:60px;">
+    <div class="row">
+      <div class="col-md p-3 pullquote">
+        “When a developer doesn’t know much about Kubernetes, just clicking a box is powerful.”
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:120px;">
+    <div class="row">
+      <div class="col-md">
         <div class="regular-lg pb-4">
           <b>Don’t get in the way of developers becoming efficient:</b>
-          Our goal is to get developers from the first column to the second with little friction. Developers tend to gain expertise with technologies over time, and will often graduate from using a GUI to CLI and API-based workflows. 
+          Developers tend to gain expertise with technologies over time, and will often graduate from using a GUI to CLI and API-based workflows. Our design should enable this gain in skill and confidence with little or no friction.
         </div>
         <div class="regular-lg pb-0">
           <b>Get out of the way of advanced users:</b>
@@ -259,15 +285,39 @@
     </div>
   </div>
 
-   <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:120px;">
-    <div class="row">
-      <div class="col-md p-3 pullquote">
-        “When a developer doesn’t know much about Kubernetes, just clicking a box is powerful.”
-      </div>
-    </div>
-  </div>
+   
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!--***********************************************-->
