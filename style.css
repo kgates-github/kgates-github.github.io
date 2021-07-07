@@ -77,7 +77,7 @@ h4 {
 }
 
 .text-light {
-	color:#bbb !important;
+	color:#ddd !important;
 }
 
 .text-extra-light {
@@ -96,8 +96,8 @@ h4 {
   margin-right: auto;
   margin-left: auto;
   max-width: 600px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 240px;
+  padding-bottom: 240px;
   padding-left: 1em;
   padding-right: 1em;
   overflow-x: hidden !important;
@@ -200,7 +200,7 @@ a:active  { color: #333; }
 
 .headline-medium {
 	font-size: 2.25em;
-	font-weight: 700;
+	font-weight: 900;
 	color:#575757;
 	line-height:1.2;
 }
