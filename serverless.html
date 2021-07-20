@@ -84,24 +84,24 @@
     <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:120px;">
       <div class="row m-0 pb-0">
         <div class="col-md">
-          <img src="images/serverless-01-01.png" class="img-fluid" alt="image">
-          <div class="regular-lg pt-4 text-light" style="text-align: center;font-style: italic; ">
-            <div class="bold-5 text-extra-light"><b>Database tables as the UI</b></div>
+          <img src="images/serverless-01-01.png" class="img-fluid pb-4" alt="image">
+          <div class="regular-lg text-light" style="text-align: center;">
+            <div class="bold-5 text-extra-light pb-4"><b>Database tables as the UI</b></div>
             The main interface constists of four tables which seemed like tables you might find in a database (configurations, status messages, routes, revisions).  
           </div>
         </div>
         <div class="col-md">
-          <img src="images/serverless-01-02.png" class="img-fluid" alt="image">
-          <div class="regular-lg pt-4 text-light" style="text-align: center; font-style: italic;">
-            <div class="bold-5 text-extra-light">Disjointed information layout</div>
+          <img src="images/serverless-01-02.png" class="img-fluid pb-4" alt="image">
+          <div class="regular-lg text-light" style="text-align: center;">
+            <div class="bold-5 pb-4 text-extra-light">Disjointed layout</div>
               Information is not layed out logically. For example, system status information relevant to the table in the lower left appears on the upper right.
           </div>
         </div>
         <div class="col-md">
-          <img src="images/serverless-01-03.png" class="img-fluid" alt="image">
-          <div class="regular-lg pt-4 text-light" style="text-align: center; font-style: italic;">
-            <div class="bold-5 text-extra-light">Unclear calls to action</div>
-              The only actions available are a bit of clickable text on the upper left that says "configuration", and a delete button on the upper right.
+          <img src="images/serverless-01-03.png" class="img-fluid pb-4" alt="image">
+          <div class="regular-lg text-light" style="text-align: center;">
+            <div class="bold-5 pb-4 text-extra-light">Poor UX flow</div>
+              The only actions available are a bit of clickable text on the upper left that says "configuration", which leads to an editable config file, and a delete button on the upper right.
           </div>
         </div>
       </div>
@@ -122,11 +122,12 @@
 
   </div>
 
-   <div class="bg-dark-gray" style="background-color: #000;">
+   <div class="bg-dark-gray" style="background-color: #111;">
     <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:120px; max-width:900px; padding-bottom: 240px;">
       <div class="row">
         <div class="col-md">
            <img src="images/serverless-02-10.png" class="img-fluid" alt="image">
+           <div class="caption pt-2 text-light" style="max-width: 600px; color:#999 !important;">A mock using VMWare's design pattern library. Our iterative design process helped us provide an intuitive UX for beginners while also meeting the needs of advanced users. <br>(Design by Steph Mathiew)</div>
         </div>
       </div>
     </div>
@@ -148,7 +149,7 @@
   -->
 
   <div class="bg-light-gray">
-    <div class="caption pt-2" style="max-width: 500px;">Our design process was highly collaborative and interdisciplinary. We explored many ideas, from many perspectives.</div>
+    
     <div class="container-fluid-content-01 overflow-hidden" style="padding-top:100px; padding-bottom: 240px;">
       <div class="row mb-5">
         <div class="col-md"></div>
@@ -171,11 +172,11 @@
             We felt we were trailing competitors. IBM, Google and others were already providing KNative serverless solutions with proprietary GUIs. Large enterprises don't allow many of their developers direct access to software-building tools, which means GUIs are not a nice-to-haves, but requirements for adoption. 
           </div>
           <div class="regular-lg pb-4">
-            <div class="bold-5">My Role</div>
+            <div class="bold-5 pb-4">My Role</div>
             As design lead, I drove the overall approach to design. I worked closely with a PM in planning workshops, conducting user interviews, and rapid prototyping. 
           </div>
           <div class="regular-lg pb-0">
-            <div class="bold-5">Collaborators</div>
+            <div class="bold-5 pb-4">Collaborators</div>
             On a daily basis, I worked with a product manager and engineering lead. Two visual designers rotated onto the project towards the end. 
           </div>
         </div>
@@ -200,7 +201,7 @@
             We were building on open-source technology that had already survived contact with reality. That shaped how we thought about risk.
           </div>
           <div class="regular-lg pb-4">
-            <div class="bold-5">Demand</div>
+            <div class="bold-5 pb-4">Demand</div>
               Demand for serverless technology is well-established and growing. According to the 
               <a style="color:#0066cc; text-decoration: underline;" href="https://www.cncf.io/wp-content/uploads/2020/11/CNCF_Survey_Report_2020.pdf">
               2020 Cloud Native Computing Foundation (CNCF) survey</a>, 30% of organizations polled have production apps running on serverless and another 35% are considering it. The CNCF "fully expect this growth to continue".
@@ -236,7 +237,7 @@
       <div class="row">
         <div class="col-md">
           <div class="regular-lg pb-4">
-            <div class="bold-5">Value</div>
+            <div class="bold-5 pb-4">Value</div>
             Open-source serverless functionality has been validated in the marketplace. It demonstrably solves well-known IT problems: 
           </div>
           <div class="regular-lg pb-4">
@@ -583,7 +584,7 @@
       <div class="col-lg">
         <img src="images/serverless-11-03.png" class="img-fluid" alt="image">
         <div class="regular-lg pt-4 text-light" style="text-align: center;">
-           <div class="bold-5 pb-4 text-extra-light">Cold start analysis</div>
+           <div class="bold-5 pb-4 text-extra-light">Performance analysis</div>
             Serverless technology will automatically free up system resources when an app has no traffic. When traffic returns, starting up cold can be slow. Showing how long cold starts take would enable developers to optimize for more responsiveness. <!-- starts. Cold starts are the second-from-top pain point for serverless users[1]-->
 
         </div>
@@ -592,45 +593,67 @@
   </div>
 </div>
 
+
 <!--***********************************************-->
 
 
-<div class="bg-light-gray">
+<div class="">
   <div class="container-fluid-content-01" style="padding-bottom:0px;">
     <section class="row">
       <div class="col-md section-header-no-border pb-4">
-        Conclusion
+        Rapid Prototyping
       </div>
     </section>
     <div class="row">
       <div class="col-md">
         <div class="headline-medium pb-5">
-          Launching on Obama's Twitter account
+          Solving Fuzzy, Complex Problems Under Deadline
         </div>
         <div class="regular-lg pb-5">
-          The final weeks of the campaign were total chaos. Despite this, we managed to launch Project Atlas the morning of October 1st. Later that day, the campaign sent the URL out on Obama's Twitter account, where it reached the president's 42 million followers.
+          Cloud computing is very complex, and most designs I've worked on in the domain are like multivariate problems: There are many possible outcomes, which are dependent on many variables, which are often related in unknown ways. No human is smart enough to solve problems like these by themselves, so I don't try. Instead, I make learning part of the process. 
+        </div>
+        <div class="headline-small pb-4">Grooming Seed Ideas Into a Direction</div>
+        <div class="regular-lg pb-5">
+          First, we ran a mini sketching session with the PM, another designer and myself. The goal was to take ideas from the previous design studio and groom them into one or two possible directions.
         </div>
       </div>
     </div>
   </div>
 
-   <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:120px;">
-    <div class="row gx-3 p-0 m-0">
+  <div class="container-fluid-content-02 pb-5" style="max-width: 900px; margin-bottom: 120px;">
+    <div class="row">
       <div class="col-md">
-        <div class="ps-1 pe-1 pt-3 bg-white">
-          <img src="images/obama/obama-twitter.png" class="img-fluid" alt="image">
+        <div class="p-2 bg-white">
+          <img src="images/serverless-12.png" class="img-fluid" alt="image">
         </div>
         <div class="caption pt-3">
-          The tweet that went out October 1, 2012
+          Our inital attemps at grooming solutions show we were largely in alignment.
         </div>
       </div>
     </div>
   </div>
 
-
-  <div class="container-fluid-content-02" style="max-width: 900px; margin-bottom: 120px">
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px;">
     <div class="row">
-      <div class="col-md pb-4"></div>
+      <div class="col-md">
+        <div class="headline-small pb-4">Wireframes and Feedback</div>
+        <div class="regular-lg pb-4">
+          [INTRO FEEDBACK: Wire frames, evaluative / generative feedback, three scenarios]
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:120px;">
+    <div class="row">
+      <div class="col-md">
+        <div class="">
+          <img src="images/serverless-13.png" class="img-fluid" alt="image">
+        </div>
+        <div class="caption pt-3">
+          We went through many iterations in two weeks of prototyping
+        </div>
+      </div>
     </div>
   </div>
 
