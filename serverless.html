@@ -162,9 +162,6 @@
       <div class="row">
         <div class="col-md">
           <div class="headline-medium pb-5">Trailing the Competition</div>
-          <!--
-          
-          -->
           <div class="regular-lg pb-4">
             Once we realized we needed to redesign the GUI from the ground up, we decided to make make it part of out propritary offering. 
           </div>
@@ -607,7 +604,7 @@
     <div class="row">
       <div class="col-md">
         <div class="headline-medium pb-5">
-          Solving Fuzzy, Complex Problems Under Deadline
+          Solving Fuzzy, Multivariate Problems Under Deadline
         </div>
         <div class="regular-lg pb-5">
           Cloud computing is very complex, and most designs I've worked on in the domain are like multivariate problems: There are many possible outcomes, which are dependent on many variables, which are often related in unknown ways. No human is smart enough to solve problems like these by themselves, so I don't try. Instead, I make learning part of the process. 
@@ -620,7 +617,7 @@
     </div>
   </div>
 
-  <div class="container-fluid-content-02 pb-5" style="max-width: 900px; margin-bottom: 120px;">
+  <div class="container-fluid-content-02 pb-5" style="max-width: 900px; margin-bottom: 60px;">
     <div class="row">
       <div class="col-md">
         <div class="p-2 bg-white">
@@ -633,25 +630,80 @@
     </div>
   </div>
 
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px;">
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:120px;">
     <div class="row">
       <div class="col-md">
-        <div class="headline-small pb-4">Wireframes and Feedback</div>
+        <div class="headline-small pb-4">Evaluative and Generative Feedback</div>
         <div class="regular-lg pb-4">
-          [INTRO FEEDBACK: Wire frames, evaluative / generative feedback, three scenarios]
+          Once we had a direction, we wanted to test it with field engineers who are embeded on customer dev teams. The sessions had two parts: usability tests and generative questions. We wanted to get feedback on our design, but we also wanted to probe into some general questions we had, such as when developers use GUIs. 
+        </div>
+        <div class="regular-lg pb-4">
+          We created a testing plan and wrote a discussion guide. We split our tests between users familiar with serverless technology and those who weren't. We then ran a batch of usability / research sessions, updated wireframes based on what we learned, then did it again. 
         </div>
       </div>
     </div>
   </div>
 
-   <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:120px;">
+  <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:120px;">
+    <div class="row">
+      <div class="col-md">
+        <div class="">
+          <img src="images/serverless-14.png" class="img-fluid" alt="image">
+        </div>
+        <div class="caption pt-3">
+          Our usability tests had three primary user scenarios: Create, update and route traffic.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:120px;">
     <div class="row">
       <div class="col-md">
         <div class="">
           <img src="images/serverless-13.png" class="img-fluid" alt="image">
         </div>
         <div class="caption pt-3">
-          We went through many iterations in two weeks of prototyping
+          We went through many iterations in two weeks of prototyping. We synthesized feedback inline to maintain context (right)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:120px;">
+    <div class="row">
+      <div class="col-md">
+        <div class="headline-small pb-5">Key Findings</div>
+        <div class="bold-5 pb-4">We over simplified</div>
+        <div class="regular-lg  pb-4">
+          We simplified the UI too much, and strayed too far from the underlying technology. This risked introducing confusion and disharmony, especially when users toggle between the GUI and CLI.
+        </div>
+        <div class="regular-lg pb-4">
+          We needed to stay true to underlying concepts in Kubernetes and serverless functionality. 
+        </div>
+        <!--
+        <div class="regular-lg pb-4">
+          <ul>
+            <li>Stick to language used by open source (e.g., “update” instead of “edit”).</li>
+            <li>Use contextual help to clarify new or unusual concepts.</li>
+          </ul>
+        </div>
+        -->
+        <div class="bold-5 pb-4">We needed an onboarding path</div>
+        <div class="regular-lg pb-4">
+          Users with little experience with serverless were confused by new serverless concepts. 
+          One user with no experience with serverless thought he was configuring a database for the frist 15 minutes of the interview.
+        </div>
+        <div class="regular-lg pb-4">
+          We would need to offer onboarding path for users new to serverless that explains key concepts.
+        </div>
+        <div class="bold-5 pb-4">Default settings are really important</div>
+        <div class="regular-lg pb-4">
+          When a developer is setting up serverless for the first time, they will have no idea how much memory their app will need. We were asking a question that could not be answered.
+        </div>
+        <div class="bold-5 pb-4">GUIs can provide value for all users</div>
+        <div class="regular-lg pb-4">
+          GUIs can provide value for new users, early-career developers, seasoned veterans, and even expert users.
         </div>
       </div>
     </div>
@@ -659,10 +711,10 @@
 
 </div>
 
+
+
+
 <!--***********************************************-->
-
-
- 
 
 
     <!-- Optional JavaScript; choose one of the two! -->
