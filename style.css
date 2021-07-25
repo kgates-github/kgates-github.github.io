@@ -263,6 +263,18 @@ p.center-lg {
 	text-align: center;
 }
 
+.pullquote:before, .pullquote:after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 1px;
+  background: #627484;
+}
+
+.pullquote:before, .pullquote:after {
+    margin: 1.125rem auto;
+}
+
 .caption {
 	font-size: 0.66em;
 	font-weight: 400;
