@@ -276,13 +276,14 @@ p.center-lg {
 }
 
 .caption {
-	font-size: 0.66em;
+	font-size: 1em;
 	font-weight: 400;
-	font-style: italic;
-	color:#666;
+	font-family: 'Garamund', serif;
+	/*font-style: italic;*/
+	color:#999;
 	line-height:1.3;
 	text-align: center;
-	max-width:650px;
+	max-width:600px;
 	margin-left: auto;
 	margin-right: auto;
 }
