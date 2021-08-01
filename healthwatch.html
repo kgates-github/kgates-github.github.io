@@ -218,6 +218,86 @@
     </div>
   </div>
 
+
+<!--=================================================-->
+       
+  <div class="bg-dark-gray">
+    <div class="container-fluid-content-01 overflow-hidden" style="padding-top:10px; padding-bottom: 120px;">
+      <div class="row">
+        <div class="col-md">
+          <div class="caption pt-0 text-light">HealthWatch unveiled by Pivotal’s VP of R&D at the 2017 Spring One Conference</div>
+        </div>
+      </div>
+      <div class="row" style="padding-top: 120px;">
+        <div class="col-md">
+          <div class="headline-medium pb-5 text-extra-light">
+            HealthWatch would go on to gain 100% traction with 30+ Fortune 500 companies we tracked.
+          </div>
+          <div class="regular-lg pb-0 text-light">
+            Fast forward eight months. HealthWatch was unveiled in December 2017. Despite our initial misgivings, we found a direction that worked:
+          </div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:120px;">
+      <div class="row m-0 pb-0 gx-5">
+        <div class="col-md">
+          <img src="images/healthwatch-02-01.png" class="img-fluid pb-4" alt="image">
+          <div class="regular-lg text-light" style="text-align: center;">
+            <div class="bold-5 text-extra-light pb-4"><b>No hassles</b></div>
+             When a customer installs HealthWatch, everything is automatically up and running. No tediuous configuration is needed. Platform operators can immediately see what's going on. 
+             <br><span class="caption" style="color:#999;">Visual design by Justin Roozeboom</span>
+          </div>
+        </div>
+        <div class="col-md">
+          <img src="images/healthwatch-02-04.png" class="img-fluid pb-4" alt="image">
+          <div class="regular-lg text-light" style="text-align: center;">
+            <div class="bold-5 pb-4 text-extra-light">Detail views with historical data</div>
+              Historic data helps operators answer the question, “What happened when I was away?” The view above shows 24 hours of automated test results. <br><span class="caption" style="color:#999;">Visual design by Justin Roozeboom</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:120px;">
+      <div class="row m-0 pb-0 gx-5">
+        <div class="col-md">
+          <img src="images/healthwatch-02-03.png" class="img-fluid pb-4" alt="image">
+          <div class="regular-lg text-light" style="text-align: center;">
+            <div class="bold-5 text-extra-light pb-4"><b>Automated testing</b></div>
+              HealthWatch exercises key functionality and reports back how well it is working. This saves users from needing to learn arcane metrics to infer the health of functionality. <br><span class="caption" style="color:#999;">Visual design by Justin Roozeboom</span>
+          </div>
+        </div>
+        <div class="col-md">
+          <img src="images/healthwatch-02-05.png" class="img-fluid pb-4 ps-3" alt="image">
+          <div class="regular-lg text-light" style="text-align: center;">
+            <div class="bold-5 pb-4 text-extra-light">API first</div>
+              All of the functionality we defined, including automated testing, is available through an API. We assumed that once operators are comfortable monitoring the platform, they’ll graduate and create their own dashboards.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:240px;">
+      <div class="row m-0 pb-0">
+        <div class="col-md">
+          <div class="regular-lg pb-4 text-light">
+            The path getting to a viable product was not easy. It involved a highly iterative design process. Low fidelity, co-creation and continuous feedback were part of our daily lives. There are many iterations and many layers of experience belying the design.
+          </div>
+          <div class="regular-lg pb-0 text-light">
+            This is how we did it.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+<!--
+
+
   <div class="bg-dark-gray">
     <div class="container-fluid-content-01 overflow-hidden" style="padding-top:10px;">
       <div class="row">
@@ -261,6 +341,7 @@
     </div>
   </div>
 
+-->
 <!--***********************************************-->
 
  
@@ -621,7 +702,7 @@
           Instead, when a user looks at a data dashboard, they look for any new information, which they then use to update their mental model of the whole system. After that, they make an assessment of the system based on this new state. 
         </div>
         <div class="regular-lg pb-5">
-          User experiences like this exist in the user's head, not screens. Screens are a type of touchpoint.
+          A big part of the user experience for this product exists in the user's head, not on screens. Screens are a type of touchpoint.
         </div>
      
         <div class="col-md">
@@ -725,7 +806,7 @@
     <div class="row">
       <div class="col-md">
         <div class="headline-small pb-4">
-          Co-creating
+          Co-Creating
         </div>
         <div class="regular-lg pb-4">
           What’s the best way to design a feature in a complex domain? Find domain experts and have them design it.
@@ -763,11 +844,11 @@
           Here are a couple of interesting things we learned:
         </div>
         <div class="regular-lg pb-4">
-          <div class="bold-5">The question “When?” is paramount </div>
+          <div class="bold-5 pb-4">The question “When?” is paramount </div>
           “When did the system first start to have problems?” is one of the first things operators want to know. The alert that compelled them into action might have been triggered long after the root of the problem started. We made timestamps as precise as possible. 
         </div>
         <div class="regular-lg pb-4">
-          <div class="bold-5">Component IDs and timestamps are keys</div>
+          <div class="bold-5 pb-4">Component IDs and timestamps are keys</div>
           Operators bounce between our app and others, such as log search tools. Component IDs and timestamps are the two things you need when jumping between systems. We add copy-to-clipboard buttons to everything we could.
         </div>
         <div class="regular-lg pb-5">
@@ -858,10 +939,8 @@
         <div class="regular-lg pb-5">
           Next we learned that if there is a change in throughput, operators would want to know if there is a change in the number of errors, which tend to have a steady-state rate at scale. We added a chart showing errors at thee bottom. We still clung to trying to show CPU as a distribution, but it did not pass muster.
         </div>
-        <div class="regular-lg pb-3">
-          <div class="bold-5">visual layout and hierarchy</div>
-        </div>
-        <div class="regular-lg pb-4">
+        <div class="headline-small pb-4">Layout and Hierarchy</div>
+        <div class="regular-lg pb-0">
           For data dashboards, like in typography, meaning drives layout. Through our iterative design process, we first understood the implications of metrics and how they naturally hung together with others. That drove layout decisions. For example, some indicators, like HTTP throughput, are key to interpreting others, and therefore are given prominence. Metrics are like hieroglyphs 
           &mdash; meanings are often interpreted by combining several together. 
         </div>
@@ -869,7 +948,7 @@
     </div>
   </div>
 
-  <div class="container-fluid-content-02 pb-4" style="max-width: 900px;">
+  <div class="container-fluid-content-02 pb-5" style="max-width: 900px;">
     <div class="row">
       <div class="col-md">
         <img src="images/healthwatch-23-04.png" class="img-fluid center-block d-block mx-auto" alt="image">
@@ -877,17 +956,17 @@
     </div>
   </div>
 
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px;">
+  <div class="container-fluid-content-02 pb-5" style="max-width: 600px;">
     <div class="row">
       <div class="col-md">
-        <div class="regular-lg pb-0">
+        <div class="regular-lg">
           When there is a drop in traffic (top arrows), the operator will want to know if it coresponds to an increase in errors (bottom arrows). That would mean there is likely a problem and not a natural decrease in traffic.
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container-fluid-content-02 pb-4" style="max-width: 900px;">
+  <div class="container-fluid-content-02 pb-5" style="max-width: 900px;">
     <div class="row">
       <div class="col-md">
         <img src="images/healthwatch-23-05.png" class="img-fluid center-block d-block mx-auto" alt="image">
@@ -895,10 +974,10 @@
     </div>
   </div>
 
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px;">
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:0px;">
     <div class="row">
       <div class="col-md">
-        <div class="regular-lg pb-2">
+        <div class="regular-lg pb-5">
           When there is an increase in traffic (top arrows), the operator will want to know if the routers are handling the load. This is where router CPU usage and latency come into play.
         </div>
       <!--
@@ -1151,15 +1230,15 @@
     </div>
     <div class="row pb-5">
       <div class="col-md" style="text-align: center;">
-        <div class="bold-5">End-user Impact</div> 
+        <div class="bold-5 pb-3">End-user Impact</div> 
         End users affected. Generally urgent.
       </div>
       <div class="col-md" style="text-align: center;">
-        <div class="bold-5">Developer Impact</div> 
+        <div class="bold-5 pb-3">Developer Impact</div> 
         Not as urgent as end-user impact, but potentially important. 
       </div>
       <div class="col-md" style="text-align: center;">
-        <div class="bold-5">Platform Impact</div> 
+        <div class="bold-5 pb-3">Platform Impact</div> 
         Underlying VMs and other platform infrastructure.
       </div>
     </div>
