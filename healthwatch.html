@@ -234,7 +234,7 @@
             HealthWatch would go on to gain 100% traction with 30+ Fortune 500 companies we tracked.
           </div>
           <div class="regular-lg pb-0 text-light">
-            Fast forward eight months. HealthWatch was unveiled in December 2017. Despite our initial misgivings, we found a direction that worked:
+            Fast forward eight months. HealthWatch was unveiled in December 2017. Despite our initial misgivings, we found a direction that worked. Below are some key attributes and features:
           </div> 
         </div>
       </div>
@@ -254,7 +254,7 @@
           <img src="images/healthwatch-02-04.png" class="img-fluid pb-4" alt="image">
           <div class="regular-lg text-light" style="text-align: center;">
             <div class="bold-5 pb-4 text-extra-light">Detail views with historical data</div>
-              Historic data helps operators answer the question, “What happened when I was away?” The view above shows 24 hours of automated test results. <br><span class="caption" style="color:#999;">Visual design by Justin Roozeboom</span>
+              Historic data helps platform operators (a.k.a. sys admins) answer the question, “What happened when I was away?” The view above shows 24 hours of automated test results. <br><span class="caption" style="color:#999;">Visual design by Justin Roozeboom</span>
           </div>
         </div>
       </div>
@@ -263,14 +263,18 @@
     <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:120px;">
       <div class="row m-0 pb-0 gx-5">
         <div class="col-md">
-          <img src="images/healthwatch-02-03.png" class="img-fluid pb-4" alt="image">
+          <div style="min-height:380px;">
+            <img src="images/healthwatch-02-03.png" class="img-fluid pb-4" alt="image">
+          </div>
           <div class="regular-lg text-light" style="text-align: center;">
             <div class="bold-5 text-extra-light pb-4"><b>Automated testing</b></div>
               HealthWatch exercises key functionality and reports back how well it is working. This saves users from needing to learn arcane metrics to infer the health of functionality. <br><span class="caption" style="color:#999;">Visual design by Justin Roozeboom</span>
           </div>
         </div>
         <div class="col-md">
-          <img src="images/healthwatch-02-05.png" class="img-fluid pb-4 ps-3" alt="image">
+          <div class="ps-4" style="min-height:380px;">
+            <img src="images/healthwatch-02-05.png" class="img-fluid pb-4" alt="image">
+          </div>
           <div class="regular-lg text-light" style="text-align: center;">
             <div class="bold-5 pb-4 text-extra-light">API first</div>
               All of the functionality we defined, including automated testing, is available through an API. We assumed that once operators are comfortable monitoring the platform, they’ll graduate and create their own dashboards.
@@ -871,7 +875,7 @@
     <div class="row">
       <div class="col-md">
         <div class="headline-medium pb-5" style="width:600px;">
-          Being Wrong, Constantly and Cheaply
+          Failing Forward, Cheaply
         </div>
         <div class="regular-lg pb-4">
           Failure is good. What's important in design is learning, not being right. Rapid prototyping means being wrong constantly until you gain confidence that you aren't. 
@@ -940,9 +944,11 @@
           Next we learned that if there is a change in throughput, operators would want to know if there is a change in the number of errors, which tend to have a steady-state rate at scale. We added a chart showing errors at thee bottom. We still clung to trying to show CPU as a distribution, but it did not pass muster.
         </div>
         <div class="headline-small pb-4">Layout and Hierarchy</div>
+        <div class="regular-lg pb-4">
+          For data dashboards, like in typography, meaning drives layout. Dashboards are in some ways like hieroglyphs&mdash;meaning is often created by combining several symbols, or graphs, together. 
+        </div>
         <div class="regular-lg pb-0">
-          For data dashboards, like in typography, meaning drives layout. Through our iterative design process, we first understood the implications of metrics and how they naturally hung together with others. That drove layout decisions. For example, some indicators, like HTTP throughput, are key to interpreting others, and therefore are given prominence. Metrics are like hieroglyphs 
-          &mdash; meanings are often interpreted by combining several together. 
+          Through our iterative design process, we first understood the implications of metrics and how they naturally hung together with others. That drove layout decisions. For example, some indicators, like HTTP throughput, are key to interpreting others, and therefore are given prominence. 
         </div>
       </div>
     </div>
@@ -960,7 +966,7 @@
     <div class="row">
       <div class="col-md">
         <div class="regular-lg">
-          When there is a drop in traffic (top arrows), the operator will want to know if it coresponds to an increase in errors (bottom arrows). That would mean there is likely a problem and not a natural decrease in traffic.
+          When there is a drop in traffic (top arrows), and an increase in errors (bottom arrows), that would mean there is likely a problem, and not a natural decrease in traffic.
         </div>
       </div>
     </div>
@@ -978,7 +984,7 @@
     <div class="row">
       <div class="col-md">
         <div class="regular-lg pb-5">
-          When there is an increase in traffic (top arrows), the operator will want to know if the routers are handling the load. This is where router CPU usage and latency come into play.
+          When there is an increase in traffic (top arrows), and router CPU usage and latency look good, that means the platform is successfully handling the increased load.
         </div>
       <!--
         <div class="regular-lg pb-4">
@@ -1106,7 +1112,7 @@
     <div class="row">
       <div class="col-md pt-4 pb-4">
         <div class="regular-lg pb-4">
-          Every Monday, I ran a design review with engineering and the PM, then during the week, co-created and iterated on design directions in low fidelity.
+          Every Monday, I ran an engineering review with our developers and the PM, then during the week, co-created and iterated on design directions in low fidelity.
         </div>
         <div class="regular-lg pb-5">
           On Fridays, I presented wireframes and sharpie sketches to the panel. Sometimes we got things right straight away; sometimes we were wrong and needed a lot of iterations. One thing we learned early on was that even a poorly drawn, half-baked design could inspire a highly-fruitful conversation.
@@ -1290,6 +1296,15 @@
         </div>
         <div class="regular-lg pb-5">
           Bringing HealthWatch to market wasn’t easy. The design process had many ups and downs, but we got through it.
+        </div>
+        <div class="regular-lg pb-5">
+          <img src="images/healthwatch-00.png" class="img-fluid" alt="image" 
+          style="
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+          ">
         </div>
         <div class="headline-small pb-4">
           Measurable Outcomes
