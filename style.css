@@ -79,6 +79,10 @@ h4 {
   overflow-x: hidden;
 }
 
+.text-medium-light {
+	color:#aaa !important;
+}
+
 .text-light {
 	color:#ddd !important;
 }
