@@ -65,7 +65,7 @@
           VMWare had acquired a company that makes KNative Serverless, an open source technology that helps developers deploy apps on Kubernetes, a popular cloud-based operating system. 
         </div>
         <div class="regular-lg pb-4">
-          Our initial idea was to perform a heuristic evaluation of KNative’s GUI, make a few recommendations, and that would be the end of it. Instead, what we found was a UI that had been given little attention. It would need to be redesigned from the ground up.
+          Our initial idea was to perform a heuristic evaluation of KNative’s GUI, make a few recommendations, and that would be the end of it. Instead, what we found was a UI that had been given little or no thought given to user goals, flows, hierarchy, or layout. We realized pretty quickly that we couldn’t fix it half way; It would need to be redesigned from the ground up.
         </div>
         <div class="regular-lg pb-0">
           Quick and easy was not to be.
@@ -82,8 +82,11 @@
             The Data Model as the User Interface
           </div>
           <div class="regular-lg pb-0 text-light">
+            Below are a few examples of problems we found in the open-source UI: 
+          </div>
+          <!--<div class="regular-lg pb-0 text-light">
             When we evaluated KNative's open-source UI, we found there had been little or no thought given to user goals, flows, hierarchy, or layout. We realized pretty quickly that we couldn’t fix it half way. 
-          </div> 
+          </div>-->
         </div>
       </div>
     </div>
@@ -274,7 +277,7 @@
           Targeting Users by Skill Level
         </div>
         <div class="regular-lg pb-4">
-          For most large-scale enterprises, 97 to 99% of developers are early-career or contractors, and don’t have skills in managing and configuring cloud-based infrastructure[1].
+          For most large-scale enterprises, 97 to 99% of developers are early-career or contractors, and don’t have skills in managing and configuring cloud-based infrastructure<sup>1</sup>.
         </div>
         <div class="regular-lg pb-5">
           Our design strategy took this into account: We assumed most developers will be early-career and new to serverless, but will gain skill over time. 
@@ -328,7 +331,7 @@
     </div>
   </div>
 
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:240px;">
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:180px;">
     <div class="row">
       <div class="col-md">
         <div class="regular-lg pb-4">
@@ -337,10 +340,18 @@
         </div>
         <div class="regular-lg pb-0">
           <b>Get out of the way of advanced users:</b>
-          High-skill developers will automate as much as possible. They comprise a small percentage of enterprise IT, but can play an outsized role. Get out of their way and provide an API.
+          High-skill developers will automate as much as possible. They comprise a small percentage of enterprise IT, but can play an outsized role, which can include evaluating new software tools<sup>2</sup>. Get out of their way and provide an API.
         </div>
       </div>
     </div>
+  </div>
+  <div class="container-fluid-content-02 pb-1" 
+    style="font-size: 0.66em; color:#999; font-style: italic; max-width: 600px;padding-bottom:0px;">
+    <sup>1</sup> "Marketplace Experience Research Summary", 2019 by Kevin Gates and Glen Rogers
+  </div>
+  <div class="container-fluid-content-02 pb-3" 
+    style="font-size: 0.66em; color:#999; font-style: italic; max-width: 600px;padding-bottom:0px;">
+    <sup>2</sup> "What Happens After Alpha Research Summary", 2019 by Kevin Gates
   </div>
 
 </div>
@@ -444,9 +455,10 @@
           Finding Strengths and Weaknesses
           <!--Identifying Strengths and Weaknesses-->
         </div>
-       <div class="regular-lg pb-0 text-light">
+        <div class="regular-lg pb-0 text-light">
           We analyzed competing products to ensure parity and identify gaps. We took screenshots of competitors' products and  pasted them along our journey. This allowed us to see how Google, IBM and the OS version handled specific tasks. Our goal was to make sure we had parity with competitors and to find inspiration.
         </div>
+        
       </div>
     </div>
   </div>
@@ -456,7 +468,7 @@
       <div class="col-md">
         <img src="images/serverless-08.png" class="img-fluid" alt="image" style="width:100%">
         <div class="caption pt-3 text-medium-light">
-          We walked through competitor's UIs, took screen shots and pasted them along our journey. This allowed us to evaluate competitors in context of user goals and tasks.
+          Miro's zoom feature allowed us to zoom into competitor UI screenshots and see details, while maintaining the context of user tasks and goals.
         </div>
       </div>
     </div>
@@ -509,7 +521,7 @@
           Now that we understood something about our competitors and we had a model of the user journey, we set out to reimagine it. 
         </div>
         <div class="regular-lg pb-4">
-          We set up a ideation workshop (a.k.a., design studio) in which everyone (engineers, field engineers, design and PM) would sketch concepts that would seed our initial designs. 
+          We set up an ideation workshop (a.k.a., design studio) in which everyone (engineers, field engineers, design and PM) would sketch concepts that would seed our initial designs. 
         </div>
         <div class="regular-lg pb-0">
           My goal was to provoke a collision of ideas that come from multiple perspectives. These collisions are what I've found result in concepts that are useful, doable, desirable, and differentiating. 
@@ -566,13 +578,12 @@
         </div>
 
         <div class="regular-lg pb-0">
-          <div class="bold-5 pb-4">Blurring boundaries</div>
-          The overall goal is to be transdisciplinary &mdash; meaning boundaries between disciplines are blurred to the point of being almost nonexistent. Great ideas arise when designers think like engineers, who think like domain experts, who think like designers, and everyone is stealing ideas from everyone else.
+          <div class="bold-5 pb-4">Everyone is a designer</div>
+          The overall goal is to be transdisciplinary&mdash;meaning boundaries between disciplines are blurred to the point of being almost nonexistent. Great ideas arise when designers think like engineers, who think like domain experts, who think like designers, and everyone is stealing ideas from everyone else.
         </div>
       </div>
     </div>
   </div>
-
 
   <div class="container-fluid-content-02" style="max-width: 1000px; padding-bottom:290px; padding-top:60px;">
     <div class="row">
