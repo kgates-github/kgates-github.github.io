@@ -84,7 +84,7 @@ h4 {
 }
 
 .text-light {
-	color:#aaa !important;
+	color:#ccc !important;
 }
 
 .text-extra-light {
@@ -268,6 +268,7 @@ p.center-lg {
 	line-height: 1.5em;
 	font-weight: 500;
 	text-align: center;
+	
 }
 
 .pullquote:before, .pullquote:after {
@@ -275,7 +276,7 @@ p.center-lg {
   display: block;
   width: 20%;
   height: 1px;
-  background: #627484;
+  background-color: #627484;
 }
 
 .pullquote:before, .pullquote:after {
