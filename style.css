@@ -213,8 +213,8 @@ a:active  { color: #333; }
 
 .headline-small {
 	font-size: 1.5em;
-	font-weight: 700;
-	color:#575757;
+	font-weight: 300;
+	color: #627484; /*#575757;*/
 	line-height:1.3;
 }
 
@@ -268,7 +268,7 @@ p.center-lg {
 	line-height: 1.5em;
 	font-weight: 500;
 	text-align: center;
-	
+
 }
 
 .pullquote:before, .pullquote:after {
