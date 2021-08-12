@@ -294,6 +294,8 @@ p.center-lg {
 	max-width:600px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 .round-button {
