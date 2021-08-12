@@ -599,20 +599,45 @@
   </div>
   <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px;">
     <div class="row">
-      <div class="headline-small pb-4">
-        Persona / User Profile
+      <div class="headline-small pb-5">
+        Target Persona
+      </div>
+      <div class="pb-4" style="display:flex; flex-direction: row; align-items: center;">
+        <div style="width:170px; height:170px;">
+          <img src="images/avatar-01.png" style="float:left; margin: 0px 30px 0px 0px; width:170px; height:170px;"alt="image">
+        </div>
+        <div class="" style="flex:1; font-weight: 400 !important; font-size:1.5em; line-height: 1.2em; padding-left: 20px;">
+          New Platform Operator<br>
+          <span style="font-weight: 200 !important;">Todd</span>
+        </div>
       </div>
       <div class="regular-lg pb-4">
         Our target users were platform operators who were new to monitoring. Despite that their teams tend to be small, with four to ten members, there can be more than a thousand developers using the platform once it is at scale.
       </div>
         
-      <div class="bold-5 pb-4">Key Attributes:</div>
-      <div class="regular-lg">
+      <div class="bold-5 pb-4">Key Attributes</div>
+      <div class="regular-lg pb-4">
         <ul>
           <li>Learning how to monitor CloudFoundry</li>
           <li>Troubleshoots problems, but doesn't actively monitor</li>
           <li>Stoplight metaphor is well known and understood</li>
           <li>Wants to understand business impacts of what he is monitoring</li>
+        </ul>
+      </div>
+       <div class="bold-5 pb-4">Frustrations</div>
+      <div class="regular-lg pb-4">
+        <ul>
+          <li>Learning how to operate the platform is challenging</li>
+          <li>Platform-monitoring software is difficult to learn</li>
+          <li>"Data fatigue"&mdash;There is too much data and it's difficult to make sense of.</li>
+        </ul>
+      </div>
+      <div class="bold-5 pb-4">Quotes</div>
+      <div class="regular-lg">
+        <ul>
+          <li>“The last thing we want is the end user telling us about problems with our applications.”</li>
+          <li>“We discovered a problem when developers started complaining about a big lag pushing apps.”</li>
+          <li>"Platform issues are almost always caused by humans, and it's almost always because someone was doing an update."</li>
         </ul>
       </div>
     </div>
@@ -667,9 +692,12 @@
           <div class="bold-5 pb-4">Design a GUI</div>
           We used the KPIs as a basis for a UI that would be exemplar of how to visualize and organize metrics. This ended up being a two-way street as some of our designs defined KPIs.
         </div>
-        <div class="regular-lg pb-4">
+        <div class="regular-lg pb-5">
           <div class="bold-5 pb-4">Provide an API</div>
           We knew that our customers will eventually create custom solutions, so we made our metrics available by API.
+        </div>
+        <div class="headline-small pb-4">
+          Design Approach
         </div>
         <div class="regular-lg pb-4">
           Around this time, we started thinking about how we might fit in the market: Advanced users will just use the API, but those new to the platform might benefit from an opinionated GUI that would be a bridge for them as they got up and running.
