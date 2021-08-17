@@ -107,8 +107,8 @@
           <div class="regular-lg text-light p-3">
             <div class="bold-5 text-extra-light pb-3"><b>Baked-in best practices</b></div>
              All of our designs were informed by domain experts with deep expertise. Platform operators can immediately get access to dashboards that embody best practices without having to configure anything.  
-             <br><span class="caption" style="color:#999;">Visual design by Justin Roozeboom</span>
           </div>
+          <div class="credit p-3">Visual design by Justin Roozeboom</div>
         </div>
         <div class="col-md">
           <div>
@@ -116,8 +116,9 @@
           </div>
           <div class="regular-lg text-light p-3">
             <div class="bold-5 text-extra-light pb-3"><b>Automated tests</b></div>
-              HealthWatch exercises key functionality and reports back how well it is working. This saves users from needing to learn arcane metrics to infer the health of functionality. <br><span class="caption" style="color:#999;">Visual design by Justin Roozeboom</span>
+              HealthWatch exercises key functionality and reports back how well it is working. This saves users from needing to learn arcane metrics to infer the health of functionality. 
           </div>
+          <div class="credit p-3">Visual design by Justin Roozeboom</div>
         </div>
       </div>
     </div>
@@ -128,8 +129,9 @@
            <img src="images/healthwatch-02-04.png" class="img-fluid pb-2" alt="image">
           <div class="regular-lg text-light p-3">
             <div class="bold-5 pb-3 text-extra-light">Detail views with historical data</div>
-              Historic data helps platform operators answer the question, “What happened when I was away?” The view above shows 24 hours of automated test results. <br><span class="caption" style="color:#999;">Visual design by Justin Roozeboom</span>
+              Historic data helps platform operators answer the question, “What happened when I was away?” The view above shows 24 hours of automated test results.
           </div>
+          <div class="credit p-3">Visual design by Justin Roozeboom</div>
         </div>
         <div class="col-md">
           <div class="pb-2">
@@ -726,13 +728,7 @@
           Co-Creating
         </div>
         <div class="regular-lg pb-4">
-          What’s the best way to design a feature in a complex domain? Find domain experts and have them design it.
-        </div>
-        <div class="regular-lg pb-4">
-          Here is an example of how we used co-creation to inform designs: First, we had a Cloud Foundry operator walk us through a time when they had to troubleshoot a problem with their system. 
-        </div>
-        <div class="regular-lg pb-4">
-          After they told us their story, we read through the metrics we were considering including in the dashboard to make sure everyone understood them. Then we went to a whiteboard and sketched together. 
+          We had a Cloud Foundry operators walk us through a time when they had to troubleshoot a problem. We then read through the metrics we were considering including in the dashboard to make sure everyone understood them. Then we went to a whiteboard and sketched together. 
         </div>
         <div class="regular-lg pb-4">
           <img src="images/healthwatch-11.png" class="img-fluid center-block d-block mx-auto" alt="image"> 
@@ -761,12 +757,11 @@
           Here are a couple of interesting things we learned:
         </div>
         <div class="regular-lg pb-4">
-          <div class="bold-5 pb-4">The question “When?” is paramount </div>
-          “When did the system first start to have problems?” is one of the first things operators want to know. The alert that compelled them into action might have been triggered long after the root of the problem started. We made timestamps as precise as possible. 
-        </div>
-        <div class="regular-lg pb-4">
-          <div class="bold-5 pb-4">Component IDs and timestamps are keys</div>
-          Operators bounce between our app and others, such as log search tools. Component IDs and timestamps are the two things you need when jumping between systems. We add copy-to-clipboard buttons to everything we could.
+          <ul>
+            <li class="pb-4"><b>The question “When?” is paramount:</b> “When did the system first start to have problems?” is one of the first things operators want to know. The alert that compelled them into action might have been triggered long after the root of the problem started. We made timestamps as precise as possible.</li>
+
+            <li class="pb-4"><b>Component IDs and timestamps are keys:</b> Operators bounce between our app and others, such as log search tools. Component IDs and timestamps are the two things you need when jumping between systems. We add copy-to-clipboard buttons to everything we could.</li
+          </ul>
         </div>
         <div class="regular-lg pb-5">
           <img src="images/healthwatch-12.png" class="img-fluid center-block d-block mx-auto" alt="image"> 
