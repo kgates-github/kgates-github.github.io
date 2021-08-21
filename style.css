@@ -309,11 +309,11 @@ p.center-lg {
 }
 
 .round-button {
-	background-color: #333; 
+	background-color: #444; 
 	color:white !important; 
-	font-size: 0.66em; 
+	font-size: 1em; 
 	display:block;
-	width: 150px !important;
+	width: 250px !important;
 	text-align: center;
 	padding: 8px 0px 8px 0px; 
 	border-radius: 25px;
