@@ -324,16 +324,19 @@ p.center-lg {
 .circle-arrow {
 	width:50px; 
 	height:50px; 
-	display:block; 
-	border:4px solid #333;
+	display:flex;
+	justify-content: center;
+	align-items: center;
 	background-color: #333;
 	color:#fff; 
 	border-radius: 50px; 
 	text-align: center;
 	float:right;
-	margin-right:15px;
+	margin-right:0px;
 	font-size: 43px;
+	font-weight: 800;
 }
+
 
 .large-button {
 	width: 100% !important;
@@ -352,17 +355,9 @@ p.center-lg {
 	display: flex !important;
 }
 
-.arrow {
-	font-size: 104px; 
-}
-
 @media screen and (max-width: 768px) {
   .card-image {
     display: none !important;
-  }
-
-  .arrow {
-  	font-size: 72px; 
   }
 }
 
@@ -382,18 +377,14 @@ p.center-lg {
   .card-image {
     
   }
-  .arrow {
-  	font-size: 104px; 
-  }
+  
 }
 
 @media screen and (min-width: 1200px) {
   .card-image {
     
   }
-  .arrow {
-  	font-size: 152px; 
-  }
+  
 }
 
 
