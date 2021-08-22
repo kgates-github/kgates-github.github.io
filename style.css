@@ -59,8 +59,8 @@ h4 {
 .section-card-header {
 	font-size: 1.5em; 
 	line-height: 1.0; 
-	font-weight: 700;
-	color: #333; /*#CC5B4C !important;*/
+	font-weight: 800;
+	color: #555; /*#CC5B4C !important;*/
 }
 
 .bg-light-gray {
@@ -202,7 +202,7 @@ a:active  { color: #333; }
 .headline-heavy {
 	font-size: 3.33em;
 	font-weight: 900;
-	color:#494949;
+	color: #494949;
 	line-height:1.2;
 }
 
