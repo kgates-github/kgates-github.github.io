@@ -273,6 +273,10 @@ p.center-lg {
 
 }
 
+.gunmetal-light {
+	color: #DAECFC;
+}
+
 .pullquote:before, .pullquote:after {
   content: "";
   display: block;
