@@ -774,7 +774,7 @@
         </div>
         <div class="regular-lg ps-4 pe-4 pb-4">
           <ol>
-            <li>No default values for compute resources.</li>
+            <li>No default values for compute resources (these are important&mdash;see why in summary below).</li>
             <li>Wording for compute recource values ("Min", "Max") not aligned with open-source terminology.</li>
             <li>No guidance for limit values.</li>
             <li>Additional "advanced settings" didn't make sense.</li>
@@ -790,7 +790,7 @@
         </div>
         <div class="regular-lg ps-4 pe-4 pb-4">
           <ol>
-            <li>Default values (these are important&mdash;see why in summary below).</li>
+            <li>Default values.</li>
             <li>Wording for compute recource values aligned with open-source terminology ("Request", "Limit").</li>
             <li>Limit guidance.</li>
             <li>Made "advanced settings" the name of step.</li>
@@ -806,12 +806,12 @@
         <div class="headline-small pb-5">Findings Summary</div>
         <div class="regular-lg pb-4">
           <ul>
+            <li class="pb-4"><b>Default settings are really important:</b> When a developer is setting up serverless for the first time, they will have no idea how much memory their app will need. By asking this, we were forcing a question on them that could not be answered.</li>
+            
             <li class="pb-4"><b>We strayed too far from the underlying technology:</b> We weren't staying true to underlying concepts and language used in Kubernetes and serverless functionality. This risked introducing confusion and disharmony, especially when users toggle between the GUI and CLI.</li>
             
             <li class="pb-4"><b>Novice users were confused:</b> A big part of the confusion was caused by a few terms associated with serverless technology that were overloaded (in particular, "service" and "traffic"). One tester thought he was configuring a database for the first 10 minutes of the interview. </li>
-            
-            <li class="pb-4"><b>Default settings are really important:</b> When a developer is setting up serverless for the first time, they will have no idea how much memory their app will need. By asking this, we were forcing a question on them that could not be answered.</li>
-            
+             
             <li class="pb-0"><b>GUIs can provide value for all users:</b> GUIs can provide value for new users, early-career developers, seasoned veterans, and even expert users. This reinforced our initial assumptions.</li>
           </ul>
         </div>
