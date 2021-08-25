@@ -738,7 +738,7 @@
     </div>
   </div>
 
-  <div class="container-fluid-content-02" style="max-width: 1400px; padding-bottom:120px;">
+  <div class="container-fluid-content-02" style="max-width: 1400px; padding-bottom:240px;">
     <div class="row">
       <div class="col-md">
         <div class="">
@@ -751,22 +751,50 @@
     </div>
   </div>
 
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:0px;">
+    <div class="row">
+      <div class="col-md pb-5">
+        <div class="headline-small pb-4">Feedback Example</div>
+         <div class="regular-lg pb-4">
+          When appropriate, we sythesized feedback inline to maintain context. We took the synthesis and produced new versions quickly. The example below is from our third iteration.
+        </div>
+      </div>
+    </div>
+  </div>
+
    <div class="container-fluid-content-02" style="max-width: 1400px; padding-bottom:120px;">
+    
     <div class="row gx-3">
       <div class="col-md">
         <div class="">
           <img src="images/serverless-13-02-01.png" class="img-fluid" alt="image">
         </div>
-        <div class="caption pt-3">
-          We synthesized feedback in-line to maintain context
+        <div class="bold-5 pt-4 p-4">
+          Problems:
+        </div>
+        <div class="regular-lg ps-4 pe-4 pb-4">
+          <ol>
+            <li>No default values for compute resources.</li>
+            <li>Wording for compute recource values ("Min", "Max") not aligned with open-source terminology.</li>
+            <li>No guidance for limit values.</li>
+            <li>Additional "advanced settings" didn't make sense.</li>
+          </ol>
         </div>
       </div>
       <div class="col-md">
         <div class="">
           <img src="images/serverless-13-02-02.png" class="img-fluid" alt="image">
         </div>
-        <div class="caption pt-3">
-          We took the synthesis and quickly produced new versions
+        <div class="bold-5 pt-4 p-4">
+          Solutions:
+        </div>
+        <div class="regular-lg ps-4 pe-4 pb-4">
+          <ol>
+            <li>Default values (these are important&mdash;see why in summary below).</li>
+            <li>Wording for compute recource values aligned with open-source terminology ("Request", "Limit").</li>
+            <li>Limit guidance.</li>
+            <li>Made "advanced settings" the name of step.</li>
+          </ol>
         </div>
       </div>
     </div>
@@ -775,7 +803,7 @@
   <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px;">
     <div class="row">
       <div class="col-md">
-        <div class="headline-small pb-5">Key Findings</div>
+        <div class="headline-small pb-5">Findings Summary</div>
         <div class="regular-lg pb-4">
           <ul>
             <li class="pb-4"><b>We strayed too far from the underlying technology:</b> We weren't staying true to underlying concepts and language used in Kubernetes and serverless functionality. This risked introducing confusion and disharmony, especially when users toggle between the GUI and CLI.</li>
