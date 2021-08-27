@@ -552,7 +552,7 @@
       <div class="col-md">
         <div class="headline-medium pb-5" style="margin-bottom: 0px;">
           <!--Conjuring the Doable, Desirable, and Differentiating-->
-          Reimagining a Whole New Approach to the GUI
+          Reimagining a Whole New Approach
         </div>
         <div class="regular-lg pb-4">
           Now that we understood something about our competitors and we had a model of the user journey, we set out to reimagine it. 
@@ -710,7 +710,7 @@
   <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:120px;">
     <div class="row">
       <div class="col-md">
-        <div class="headline-small pb-4">Testing and Feedback</div>
+        <div class="headline-small pb-4">User Testing</div>
         <div class="regular-lg pb-4">
           Once we had an initial direction, we wanted to test it. We set up testing sessions with field engineers who are embedded on customer dev teams, as well as seasoned internal engineers. We then created a testing plan and wrote a discussion guide.
         </div>
@@ -762,18 +762,81 @@
     <div class="row">
       <div class="col-md pb-5">
         <div class="headline-medium pb-5 text-extra-light">User Feedback</div>
-         <div class="regular-lg pb-5 text-light">
-          When appropriate, we sythesized feedback inline to maintain context. We took the synthesis and produced new versions quickly. The example below is from our third iteration.
+        <div class="regular-lg pb-5 text-light">
+          When appropriate, we sythesized feedback inline by affinity mapping stickies directly on the wireframes to maintain context. We took the synthesis and produced new versions quickly. 
         </div>
-        <div class="headline-small pb-0 gunmetal-light" style="text-align: left;">
-          Create Service Example:<br>3rd to 4th Iteration
+        <div class="regular-lg pb-0 text-light">
+          <img src="images/serverless-13-01-00.png" class="img-fluid" alt="image">
+          <div class="caption text-light mt-3">Feedback sythesis example</div>
         </div>
       </div>
     </div>
   </div>
 
-   <div class="container-fluid-content-02" style="max-width: 1400px; padding-bottom:60px;">
-    
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-top:60px; padding-bottom:60px;">
+    <div class="row">
+      <div class="col-md pb-5">
+
+        <div class="headline-small pb-4 gunmetal-light">Overall Findings Summary</div>
+        <div class="regular-lg pb-0 text-light">
+          <ul>
+            <li class="pb-4"><span class="text-extra-light" style="font-weight:700;">Default settings are really important:</span> When a developer is setting up serverless for the first time, they will have no idea how much memory their app will need. By asking this, we were forcing a question on them that could not be answered.</li>
+            
+            <li class="pb-4"><span class="text-extra-light" style="font-weight:700;">We strayed too far from the underlying technology:</span> We weren't staying true to underlying concepts and language used in Kubernetes and serverless functionality. This risked introducing confusion and disharmony, especially when users toggle between the GUI and CLI.</li>
+            
+            <li class="pb-4"><span class="text-extra-light" style="font-weight:700;">Novice users were confused:</span> A big part of the confusion was caused by a few terms associated with serverless technology that were overloaded (in particular, "service" and "traffic"). One tester thought he was configuring a database for the first 10 minutes of the interview. </li>
+             
+            <li class="pb-0"><span class="text-extra-light" style="font-weight:700;">GUIs can provide value for all users:</span> GUIs can provide value for new users, early-career developers, seasoned veterans, and even expert users. This reinforced our initial assumptions.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:60px; padding-top:0px;">
+    <div class="row">
+      <div class="col-md p-3 pullquote gunmetal-light">
+        “When a developer doesn’t know much about a new technology, just clicking a box is powerful.”
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-top:60px; padding-bottom:0px;">
+    <div class="row">
+      <div class="col-md pb-5">
+        <div class="headline-small pb-4 gunmetal-light" style="text-align: left;">
+          Create Service Evolution
+        </div>
+         <div class="regular-lg pb-0 text-light">
+          We incorporated feedback from many types of users: experts, novices, field engineers, internal engineers. We moved quickly and let the designs evolve as we learned.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 1400px; padding-top:0px; padding-bottom:120px;">
+    <div class="row">
+      <div class="col-md pb-0">
+        <img src="images/serverless-13-02-00.png" class="img-fluid" alt="image">
+        <div class="caption text-light mt-3">Early versions of the create service design</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-top:60px; padding-bottom:0px;">
+    <div class="row">
+      <div class="col-md pb-5">
+        <div class="headline-small pb-4 gunmetal-light" style="text-align: left;">
+          Devil in the Details: A Look at the 4th and 5th Iterations
+        </div>
+        <div class="regular-lg pb-5 text-light">
+          Below is a look at how we took feedback on iteration four and used it to shape iteration five. Some changes, such as the need for form defaults, at first seemed trivial, but ended up solving a significant pain point. Subtle concepts in the underlying KNative technology shaped wording in important ways. 
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="container-fluid-content-02" style="max-width: 1400px; padding-bottom:240px;">
     <div class="row gx-3">
       <div class="col-md">
         <div class="">
@@ -784,7 +847,7 @@
         </div>
         <div class="regular-lg ps-4 pe-4 pb-4 text-light">
           <ol>
-            <li class="pb-4">No default values for compute resources (these are suprisingly important&mdash;see why in summary below).</li>
+            <li class="pb-4">No default values for compute resources (these are suprisingly important&mdash;see why in summary above).</li>
             <li class="pb-4">Wording for compute recource values ("Min", "Max") not aligned with open-source terminology.</li>
             <li class="pb-4">No guidance for limit values.</li>
             <li>Additional "advanced settings" didn't make sense.</li>
@@ -798,7 +861,7 @@
         <div class="bold-5 pt-4 p-4 text-extra-light">
           4th-Iteration Solutions:
         </div>
-        <div class="regular-lg ps-4 pe-4 pb-4 text-light">
+        <div class="regular-lg ps-4 pe-4 pb-0 text-light">
           <ol>
             <li class="pb-4">Offer preset default values to get developers up and running.</li>
             <li class="pb-4">Wording for compute recource values aligned with open-source terminology ("Request", "Limit"). KNative uses AI to allocate memory, meaning memory is not "set", but "requested".</li>
@@ -810,33 +873,7 @@
     </div>
   </div>
 
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px;">
-    <div class="row">
-      <div class="col-md">
-        <div class="headline-small pb-5 gunmetal-light">Overall Findings Summary</div>
-        <div class="regular-lg pb-4 text-light">
-          <ul>
-            <li class="pb-4"><span class="text-extra-light" style="font-weight:700;">Default settings are really important:</span> When a developer is setting up serverless for the first time, they will have no idea how much memory their app will need. By asking this, we were forcing a question on them that could not be answered.</li>
-            
-            <li class="pb-4"><span class="text-extra-light" style="font-weight:700;">We strayed too far from the underlying technology:</span> We weren't staying true to underlying concepts and language used in Kubernetes and serverless functionality. This risked introducing confusion and disharmony, especially when users toggle between the GUI and CLI.</li>
-            
-            <li class="pb-4"><span class="text-extra-light" style="font-weight:700;">Novice users were confused:</span> A big part of the confusion was caused by a few terms associated with serverless technology that were overloaded (in particular, "service" and "traffic"). One tester thought he was configuring a database for the first 10 minutes of the interview. </li>
-             
-            <li class="pb-0"><span class="text-extra-light" style="font-weight:700;">GUIs can provide value for all users:</span> GUIs can provide value for new users, early-career developers, seasoned veterans, and even expert users. This reinforced our initial assumptions.</li>
-          </ul>
-        </div>
- 
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:240px; padding-top:0px;">
-    <div class="row">
-      <div class="col-md p-3 pullquote gunmetal-light">
-        “When a developer doesn’t know much about a new technology, just clicking a box is powerful.”
-      </div>
-    </div>
-  </div>
+  
 
 </div>
 
