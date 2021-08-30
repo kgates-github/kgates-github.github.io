@@ -336,7 +336,7 @@
        
         <div class="regular-lg pb-0">
           <b>Lower barriers to adoption to allow scale:</b>  
-          Enable developers who are new to serverless to deploy to the technology regardless of their expertise in cloud infrastructure. This will allow customers to benefit from the value brought by serverless at scale. 
+          <span class="highlight">Enable developers who are new to serverless to deploy to the technology regardless of their expertise in cloud infrastructure.</span> This will allow customers to benefit from the value brought by serverless at scale. 
         </div>
       </div>
     </div>
@@ -422,19 +422,31 @@
         </div>
         <div class="regular-lg pb-4">
           <div class="bold-5 pb-4">Objectives:</div>
+          <div class="regular-lg pb-4">
+            First and foremost, we wanted to have a foundation for ideation sessions in which we rethink the journey. In addition, we wanted to:
+          </div>
           <ul>
-            <li>Have an agreed-upon model of what we as a team think we know about the current state of the journey.</li> 
-            <li>Have a linear narrative which allow us to see the big picture and how tasks are connected and in service of the user reaching goals.</li> 
-            <li>Have a way to fold in and organize other materials such as research findings and competitive analysis.</li> 
-            
-            <li>Have a foundation for ideation sessions in which we rethink the journey.</li> 
+            <li class="pb-4">Have an agreed-upon model of what we as a team think we know about the current state of the journey.</li> 
+            <li class="pb-4">Have a linear narrative which allow us to see the big picture and how tasks are connected and in service of the user reaching goals.</li> 
+            <li class="pb-4">Have a way to fold in and organize other materials such as research findings and competitive analysis.</li> 
           </ul>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:60px;">
+  <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:60px;">
+    <div class="row">
+      <div class="col-md">
+        <img src="images/serverless-06.png" class="img-fluid" alt="image" style="width:100%">
+        <div class="caption pt-3">
+          Our proto-journey map layed out a flow centered on user goals. 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:240px;">
     <div class="row">
       <div class="col-md">
         <img src="images/serverless-07.png" class="img-fluid" alt="image" style="width:100%">
@@ -445,16 +457,7 @@
     </div>
   </div>
 
-  <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:240px;">
-    <div class="row">
-      <div class="col-md">
-        <img src="images/serverless-06.png" class="img-fluid" alt="image" style="width:100%">
-        <div class="caption pt-3">
-          Our end-to-end proto-journey map tied user goals together.
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
   
 <!--***********************************************-->
@@ -559,8 +562,11 @@
           <!--Conjuring the Doable, Desirable, and Differentiating-->
           Reimagining the User Experience
         </div>
-        <div class="regular-lg pb-4">
+        <div class="regular-lg pb-5">
           Now that we understood something about our competitors and we had a model of the user journey, we set out to reimagine it. 
+        </div>
+        <div class="headline-medium pb-5" style="color:red">
+          Create service -> update service -> split traffic for A/B test
         </div>
         <div class="regular-lg pb-4">
           We set up an ideation workshop (a.k.a., design studio) in which everyone (engineers, field engineers, design and PM) would sketch concepts that would seed our initial designs. 
@@ -708,7 +714,7 @@
     <div class="row">
       <div class="col-md">
         <div class="headline-medium pb-5">
-          Iterating Towards a Solid Solution
+          Iterating Towards a Solution
         </div>
         <div class="regular-lg pb-4">
           Cloud computing is very complex, and most designs I've worked on in the domain are like multivariate problems: There are many possible outcomes, which are dependent on many variables, which are often related in unknown ways. 
@@ -738,7 +744,7 @@
   <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:120px;">
     <div class="row">
       <div class="col-md">
-        <div class="headline-small pb-4">User Testing Approach</div>
+        <div class="headline-small pb-4">User Testing</div>
         <div class="regular-lg pb-4">
           Once we had an initial direction, we wanted to test it. We set up testing sessions with field engineers who are embedded on customer dev teams, as well as seasoned internal engineers. We then created a testing plan and wrote a discussion guide.
         </div>
@@ -837,12 +843,9 @@
     </div>
   </div>
 
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-top:60px; padding-bottom:0px;">
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-top:0px; padding-bottom:0px;">
     <div class="row">
       <div class="col-md pb-5">
-        <div class="headline-small pb-4 gunmetal-light" style="text-align: left;">
-          Evolution from the 4th to 5th Iteration
-        </div>
         <div class="regular-lg pb-0 text-light">
           Below is a look at how we took feedback on iteration four and used it to shape iteration five. Some changes, such as the need for form defaults, at first seemed trivial, but ended up solving a significant pain point. Subtle concepts in the underlying KNative technology shaped wording in important ways. 
         </div>
@@ -861,7 +864,7 @@
         </div>
         <div class="regular-lg ps-4 pe-4 pb-4 text-light">
           <ol>
-            <li class="pb-4">No default values for compute resources (these are suprisingly important&mdash;see why in summary above).</li>
+            <li class="pb-4">No default values for compute resources (e.g., memory and CPU). These are suprisingly important&mdash;see why in summary below.</li>
             <li class="pb-4">Wording for compute recource values ("Min", "Max") not aligned with open-source terminology.</li>
             <li>Additional "advanced settings" didn't make sense.</li>
           </ol>

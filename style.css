@@ -277,6 +277,10 @@ p.center-lg {
 	color: #DAECFC;
 }
 
+.highlight {
+	background-color: yellow;
+}
+
 .pullquote:before, .pullquote:after {
   content: "";
   display: block;
