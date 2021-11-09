@@ -54,7 +54,7 @@
           The goal of this project was to exercise skills I haven't used in a while. The last time I designed for mobile was the Obama 2012 campaign, and, while I've written a lot of JavaScript (d3.js)  working on a medical informatics team, that was years ago. 
         </div> 
          <div class="regular-lg pb-4">
-          For this project, I wanted to explore mobile IX patterns while leveraging my background in data visualization. I also wanted to learn a bit of React Native. 
+          For this project, I created a weather app that combines weather and air pollution forecasts. I wanted to explore mobile IX patterns while leveraging my background in data visualization. I also wanted to learn a bit of React Native. 
         </div> 
       </div>
     </div>
@@ -88,7 +88,7 @@
       height:100%;">
       <div style="position: relative; top: 50%; 
         -ms-transform: translateY(-50%);
-        transform: translateY(-50%);">Concept Exploration</div>
+        transform: translateY(-50%);">Discovery and Concept Exploration</div>
     </div>
   </div>
 </div>
@@ -98,7 +98,7 @@
   <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:60px;">
     <section class="row">
       <div class="col-md section-header-no-border pb-4">
-        Concept Exploration
+        Discovery and Concept Exploration
       </div>
     </section>
     <div class="row">
@@ -123,9 +123,7 @@
     </div>
   </div>
 
-
-
-
+<!--
   <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px;">
     <div class="row">
       <div class="col-md">
@@ -138,15 +136,16 @@
       </div>
     </div>
   </div>
+-->
 
   <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px;">
     <div class="row">
       <div class="col-md">
         <div class="headline-small pb-4">
-          Sketching and Emergent User Scenarios 
+          Emergent User Needs 
         </div>
         <div class="regular-lg pb-4">
-           Once I started sketching concepts out on paper, I realzed something early on: I had a hard time reasoning about my concepts without some kind of criteria against which to evaluate feature ideas. 
+           Once I started sketching concepts out on paper, I realized something early on: I had a hard time reasoning about my concepts without some kind of criteria against which to evaluate feature ideas. 
         </div>
          <div class="regular-lg pb-4">
            I started writing questions down on my drawing paper that I wanted the app to answer for users. These included things like “Will I need to bring a raincoat to work tomorrow?” and “Will it be warm enough tonight to eat dinner on the patio?”. 
@@ -155,7 +154,7 @@
     </div>
   </div>
 
-  <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:60px;">
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px;">
     <div class="row m-0 pb-4">
       <div class="col-md" style="align-items: center;">
         <img src="images/weather-03.png" class="img-fluid" alt="image">
@@ -170,11 +169,44 @@
     </div>
   </div>
 
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:120px;">
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:240px;">
     <div class="row">
       <div class="col-md">
         <div class="regular-lg pb-5">
           I realized the questions were filling the role that research findings would normally play in my regular design process. The questions also hung together in logical ways and groups of questions chained together formed something like journeys or user scenarios. 
+        </div>
+        <div class="headline-small pb-4">
+          Learning Through Iteration 
+        </div>
+        <div class="regular-lg pb-5">
+          As I iterated on the designs, I was able to suss out trade-offs between approaches. For example, I started with a boxplot chart showing highs and lows for the week. This answered the question, "What's the week going to be like?". 
+        </div>
+        <div class="regular-lg pb-5">
+          <img src="images/weather-sketch-01.png" class="img-fluid" alt="Image">
+           <div class="caption pt-4 text-medium-light">Early sketch and wireframe showing forecasts as box plots.</div>
+        </div>
+        <div class="regular-lg pb-5">
+          This approach visually conveyed the week's temperature trend, but I couldn't come up with a graceful way to show hourly data (I initially included a toggle button). In addition the showing the outlook for the week, the app needed to answer more specific questions such as, "How cold will it be tomorrow morning when I walk to work?". 
+        </div>
+       <div class="regular-lg pb-5">
+          <img src="images/weather-sketch-02.png" class="img-fluid" alt="Image">
+           <div class="caption pt-4 text-medium-light">Sketch and wireframe exploring compacting boxplots down and using them as tab navigation.</div>
+        </div>
+        <div class="regular-lg pb-4">
+          The answer to the trade-offs I faced was to do away with the boxplot and compact everything down to thumbnail size, and use this as the navigation. Things started to feel like they were coming together. 
+        </div>
+        <div class="regular-lg pb-0">
+          <div class="bold-5 pb-4">Pros:</div>
+          <ul>
+            <li class="pb-4">It answers the question, "What's the week like?", effectively enough.</li>
+            <li class="pb-4">Good wayfinding. It guides users to either specific dates or weather that might be of concern. Also, the compact forecasts give off a good scent&mdash;They convey the headline, then get the user to the details they might need.</li>
+            <li class="pb-4">It's compact and frees up space to allow room for detailed forecasts and charts.</li>
+          </ul>
+          <div class="bold-5 pb-4">Con:</div>
+          <ul>
+            <li class="pb-4">It doesn't have the visual impact of box plots that clearly show the temperature trend for the week.</li>
+          </ul>
+
         </div>
       </div>
     </div>
@@ -185,10 +217,10 @@
     <div class="row">
       <div class="col-md">
         <div class="headline-medium pb-4 text-extra-light" style="text-align: left;">
-          Early-Stage Concepts
+          A Few Interesting Concepts
         </div> 
         <div class="regular-lg text-light">
-          Below are a few early concepts that eventually made it into the prototype. 
+          Below are a few early concepts that eventually made it into the prototype. These examples show how an iterative approach to design that includes data analysis can lead to novel solution ideas. It also shows how seemingly disparate ideas can come together in interesting ways.
         </div>
       </div>
     </div>
@@ -211,7 +243,7 @@
         </div>
         <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>Air Pollution Idea Two</b></div>
         <div class="regular-lg text-light ps-3 pe-3">
-          The first iteration had the color coding arranged horizontally, but this version I made them vertical. This would allow users to align unhealthy air quality with the time of day on the x-axis. (e.g., "Air quality will be unhealthy from 12 pm until 3 pm."")
+          In this version I made the qualitative color bars vertical. This would allow users to align unhealthy air quality with the time of day on the x-axis. (e.g., "Air quality will be unhealthy from 12 pm until 3 pm.") This resonated with what I saw in the data: air quality can go from good to unhealthy in just a few hours.
         </div>
       </div>
     </div>
@@ -231,7 +263,7 @@
         </div>
         <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>Historical Data</b></div>
         <div class="regular-lg text-light ps-3 pe-3">
-          Above is one of many sketches exploring how historic data might be displayed. In this case, the gray-shaded area chart behind the forecast line shows 95th and 5th percentiles, which would show the user how cold or warm it can get. This concept ended up working well togther with the chart interactions.
+          Above is one of many sketches exploring how historic data might be displayed. In this case, the gray-shaded area chart behind the forecast line shows 95th and 5th percentiles, which would show the user how cold or warm it can get. This concept ended up working well together with the chart interactions.
         </div>
       </div>
     </div>
@@ -287,7 +319,7 @@
 <!--***********************************************-->
 
 <div class="bg-dark-gray" style="background-color: #000;"> 
-  <div class="container-fluid-content-01 overflow-hidden pb-5">
+  <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom: 120px;">
     <section class="row">
       <div class="col-md section-header-no-border pb-4" style="color:#FF9788;">
         Prototyping
@@ -295,16 +327,22 @@
     </section>
     <div class="row">
       <div class="col-md">
-        <div class="regular-lg pb-5">
-          <div class="headline-medium text-extra-light" style="max-width: 400px;">
+        <div class="regular-lg pb-0">
+          <div class="headline-medium text-extra-light pb-5" style="max-width: 400px;">
+            Code as Part ot the Design Process
+          </div>
+          <div class="headline-small text-extra-light pb-4">
             Designing for Many Screen Sizes
+          </div>
+          <div class="regular-lg pb-0 text-light">
+            One of the benefits of React Native is its dev environment, called Expo, which enables "hot reloads". Using Expo meant that when I made a change to the code, I could see the effects immediately. I got in the habit of running three iOS simulators so I could work out layouts on many screen sizes at once.
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:60px;">
+  <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:120px;">
     <div class="row m-0 pb-4">
       <div class="col-md" style="align-items: center;">
         <img src="images/weather-screen.gif" class="img-fluid" alt="image">
@@ -315,12 +353,31 @@
   <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:240px; padding-top:0px;">
     <div class="row">
       <div class="col-md">
-        <div class="regular-lg pb-4 text-light">
-           One of the benefits of React Native is its dev enviroment, called Expo, which enables "hot reloads". Using Expo meant that when I made a change to the code, I could see the effects imediately. I got in the habit of running three iOS simulators so I could work out layouts on many screen sizes at once.
+        
+        <div class="headline-small text-extra-light pb-4">
+          Inspiration from Code
+        </div>
+        <div class="regular-lg pb-5 text-light">
+          The feature that allows users to access detail historical data came to me when writing code. I created a quick sketch on paper then built it out.
+        </div>
+        <div style="
+          
+          border-radius:0px; 
+          overflow: hidden; 
+          width: 340px;
+          height: 680px;
+          box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.3), -10px 10px 8px 1px rgba(0, 0, 0, 0.3);
+          /*background-color: green;*/
+        ">
+          <img data-gifffer="images/weather-history.gif" 
+            data-gifffer-width="340" data-gifffer-height="680"
+             alt="image"/>
         </div>
       </div>
     </div>
   </div>
+
+  
 
 </div>
 
@@ -349,9 +406,13 @@
 
 <!--***********************************************-->
 
-<div class="bg-light-gray" style="background-color: #eeeeee; margin:auto; padding-top:240px; padding-bottom:60px;">
-  <div class="container-fluid-content-02 ps-5 pe-5" 
-      style="max-width: 600px; padding-top:0px;">
+<div class="" style="margin:auto; padding-bottom:60px;">
+  <div class="container-fluid-content-01 overflow-hidden" style="padding-top:10px; padding-bottom: 0px;">
+    <div class="row" style="padding-bottom: 200px;">
+      <div class="col-md">
+        <div class="caption pt-0">The prototype running on an iPad. The screen shows a day with very poor air quality.</div>
+      </div>
+    </div>
     <section class="row">
       <div class="col-md section-header-no-border pb-4">
         Scenarios
@@ -363,8 +424,14 @@
           <div class="headline-medium pb-0">Key User Scenarios</div> 
         </div>
         <div class="headline-small pb-4" style="max-width: 300px;">Janice packs for a trip to New York City</div>
+        <div class="regular-lg pb-4">
+          <b>Scenario:</b> Janice is going to New York City for business and wants to get an idea of what the weather will be like while she's there. 
+        </div>
+        <div class="regular-lg pb-4">
+          She opens the app and adds New York City. She then checks the daily temperatures to see how cold it will be in the morning when she'll be walking to the office. Weather is volatile in New York, and forecasts can change. Janice checks historic data to see what is normal for the time of year. 
+        </div>
         <div class="regular-lg pb-5">
-          <b>Scenario:</b> Janice is going to New York City for business and wants to get an idea of what the weather will be like. She adds New York City. She then checks the daily temperatures to see how cold it will be in the morning when she walks to the office. Nothing looks too extreme, and there is no rain until the weekend, but she packs and umbrella just in case.
+          Nothing looks too extreme, and there is no rain until the weekend, but she packs and umbrella just in case.
         </div>
       </div>
     </div>
@@ -372,19 +439,19 @@
 
  <div class="container-fluid-content-02 ps-5 pe-5" 
       style="max-width: 900px; padding-bottom:0px; padding-top:0px;">
-    <div class="row g-4" style="padding-bottom: 240px;">
+    <div class="row g-4" style="padding-bottom: 120px;">
       <div class="col-lg">
         <div style="
           margin: auto;
-          border-radius:60px; 
+          border-radius:50px; 
           overflow: hidden; 
           width: 340px;
           height: 680px;
-          box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.3), -10px 10px 8px 1px rgba(0, 0, 0, 0.3);
+          /*box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.3), -10px 10px 8px 1px rgba(0, 0, 0, 0.3);*/
           /*background-color: green;*/
         ">
           <img data-gifffer="images/weather-basic.gif" 
-            data-gifffer-width="340" 
+            data-gifffer-width="340" data-gifffer-height="680" 
              alt="image"/>
         </div>
       </div>
@@ -412,7 +479,7 @@
       style="max-width: 600px; padding-top:0px;">
     <div class="row">
       <div class="col-md">
-        <div class="headline-small pb-4">Dave decides to postpone a run due to air pollution</div>
+        <div class="headline-small pb-4">Dave wants to go for a run, but postpones due to air pollution alert</div>
         <div class="regular-lg pb-5">
           <b>Scenario:</b> Dave wants to go on a run. He checks the weather and notices an air pollution alert. He clicks it and is quickly able to see the air is very unhealthy for the rest of the afternoon. The EPA guidance recommends staying indoors. He sees the air quality gets much better after 5 pm and decides to check the air quality later to see if its okay to run.
         </div>
@@ -426,15 +493,14 @@
       <div class="col-lg">
         <div style="
           margin: auto;
-          border-radius:60px; 
+          border-radius:50px; 
           overflow: hidden; 
           width: 340px;
           height: 680px;
-          box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.3), -10px 10px 8px 1px rgba(0, 0, 0, 0.3);
-          /*background-color: green;*/
+          /*box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.3), -10px 10px 8px 1px rgba(0, 0, 0, 0.3);*/
         ">
           <img data-gifffer="images/weather-alert.gif" 
-            data-gifffer-width="340" 
+            data-gifffer-width="340" data-gifffer-height="680" 
              alt="image"/>
         </div>
       </div>
@@ -463,37 +529,134 @@
   </div>
 </div>
 
-<div class="bg-dark-gray" style="background-color: #000; margin:auto; padding-top:240px; padding-bottom:240px;">
-  <div class="container-fluid-content-02 ps-5 pe-5" 
-      style="max-width: 900px; padding-bottom:0px; padding-top:0px;">
-    <div class="row g-4" style="padding-bottom: 240px;">
-      <div class="col-lg">
-        <img src="images/weather-controls.gif" class="img-fluid p-2" alt="image">
+
+
+<!--***********************************************-->
+
+<div class="bg-light-gray">
+  <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom: 0px;">
+  
+    <div class="row">
+      <div class="col-md section-header-no-border pb-4">
+        Design Principles
       </div>
-      <div class="col-lg pt-5">
-        <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>Put controls near the thing they affect</b></div>
-        <div class="regular-lg text-light ps-3 pe-3 pb-4">
-           This is a standard Nielsen/Norman heuristic, but I have found it lacking in many mobile UIs.
-        </div>
-         <div class="regular-lg text-light ps-3 pe-3 pb-4">
-           I put the controls for toggling between fahrenheit and celsius next to temperature readings. (This was  influenced by Google’s weather module, which has a lot of features I like.) 
-        </div>
+      <div class="headline-medium pb-5">
+        A Few Key Design Principles
+      </div>
+      <div class="regular-lg pb-5">
+        In addition to the design solving user needs (aka questions), a few design principles drove some of my thinking.
       </div>
     </div>
+  </div>
 
-     <div class="row g-4" style="padding-bottom: 240px;">
-      <div class="col-lg">
-        <img src="images/weather-hints.gif" class="img-fluid p-2" alt="image">
+  <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:240px; padding-top:0px;">
+    <div class="row pb-4">
+      <div class="col-md">
+        <div style="
+          margin: auto;
+          border-radius:50px; 
+          overflow: hidden; 
+          width: 340px;
+          height: 680px;
+          /*box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.3), -10px 10px 8px 1px rgba(0, 0, 0, 0.3);*/
+        ">
+          <img data-gifffer="images/weather-controls.gif" 
+            data-gifffer-width="340" data-gifffer-height="680"
+             alt="image"/>
+        </div>
+        <div class="bold-5 pb-4 ps-4 pe-2 pt-5">
+          Put controls near the thing they affect
+        </div> 
+        <div class="regular-lg pb-4 ps-4 pe-2">
+          This is a standard Nielsen/Norman heuristic, but I have found it lacking in many mobile UIs.
+        </div>
+        
       </div>
-      <div class="col-lg pt-5">
-        <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>Embed usage tips in the UX</b></div>
-        <div class="regular-lg text-light ps-3 pe-3 pb-4">
-          Generally good practice. Getting content and timing just right seems like it would take some iterations. I would really like to test these on users with no experience with my app.
+  
+      <div class="col-md">
+        <div style="
+          margin: auto;
+          border-radius:50px; 
+          overflow: hidden; 
+          width: 340px;
+          height: 680px;
+          /*box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.3), -10px 10px 8px 1px rgba(0, 0, 0, 0.3);*/
+        ">
+          <img data-gifffer="images/weather-settings.gif" 
+            data-gifffer-width="340" data-gifffer-height="680"
+             alt="image"/>
+        </div>
+        <div class="bold-5 pb-4 ps-4 pe-2 pt-5">
+          Let users decide what's important
+        </div> 
+        <div class="regular-lg pb-4 ps-4 pe-2">
+          During fire season in California, air pollution if very important. Other times of year it isn't. Let users opt in to data sets that they need.
+        </div>
+        
+      </div>
+   
+      <div class="col-md">
+        <div style="
+          margin: auto;
+          border-radius:50px; 
+          overflow: hidden; 
+          width: 340px;
+          height: 680px;
+          /*box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.3), -10px 10px 8px 1px rgba(0, 0, 0, 0.3);*/
+        ">
+          <img data-gifffer="images/weather-undo.gif" 
+            data-gifffer-width="340" data-gifffer-height="680"
+             alt="image"/>
+        </div>
+        <div class="bold-5 pb-4 ps-4 pe-2 pt-5">
+          Let users recover from mistakes
+        </div> 
+        <div class="regular-lg pb-4 ps-4 pe-2">
+          Undo functionality lets users recover from accidentally deleting a city with one click. Recovering from deleting a city requires three steps. Why not make it one?
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  
+ 
+
+</div>
+
+
+
+<!--***********************************************-->
+
+
+ <div class="container-fluid-content-01" style="padding-bottom:240px">
+    <section class="row">
+      <div class="col-md section-header-no-border pb-4">
+        Conclusion
+      </div>
+    </section>
+    <div class="row">
+      <div class="col-md">
+        <div class="headline-medium pb-5">
+          Learnings
+        </div>
+        <div class="regular-lg pb-0">
+          <ul>
+            <li class="pb-4"><b>The project was unexpectedly challenging:</b> 
+              We designed a UI on top of two very opinionated APIs (KNative and Kubernetes) and those opinions were often at odds with good UX principles. That created tension between the UX for advanced users, who want to see concepts they are familiar with, and novice users, who we wanted to hand-hold.
+            </li>
+            <li class="pb-4"><b>Embedding competitive analysis in the journey map is a keeper:</b> 
+              We found ourselves referring back to the analysis often, and I got feedback that others were doing the same.
+            </li>
+            <li class="pb-4"><b>Engineers have a creative superpower:</b> 
+              Engineers can imagine possibilities that are unthinkable to we lay people. These unthinkable thoughts hold the potential for differentiating features. This just reinforces what I already know&mdash;I always include engineers in the creative process : ) You can read more about that <a href="https://medium.com/built-to-adapt/code-complexity-is-a-design-problem-e53e4229b5de" 
+            style="color:#0066cc; text-decoration: underline;">here</a>.
+            </li>
         </div>
       </div>
     </div>
   </div>
-</div>
+
 
 </body>
 
