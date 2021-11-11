@@ -283,7 +283,7 @@
         </div>
         <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>Chart Interactions</b></div>
         <div class="regular-lg text-light ps-3 pe-3">
-          These sketches explore how a double tap will activate the chart and allow users to drag across it to see hourly values (answering the question "How cold will it be when I walk to work tomorow morning?"). When I work through interactions in the ealy stages of design, I often start with small, thumbnail sketches. 
+          I needed to think through gestures and how they might conflict. In this case, a drag gesture conflicts with the primary swipe interation of the app. These sketches explore how a double tap will activate the chart and allow users to drag across it to see hourly values (answering the question "How cold will it be when I walk to work tomorow morning?"). 
         </div>
       </div>
       <div class="col-lg">
@@ -382,26 +382,37 @@
   <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:240px; padding-top:0px;">
     <div class="row">
       <div class="col-md">
-        
-        <!--<div class="headline-small text-extra-light pb-4">
-          Inspiration from Code
-        </div>-->
         <div class="regular-lg pb-5 text-light">
           React Native uses FlexBox, which means layouts can be defined as rules that respond differently depending on screen dimensions and content. I got in the habit of running three iOS simulators so I could work out layouts on many screens at once.
         </div>
-        <!--<div style="
-          
+        <div class="headline-small text-extra-light pb-4">
+          Working Out Chart Activation / Exploration
+        </div>
+        <div class="regular-lg pb-4 text-light">
+          One question the app was to answer was, "How cold will it be tomorrow morning when I'll be walking to work?" Users should be able to see data for specific times of day. I enabled this by using a long tap (250 ms) to activate the chart. Once activated, the user can drag a cursor to get details. 
+        </div>
+        <div class="regular-lg text-light" style="margin-bottom:120px;">
+          I also experimented with a drag-down interaction that "pulls" historic temperature data out. This would answer, "How cold can it get this time of year?" 
+        </div>
+        <div style="
+          margin-left: auto;
+          margin-right: auto;
           border-radius:0px; 
           overflow: hidden; 
           width: 340px;
           height: 680px;
-          box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.3), -10px 10px 8px 1px rgba(0, 0, 0, 0.3);
           /*background-color: green;*/
         ">
           <img data-gifffer="images/weather-history.gif" 
             data-gifffer-width="340" data-gifffer-height="680"
              alt="image"/>
-        </div>-->
+        </div>
+        <div class="caption pt-5 text-light" style="margin-bottom: 120px;">
+          Chart activation and exploration interactions. I later intcorporated in-line tool tips to guide users through this functionality.
+        </div>
+        <div class="regular-lg pb-5 text-light">
+          A couple of concepts seem to work well together: If the user wants details, they can long tap. The app then "knows" they want details, so once in this active mode, they can get more. I
+        </div>
       </div>
     </div>
   </div>
