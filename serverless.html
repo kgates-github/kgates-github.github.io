@@ -738,6 +738,10 @@
         <div class="regular-lg pb-5">
           These types of problems can be very challenging, and I've found an iterative approach with constant feedback is the best way to work through them. 
         </div>
+        <div class="headline-small pb-4">Solution Grooming</div>
+        <div class="regular-lg pb-5">
+          At this point, we had a lot of ideas to work with from the creative workshop and competitive analysis. We set a timer, and the PM and I independently sketched out concepts. When we were done, we compared notes. The idea was to see how aligned we were on how various concepts might fit together. We were very closely aligned, it turned out. 
+        </div>
         <!--
         <div class="headline-small pb-4">Grooming Seed Ideas Into a Direction</div>
         <div class="regular-lg pb-5">
@@ -751,6 +755,7 @@
   <div class="container-fluid-content-02 pb-5" style="max-width: 900px; margin-bottom: 60px;">
     <div class="row">
       <div class="col-md">
+        
         <img src="images/serverless-12.png" class="img-fluid" alt="image">
         <div class="caption pt-3">
           Our inital attemps at grooming solutions showed we were largely in alignment.
@@ -762,12 +767,12 @@
   <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:120px;">
     <div class="row">
       <div class="col-md">
-        <div class="headline-small pb-4">User Feedback</div>
-        <div class="regular-lg pb-4">
+        <div class="headline-small pb-4">Setting Up User Feedback</div>
+        <!--<div class="regular-lg pb-4">
           Once we had groomed ideas from the workshop into an initial direction, we wanted to test it. We set up testing sessions with field engineers who are embedded on customer dev teams, as well as seasoned internal engineers. We then created a testing plan and wrote a discussion guide.
-        </div>
+        </div>-->
         <div class="regular-lg pb-4">
-          We got feedback from many types of users: experts, novices, field engineers, internal engineers. For each of these, we had two types of learning goals: 
+          We set feedback from many types of users: experts, novices, field engineers, internal engineers. For each of these, we had two types of learning goals: 
         </div>
         <div class="regular-lg pb-4">
           <ul>
@@ -859,57 +864,24 @@
     </div>
   </div>
   -->
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-top:0px; padding-bottom:0px;">
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-top:0px; padding-bottom:60px;">
     <div class="row">
       <div class="headline-small pb-4 gunmetal-light" style="text-align: left;">
-          Small Details With Outsized Impact
-        </div>
-      <div class="col-md pb-5">
-        <div class="regular-lg pb-0 text-light">
-          Below is a detailed look at how we took feedback on iteration four and used it to shape iteration five. Some changes, such as the need for form defaults, at first seemed trivial, but ended up solving a significant pain point. Subtle concepts in the underlying KNative technology shaped wording in important ways. 
-        </div>
-      </div>
-    </div>
-  </div>
-
-   <div class="container-fluid-content-02" style="max-width: 1400px; padding-bottom:60px;">
-    <div class="row gx-3">
-      <div class="col-md">
-        <div class="">
-          <img src="images/serverless-13-02-01.png" class="img-fluid" alt="image">
-        </div>
-        <div class="bold-5 pt-4 p-4 text-extra-light" style="text-align: center;">
-          4th-Iteration Problems:
-        </div>
-        <div class="regular-lg ps-4 pe-4 pb-4 text-light">
-          <ol>
-            <li class="pb-4">No default values for compute resources (e.g., memory and CPU). When a developer is setting up serverless for the first time, they will have no idea how much memory their app will need. By asking this, we were forcing a question on them that could not be answered.</li>
-            <li class="pb-4">Wording for compute recource values ("Min", "Max") not aligned with open-source terminology. This risks creating disharmony when users toggle between the CLI and UI.</li>
-            <li>Additional "advanced settings" didn't make sense. We weren't sure what to put in the advanced settings, so we probed interviewees.</li>
-          </ol>
-        </div>
+        Big Frustations Hidden in Small Details
       </div>
       <div class="col-md">
-        <div class="">
+        <div class="regular-lg pb-5 text-light">
+          Some changes, such as the need for form defaults, at first seemed trivial, but ended up solving a significant pain point. 
+        </div>
+        <div class="pb-5">
           <img src="images/serverless-13-02-02.png" class="img-fluid" alt="image">
         </div>
-        <div class="bold-5 pt-4 p-4 text-extra-light" style="text-align: center;">
-          5th-Iteration Solutions:
+        <div class="regular-lg pb-4 text-light">
+          Our first versions did not have default settings for memory allocations (1). The problem is that when the user is filling this field out, their app is in its early stages, and they have no idea how much memory they'll need at launch. 
         </div>
-        <div class="regular-lg ps-4 pe-4 pb-0 text-light">
-          <ol>
-            <li class="pb-4">Don't ask developers questions they can't answer. Offer preset default values to get developers up and running. They can figure out their app's compute needs later.</li>
-            <li class="pb-4">Wording for compute recource values aligned with open-source terminology ("Request", "Limit"). KNative uses AI to allocate memory, meaning memory is not "set", but "requested".</li>
-            <li>Made "advanced settings" the name of step, making language between "create" and "update" the same.</li>
-          </ol>
+        <div class="regular-lg pb-5 text-light">
+          This was a required field, so when you put everything together, we were forcing the user to answer a question they could not answer. Very frustrating.
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-top:60px; padding-bottom:60px;">
-    <div class="row">
-      <div class="col-md pb-0">
 
         <div class="headline-small pb-4 gunmetal-light">Additional Findings</div>
         <div class="regular-lg pb-0 text-light">
@@ -1162,10 +1134,10 @@
           As of this writing, the project was going into an internal alpha release. Initial feedback from our field team was very positive. “When a developer doesn’t know much about a new technology, just clicking a box is powerful.” was a response from a field engineer in EMEA.
         </div> 
         <div class="headline-small pb-4">
-          Impact on VMWare's Design Practice
+          Impact on the Design Practice
         </div>
         <div class="regular-lg pb-5">
-          Our "target intermediates" matrix went over well with other design teams, and was widely adopted.
+          Our "target intermediates" matrix went over well with other design teams, and was adopted for other projects.
         </div> 
         <div class="headline-small pb-4">
           Learnings
