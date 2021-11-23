@@ -44,7 +44,7 @@
   <div class="container-fluid-content-01 overflow-hidden pt-5" style="padding-bottom: 240px;">
     <div class="row gx-3 mt-5" style="max-width: 600px;">
       <div class="col">
-        <div class='headline-heavy' style="font-weight: 700; padding-bottom:120px">Pivotal HealthWatch</div>
+        <div class='headline-heavy' style="padding-bottom:120px">Pivotal HealthWatch</div>
         <div class='headline-small mb-4' style="">From Fool's Errand to 100% Traction</div>
       </div>
     </div>
@@ -52,7 +52,7 @@
     <div class="row">
       <div class="col-md">
         <div class="regular-lg pb-4">
-          When our project, Pivotal HealthWatch, kicked off in 2017, things didn't look good.
+          When our project, Pivotal HealthWatch, kicked off, things didn't look good.
         </div> 
         <div class="regular-lg pb-4">
           In the beginning, it was just a product manager and me. Senior management had tasked us with coming up with an out-of-the-box data dashboard for monitoring Pivotal Cloud Foundry, an operating system for cloud platforms like Amazon’s AWS. 
@@ -84,7 +84,7 @@
     <div class="container-fluid-content-01 overflow-hidden" style="padding-top:10px; padding-bottom: 120px;">
       <div class="row">
         <div class="col-md">
-          <div class="caption pt-0 text-light">HealthWatch unveiled by Pivotal’s VP of R&D at the 2017 Spring One Conference</div>
+          <div class="caption pt-0 text-light">HealthWatch unveiled by Pivotal’s VP of R&D at a Spring One Conference in San Francisco</div>
         </div>
       </div>
       <div class="row" style="padding-top: 120px;">
@@ -93,7 +93,7 @@
             100% Traction
           </div>
           <div class="regular-lg pb-4 text-light">
-            Fast forward several months. HealthWatch was unveiled in December 2017. Despite our initial misgivings, we found a direction that worked. The product would go on to gain 100% adoption with 30+ Fortune 500 companies we tracked.
+            Fast forward several months. Despite our initial misgivings, we found a direction that worked. The product would go on to gain 100% adoption with 30+ Fortune 500 companies we tracked.
           </div> 
           <div class="regular-lg pb-0 text-light">
             The path getting to a viable product was not easy. It involved a highly iterative design process. Low fidelity, co-creation and continuous feedback were part of our daily lives. 
@@ -120,9 +120,9 @@
             Key Value Props:
           </div>
           <ul class="pb-4 text-light">
-            <li class="pb-4"><span style="font-weight: 700; color: #fff;">Baked-in expertise:</span> All of our designs were informed by domain experts with deep expertise. Customers immediately get access to dashboards that embody best practices without having to configure anything.</li>
+            <li class="pb-4"><span style="font-weight: 700; color: #fff;">Baked-in expertise:</span> All of our designs were informed by domain experts with deep expertise. </li>
             <li class="pb-4"><span style="font-weight: 700; color: #fff;">Automated tests:</span> HealthWatch exercises key functionality and reports back how well it is working. This saves users from needing to learn arcane metrics to infer the health of functionality.</li>
-            <li class=""><span style="font-weight: 700; color: #fff;">Detail views with historical data:</span> Historic data helps platform operators answer the question, “What happened when I was away?” The view above shows 24 hours of automated test results.</li>
+            <li class=""><span style="font-weight: 700; color: #fff;">Batteries Included:</span> HealthWatch come ready to run out-of-the-box. Customers immediately get access to dashboards that embody best practices without having to configure anything.</li>
             
           </ul>
         </div>
@@ -738,7 +738,7 @@
           <div class="caption pt-2">Evolution of a design from design studio to production.</div>
         </div>
       </div>
-    <div class="row" style="padding-top: 120px;">
+    <div class="row" style="padding-top: 200px;">
       <div class="col-md section-header-no-border pb-4">
         Collaboration
       </div>
@@ -913,7 +913,7 @@
     </div>
   </div>
 
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px;">
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:120px;">
     <div class="row">
       <div class="col-md">
         <div class="regular-lg pb-5">
@@ -923,41 +923,32 @@
         <div class="regular-lg pb-5">
           <img src="images/healthwatch-23-01.png" class="img-fluid center-block d-block mx-auto" alt="image">
           <div class="caption pt-3">
-            R.I.P. router panel design #1. <br>Born: March 15, 2017. Died: March 16, 2017.
+            Our first router panel design didn't go over well.
           </div>
         </div>
         <div class="regular-lg pb-4">
           We quickly learned what we got wrong: We focused too much on router CPU and tried to force everything into 
-          a stoplight visualization.
-        </div>
-        <div class="regular-lg pb-4">
-          Operators want to first understand how much traffic is flowing through the routers and whether 
-          there are any trends up or down. They then want to get an idea of how responsive requests are. 
+          a stoplight visualization. We didn't include overall traffic.
         </div>
         <div class="regular-lg pb-5">
           So we went back to the drawingboard. (Literally.)
         </div>
         <div class="regular-lg pb-5">
-          <img src="images/healthwatch-23-02.png" class="img-fluid center-block d-block mx-auto" alt="image">
+          <div style="display:flex; flex-direction:row">
+            <img src="images/healthwatch-23-02.png" class="img-fluid center-block d-block mx-auto" alt="image">
+            <img src="images/healthwatch-23-03.png" class="img-fluid center-block d-block mx-auto" alt="image">
+          </div>
           <div class="caption pt-3">
-            R.I.P. design #2.
+            Two more versions. We increased fidelity as our confidence in the design grew.
           </div>
         </div> 
         <div class="regular-lg pb-5">
-          Our next sketches took these insights into account. The throughput chart at top went over well, as did the CPU usage at the bottom. The middle charts tried to show distributions of latency and CPU, but generally confused everyone.
+          What we learned from the expert panel is that operators care first about overall traffic and whether it is trending up or down. If something is concerning, they then will want router details, such as latency and errors. I worked with engineers to explore bringing in new metrics.
         </div>
-        <div class="regular-lg pb-5">
-          <img src="images/healthwatch-23-03.png" class="img-fluid center-block d-block mx-auto" alt="image">
-          <div class="caption pt-3">
-              R.I.P. design #3.
-          </div>
-        </div> 
-        <div class="regular-lg pb-5">
-          Next we learned that if there is a change in throughput, operators would want to know if there is a change in the number of errors, which tend to have a steady-state rate at scale. We added a chart showing errors at thee bottom. We still clung to trying to show CPU as a distribution, but it did not last much longer.
-        </div>
+       
         <div class="headline-small pb-4">Layout and Hierarchy</div>
         <div class="regular-lg pb-4">
-          For data dashboards, like in typography, meaning drives layout. Dashboards are in some ways like hieroglyphs&mdash;meaning is often created by combining together multiple symbols, or graphs, in a logical order. 
+          For data dashboards, like in typography, meaning drives layout.
         </div>
         <div class="regular-lg pb-0">
           Through our iterative design process, we first understood the implications of metrics and how they naturally hung together with others. That drove layout decisions. For example, some indicators, like HTTP throughput, are key to interpreting others, and therefore are given prominence. 
@@ -966,7 +957,7 @@
     </div>
   </div>
 
-  <div class="container-fluid-content-02 pb-5" style="max-width: 1400px; margin-bottom:240px;">
+  <div class="container-fluid-content-02 pb-5" style="max-width: 900px; margin-bottom:240px;">
     <div class="row">
       <div class="col-md">
         <img src="images/healthwatch-23-04.png" class="img-fluid center-block d-block mx-auto" alt="image">
@@ -1377,7 +1368,7 @@
           Impact on Pivotal's Design Practice
         </div>
         <div class="regular-lg pb-5">
-          User-centered design was not widely accepted in Pivotal's R&D department when we started. After launch, I gave lightning talks and wrote essays on our process (one of which was publiched in PC World and translated into German). It most likely didn't hurt that our design process was associated with 100% traction.
+          User-centered design was not widely accepted in Pivotal's R&D department when we started. After launch, I gave lightning talks and wrote essays on our process (one of which was publiched in PC World and translated into German). 
         </div>
         <div class="headline-small pb-4">
           Impact on Marketing and Sales
