@@ -121,6 +121,7 @@
 
 <!--***********************************************-->
 
+<div class="bg-light-gray">
   <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:60px;">
     <section class="row">
       <div class="col-md section-header-no-border pb-4">
@@ -220,8 +221,9 @@
            <div class="caption pt-4 text-medium-light">Sketch and wireframe exploring compacting boxplots down and using them as tab navigation.</div>
         </div>
         <div class="regular-lg pb-4">
-          The answer to the trade-offs I faced was to do away with the boxplot and compact everything down to thumbnail size, and use this as the navigation. Things started to feel like they were coming together. 
+          The answer to the trade-offs I faced was to do away with the boxplot and compact everything down to thumbnail size, and use this as the navigation. 
         </div>
+        <!--
         <div class="regular-lg pb-0">
           <div class="bold-5 pb-4">Pros:</div>
           <ul>
@@ -235,71 +237,12 @@
           </ul>
 
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="bg-dark-gray">
-  <div class="container-fluid-content-02 ps-5 pe-5" style="max-width: 600px; padding-bottom:60px; padding-top:240px;">
-    <div class="row">
-      <div class="col-md">
-        <div class="headline-medium pb-4 text-extra-light" style="text-align: left;">
-          A Few Interesting Concepts
-        </div> 
-        <div class="regular-lg text-light">
-          Below are a few early concepts that eventually made it into the prototype. 
-          <!--These examples show how an iterative approach to design that includes data analysis can lead to novel solution ideas. It also shows how seemingly disparate ideas can come together in interesting ways.-->
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02 ps-5 pe-5" style="max-width: 900px; padding-bottom:240px; padding-top:0px;">
-    <div class="row pb-5 g-4">
-      <div class="col-lg">
-        <div class="mb-4" style="background-color: #444;">
-          <img src="images/weather-06.png" class="img-fluid p-2" alt="image">
-        </div>
-        <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>Air Pollution Idea One</b></div>
-        <div class="regular-lg text-light ps-3 pe-3">
-          I started experimenting with puting air pollution forecasts line charts over color-coded qualitative categories defined by the EPA. These convey air quality hazardousness with easy-to-understand labels such as "Unhealthy" and "Very Unhealthy". 
-        </div>
-      </div>
-      <div class="col-lg">
-        <div class="mb-4" style="background-color: #444">
-          <img src="images/weather-05.png" class="img-fluid p-2" alt="image">
-        </div>
-        <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>Air Pollution Idea Two</b></div>
-        <div class="regular-lg text-light ps-3 pe-3">
-          In this version I made the qualitative color bars vertical. This would allow users to align unhealthy air quality with the time of day on the x-axis. (e.g., "Air quality will be unhealthy from 12 pm until 3 pm.") This resonated with what I saw in the data: air quality can go from good to unhealthy in just a few hours.
-        </div>
-      </div>
-    </div>
-    <div class="row pb-4 g-4">
-      <div class="col-lg">
-        <div class="mb-4" style="background-color: #444">
-          <div><img src="images/weather-08.png" class="img-fluid p-2" alt="image"></div>
-        </div>
-        <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>Chart Interactions</b></div>
-        <div class="regular-lg text-light ps-3 pe-3">
-          I needed to think through gestures and how they might conflict. In this case, a drag gesture conflicts with the primary swipe interation of the app. These sketches explore how a double tap will activate the chart and allow users to drag across it to see hourly values (answering the question "How cold will it be when I walk to work tomorow morning?"). 
-        </div>
-      </div>
-      <div class="col-lg">
-        <div class="mb-4" style="background-color: #444">
-          <img src="images/weather-10.png" class="img-fluid p-2" alt="image">
-        </div>
-        <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>Historical Data</b></div>
-        <div class="regular-lg text-light ps-3 pe-3">
-          Above is one of many sketches exploring how historic data might be displayed. In this case, the gray-shaded area chart behind the forecast line shows 95th and 5th percentiles, which would show the user how cold or warm it can get. This concept ended up working well together with the chart interactions.
-        </div>
+        -->
       </div>
     </div>
   </div>
 </div>
 
-
-<!--***********************************************-->
 
   <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:60px;">
     <section class="row">
@@ -343,6 +286,95 @@
     </div>
   </div>
 
+<!--***********************************************--> 
+
+<div class="bg-dark-gray" style="background-color: #555;">
+  <div class="container-fluid-content-02 ps-5 pe-5" style="max-width: 600px; padding-bottom:60px; padding-top:240px;">
+    <div class="row">
+      <div class="col-md">
+        <div class="headline-medium pb-4 text-extra-light" style="text-align: left;">
+          Convergence of Ideas
+        </div> 
+        <div class="regular-lg text-light">
+          Below is an example of how two concepts, viewing temperature details and conveying historical data, converged.
+          <!--These examples show how an iterative approach to design that includes data analysis can lead to novel solution ideas. It also shows how seemingly disparate ideas can come together in interesting ways.-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid-content-02 ps-5 pe-5" style="max-width: 1200px; padding-bottom:240px; padding-top:0px;">
+    <!--
+    <div class="row pb-5 g-4">
+      <div class="col-lg">
+        <div class="mb-4" style="background-color: #444;">
+          <img src="images/weather-06.png" class="img-fluid p-2" alt="image">
+        </div>
+        <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>Air Pollution Idea One</b></div>
+        <div class="regular-lg text-light ps-3 pe-3">
+          I started experimenting with puting air pollution forecasts line charts over color-coded qualitative categories defined by the EPA. These convey air quality hazardousness with easy-to-understand labels such as "Unhealthy" and "Very Unhealthy". 
+        </div>
+      </div>
+      <div class="col-lg">
+        <div class="mb-4" style="background-color: #444">
+          <img src="images/weather-05.png" class="img-fluid p-2" alt="image">
+        </div>
+        <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>Air Pollution Idea Two</b></div>
+        <div class="regular-lg text-light ps-3 pe-3">
+          In this version I made the qualitative color bars vertical. This would allow users to align unhealthy air quality with the time of day on the x-axis. (e.g., "Air quality will be unhealthy from 12 pm until 3 pm.") This resonated with what I saw in the data: air quality can go from good to unhealthy in just a few hours.
+        </div>
+      </div>
+    </div>
+    -->
+    <div class="row pb-4 g-4">
+      <div class="col-lg">
+        <div class="mb-4" style="background-color: #555; height: 680px; margin:auto;">
+          <div><img src="images/weather-08-01.png" class="img-fluid p-2" alt="image"></div>
+        </div>
+        <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>Chart Interactions</b></div>
+        <div class="regular-lg text-light ps-3 pe-3">
+          I wanted users to be able to find the answer to the question "How cold will it be when I walk to work tomorow morning?". I started with sketches, then created the wireframe above to explore how a long tap will activate the chart and allow users to drag to see hourly values. 
+        </div>
+      </div>
+      <div class="col-lg">
+        <div class="mb-4" style="background-color: #555; height: 680px;">
+          <img src="images/weather-08-02.png" class="img-fluid p-2" alt="image">
+        </div>
+        <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>Historical Data</b></div>
+        <div class="regular-lg text-light ps-3 pe-3">
+          Above is one of many explorations on how historic data might be displayed. In this case, the gray-shaded area chart behind the forecast line shows 95th and 5th percentiles, which would show the user how cold or warm it can get at a given time of year. 
+        </div>
+      </div>
+      <div class="col-lg">
+        <div class="mb-4" style="background-color: #555">
+          <div style="
+            margin-left: auto;
+            margin-right: auto;
+            border-radius:55px; 
+            overflow: hidden; 
+            width: 340px;
+            height: 680px;
+            background-color: #555;
+          ">
+            <img data-gifffer="images/weather-history.gif" 
+              data-gifffer-width="340" data-gifffer-height="680"
+               alt="image"/>
+          </div>
+        </div>
+        <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>Convergence</b></div>
+        <div class="regular-lg text-light ps-3 pe-3">
+          Users can see data for specific times of day by activating the chart with a long tap. Once activated, A drag-down interaction "pulls" historic temperature data out, answering the question, "How cold can it get this time of year in the morning?"
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
 
 <!--***********************************************-->
 
@@ -359,7 +391,7 @@
           <div class="headline-medium text-extra-light pb-5" style="max-width: 400px;">
             Code as Part of the Design Process
           </div>
-          <div class="headline-small text-extra-light pb-4">
+          <div class="headline-small pb-4" style="color:#999">
             Designing for Many Screen Sizes
           </div>
           <div class="regular-lg pb-0 text-light">
@@ -384,14 +416,15 @@
         <div class="regular-lg pb-5 text-light">
           React Native uses FlexBox, which means layouts can be defined as rules that respond differently depending on screen dimensions and content. I got in the habit of running three iOS simulators so I could work out layouts on many screens at once.
         </div>
-        <div class="headline-small text-extra-light pb-4">
+        <!--
+        <div class="headline-small pb-4" style="color:#999">
           Working Out Chart Activation / Exploration
         </div>
         <div class="regular-lg pb-4 text-light">
-          One question the app was to answer was, "How cold will it be tomorrow morning when I'll be walking to work?" Users should be able to see data for specific times of day. I enabled this by using a long tap (250 ms) to activate the chart. Once activated, the user can drag a cursor to get details. 
+          One question the app was to answer was, "How cold will it be tomorrow morning when I'll be walking to work?" Users can see data for specific times of day by activating the chart with a long tap. Once activated, A drag-down interaction "pulls" historic temperature data out. This would answer, "How cold can it get this time of year in the morning?"
         </div>
         <div class="regular-lg text-light" style="margin-bottom:120px;">
-          I also experimented with a drag-down interaction that "pulls" historic temperature data out. This would answer, "How cold can it get this time of year?" 
+           
         </div>
         <div style="
           margin-left: auto;
@@ -412,7 +445,9 @@
         <div class="regular-lg pb-5 text-light">
           A couple of concepts seem to work well together: If the user wants details, they can long tap. The app then "knows" they want details, so once in this active mode, they can get more.
         </div>
+         -->
       </div>
+
     </div>
   </div>
 
