@@ -463,10 +463,10 @@
     <div class="row">
       <div class="col-md">
         <div class="headline-medium pb-5">
-          Seeing the Customer's Perspective
+          Concept Validation and Seeing the Customer's Perspective
         </div>
         <div class="regular-lg pb-4">
-          We set up interviews with around 30 stakeholders, customers, and field engineers (who work onsite at our customers’ offices). Our goal was to better understand our customers' needs with platform monitoring and if there might be a place for us. 
+          We set up interviews with around 30 customer platform operators and Pivotal field engineers (who work onsite at our customers’ offices). Our goal was to better understand our customers' needs with platform monitoring and if there might be a place for us. 
         </div>
       </div>
     </div>
@@ -485,18 +485,14 @@
           Key Findings
         </div>
         <div class="regular-lg pb-4"> 
-          After four weeks of user interviews and synthesis, a few themes manifested:  
+          After a few weeks of user interviews and synthesis, a few themes manifested:  
         </div>
         <div class="regular-lg">
-
-         <ul class="pb-0">
+          <ul class="pb-0">
+            <li class="pb-4"><b>Data overload:</b> There are "thousands of metrics” and “customers don’t know what to monitor”. Only a relatively small number of metrics are really needed to be effective, the trick is to know which ones.</li>
             <li class="pb-4"><b>Metrics are “esoteric”:</b> For the uninitiated, it is difficult to know what to do with the platform’s metrics and they can be hard to interpret. Customers “want a decoder ring” to help them.</li>
-
-            <li class="pb-4"><b>Data overkill:</b> There are "thousands of metrics” and “customers don’t know what to monitor”. Only a relatively small number of metrics are really needed to be effective, the trick is to know which ones.</li>
-
-            <li class="pb-4"><b>3rd-party tools are prevalant:</b> Most customers are already paying for licenses for third-party tools and plan to use them for platform monitoring. But a “bridge solution" could be useful while they are getting up to speed with the platform.</li>
-
-            <li><b>Many teams with many needs:</b> There are a lot of teams monitoring, all of which have different needs. Monitoring is “always a snowflake”.</li>
+            <li class="pb-4"><b>Third-party tools are hard to learn:</b> Most customers are already paying for third-party tools and plan to use them for platform monitoring. But these tools themselves take time to learn. Our GUI could be a “bridge solution" while they are getting up to speed with the platform.</li>
+            <li><b>Platform monitoring dashboards are "snowflakes":</b> There are a lot of teams monitoring, all of which have different needs. In the long run, operations teams will create dashboards unique to their.</li>
           </ul>
         </div>
       </div>
@@ -654,7 +650,7 @@
 <div class="container-fluid-content-02" style="max-width: 600px; padding-top: 0px; padding-bottom: 240px;">
   <div class="row">
       <div class="regular-lg pb-5">
-        Using data from our research track, I created a journey map that captured the non-linear nature of the user experience. When there is a potential issue with the platform, our users go on a journey through an constellation of alerts, dashboards, and Slack conversations. Our app would manifest as touchpoints along this journey.
+        Our journey map conveyed the non-linear nature of the user experience. It also captured that we would be part of a larger ecosystem: When there is a potential issue with the platform, our users go on a journey through an constellation of alerts, dashboards, and Slack conversations. Our work would manifest as touchpoints along that journey&mdash;sometimes as UIs, sometimes not.
       </div>
      
       <div class="headline-small pb-4">
@@ -946,10 +942,12 @@
             Two more versions. We increased fidelity as our confidence in the design grew.
           </div>
         </div> 
+        <div class="regular-lg pb-4">
+          What we learned from the expert panel is that operators care first about overall traffic and whether it is trending up or down. If something is concerning, they then will want router details, such as latency and errors. 
+        </div> 
         <div class="regular-lg pb-5">
-          What we learned from the expert panel is that operators care first about overall traffic and whether it is trending up or down. If something is concerning, they then will want router details, such as latency and errors. Around this time, I started working with engineers to explore bringing in new metrics.
+          This direction required aggregating traffic data from multiple routers in realtime, which is no easy task. I presented the new concept during our engineering review the next Monday. Engineers felt the aggregation was doable, and they began technical explorations.
         </div>
-       
         <div class="headline-small pb-4">Layout and Hierarchy</div>
         <div class="regular-lg pb-4">
           For data dashboards, like in typography, meaning drives layout.
@@ -1337,7 +1335,43 @@
   </div>
 </div>
 
+<!--***********************************************-->
 
+<div class="bg-dark-gray"> 
+  <div class="container-fluid-content-01 pb-0" style="padding-bottom:120px">
+    <section class="row">
+      <div class="col-md section-header-no-border pb-4">
+        The Solution
+      </div>
+    </section>
+    <div class="row">
+      <div class="col-md">
+        <div class="headline-medium pb-5 text-extra-light">
+          Customer Problems, Solved
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:240px;">
+    <div class="row">
+      <div class="col">
+        <img src="images/healthwatch-02-01.png" class="img-fluid pb-2" alt="image">
+          <div class="caption pt-0 text-light pb-5">The main dashboard (Visual design by Justin Roozeboom.)</div>
+      </div>
+      <div class="col-4">
+        <div class="regular-lg text-light">
+          <ul class="pb-0 pt-3">
+            <li class="pb-4"><b>Data overload:</b> HealthWatch conveys the health of the platform with a few dozen key metrics.</li>
+            <li class="pb-4"><b>Metrics are “esoteric”:</b> All dashboard components have help buttons that open documentation with KPI definitions.</li>
+            <li class="pb-4"><b>Third-party tools are hard to learn:</b> Our dashboards requires no prior knowledge or configuration.</li>
+            <li><b>Platform monitoring dashboards are "snowflakes":</b> Our product is based on an API customers are free to use when they are ready to create their own dashboards.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!--***********************************************-->
 
@@ -1372,13 +1406,13 @@
           Impact on Pivotal's Design Practice
         </div>
         <div class="regular-lg pb-5">
-          User-centered design was not widely practiced in Pivotal's R&D department when we started. After launch, I gave two lightning talks and wrote an essay on our process (which was publiched in PC World and translated into German). 
+          User-centered design was not widely practiced in Pivotal's R&D department when we started. After launch, I gave two lightning talks and wrote an essay on our process (which was published in PC World and translated into German). 
         </div>
         <div class="headline-small pb-4">
           Impact on Marketing and Sales
         </div>
         <div class="regular-lg pb-5"> 
-          Dogfooding had a lot of benefits. The feedback was great, but dogfooding also had a another angle: Our sales and marketing teams could say, “We use this product ourselves.” I also heard from the field that the out-of-the-box UI played well in sales demos.  
+          Dogfooding had value we didn't think of: Our sales and marketing teams could say, “We use this product ourselves.” I also heard from the field that the out-of-the-box UI played well in sales demos.  
         </div>
         <div class="headline-small pb-4">
           U.S. Patent
@@ -1414,13 +1448,13 @@
             <li class="pb-4"><b>The expert advisory panel worked well:</b> 
               By meeting regularly, the panel felt they were part of the process. We developed a repore, which meant we got comfortable getting critical feedback. In addition, the field engineers on the panel were, in the end, basically SMEs (subject matter experts). They trained other field engineers.
             </li>
-           
             <li class="pb-4"><b>Emergent design came with challenges:</b> 
               The design we came up with was not top-down. It emerged over several weeks. This was good in a lot of ways, but had some drawbacks. IA was challenging. We made design decisions optimized locally and when stepped back, getting everything to sync was difficult. 
             </li>
             <li class="pb-4"><b>We got UCD and Agile to play fairly nice:</b> 
-              Our weekly design cadence with regular interaction with engineering worked. A lot of this is due to the fact that our design was emergent. There is still work to be done in figuring our how to sync the oscillating cadence of a UCD process with the relentless momentum of an Agile dev team.
+              Our weekly design cadence with regular interaction with engineering worked. A lot of this is due to the fact that our design was emergent. There is still work to be done in figuring our how to sync the oscillating cadence of a UCD process with the relentless momentum of an Agile dev team. -- Different cadences means communication needs to change.--
             </li>
+          </ul>
         </div>
       </div>
     </div>
