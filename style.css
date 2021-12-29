@@ -36,9 +36,9 @@ h4 {
 
 /* Rules for sizing the icon. */
 
-.material-icons.md-32 { font-size: 32px; color:#000; }
-.material-icons.md-48 { font-size: 48px; color:#000; }
-.material-icons.md-72 { font-size: 72px; color:#000; }
+.material-icons.md-32  { font-size: 32px; color:#000; }
+.material-icons.md-48  { font-size: 48px; color:#000; }
+.material-icons.md-72  { font-size: 72px; color:#000; }
 .material-icons.md-104 { font-size: 104px; color:#000; }
 .material-icons.md-152 { font-size: 152px; color:#000; }
 
