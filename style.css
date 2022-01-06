@@ -223,8 +223,8 @@ a { text-decoration: none; }
 
 .headline-small {
 	font-size: 1.5em;
-	font-weight: 300;
-	color: #777; /*#627484; #575757;*/
+	font-weight: 400;
+	color: #000; /*#627484; #575757;*/
 	line-height:1.33;
 }
 
