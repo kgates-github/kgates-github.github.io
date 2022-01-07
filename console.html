@@ -78,8 +78,9 @@
         height:900px; 
         width:105%; 
         background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.0) ), url('images/console-01.png'); 
-        
+        background-position: 50% 20%;
         background-repeat: no-repeat;
+        background-size: cover;
         margin-right:-25px;">
    
   </div>
@@ -128,7 +129,7 @@
         <div class="bold-5 pb-4">Project Goals</div>
         <div class="regular-lg pb-5">
           <ul class="pb-0">
-            <li class="pb-4"><b>Start with customer needs:</b> We wanted to have an evidence-driven approach to ideation. Understanding customers would always precede solution ideas.</li>
+            <li class="pb-4"><b>Start with understanding the customer:</b> We wanted to have an evidence-driven approach to ideation. Understanding customers would always precede solution ideas.</li>
             <!--<li class="pb-4"><b>Go wide:</b> We wanted to thoroughly understand the customer perspective in getting / granting access to software-building tools.</li>-->
             <li class="pb-4"><b>Be transdiscliplinary:</b> Infuse the whole design process with diverse perspectives. There are many facets to a successful product&mdash;engineering, design, marketing and more. All should have a role in the creative process.</li>
              <li class="pb-0"><b>Come up with actionable ideas:</b> An R&D product team should be able to start writing code shortly after the exd of the creative process.</li>
@@ -353,19 +354,25 @@
     </section>
     <div class="row">
       <div class="col-md">
-        <div class="headline-medium pb-5">
+        <div class="headline-medium pb-0">
           Understanding Our Two Primary Users
         </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid-content-02 pb-4" style="max-width: 1200px; padding-top:120px; padding-bottom:0px;">
+    <div class="row g-5">
+      <div class="col-md">
         <div class="pb-5" style="display:flex; flex-direction: row; align-items: center;">
-	        <div style="width:170px; height:170px;">
-	          <img src="images/avatar-03.png" style="float:left; margin: 0px 30px 0px 0px; width:170px; height:170px;"alt="image">
-	        </div>
-	        <div class="" style="flex:1; font-weight: 400 !important; font-size:1.5em; line-height: 1.2em; padding-left: 20px;">
-	          App Developer<br>
-	          <span style="font-weight: 200 !important;">Cody</span>
-	        </div>
-	      </div>
-       
+          <div style="width:170px; height:170px;">
+            <img src="images/avatar-03.png" style="float:left; margin: 0px 30px 0px 0px; width:170px; height:170px;"alt="image">
+          </div>
+          <div class="" style="flex:1; font-weight: 400 !important; font-size:1.5em; line-height: 1.2em; padding-left: 20px;">
+            App Developer<br>
+            <span style="font-weight: 200 !important;">Cody</span>
+          </div>
+        </div>
         <div class="regular-lg pb-4">
           <span class="bold-5">Role:</span> App developers build apps and other types of software.
         </div>
@@ -373,13 +380,65 @@
           <span class="bold-5">Characteristics:</span> Ninety-seven to ninety-nine percent of our customers’ developers are early in their careers. Most are focused on writing code and are mostly not able or comfortable working with cloud infrastructure.
         </div>
         <div class="regular-lg pb-4">
-          <span class="bold-5">Key Drivers:</span> App devs want access to a wide variety of tools and the latest hot tech. There are a number of reasons for this:
+          <span class="bold-5">Key Drivers:</span> App devs want access to a wide variety of tools and the latest hot tech. 
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="regular-lg pb-4">
+          <span class="bold-5">Underlying Motivators:</span> There are a number of reasons driving app dev demand for tools:
         </div>
         <div class="regular-lg pb-4">
 					<ul>
             <li class="pb-4"><b>Role-specific needs:</b> Developers come in many forms. A data scientist requires a very different set of tools than a mobile app developer.</li>
             <li class="pb-4"><b>Task-specific needs:</b> Engineers sometimes start with specific needs related to the task at hand. For example, an aerospace engineering team creating flight control tests might need a time-series database with specified level of latency.</li>
             <li class="pb-0"><b>Resume value:</b> Developers often want the latest hot tech. This is partly due to resume value, which can determine their viability in the job market.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02 pb-4" style="max-width: 1200px; padding-top:120px; padding-bottom:0px;">
+    <div class="row g-5">
+      <div class="col-md">
+        <div class="pb-4" style="display:flex; flex-direction: row; align-items: center;">
+          <div style="width:170px; height:170px;">
+            <img src="images/avatar-02.png" style="float:left; margin: 0px 30px 0px 0px; width:170px; height:170px;"alt="image">
+          </div>
+          <div class="" style="flex:1; font-weight: 400 !important; font-size:1.5em; line-height: 1.2em; padding-left: 20px;">
+            Platform Operator<br>
+            <span style="font-weight: 200 !important;">Alana</span>
+          </div>
+        </div>
+
+        <div class="regular-lg pb-4">
+          <span class="bold-5">Role:</span> Platform operators maintain the cloud platform. They are responsible for providing tools for developers, keeping the platform up-to-date, and troubleshooting when something goes wrong.
+        </div>
+        <div class="regular-lg pb-4">
+          <span class="bold-5">Characteristics:</span> Even in large organizations, operator teams tend to be small, with 10 - 20 people. This contrasts with the fact that their platforms can be used by hundreds, even thousands of developers.
+        </div>
+        <div class="regular-lg pb-4">
+          <span class="bold-5">Key Drivers:</span> Operators want to offer a small, manageable set of tools that cover a wide surface area. 
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="regular-lg pb-4">
+          <span class="bold-5">Underlying Motivators:</span> Despite app developer demands, operators are often unwilling or unable to provide all of the tools developers want. There are a number of reasons for this:
+        </div>
+        <div class="regular-lg pb-4">
+          <ul>
+            <li class="pb-4"><b>Risk aversion:</b>
+              Cloud platforms are extremely complex, but tend to be stable as long as nothing changes. Introducing new tools means introducing change, and change brings risk of something going wrong.
+            </li>
+            <li class="pb-4"><b>Developing expertise:</b> 
+              If an operations team offers a new technology on their platform, they are expected to be experts at that technology. When something goes wrong, the operations teams are expected to fix it.
+            </li>
+            <li class="pb-0"><b>Not enough demand:</b> 
+              Operations teams are inherently small and they tend to be unwilling to support tools for which there is little demand.
+            </li>
+            <!--<li><b>Remembering getting burned:</b> 
+              Consequences for problems with the platform can be severe. Downtime could mean lost revenue. A security breach might bring bad press and subpoenas. Audit teams can appear unannounced at any time, and if they uncover mistakes, shut things down for months.
+            </li>-->
           </ul>
         </div>
       </div>
@@ -412,54 +471,11 @@
 -->
 
 
-  <div class="container-fluid-content-02 pb-4" style="max-width: 600px; padding-top:120px; padding-bottom:0px;">
-    <div class="row">
-      <div class="col-md">
-        <div class="pb-4" style="display:flex; flex-direction: row; align-items: center;">
-	        <div style="width:170px; height:170px;">
-	          <img src="images/avatar-02.png" style="float:left; margin: 0px 30px 0px 0px; width:170px; height:170px;"alt="image">
-	        </div>
-	        <div class="" style="flex:1; font-weight: 400 !important; font-size:1.5em; line-height: 1.2em; padding-left: 20px;">
-	          Platform Operator<br>
-	          <span style="font-weight: 200 !important;">Alana</span>
-	        </div>
-	      </div>
 
-        <div class="regular-lg pb-4">
-          <span class="bold-5">Role:</span> Platform operators maintain the cloud platform. They are responsible for providing tools for developers, keeping the platform up-to-date, and troubleshooting when something goes wrong.
-        </div>
-        <div class="regular-lg pb-4">
-          <span class="bold-5">Characteristics:</span> Even in large organizations, operator teams tend to be small, with 10 - 20 people. This contrasts with the fact that their platforms can be used by hundreds, even thousands of developers.
-        </div>
-        <div class="regular-lg pb-4">
-          <span class="bold-5">Key Drivers:</span> Operators want to offer a small, manageable set of tools that cover a wide surface area. Despite app developer demands, operators are often unwilling or unable to provide all of the tools developers want. There are a number of reasons for this:
-        </div>
-
-        
-        <div class="regular-lg pb-4">
-					<ul>
-            <li class="pb-4"><b>Risk aversion:</b>
-							Cloud platforms are extremely complex, but tend to be stable as long as nothing changes. Introducing new tools means introducing change, and change brings risk of something going wrong.
-						</li>
-            <li class="pb-4"><b>Developing expertise:</b> 
-							If an operations team offers a new technology on their platform, they are expected to be experts at that technology. When something goes wrong, the operations teams are expected to fix it.
-            </li>
-            <li class="pb-0"><b>Not enough demand:</b> 
-							Operations teams are inherently small and they tend to be unwilling to support tools for which there is little demand.
-            </li>
-            <!--<li><b>Remembering getting burned:</b> 
-							Consequences for problems with the platform can be severe. Downtime could mean lost revenue. A security breach might bring bad press and subpoenas. Audit teams can appear unannounced at any time, and if they uncover mistakes, shut things down for months.
-            </li>-->
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:240px;">
+  <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:240px; padding-top:120px;">
     <div class="row">
       <div class="col-md p-3 pullquote">
-        “An audit team found unencrypted passwords on a VM and shut the operations team down for eight months.”
+        “If it's a one-off thing and there is no demand, we don't want to touch it.”
       </div>
     </div>
   </div>
@@ -554,14 +570,14 @@
   <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom: 0px; padding-top: 0px;">
     <div class="row">
       <div class="col-md pb-0">
-        <div class="regular-lg pb-4">
-          Since the misalignment between app devs and operators is central to everything we would do, our approach to journey mapping reflected that:
+        <div class="regular-lg pb-5">
+          Since the misalignment between app devs and operators is central to everything we would do, our approach to journey mapping reflected that.
+        </div>
+        <div class="headline-small pb-4">
+          Overall Journey
         </div>
         <div class="regular-lg pb-5">
-          <ul>
-            <li class="pb-4"><b>Developer journey:</b> First, we created a walk-through of the app dev journey that emphasized conflict.</li>
-            <li class="pb-4"><b>Dev tool access journeys:</b> Next we created mini-jouney maps that showed the reality of how developers get what they need.</li>
-          </ul>
+          First, we created a walk-through of the app dev journey that emphasized misalignment between roles. 
         </div>
       </div>
     </div>
@@ -1058,7 +1074,7 @@
       <div class="col-md">
         <div class="headline-small pb-4">Drilling Down</div>
         <div class="regular-lg pb-0">
-          We had a clear direction from the advisory panel, but they were very high-level, and we needed to drill into them them further. We did this by taking each concept (e.g., "Tiered SLAs") and expanding through more "how might we?" exercises. 
+          We had a clear direction from the advisory panel, but our concepts were very high-level, and we needed to drill into them them further. We did this by taking each concept (e.g., "Tiered SLAs") and expanding through more "how might we?" exercises. 
 				</div>
 	    </div>
 		</div>
@@ -1067,7 +1083,7 @@
 	<div class="container-fluid-content-02" style="max-width: 1400px; padding-bottom:240px; padding-top:0px;">
     <div class="row pb-4">
       <div class="col-md">
-        <img src="images/console-26.png" class="img-fluid pt-5 ps-4 pe-4 pb-5" alt="image" style="border:1px solid #ccc;">
+        <img src="images/console-26-01.png" class="img-fluid pb-4" alt="image" style="border:1px solid #fff;">
         <div class="caption pt-3">Diagram showing chains of solutions that originate from “How might we allow more tools to be available?”.</div>
       </div> 
     </div>
