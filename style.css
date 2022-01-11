@@ -221,7 +221,7 @@ a { text-decoration: none; }
 	font-size: 2.35em;
 	font-weight: 700;
 	color:#575757;
-	line-height:1.2;
+	line-height:1.1;
 }
 
 .headline-small {
@@ -236,7 +236,7 @@ a { text-decoration: none; }
 	font-size: 1.77em;
 	font-weight: 400;
 	color:#666;
-	line-height:1.37;
+	line-height:1.33;
 }
 
 .ideogram-sm {
@@ -319,7 +319,7 @@ p.center-lg {
 	font-weight: 300;
 	/*font-family: 'Lora', 'Garamund', serif;*/
 	font-style: italic;
-	color:#777;
+	color:#333;
 	line-height:1.3;
 	text-align: center;
 	max-width:600px;
