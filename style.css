@@ -388,11 +388,19 @@ p.center-lg {
   .card-image {
     display: none !important;
   }
+
+  .headshot {
+    display: none !important;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .card-image {
     display: flex !important;
+  }
+
+  .headshot {
+    display: block !important;
   }
 }
 
