@@ -13,7 +13,15 @@
     ga('send', 'pageview');
     </script>
     <!-- End Google Analytics -->
-    
+
+    <script>
+      function toggleNav() {
+        let margin = (document.getElementById("side-bar-nav").style.width == '0px') ? '200px' : '0px';
+        document.getElementById("side-bar-nav").style.width = margin;
+        document.getElementById("main-body-cont").style.marginLeft = margin;
+      }
+    </script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,32 +37,12 @@
     <title>Kevin Gates, UX Design Portfolio</title>
   </head>
   <body>
-    
-  <div class="side-bar-nav"
-    style="height:100%; position:fixed; padding-top:630px; display:none; ">
-    <div class="pt-4 ps-4 pb-5" style ="background-color: rgba(255, 255, 255, 1); 
-          width: 150px; line-height: 1.6em; border-radius: 0px 2px 2px 0px;">
-      <div class='side-nav pt-3'><a href="writing.html" style="font-weight: 700;">Intro</a></div>
-      <div class='side-nav'><a href="writing.html">Tl;dr</a></div>
-      <div class='side-nav'><a href="writing.html">Roadmapping</a></div>
-      <div class='side-nav pt-3'><a href="writing.html" style="font-weight: 700;">Research</a></div>
-      <div class='side-nav'><a href="writing.html">Interviews</a></div>
-      <div class='side-nav'><a href="writing.html">Personas</a></div>
-      <div class='side-nav'><a href="writing.html">Findings</a></div>
-      <div class='side-nav pt-3'><a href="writing.html" style="font-weight: 700;">Ideation</a></div>
-      <div class='side-nav'><a href="writing.html">Workshop prep</a></div>
-      <div class='side-nav'><a href="writing.html">Prioritization</a></div>
-      <div class='side-nav'><a href="writing.html">Causal mapping</a></div>
-      <div class='side-nav'><a href="writing.html">How might we?</a></div>
-      <div class='side-nav'><a href="writing.html">Visioning</a></div>
-      <div class='side-nav'><a href="writing.html">Storyboard</a></div>
-    </div>
-  </div>
 
+  
   <div class="ps-4 pe-4" 
     style="height:60px; width: 100%; display:flex; 
       flex-direction:row; align-items: center; 
-      position:fixed; background-color: white; ">
+      position:fixed; background-color: white; z-index: 100;">
     <div style="flex:1">
       <a href="index.html" style="line-height: 1.1em;">
         <div class='nav-header'>Kevin Gates</div>
@@ -69,6 +57,54 @@
     </div>
   </div>
 
+  <div id="side-bar-nav"
+    style="
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 120px;
+    ">
+    <div class="ps-4 pb-5" style ="line-height: 1.6em;">
+      <div class='side-nav pb-2'><a href="#nav-01" style="font-weight: 700;">INTRO</a></div>
+      <div class='side-nav ms-2'><a href="#nav-01">Tl;dr</a></div>
+      <div class='side-nav ms-2'><a href="#nav-03">Role and team</a></div>
+      <div class='side-nav ms-2'><a href="#nav-04">Roadmapping</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-05" style="font-weight: 700;">RESEARCH</a></div>
+      <div class='side-nav ms-2'><a href="#nav-06">Interviews</a></div>
+      <div class='side-nav ms-2'><a href="#nav-07">Personas</a></div>
+      <div class='side-nav ms-2'><a href="#nav-08">Findings</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-09" style="font-weight: 700;">IDEATION</a></div>
+      <div class='side-nav ms-2'><a href="#nav-10">Workshop prep</a></div>
+      <div class='side-nav ms-2'><a href="#nav-11">Prioritization</a></div>
+      <div class='side-nav ms-2'><a href="#nav-12">Causal mapping</a></div>
+      <div class='side-nav ms-2'><a href="#nav-13">Solutioning</a></div>
+      <div class='side-nav ms-2'><a href="#nav-14">Visioning</a></div>
+      <div class='side-nav ms-2'><a href="#nav-15">Storyboard</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-16" style="font-weight: 700;">CONCLUSION</a></div>
+      <div class='side-nav ms-2'><a href="#nav-17">Impact</a></div>
+    </div>
+  </div>
+
+<div id="main-body-cont" style="margin-left: 200px;">
+  <a id="nav-01"></a>
+  <div class="menu" onclick="toggleNav()" style="
+      background-color: #111; 
+      color:#ccc; 
+      position:fixed;
+      margin-top: 110px;
+      padding: 6px;
+      width: 34px;
+      font-size: 20px;
+      border-radius: 0px 5px 5px 0px;
+      cursor: pointer;
+    ">☰</div> 
+
   <div class="bg-dark-gray mt-0 nav-padding" style="
       background-color: #000;
       background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url('images/console-01-01a.png'); 
@@ -76,10 +112,9 @@
       background-position: 50% 100%;
       background-size: cover;
     "> 
-  <div style="margin-bottom:60px; margin-top:120px; display: flex; flex-direction: row;">
-    
-    <div style="flex:1; background-color: none; min-width: 190px;"></div>
-    <div class="p-4" style="background-color: rgba(255, 255, 255, 0.7); width: 900px;">
+  
+  <div class="container-fluid-content-02" style="max-width: 900px; margin-top:120px;">
+    <div class="p-4" style="background-color: rgba(255, 255, 255, 0.7); max-width: 900px;">
       <div class="pb-3 mb-3"style="display:flex; flex-direction: row;  
         border-bottom: 1px solid rgba(0, 0, 0, 0.4);"> 
         <div class="regular-lg bold-5" style="width:100px;">
@@ -124,7 +159,7 @@
         </div>
       </div>
     </div>
-    <div style="flex:1; background-color: none; min-width: 190px;"></div>
+    
   </div>
 
   <div class="container-fluid-content-01 overflow-hidden pt-4">
@@ -154,48 +189,14 @@
   </div>
 </div>
 
-
-  <!--***********************************************-->
-
-<!--
-  <div class="bg-dark-gray" style="
-        background-color: #000;
-        height:900px; 
-        width:105%; 
-        background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url('images/console-01-01a.png'); 
-        background-position: 40% 70%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-right:-25px;">
-   
-  </div>
--->
-
-  <!--***********************************************-->
-  
-<!--
-  <div class="bg-dark-gray" >  
-    <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:300px; padding-top:300px;">
-      <div class="row">
-         <div class="p-3 pullquote-light">
-           “To procure a database... <br>you can wait months and months.”
-        </div>
-        <div class="p-3 pullquote-light" style="text-align: right; font-size: 1em !important;">
-           - Enterprise app developer
-        </div>
-       
-      </div>
-    </div>
-  </div>
--->
-
  	<!--***********************************************-->
 
+  <a id="nav-03"></a>
   <div class="bg-light-gray">
   	<div class="container-fluid-content-01 overflow-hidden" style="padding-top:0px;">
       <section class="row" style="padding-top:120px;">
         <div class="col-md section-header-no-border pb-5">
-          The Challenge
+          Role and Team
         </div>
       </section>
       <div class="row">
@@ -242,7 +243,7 @@
 
 <!--***********************************************-->
 
- 
+  <a id="nav-04"></a>
   <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:0px;">
     <section class="row">
       <div class="col-md section-header-no-border pb-4">
@@ -307,7 +308,8 @@
 -->
 
 <!--***********************************************-->
-
+  
+  <a id="nav-05"></a>
   <div class="bg-dark-gray" style="
         background-color: #000;
         height:900px; 
@@ -331,6 +333,7 @@
 
 <!--***********************************************-->
 
+<a id="nav-06"></a>
 <div class="bg-light-gray">
   <div class="container-fluid-content-01 pb-0">
     <section class="row">
@@ -421,7 +424,7 @@
     </div>
   </div>
 
-  <div class="container-fluid-content-02 nav-margin" style="max-width: 100%; padding-top:0px; padding-bottom:120px;">
+  <div class="container-fluid-content-02" style="max-width: 100%; padding-top:0px; padding-bottom:120px;">
     <div class="row gx-3">
       <div class="col-md">
         <img src="images/console-08.jpg" class="img-fluid" alt="image"> 
@@ -435,7 +438,7 @@
 
 <!--***********************************************-->
 
-
+<a id="nav-07"></a>
 <div class="bg-dark-gray">
   <div class="container-fluid-content-01 pb-4">
     <section class="row">
@@ -566,6 +569,7 @@
 
 <!--***********************************************-->
 
+  <a id="nav-08"></a>
   <div class="container-fluid-content-01 pb-5">
 	  <section class="row">
 	    <div class="col-md section-header-no-border pb-4">
@@ -589,21 +593,6 @@
 	    </div>
 	  </div>
 	</div>
-
-  <!--
-	<div class="container-fluid-content-02" style="max-width: 600px; padding-bottom: 120px;">
-	  <div class="row">
-	    <div class="col-md">
-	      <div class="headline-small pb-4">
-					Persona Misalignment as an Argument
-	      </div>
-	      <div class="regular-lg pb-0">
-					Any solutions we would come up with would have to account for these misaligned interests. To help with this, we created a fictional set of arguments between an app dev and operators. Our goal was to drive home key points in a memorable way.
-	      </div>
-	    </div>
-	  </div>
-	</div>
-  -->
 
   <div class="container-fluid-content-02 nav-margin" style="max-width: 1400px; padding-bottom: 120px;">
     <div class="row">
@@ -640,42 +629,41 @@
         <div class="caption pt-5">In our research findings presentation, we imagined a series of fictional arguments between personas to convey misaligned interests.</div>
         </div>
       </div>
-    </div>
+  </div>
 
-    <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom: 0px;">
-      <div class="row">
-        <div class="col-md pb-0">
-          <div class="headline-small pb-4">
-            Dev Tool Access Patterns
-          </div>
-          <div class="regular-lg pb-5">
-            One way or another, developers tend to get the tools they need, often through off-platform sources. Some of these, such as dedicated service teams, are sanctioned, while others, such as developers going "DIY", are not, which can lead to security and compliance risk.
-          </div>
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom: 0px;">
+    <div class="row">
+      <div class="col-md pb-0">
+        <div class="headline-small pb-4">
+          Dev Tool Access Patterns
         </div>
-      </div>
-    </div>
-    <div class="container-fluid-content-02  nav-margin" style="max-width: 1200px; padding-top: 0px; padding-bottom: 240px;">
-      <div class="row">
-        <div class="col-md">
-          <div class="bg-white">
-            <img src="images/console-06-10.png" class="img-fluid center-block d-block mx-auto" alt="image"> 
-          </div>
-           <div class="caption pt-3">
-            Diagrams from our research findings deck that depict the various ways developers get the tools they need from a variety of sources.
-          </div>
+        <div class="regular-lg pb-5">
+          One way or another, developers tend to get the tools they need, often through off-platform sources. Some of these, such as dedicated service teams, are sanctioned, while others, such as developers going "DIY", are not, which can lead to security and compliance risk.
         </div>
       </div>
     </div>
   </div>
 
+  <div class="container-fluid-content-02  nav-margin" style="max-width: 1200px; padding-top: 0px; padding-bottom: 240px;">
+    <div class="row">
+      <div class="col-md">
+        <div class="bg-white">
+          <img src="images/console-06-10.png" class="img-fluid center-block d-block mx-auto" alt="image"> 
+        </div>
+         <div class="caption pt-3">
+          Diagrams from our research findings deck that depict the various ways developers get the tools they need from a variety of sources.
+        </div>
+      </div>
+    </div>
   </div>
+
 
 <!--***********************************************-->
-
+  
+  <a id="nav-09"></a>
    <div class="bg-dark-gray" style="background-color: #000;
       height:900px; 
       width:105%;  
-      /*background-image: url('images/console-00.png');*/
       background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url('images/console-00.png');
       background-repeat: no-repeat;
       background-size: cover;
@@ -687,16 +675,14 @@
 			height:100%;">
       <div style="position: relative; top: 50%; 
       	-ms-transform: translateY(-50%);
-				transform: translateY(-50%);">Ideation Week</div>
+				transform: translateY(-50%);">Ideation Week
+      </div>
     </div>
-  	<!--<div class="container-fluid-content-02 overflow-hidden" style="max-width:1200px;">
-    <img src="images/console-01-01.png" class="img-fluid" alt="Image">
-  	</div>-->
   </div>
 
 <!--***********************************************-->
 
-<div>
+  <a id="nav-10"></a>
   <div class="container-fluid-content-01 overflow-hidden" style="padding-top:10px; padding-bottom: 0px;">
     
     <div class="row">
@@ -718,7 +704,6 @@
     </div>
   </div>
   
-
   <div class="container-fluid-content-02 nav-margin" style="max-width: 900px; padding-bottom:0px; padding-top:0px;">
     <div class="row pb-4">
       <div class="col-md">
@@ -783,8 +768,6 @@
     </div>
   </div>
 
-
-
   <!--
   <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:120px;">
     <div class="row">
@@ -814,7 +797,6 @@
     </div>
   </div>
 
-</div>
 
 <!--
 <div class="bg-dark-gray">
@@ -895,7 +877,7 @@
 
 <!--***********************************************-->
 
-
+<a id="nav-11"></a>
 <div class="bg-light-gray">
   <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:0px;">
     <section class="row">
@@ -967,7 +949,7 @@
 
 <!--***********************************************-->
 
-<div style="border-bottom:1px solid #ccc;">
+  <a id="nav-12"></a>
   <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:0px;">
     <section class="row">
       <div class="col-md section-header-no-border pb-4">
@@ -983,7 +965,7 @@
     </div>
   </div>
 
-  <div class="container-fluid-content-02 pb-5" style="max-width: 1200px; padding-top:0px; margin-top:0px;">
+  <div class="container-fluid-content-02 pb-5" style="max-width: 1000px; padding-top:0px; margin-top:0px;">
     <div class="row">
       <div class="col-md">
         <img src="images/console-22-03-01.png" class="img-fluid center-block d-block mx-auto" alt="image"> 
@@ -1020,6 +1002,7 @@
 	    </div>
 		</div>
 	</div>
+
 	<div class="container-fluid-content-02" style="max-width: 900px; padding-top:60px; padding-bottom:120px;">
     <div class="row gx-3">
       <div class="col-md">
@@ -1031,7 +1014,7 @@
       
     </div>
   </div>
-  <!--
+<!--
   <div class="container-fluid-content-02 overflow-hidden pb-0" style="max-width: 600px; padding-bottom:0px;">
     <div class="row">
       <div class="col-md">
@@ -1078,12 +1061,11 @@
   </div>
 -->
 
-</div>
 
 
 <!--***********************************************-->
 
-
+  <a id="nav-13"></a>
 	<div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:0px;">
     <section class="row">
       <div class="col-md section-header-no-border pb-4">
@@ -1170,7 +1152,7 @@
 
 <!--***********************************************-->
 
-
+<a id="nav-14"></a>
 <div class="bg-light-gray">
   <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:0px;">
     <section class="row">
@@ -1301,6 +1283,7 @@
 
 <!--***********************************************-->
 
+<a id="nav-15"></a>
 <div class="bg-dark-gray" style="background-color: #000;"> 
   <div class="container-fluid-content-02 nav-margin" style="max-width: 1800px; padding-bottom:120px; padding-top:120px;">
     <div class="row">
@@ -1753,7 +1736,8 @@
 
 <!--***********************************************-->
 
-
+  <a id="nav-16"></a>
+  <a id="nav-17"></a>
   <div class="container-fluid-content-01" style="padding-bottom:240px">
     <section class="row">
       <div class="col-md section-header-no-border pb-4">
@@ -1765,9 +1749,7 @@
         <div class="headline-medium pb-5">
           Impact
         </div>
-         <div class="regular-lg pb-5">
-          Pivotal was acquired by VMWare early 2020 and our teams were reorganized, so this project did not have the ending I would like. Despite that, we still had impact.
-        </div>
+        
         <div class="headline-small pb-4">
           Design Sprint
         </div>
@@ -1871,6 +1853,7 @@
 	  </div>
 	</div>
 -->
+
 </div>
 
 

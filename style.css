@@ -155,12 +155,16 @@ h4 {
 .side-nav {
 	font-size: 1 em;
 	font-weight: 300;
-	color:#CC5B4C;
+	color:#ccc;
 	text-decoration: none;
 	cursor: pointer;
 	padding-left: 0px !important;
 	margin-top: 0px !important;
 	white-space: nowrap;
+}
+
+#main-body-cont {
+	transition: 0.3s;
 }
 
 .text-center {
@@ -175,10 +179,10 @@ a { text-decoration: none; }
 .top-nav a:hover   { color: #CC5B4C; }
 .top-nav a:active  { color: #CC5B4C; }
 
-.side-nav a:link    { color: #CC5B4C; }
-.side-nav a:visited { color: #CC5B4C; }
-.side-nav a:hover   { color: #CC5B4C; }
-.side-nav a:active  { color: #CC5B4C; }
+.side-nav a:link    { color: #ccc; }
+.side-nav a:visited { color: #ccc; }
+.side-nav a:hover   { color: #ccc; }
+.side-nav a:active  { color: #ccc; }
 
 .link-light a:link    { color: #CC5B4C !important; text-decoration: underline; }
 .link-light a:visited { color: #CC5B4C !important; text-decoration: underline; }
@@ -413,6 +417,15 @@ p.center-lg {
 		font-size: 2.62em;
 	}
 
+	#main-body-cont {
+    margin-left: 0px !important;
+  }
+
+  #side-bar-nav {
+  	width: 0px !important;
+  }
+}
+
 
 @media screen and (min-width: 768px) {
   .card-image {
@@ -433,23 +446,11 @@ p.center-lg {
 }
 
 @media screen and (max-width: 1200px) {
-  .side-bar-nav {
-    display: none !important;
-  }
-
-  .nav-margin {
-  	margin-left:  !important;
-  }
+  
 }
 
 @media screen and (min-width: 1200px) {
-  .side-bar-nav {
-    display: flex !important;
-  }
-
-  .nav-margin {
-  	margin-left: 180px !important;
-  }
+ 
 }
 
 
