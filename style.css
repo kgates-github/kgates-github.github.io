@@ -220,7 +220,7 @@ a { text-decoration: none; }
 .headline-center-heavy {
 	margin:130px 0px 50px 0px;
 	font-size: 4.24em;
-	font-weight: 700;
+	font-weight: 900;
 	color:#222;
 	line-height:1.1;
 	text-align: center;
@@ -228,7 +228,7 @@ a { text-decoration: none; }
 
 .headline-heavy {
 	font-size: 4.24em;
-	font-weight: 700;
+	font-weight: 900;
 	color: #494949;
 	line-height:1.1;
 }
