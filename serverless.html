@@ -38,14 +38,57 @@
     </div>
   </div>
 
-<!--
-  <div  style="
-          background-image:  linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.0) ), url('images/serverless-02-04.png');
-          background-position: center;
-          background-repeat: repeat-y;
-          background-size: 100%;
-        ">
--->  
+  <div class="container-fluid-content-02" style="max-width: 900px; 
+      margin-top:120px; ;">
+    <div class="row p-4">
+      <div class="pb-3 mb-3"style="display:flex; flex-direction: row; 
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);"> 
+        <div class="regular-lg bold-5" style="width:100px;">
+          Tl; dr
+        </div> 
+        <div class="regular-lg" style="flex:1;">
+          <ul>
+            <li>
+              In the world of cloud computing, memory is expensive&mdash;Amazon charges for it by the second. KNative, a popular open-source tool, automatically frees up unused memory, which can mean massive cost savings. 
+            </li>
+            <li>
+              The problem is that KNative is complex and difficult to learn. Between 97 and 99% of app developers in large enterprises are early-career and not comforatable working with cloud infrastructure.
+            </li>
+            <li>
+              We created a UX that lowers barriers to adoption and enables cost savings to scale. 
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pb-3 mb-3"style="display:flex; flex-direction: row; 
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);"> 
+        <div class="regular-lg bold-5" style="width:100px">
+          Impact
+        </div> 
+        <div class="regular-lg" style="flex:1;">
+          <ul>
+          <li>Initial feedback from our field team was very positive. (As of this writing, the project was going into an internal alpha release.)</li>
+          <li>Our framework for targeting users by skill level was adopted for other projects.</li>
+          <li>I wrote an essay highlighting our design process which was published in PC World and Entwickler.de.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pb-3 mb-5"style="display:flex; flex-direction: row; 
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);"> 
+        <div class="regular-lg bold-5" style="width:100px">
+          Learnings
+        </div> 
+        <div class="regular-lg" style="flex:1;">
+          <ul>
+            <li>Designing a good UX ontop of an opinionated API can be very challenging.</li>
+            <li>Embedding competitive analysis in the journey map is highly effective.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
   <div class="container-fluid-content-01 overflow-hidden pt-5" style="padding-bottom: 120px;">
     <div class="row mt-5" style="max-width: 600px;">
@@ -65,7 +108,7 @@
           When a product manager and I kicked off this project, our company, VMWare, had acquired a start-up that makes KNative, an open source technology that helps developers deploy apps on Kubernetes, a popular cloud-based operating system. 
         </div>-->
         <div class="regular-lg pb-4">
-          When a product manager and I kicked off this project, our initial idea was to perform a heuristic evaluation of KNative’s GUI, make a few recommendations, and that would be the end of it. 
+          When a product manager and I kicked off this project, our initial idea was to perform a heuristic evaluation of KNative’s open-source GUI, make a few recommendations, and that would be the end of it. 
         </div>
         <div class="regular-lg pb-0">
           Instead, what we found was a UI that had been given little attention. We couldn’t fix it half way&mdash;it needed a redesign from the ground up. 
@@ -75,7 +118,7 @@
   </div>
 
   <div class="bg-dark-gray">
-    <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:120px;">
+    <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:60px;">
     <section class="row">
       <div class="col-md section-header-no-border pb-4" style="color:#FF9788;">
         The Problem
@@ -83,10 +126,10 @@
     </section>
       <div class="row">
         <div class="col-md">
-          <div class="headline-medium pb-5 text-extra-light" style="max-width: 500px;">
+          <div class="headline-medium pb-4 text-extra-light" style="max-width: 500px;">
             Data Model as the UI
           </div>
-          <div class="regular-lg pb-0 text-light">
+          <div class="regular-lg text-light">
             Overall, the open-source UI looked like a reflection of a data model, and did not have well-thought-out flows, hierarchy, or layout. Below are a few examples of problems we found: 
           </div>
           <!--<div class="regular-lg pb-0 text-light">
@@ -96,7 +139,7 @@
       </div>
     </div>
 
-    <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:120px; padding-top:0px;">
+    <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:120px; padding-top:0px;">
       <div class="row m-0 pb-0">
         <div class="col-md">
           <div class="pb-4">
@@ -189,7 +232,7 @@
           </div>
           <div class="regular-lg pb-5">
             <ul>
-              <li class="pb-4"><b>We were trailing competitors:</b> IBM, Google and others were already providing KNative serverless solutions with proprietary GUIs.</li>
+              <li><b>We were trailing competitors:</b> IBM, Google and others were already providing KNative serverless solutions with proprietary GUIs.</li>
               <li><b>GUIs are not a nice-to-haves:</b> Large enterprises don't allow many of their developers direct access to software-building tools, so GUIs are often requirements for adoption.</li>
             </ul>
           </div>
@@ -237,7 +280,7 @@
 
           <div class="regular-lg pb-0">
             <ul>
-              <li class="pb-4">30% of organizations polled have production apps running on serverless and another 35% are considering it. The CNCF "fully expect growth to continue".</li>
+              <li>30% of organizations polled have production apps running on serverless and another 35% are considering it. The CNCF "fully expect growth to continue".</li>
               <li class="pb-0">82% of organizations who are using serverless are using hosted solutions.</li>
             </ul>
           </div>
@@ -278,9 +321,9 @@
 
           <div class="regular-lg pb-0">
             <ul>
-              <li class="pb-4"><b>Developer efficiency:</b> Serverless reduces complexity of pushing code to the Kubernetes-enabled cloud.</li> 
-              <li class="pb-4"><b>Resource efficiency:</b> Serverless automatically frees up unused memory and CPU allocations in the cloud (“scales to zero”). </li>
-              <li class="pb-4"><b>Emergency recovery:</b> Serverless automatically creates application backups.</li>
+              <li><b>Developer efficiency:</b> Serverless reduces complexity of pushing code to the Kubernetes-enabled cloud.</li> 
+              <li><b>Resource efficiency:</b> Serverless automatically frees up unused memory and CPU allocations in the cloud (“scales to zero”). </li>
+              <li><b>Emergency recovery:</b> Serverless automatically creates application backups.</li>
               <li class="pb-0"><b>Traffic splitting:</b> Serverless makes it easy to split traffic between versions for A/B testing and gradual rollouts.</li>
             </ul>
           </div>
@@ -443,8 +486,8 @@
             First and foremost, we wanted to have a foundation for ideation sessions in which we rethink the journey. In addition, we wanted to:
           </div>
           <ul>
-            <li class="pb-4">Have a linear narrative which allow us to see the big picture and how tasks are connected and in service of the user reaching goals.</li> 
-            <li class="pb-4">Have a way to fold in and organize other materials such as research findings and competitive analysis.</li> 
+            <li>Have a linear narrative which allow us to see the big picture and how tasks are connected and in service of the user reaching goals.</li> 
+            <li>Have a way to fold in and organize other materials such as research findings and competitive analysis.</li> 
           </ul>
         </div>
       </div>
@@ -507,9 +550,9 @@
         <div class="regular-lg text-light">
           <div class="bold-5 pb-4 text-extra-light" style="text-align: center;">Competitor strengths</div>
           <ul>
-            <!--<li class="pb-4">Google’s UI is generally well thought through and adhered to good UX heuristics.</li>-->
-            <li class="pb-4">We liked Google’s stepper approach to creating and updating serverless apps and contextual help.</li> 
-            <li class="pb-4">RedHat had advanced features we liked, such as allowing more experienced users to paste configurations into the UI rather than fill out a form.</li> 
+            <!--<li>Google’s UI is generally well thought through and adhered to good UX heuristics.</li>-->
+            <li>We liked Google’s stepper approach to creating and updating serverless apps and contextual help.</li> 
+            <li>RedHat had advanced features we liked, such as allowing more experienced users to paste configurations into the UI rather than fill out a form.</li> 
           </ul>
         </div>
       </div>
@@ -517,10 +560,10 @@
         <div class="regular-lg text-light">
           <div class="bold-5 pb-4 text-extra-light" style="text-align: center;">Competitor weaknesses</div>
           <ul>
-            <li class="pb-4">Most UIs reflected data structures, not user mental models. Elements in UI not logically grouped together.</li> 
-            <li class="pb-4">Poor / confusing wayfinding</li> 
-            <li class="pb-4">System status messages incoherent</li> 
-            <li class="pb-4">Lack of guided step-by-step flows or beginners (“Paste YAML here”)</li> 
+            <li>Most UIs reflected data structures, not user mental models. Elements in UI not logically grouped together.</li> 
+            <li>Poor / confusing wayfinding</li> 
+            <li>System status messages incoherent</li> 
+            <li>Lack of guided step-by-step flows or beginners (“Paste YAML here”)</li> 
           </ul>
         </div>
       </div>
@@ -579,11 +622,11 @@
         </div>
         <div class="regular-lg pb-0">
           <ul>
-            <li class="pb-4"><b>Getting the right people in the room:</b> In my experience, this means customer advocates (if not actual customers), people from related projects, engineers, and domain experts.</li>
+            <li><b>Getting the right people in the room:</b> In my experience, this means customer advocates (if not actual customers), people from related projects, engineers, and domain experts.</li>
             
-            <li class="pb-4"><b>Getting everyone into a creative mindset</b> That means getting people comfortable with the process, encouraging them to think laterally and, getting them into the user's shoes.</li>
+            <li><b>Getting everyone into a creative mindset</b> That means getting people comfortable with the process, encouraging them to think laterally and, getting them into the user's shoes.</li>
             
-            <li class="pb-4"><b>Do away with role boundaries:</b> Everyone is a designer in my ideation workshops, but maintain a perspective of the world that comes from their past.  </li>
+            <li><b>Do away with role boundaries:</b> Everyone is a designer in my ideation workshops, but maintain a perspective of the world that comes from their past.  </li>
             
             <li class="pb-0"><b>Discouraging ownership of ideas:</b> I sometimes require participants to steal ideas from others and explain what they stole and why. If two ideas work great together, that will be good for customers. Allowing ownership of ideas impedes that.</li>
           </ul>
@@ -614,11 +657,11 @@
 
         <div class="regular-lg pb-4">
           <ul>
-            <li class="pb-4"><b>Getting the right people in the room:</b> In my experience, this means customer advocates (if not actual customers), people from related projects, engineers, and domain experts.</li>
+            <li><b>Getting the right people in the room:</b> In my experience, this means customer advocates (if not actual customers), people from related projects, engineers, and domain experts.</li>
             
-            <li class="pb-4"><b>Getting everyone into a creative midset</b> That means getting people comfortable with the process, encouraging them to think laterally and, getting them into the user's shoes.</li>
+            <li><b>Getting everyone into a creative midset</b> That means getting people comfortable with the process, encouraging them to think laterally and, getting them into the user's shoes.</li>
             
-            <li class="pb-4"><b>Do away with role boundaries:</b> Everyone is a designer in my ideation workshops, but maintain a perspective of the world that comes from their past.  </li>
+            <li><b>Do away with role boundaries:</b> Everyone is a designer in my ideation workshops, but maintain a perspective of the world that comes from their past.  </li>
             
             <li class="pb-0"><b>Discouraging ownership of ideas:</b> I sometimes require participants to steal ideas from others and explain what they stole and why. If two ideas work great together, that will be good for customers. Allowing ownership of ideas impedes that.</li>
           </ul>
@@ -796,8 +839,8 @@
         </div>
         <div class="regular-lg pb-4">
           <ul>
-            <li class="pb-4"><b>Evaluative (a.k.a., usability):</b> Can the user complete given tasks? What about developers with no experience with serverless, can they understand everything?</li>
-            <li class="pb-0"><b>Generative:</b> When do developers use GUIs versus command lines? Why do they use them? What would they change in our UI, if anything?</li> 
+            <li><b>Evaluative (a.k.a., usability):</b> Can the user complete given tasks? What about developers with no experience with serverless, can they understand everything?</li>
+            <li><b>Generative:</b> When do developers use GUIs versus command lines? Why do they use them? What would they change in our UI, if anything?</li> 
           </ul>
         </div>
       </div>
@@ -907,9 +950,9 @@
         <div class="regular-lg pb-0 text-light">
           <ul>
            
-            <!--<li class="pb-4"><span class="text-extra-light" style="font-weight:700;">We strayed too far from the underlying technology:</span> We weren't staying true to underlying concepts and language used in Kubernetes and serverless functionality. This risked introducing confusion and disharmony, especially when users toggle between the GUI and CLI.</li>-->
+            <!--<li><span class="text-extra-light" style="font-weight:700;">We strayed too far from the underlying technology:</span> We weren't staying true to underlying concepts and language used in Kubernetes and serverless functionality. This risked introducing confusion and disharmony, especially when users toggle between the GUI and CLI.</li>-->
             
-            <li class="pb-4"><span class="text-extra-light" style="font-weight:700;">Novice users were confused:</span> A big part of the confusion was caused by a few terms associated with serverless technology that were overloaded (in particular, "service" and "traffic"). One tester thought he was configuring a database for the first 10 minutes of the interview. </li>
+            <li><span class="text-extra-light" style="font-weight:700;">Novice users were confused:</span> A big part of the confusion was caused by a few terms associated with serverless technology that were overloaded (in particular, "service" and "traffic"). One tester thought he was configuring a database for the first 10 minutes of the interview. </li>
              
             <li class="pb-0"><span class="text-extra-light" style="font-weight:700;">GUIs can provide value for all users:</span> GUIs can provide value for new users, early-career developers, seasoned veterans, and even expert users. This reinforced our initial assumptions.</li>
           </ul>
@@ -1138,7 +1181,7 @@
         </div>
         <ul class="pb-0 text-light  regular-lg">
           <li class="pb-4 "><span style="font-weight: 700; color: #fff;">Users don't have to think about infrastructure:</span> We aimed to allow users with no knowledge of Kubernetes or KNative to easily access their benefits.</li>
-          <li class="pb-4"><span style="font-weight: 700; color: #fff;">Features for all skill levels:</span> We designed for early-career developers, but also included  features that allow for more efficient workflows for our advanced users.</li>
+          <li><span style="font-weight: 700; color: #fff;">Features for all skill levels:</span> We designed for early-career developers, but also included  features that allow for more efficient workflows for our advanced users.</li>
           <li class="pb-0"><span style="font-weight: 700; color: #fff;">Cost savings at scale:</span> KNative  manages memory allocation automatically which results in big cost savings. Making KNative easily accessible to developers allows those savings to scale.</li>
         </ul>
       </div>

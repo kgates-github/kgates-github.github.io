@@ -436,11 +436,19 @@ p.center-lg {
   .side-bar-nav {
     display: none !important;
   }
+
+  .nav-margin {
+  	margin-left:  !important;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .side-bar-nav {
     display: flex !important;
+  }
+
+  .nav-margin {
+  	margin-left: 180px !important;
   }
 }
 
