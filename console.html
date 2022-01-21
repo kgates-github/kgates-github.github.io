@@ -14,13 +14,7 @@
     </script>
     <!-- End Google Analytics -->
 
-    <script>
-      function toggleNav() {
-        let margin = (document.getElementById("side-bar-nav").style.width == '0px') ? '200px' : '0px';
-        document.getElementById("side-bar-nav").style.width = margin;
-        document.getElementById("main-body-cont").style.marginLeft = margin;
-      }
-    </script>
+    <script src="js.js"></script>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -68,8 +62,10 @@
       background-color: #111;
       overflow-x: hidden;
       transition: 0.3s;
-      padding-top: 120px;
+      padding-top: 60px;
     ">
+    <div style="height:30px; display:flex; flex-direction: row; margin:10px 0px 10px 0px;">
+    </div>
     <div class="ps-4 pb-5" style ="line-height: 1.6em;">
       <div class='side-nav pb-2'><a href="#nav-01" style="font-weight: 700;">INTRO</a></div>
       <div class='side-nav ms-2'><a href="#nav-01">Tl;dr</a></div>
@@ -90,21 +86,23 @@
       <div class='side-nav ms-2'><a href="#nav-17">Impact</a></div>
     </div>
   </div>
+  <div id="menu-toggle" onclick="toggleNav()" style="
+    background-color: #111; 
+    color:#ccc; 
+    position:fixed;
+    margin-left: 170px;
+    margin-top: 70px;
+    padding: 4px;
+    width: 28px;
+    font-size: 18px;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+  ">☰</div>
 
 <div id="main-body-cont" style="margin-left: 200px;">
   <a id="nav-01"></a>
-  <div class="menu" onclick="toggleNav()" style="
-      background-color: #111; 
-      color:#ccc; 
-      position:fixed;
-      margin-top: 80px;
-      padding: 4px;
-      width: 28px;
-      font-size: 18px;
-      border-radius: 0px 5px 5px 0px;
-      cursor: pointer;
-    ">☰</div> 
-
+   
   <div class="bg-dark-gray mt-0 nav-padding" style="
       background-color: #000;
       background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url('images/console-01-01a.png'); 

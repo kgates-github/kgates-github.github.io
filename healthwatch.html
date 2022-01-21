@@ -14,6 +14,8 @@
     </script>
     <!-- End Google Analytics -->
 
+    <script src="js.js"></script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,15 +32,14 @@
     <title>Kevin Gates, Product Design Portfolio</title>
   </head>
   <body class="">
-    
+  <a id="nav-01"></a>
   
-   
   <!--***********************************************-->
  
   <div class="ps-4 pe-4" 
     style="height:60px; width: 100%; display:flex; 
       flex-direction:row; align-items: center; 
-      position:fixed; background-color: white; ">
+      position:fixed; background-color: white; z-index: 100;">
     <div style="flex:1">
       <a href="index.html" style="line-height: 1.1em;">
         <div class='nav-header'>Kevin Gates</div>
@@ -53,6 +54,58 @@
     </div>
   </div>
 
+  <div id="side-bar-nav"
+    style="
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+    ">
+    <div style="height:30px; display:flex; flex-direction: row; margin:10px 0px 10px 0px;">
+    </div>
+    <div class="ps-4 pb-5" style ="line-height: 1.6em;">
+      <div class='side-nav pb-2'><a href="#nav-01" style="font-weight: 700;">INTRO</a></div>
+      <div class='side-nav ms-2'><a href="#nav-01">Tl;dr</a></div>
+      <div class='side-nav ms-2'><a href="#nav-03">Role and team</a></div>
+      <div class='side-nav ms-2'><a href="#nav-04">Roadmapping</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-05" style="font-weight: 700;">RESEARCH</a></div>
+      <div class='side-nav ms-2'><a href="#nav-06">Goals</a></div>
+      <div class='side-nav ms-2'><a href="#nav-07">Findings</a></div>
+      <div class='side-nav ms-2'><a href="#nav-07a">Target Persona</a></div>
+      <div class='side-nav ms-2'><a href="#nav-08">Strategy</a></div>
+      <div class='side-nav ms-2'><a href="#nav-09">Experience Mapping</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-10" style="font-weight: 700;">RAPID PROTOTYPING</a></div>
+      <div class='side-nav ms-2'><a href="#nav-11">Collaboration Models</a></div>
+      <div class='side-nav ms-2'><a href="#nav-12">Prototyping Example</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-13" style="font-weight: 700;">DOG FOODING</a></div>
+      <div class='side-nav ms-2'><a href="#nav-14">Card Sorting</a></div>
+      <div class='side-nav ms-2'><a href="#nav-15">Feature Vetting</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-16" style="font-weight: 700;">CONCLUSION</a></div>
+      <div class='side-nav ms-2'><a href="#nav-16">Impact</a></div>
+    </div>
+  </div>
+  <div id="menu-toggle" onclick="toggleNav()" style="
+    background-color: #111; 
+    color:#ccc; 
+    position:fixed;
+    margin-left: 170px;
+    margin-top: 70px;
+    padding: 4px;
+    width: 28px;
+    font-size: 18px;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+  ">☰</div>
+
+<div id="main-body-cont" style="margin-left: 200px;">
+  
   <div class="container-fluid-content-02" style="max-width: 900px; margin-top:120px;">
     <div class="row p-4">
       <div class="pb-3 mb-3"style="display:flex; flex-direction: row; 
@@ -307,15 +360,16 @@
 
  
     <div class="container-fluid-content-01 overflow-hidden">
+      <a id="nav-03"></a>
       <section class="row" style="padding-top:0px;">
         <div class="col-md section-header-no-border pb-5">
-          The Challenge
+          Role and Team
         </div>
       </section>
       <div class="row">
         <!--<div class="headline-medium pb-5" style="max-width: 600px;">
           Entering the World of Red Tape and Shadow IT...
-        </div>-->
+        </div>
         <div class="bold-5 pb-4">Problem</div>
         <div class="regular-lg pb-4">
           Our assignment was to build an out-of-the-box cloud platform monitoring tool, but we had concerns:
@@ -326,6 +380,7 @@
             <li><b>Unclear objectives:</b> We didn’t yet have a clear understanding of the customer problems a GUI would address or how it might provide value.</li>
           </ul>
         </div>  
+        -->
         <div class="regular-lg pb-5">
           <div class="bold-5 pb-4">My Role</div>
           As part of an agile team, I drove the overall design process for about a year. I shared research responsibilities with the PM, and led co-creation, rapid prototyping, usability testing and validation. 
@@ -347,10 +402,11 @@
 <!--***********************************************-->
 
   <div class="bg-light-gray">
+    <a id="nav-04"></a>
     <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:60px;">
       <section class="row">
         <div class="col-md section-header-no-border pb-4">
-          Design Roadmapping
+          Roadmapping
         </div>
       </section>
       <div class="row">
@@ -494,6 +550,7 @@
 <!--***********************************************-->
 
 <div class="bg-dark-gray"> 
+  <a id="nav-05"></a>
   <div class="bg-dark-gray" style="background-color: #000;
       height:900px; 
       width:105%;  
@@ -528,6 +585,7 @@
         <div class="headline-medium pb-5">
           Seeing the Customer's Perspective
         </div>
+        <a id="nav-06"></a>
         <div class="regular-lg pb-5">
           We created a topic map and set up interviews with around 30 customer platform operators and Pivotal field engineers (who work onsite at our customers’ offices). 
         </div>
@@ -544,55 +602,58 @@
       </div>
     </div>
   </div>
+
   <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:120px;">
     <div class="row">
       <div class="col-md">
         <img src="images/healthwatch-06.png" class="img-fluid center-block d-block mx-auto" alt="image"> 
+        <a id="nav-07"></a>
         <div class="caption pt-3">The PM and I created an affinity map together in which we grouped findings into themes, such as “product-market fit” and “learning process”.</div>
       </div>
     </div>
   </div>
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:120px;">
-    <div class="row">
-        <div class="headline-small pb-4">
-          Key Findings
-        </div>
-        <div class="regular-lg pb-4"> 
-          After a few weeks of user interviews and synthesis, a few themes surfaced to the top that we felt addressed our concerns:  
-        </div>
-        <div class="regular-lg pb-4">
-          <b>Third-party tools are hard to learn:</b> 
-          <ul class="pt-4 regular-lg">
-            <li>Third-party tools are sophisticated and take time to learn. This can be a burden for customers who are new to Cloud Foundry&mdash;several customers had tried to use third-party tools for platform monitoring, but gave up.</li>
-            <!--<li class="pb-0">Our GUI could be a “bridge solution" while customers are getting up to speed with the platform.</li>-->
-          </ul>
-        </div>
-        <div class="regular-lg pb-4">
-          <b>Data overload:</b> 
-          <ul class="pt-4 regular-lg">
-            <li>There are thousands of metrics and customers don’t know what to monitor. Only a relatively small number of metrics are really needed to be effective, the trick is to know which ones.</li>
-            <!--<li class="pb-0">Customers “want a decoder ring” to help them. For the uninitiated, it is difficult to know what to do with the platform’s metrics and they can be hard to interpret.</li>-->
-          </ul>
-        </div>
-        <div class="regular-lg pb-4">
-          <b>Platform monitoring dashboards are "snowflakes":</b> 
-          <ul class="pt-4 regular-lg">
-            <li>In the long run, customer reporting needs are unique and operations teams will create dashboards that fit their needs.</li>
-          </ul>
-        </div>
+
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px;">
+    <div class="row">  
+      <div class="headline-small pb-4">
+        Key Findings
+      </div>
+      <div class="regular-lg pb-4"> 
+        After a few weeks of user interviews and synthesis, a few themes surfaced to the top that we felt addressed our concerns:  
+      </div>
+      <div class="regular-lg pb-4">
+        <b>Third-party tools are hard to learn:</b> 
+        <ul class="pt-4 regular-lg">
+          <li>Third-party tools are sophisticated and take time to learn. This can be a burden for customers who are new to Cloud Foundry&mdash;several customers had tried to use third-party tools for platform monitoring, but gave up.</li>
+          <!--<li class="pb-0">Our GUI could be a “bridge solution" while customers are getting up to speed with the platform.</li>-->
+        </ul>
+      </div>
+      <div class="regular-lg pb-4">
+        <b>Data overload:</b> 
+        <ul class="pt-4 regular-lg">
+          <li>There are thousands of metrics and customers don’t know what to monitor. Only a relatively small number of metrics are really needed to be effective, the trick is to know which ones.</li>
+          <!--<li class="pb-0">Customers “want a decoder ring” to help them. For the uninitiated, it is difficult to know what to do with the platform’s metrics and they can be hard to interpret.</li>-->
+        </ul>
+      </div>
+      <div class="regular-lg pb-4">
+        <b>Platform monitoring dashboards are "snowflakes":</b> 
+        <ul class="pt-4 regular-lg">
+          <li>In the long run, customer reporting needs are unique and operations teams will create dashboards that fit their needs.</li>
+        </ul>
+        <a id="nav-07a"></a>
       </div>
     </div>
   </div>
  
-  <!--
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px;">
+  
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:120px;">
     <div class="row">
       <div class="headline-small pb-4">
         Target Persona
       </div>
       <div class="pb-4" style="display:flex; flex-direction: row; align-items: center;">
-        <div style="width:170px; height:170px;">
-          <img src="images/avatar-01.png" style="float:left; margin: 0px 30px 0px 0px; width:170px; height:170px;"alt="image">
+        <div style="width:120px; height:120px;">
+          <img src="images/avatar-01.png" style="float:left; margin: 0px 30px 0px 0px; width:120px; height:120px;"alt="image">
         </div>
         <div class="" style="flex:1; font-weight: 400 !important; font-size:1.5em; line-height: 1.2em; padding-left: 20px;">
           New Platform Operator<br>
@@ -608,36 +669,28 @@
         <ul>
           <li>Learning how to monitor CloudFoundry</li>
           <li>Troubleshoots problems, but doesn't actively monitor</li>
-          <li>Is often in the process of setting up and learning Cloud Foundry, which takes 8 to 12 months.</li>
+          <li>Is often in the process of setting up and learning Cloud Foundry, which can take 8 to 12 months.</li>
         </ul>
       </div>
        <div class="bold-5 pb-4">Frustrations</div>
       <div class="regular-lg pb-4">
         <ul>
-          <li>"Data fatigue"&mdash;There is too much data and it's difficult to make sense of.</li>
-          <li>Learning how to operate the platform is challenging</li>
-          <li>Platform-monitoring software is difficult to learn</li>
+          <li>Data overload&mdash;There is too much data and it's difficult to make sense of.</li>
+          <li>Platform-monitoring software is difficult to learn.</li>
+          <li>Flying blind&mdash;Doesn't know about issues until there is an outtage.</li>
         </ul>
       </div>
       <div class="bold-5 pb-4">Quotes</div>
       <div class="regular-lg">
         <ul>
           <li>“The last thing we want is the end user telling us about problems with our applications.”</li>
-          <li>“We discovered a problem when developers started complaining about a big lag pushing apps.”</li>
           <li>"Platform issues are almost always caused by humans, and it's almost always because someone was doing an update."</li>
         </ul>
       </div>
     </div>
   </div>
 
-  <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom: 240px;">
-    <div class="row">
-      <div class="col-md p-3 pullquote border-top">
-        “The last thing we want is the end user telling us about problems with our applications.”
-      </div>
-    </div>
-  </div>
-  -->
+  
   <!--
   <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom: 60px;">
     <div class="row">
@@ -659,6 +712,7 @@
 <!--***********************************************-->
 
 <div class="bg-light-gray">
+  <a id="nav-08"></a>
   <div class="container-fluid-content-01 pb-5">
     <section class="row">
       <div class="col-md section-header-no-border pb-4">
@@ -700,15 +754,14 @@
       
     </div>
   </div>
- 
-  
 </div>
 
 
 <!--***********************************************-->
 
-
+<a id="nav-09"></a>
 <div class="container-fluid-content-01" style="max-width: 600px; padding-bottom: 0px;">
+  
   <section class="row">
     <div class="col-md section-header-no-border pb-4">
       Experience Mapping
@@ -784,6 +837,7 @@
 <!--***********************************************-->
 
 <div class="bg-dark-gray"> 
+  <a id="nav-10"></a>
   <div class="bg-dark-gray" style="background-color: #fff;
       height:900px; 
       width:105%;  
@@ -799,7 +853,7 @@
       height:100%;">
       <div style="position: relative; top: 50%; 
         -ms-transform: translateY(-50%);
-        transform: translateY(-50%);">Collaboration and Rapid Prototyping</div>
+        transform: translateY(-50%);">Rapid Prototyping</div>
     </div>
   </div>
 </div>
@@ -807,6 +861,7 @@
 <!--***********************************************-->
 
 <div class="bg-light-gray">
+  <a id="nav-11"></a>
   <div class="container-fluid-content-01" style="padding-bottom:60px; padding-top:0px;">
     <div class="row">
         <div class="col-md">
@@ -815,7 +870,7 @@
       </div>
     <div class="row" style="padding-top: 200px;">
       <div class="col-md section-header-no-border pb-4">
-        Collaboration
+        Collaboration Models
       </div>
     </div>
     <div class="row">
@@ -943,6 +998,7 @@
         <div class="regular-lg pb-4">
           Every Monday, I got the whole team together for 30 minutes and present whatever designs I was working on: low-fi sketches, user flows, wireframes, UI components, etc. I then got the engineering team to offer any thoughts or concerns they might have. What we got was a gut-check for complexity, which got the value/cost discussion going early.
         </div>
+        <a id="nav-12"></a>
       </div>
     </div>
   </div>
@@ -960,10 +1016,12 @@
 
 <!--***********************************************-->
 
+  
   <div class="container-fluid-content-01" style="padding-bottom:60px;">
+    
     <section class="row">
       <div class="col-md section-header-no-border pb-4">
-        Rapid Prototyping
+        Prototyping Example
       </div>
     </section>
     <div class="row">
@@ -975,7 +1033,7 @@
           In our situaltion, it was almost impossible to thoroughly understand metrics and all their implications up front. We needed to just get ideas out of our heads and into the world quickly and start learning. Rapid prototyping means being wrong constantly until you gain confidence that you aren't. 
         </div>
         <div class="headline-small pb-4" style="width:600px;">
-          Rapid Prototyping Example
+          Example: <span style="text-decoration: line-through;">Routers</span> HTTP Requests
         </div>
       </div>
     </div>
@@ -1261,6 +1319,7 @@
 <!--***********************************************-->
 
 <div class="bg-dark-gray"> 
+  <a id="nav-13"></a>
   <div class="bg-dark-gray" style="background-color: #000;
       height:900px; 
       width:105%;  
@@ -1325,18 +1384,21 @@
         <div class="headline-small pb-4">
           Weekly Check-Ins
         </div>
+        <a id="nav-14"></a>
         <div class="regular-lg pb-5">
           We conducted weekly check-in sessions. In these sessions, members of the operations teams walked us through scenarios where they used HealthWatch. We got a lot of usability feedback, but also validated that the app helped them get through unexpected problems, such as failed upgrades.
         </div>
+        
       </div>
     </div>
   </div>
 
   <div class="container-fluid-content-02" style="max-width: 600px; padding-top:0px;">
+    
     <div class="row">
       <div class="col-md">
         <div class="headline-small pb-4">
-          Card Sort
+          Card Sorting
         </div>
         <div class="regular-lg pb-5">
           Once the operations team had been using HealthWatch for several weeks, we gave operations team members workbooks in Google Draw that contained movable metrics panels. We then asked them to arrange the dashboard the way they would like it. 
@@ -1384,14 +1446,16 @@
         <div class="bold-5 pb-3">Platform Impact</div> 
         Underlying VMs and other platform infrastructure.
       </div>
+      <a id="nav-15"></a>
     </div>
   </div>
 
   <div class="container-fluid-content-02" style="max-width: 600px; padding-top:0px;">
+    
     <div class="row">
       <div class="col-md">
         <div class="headline-small pb-4">
-          Dot Voting
+          Feature Vetting
         </div>
         <div class="regular-lg pb-4">
           After the card sort, we had team members independently tell us what metrics they would remove from the main dashboard and why.
@@ -1476,8 +1540,9 @@
 
 <!--***********************************************-->
 
-
+  <a id="nav-16"></a>
   <div class="container-fluid-content-01" style="padding-bottom:60px">
+    
     <section class="row">
       <div class="col-md section-header-no-border pb-4">
         Conclusion
@@ -1485,6 +1550,7 @@
     </section>
     <div class="row">
       <div class="col-md">
+        <a id="nav-17"></a>
         <div class="headline-medium pb-5">
           Impact
         </div>
@@ -1588,9 +1654,6 @@
     </div>
   </div>
 
-
-
-
   <div class="container-fluid-content-02" style="max-width: 900px; margin-bottom: 120px">
     <div class="row">
       <div class="col-md pb-4">
@@ -1599,6 +1662,7 @@
     </div>
   </div>
 
+</div>
 
 <!--***********************************************-->
 
