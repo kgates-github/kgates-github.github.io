@@ -14,6 +14,8 @@
     </script>
     <!-- End Google Analytics -->
 
+    <script src="js.js"></script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,14 +31,14 @@
     <title>Kevin Gates, Product Design Portfolio</title>
   </head>
   <body class="">
-    
+  <a id="nav-01"></a>
   
 <!--***********************************************-->
  
   <div class="ps-4 pe-4" 
     style="height:60px; width: 100%; display:flex; 
       flex-direction:row; align-items: center; 
-      position:fixed; background-color: white; ">
+      position:fixed; background-color: white; z-index: 100;">
     <div style="flex:1; padding-top:5px;">
       <a href="index.html" style="line-height: 1.1em;">
         <div class='nav-header'>Kevin Gates</div>
@@ -50,8 +52,100 @@
       <div class='top-nav ml-1'><a href="writing.html">Writing</a></div>
     </div>
   </div>
+  <div id="side-bar-nav"
+    style="
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+    ">
+    <div style="height:30px; display:flex; flex-direction: row; margin:10px 0px 40px 0px;">
+    </div>
+    <div class="ps-4 pb-5" style ="line-height: 1.6em;">
+      <div class='side-nav pb-2'><a href="#nav-01" style="font-weight: 700;">INTRO</a></div>
+      <div class='side-nav ms-2'><a href="#nav-01">Tl;dr</a></div>
+      <div class='side-nav ms-2'><a href="#nav-02">How It Works</a></div>
+      <div class='side-nav ms-2'><a href="#nav-03">Role and Team</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-04" style="font-weight: 700;">CONCEPTING</a></div>
+      <div class='side-nav ms-2'><a href="#nav-04">Data Exploration</a></div>
+      <div class='side-nav ms-2'><a href="#nav-05">Wireframing</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-06" style="font-weight: 700;">PEOPLE</a></div>
+      <div class='side-nav ms-2'><a href="#nav-06">Inspiring Volunteers</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-07" style="font-weight: 700;">BUILD</a></div>
+      <div class='side-nav ms-2'><a href="#nav-07">Pivoting</a></div>
+      <div class='side-nav ms-2'><a href="#nav-09">Mobile Support</a></div>
+      <div class='side-nav ms-2'><a href="#nav-10">Final Designs</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-11" style="font-weight: 700;">CONCLUSION</a></div>
+      <div class='side-nav ms-2'><a href="#nav-11">Impact</a></div>
+    </div>
+  </div>
+  <div id="menu-toggle" onclick="toggleNav()" style="
+    background-color: #111; 
+    color:#ccc; 
+    position:fixed;
+    margin-left: 160px;
+    margin-top: 70px;
+    padding: 4px;
+    width: 34px;
+    z-index: 60;
+    font-size: 24px;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+  ">☰</div>
 
-  <div class="container-fluid-content-01 overflow-hidden pt-5" style="padding-bottom: 240px;">
+<div id="main-body-cont" style="margin-left: 200px;">
+  <div class="container-fluid-content-02" style="max-width: 900px; margin-top:120px;">
+    <div class="p-4" style="background-color: rgba(255, 255, 255, 0.7); max-width: 900px;">
+      <div class="pb-3 mb-3"style="display:flex; flex-direction: row;  
+        border-bottom: 1px solid rgba(0, 0, 0, 0.4);"> 
+        <div class="regular-lg bold-5" style="width:100px;">
+          Tl; dr
+        </div> 
+        <div class="regular-lg" style="flex:1;">
+          <ul>
+            <li>
+              Voters in the U.S. tend to respond favorably to election talking points when they are locally-focused.
+            </li>
+            <li>
+              We built an app that highlights the Obama campaign's main themes, all taylored to the user's location.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pb-3 mb-3"style="display:flex; flex-direction: row; 
+        border-bottom: 1px solid rgba(0, 0, 0, 0.4);"> 
+        <div class="regular-lg bold-5" style="width:100px">
+          Impact
+        </div> 
+        <div class="regular-lg" style="flex:1;">
+          <ul>
+          <li>Launched during the campaign's final sprint in October 2012, our app reached the president's 42 million followers.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pb-3 mb-5"style="display:flex; flex-direction: row; 
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);"> 
+        <div class="regular-lg bold-5" style="width:100px">
+          Learnings
+        </div> 
+        <div class="regular-lg" style="flex:1;">
+          <ul>
+            <li>I learned what it takes to keep momentum up while performing a hard pivot in the middle of the project.</li>
+            <li>I learned what it takes to keep an all-volunteer engineering team motivated while performing a hard pivot.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-01 overflow-hidden pt-5" style="padding-bottom: 120px;">
     <div class="row mt-5" style="max-width: 600px;">
       <div class="col">
         <div class='headline-heavy' style="margin-bottom: 120px;">Geotargeting Obama's Achievements</div>
@@ -111,10 +205,11 @@
           <div class="regular-lg pb-4 text-light">
             Fast forward to October, 2012&mdash;Project Atlas launched on Obama's Twitter account five weeks before election day. The app we came up with ended up reaching the president's 42 million followers, but the path getting their was not a straight line. There were many ups and downs.  
           </div>
+          <a id="nav-02"></a>
         </div>
       </div>
     </div>
-
+    
     <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:120px;">
       <div class="row m-0 pb-0">
         <div class="col-md">
@@ -145,88 +240,27 @@
         </div>
       </div>
     </div>
+  </div> 
 
-
-  </div>
-
- <!-- ======================================== --> 
-
-<!--
-  <div class="bg-dark-gray">
-    <div class="container-fluid-content-01 overflow-hidden" style="padding-top:10px;">
-      <div class="row" style="height:230px;">
-        <div class="col-md">
-          <div class="caption pt-0 text-light">Screenshot of the finished product shortly after launch. 
-          (Visual design by branding team.)</div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md">
-
-          <div class="headline-medium pb-5 text-extra-light">
-            Project Atlas would go on to be launched on Obama's Twitter account five weeks before election day.
-          </div>
-          
-          <div class="pb-5">
-            <div class="mt-auto">
-              
-              <a href="healthwatch.html" tabindex="-1" role="button" 
-                class="bold-5 round-button large-button"
-                data-bs-toggle="modal" data-bs-target="#exampleModal"
-                aria-disabled="true">
-                <div style="display:flex; flex-direction: row; justify-content: center; align-items: center;">
-                  <div style="width:80px;"></div>
-                  <div style="flex:1; font-size:1.5em; font-weight:400;">See how it works</div>
-                  <div style="width:80px; padding-top:8px;">
-                    <span class="material-icons" style="color:#fff; font-size: 52px; ">arrow_forward</span>
-                  </div>
-                </div>
-              </a>
-             
-            </div>
-          </div>
-          
-          <div class="regular-lg pb-4 text-light">
-            The app we came up with ended up reaching the president's 42 million Twitter followers, but the path getting their was not a straight line. We explored many ideas, and there were ups and downs. At one point, we had to completely change directions because of a Romney attack ad. 
-          </div>
-          <div class="regular-lg pb-0 text-light">
-            Despite all of this, we got a product shipped five weeks before election day.
-          </div>
-        
-        </div>
-      </div>
-    </div>
-
-  </div>
-  --> 
+<!--***********************************************-->
   
-
-  <!--***********************************************-->
-
+  <a id="nav-03"></a>
   <div class="bg-light-gray">
     <div class="container-fluid-content-01 overflow-hidden">
       <section class="row">
         <div class="col-md section-header-no-border pb-5">
-          The Challenge
+          Role and Team
         </div>
       </section>
       <div class="row">
         <div class="col-md">
-          <div class="bold-5 pb-4">Problem</div>
-          <div class="regular-lg pb-4">
-            At the start of the project there was a lot up in the air:
-          </div>
-          <ul class="pb-5">
-            <li><b>Unclear vision:</b> What kind of app should we create? What should it do?</li>
-            <li><b>All-volunteer staff:</b> How could we motivate volunteers to work under deadline?</li>
-          </ul>
           <div class="regular-lg pb-5">
             <div class="bold-5 pb-4">My Role</div>
             Based in the San Francisco Technology Field Office, I led the ideation, wireframing and ran weekly presentations to campaign headquarters. In addition, I led the dev team, wrangled data, coordinated the efforts of volunteers, and wrote a good portion of the JavaScript and CSS.
           </div>
           <div class="bold-5 pb-4">Skills</div>
           <div class="regular-lg pb-5">
-            Concept exploration, geospatial analysis (PostGIS, QuantumGIS), JavaScript, Google Maps API
+            Concept exploration, geospatial analysis (PostGIS, QuantumGIS), wireframing, JavaScript, Google Maps API
           </div>
           <div class="regular-lg pb-0">
             <div class="bold-5 pb-4">Collaborators</div>
@@ -238,11 +272,12 @@
   </div>
 
 <!--***********************************************-->
-
+  
+  <a id="nav-04"></a>
     <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:0px;">
       <section class="row">
         <div class="col-md section-header-no-border pb-4">
-          Concept Development
+          Concepting
         </div>
       </section>
       <div class="row">
@@ -282,6 +317,7 @@
         </div>
       </div>
     </div>
+
     <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:120px;"> 
       <div class="row">
         <div class="col-md">
@@ -298,7 +334,7 @@
 
 <!--***********************************************-->
 
-
+<a id="nav-05"></a>
 <div class="bg-light-gray">
   <div class="container-fluid-content-01" style="padding-bottom:120px;">
     <section class="row">
@@ -337,38 +373,12 @@
       </div>
     </div>
   </div>
-
-  <!--
-  <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:120px;">
-    <div class="row gx-5 p-0 m-0">
-      <div class="col-md">
-        <div class="p-0 bg-white">
-          <img src="images/obama/wireframe-01.png" class="img-fluid center-block d-block mx-auto" alt="image">
-        </div>
-        <div class=" pt-3">
-          The first wireframes I created show the top five recovery projects per state. Projects are color-coded to correspond to campaign themes: education, energy, health and infrastructure. The maps were created using real data.
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="p-0 bg-white">
-          <img src="images/obama/wireframe-02.png" 
-             class="img-fluid center-block d-block mx-auto" 
-               alt="image">
-        </div>
-        <div class=" pt-3">
-          As the user zooms in, more and more projects are revealed. At each zoom level, the most relevant projects are highlighted in the inset at the left. 
-        </div>
-      </div>
-    </div>
-  </div>
-  -->
-
 </div>
 
 
 <!--***********************************************-->
 
-
+<a id="nav-06"></a>
   <div class="container-fluid-content-01" style="padding-bottom:0px;">
     <section class="row">
       <div class="col-md section-header-no-border pb-4">
@@ -420,7 +430,7 @@
 
 <!--***********************************************-->
 
-
+<a id="nav-07"></a>
 <div class="bg-light-gray">
   
   <div class="container-fluid-content-01 pb-5" style="padding-bottom:60px;">
@@ -482,7 +492,7 @@
 
 <!--***********************************************-->
 
-
+  <a id="nav-09"></a>
   <div class="container-fluid-content-01" style="padding-bottom:0px;">
     <section class="row">
       <div class="col-md section-header-no-border pb-4">
@@ -492,7 +502,7 @@
     <div class="row">
       <div class="col-md">
         <div class="headline-medium pb-5">
-          Going Mobile-First 
+          Supporting Mobile 
         </div>
         <div class="regular-lg pb-4">
           Due to time constraints, I stopped wire framing and worked directly with the prototype we had started. Our goal was to have a fully functional app with just enough opinion about the UI. The branding team in Chicago would take it from there.
@@ -523,13 +533,16 @@
   <div class="container-fluid-content-01" style="padding-top:0px; padding-bottom:0px;">
     <div class="row">
       <div class="col-md">
+        <a id="nav-10"></a>
         <div class="regular-lg pb-5">
           One challenge we faced was that some county-level data points didn't exist. When that was the case, we show county data when we had it, and state data when we didn't. In other words, our app's logic made the information displayed as local as possible.
         </div>
+
       </div>
     </div>
   </div>
 
+  
   <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:120px;"> 
     <div class="row pb-5">
       <div class="col-md">
@@ -552,7 +565,7 @@
 
 <!--***********************************************-->
 
-
+<a id="nav-11"></a>
 <div class="bg-light-gray">
   <div class="container-fluid-content-01" style="padding-bottom:0px;">
     <section class="row">
@@ -599,6 +612,7 @@
 
 <!--***********************************************-->
 
+</div>
 
  
 
