@@ -40,7 +40,7 @@
     style="height:60px; width: 100%; display:flex; 
       flex-direction:row; align-items: center; 
       position:fixed; background-color: white; z-index: 100;">
-    <div style="flex:1">
+    <div style="flex:1; padding-top:5px;">
       <a href="index.html" style="line-height: 1.1em;">
         <div class='nav-header'>Kevin Gates</div>
         <div class='nav-subheader'>UX Designer</div>
@@ -116,10 +116,10 @@
         <div class="regular-lg" style="flex:1;">
           <ul>
             <li>
-              For cloud operations teams, understanding the health of their platform is critical but challenging&mdash;these platforms emit thousands of metrics, and most are difficult to interpret. 
+              For cloud operations teams, understanding the health of their platform is critical but challenging&mdash;cloud platforms emit thousands of metrics, and most are difficult to interpret. 
             </li>
             <li>
-              We designed a UX the enables teams to get up and running quickly without any expert knowledge. Created with domain experts embedded in the design process, HealthWatch is a platform monitoring app that embodies best practices out-of-the-box. 
+              We designed a UX the enables operators to get up and running quickly without any expert knowledge. Created with domain experts embedded in the design process, HealthWatch is a platform monitoring app that embodies best practices out-of-the-box. 
             </li>
           </ul>
         </div>
@@ -613,7 +613,7 @@
     </div>
   </div>
 
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px;">
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:0px;">
     <div class="row">  
       <div class="headline-small pb-4">
         Key Findings
@@ -635,7 +635,7 @@
           <!--<li class="pb-0">Customers “want a decoder ring” to help them. For the uninitiated, it is difficult to know what to do with the platform’s metrics and they can be hard to interpret.</li>-->
         </ul>
       </div>
-      <div class="regular-lg pb-4">
+      <div class="regular-lg pb-5">
         <b>Platform monitoring dashboards are "snowflakes":</b> 
         <ul class="pt-4 regular-lg">
           <li>In the long run, customer reporting needs are unique and operations teams will create dashboards that fit their needs.</li>
@@ -644,48 +644,59 @@
       </div>
     </div>
   </div>
- 
-  
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:120px;">
+
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom: 0px;">
     <div class="row">
       <div class="headline-small pb-4">
         Target Persona
       </div>
-      <div class="pb-4" style="display:flex; flex-direction: row; align-items: center;">
-        <div style="width:120px; height:120px;">
-          <img src="images/avatar-01.png" style="float:left; margin: 0px 30px 0px 0px; width:120px; height:120px;"alt="image">
-        </div>
-        <div class="" style="flex:1; font-weight: 400 !important; font-size:1.5em; line-height: 1.2em; padding-left: 20px;">
-          New Platform Operator<br>
-          <span style="font-weight: 200 !important;">Todd</span>
-        </div>
+       <div class="regular-lg pb-5">
+          Our target users were platform operators who were new to monitoring. Despite that their teams tend to be small, with four to ten members, there can be more than a thousand developers using the platform once it is at scale.
       </div>
-      <div class="regular-lg pb-4">
-        Our target users were platform operators who were new to monitoring. Despite that their teams tend to be small, with four to ten members, there can be more than a thousand developers using the platform once it is at scale.
-      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02 p-5 mb-5" style="max-width: 900px; border:1px solid #ccc;">
+    <div class="row g-5 pt-5">
+      <div class="col-md">
+        <div class="pb-4" style="display:flex; flex-direction: row; align-items: center;">
+          <div style="width:120px; height:120px;">
+            <img src="images/avatar-01.png" style="float:left; margin: 0px 30px 0px 0px; width:120px; height:120px;"alt="image">
+          </div>
+          <div class="" style="flex:1; font-weight: 400 !important; font-size:1.5em; line-height: 1.2em; padding-left: 20px;">
+            New Platform Operator<br>
+            <span style="font-weight: 200 !important;">Todd</span>
+          </div>
+        </div>
+        <div class="regular-lg pb-4">
+          <span class="bold-5">Role:</span> Platform operators maintain the cloud platform. They are responsible for providing tools for developers, keeping the platform up-to-date, and troubleshooting when something goes wrong.
+        </div>
+        <div class="regular-lg pb-4"><span class="bold-5">Key Attributes:</span></div>
+        <div class="regular-lg pb-4">
+          <ul>
+            <li>Learning how to monitor CloudFoundry</li>
+            <li>Troubleshoots problems, but doesn't actively monitor</li>
+            <li>Is often in the process of setting up and learning Cloud Foundry, which can take 8 to 12 months.</li>
+          </ul>
+        </div>
         
-      <div class="bold-5 pb-4">Key Attributes</div>
-      <div class="regular-lg pb-4">
-        <ul>
-          <li>Learning how to monitor CloudFoundry</li>
-          <li>Troubleshoots problems, but doesn't actively monitor</li>
-          <li>Is often in the process of setting up and learning Cloud Foundry, which can take 8 to 12 months.</li>
-        </ul>
       </div>
-       <div class="bold-5 pb-4">Frustrations</div>
-      <div class="regular-lg pb-4">
-        <ul>
-          <li>Data overload&mdash;There is too much data and it's difficult to make sense of.</li>
-          <li>Platform-monitoring software is difficult to learn.</li>
-          <li>Flying blind&mdash;Doesn't know about issues until there is an outtage.</li>
-        </ul>
-      </div>
-      <div class="bold-5 pb-4">Quotes</div>
-      <div class="regular-lg">
-        <ul>
-          <li>“The last thing we want is the end user telling us about problems with our applications.”</li>
-          <li>"Platform issues are almost always caused by humans, and it's almost always because someone was doing an update."</li>
-        </ul>
+      <div class="col-md">
+        <div class="bold-5 pb-4">Frustrations</div>
+        <div class="regular-lg pb-4">
+          <ul>
+            <li>Data overload&mdash;There is too much data and it's difficult to make sense of.</li>
+            <li>Platform-monitoring software is difficult to learn.</li>
+            <li>Flying blind&mdash;Doesn't know about issues until there is an outtage.</li>
+          </ul>
+        </div>
+        <div class="bold-5 pb-4">Quotes</div>
+        <div class="regular-lg">
+          <ul>
+            <li>“The last thing we want is the end user telling us about problems with our applications.”</li>
+            <li>"Platform issues are almost always caused by humans, and it's almost always because someone was doing an update."</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
