@@ -5,3 +5,4 @@ function toggleNav() {
   document.getElementById("main-body-cont").style.setProperty("margin-left", margin, "important");
   document.getElementById("menu-toggle").style.setProperty("margin-left", marginToggle, "important"); 
 }
+
