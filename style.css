@@ -423,6 +423,7 @@ p.center-lg {
 
   #side-bar-nav {
   	width: 0px !important;
+  	/*position:  abolute !important;*/
   }
 
   #menu-toggle {

@@ -1,0 +1,1182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66268413-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-66268413-1');
+    </script>
+
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    // G-54V1L5T0G0
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+
+    <script src="js.js"></script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Kevin Gates, UX Design Portfolio</title>
+  </head>
+  <body class="">
+    <a id="nav-01"></a>
+
+<!--***********************************************-->
+
+  <div class="ps-4 pe-4" 
+    style="height:60px; width: 100%; display:flex; 
+      flex-direction:row; align-items: center; 
+      position:fixed; background-color: white; z-index: 100;">
+    <div style="flex:1; padding-top:5px;">
+      <a href="index.html" style="line-height: 1.1em;">
+        <div class='nav-header'>Kevin Gates</div>
+        <div class='nav-subheader'>UX Designer</div>
+      </a>
+    </div>
+    <div style="max-width:262px; text-align:right; display: flex; 
+        flex-direction: row; justify-content: space-between;">
+      <div class='top-nav ml-1'><a href="index.html">Case Studies</a></div>
+      <div class='top-nav ml-1'><a class='top-nav-on' href="miscellany.html">Projects</a></div>
+      <div class='top-nav ml-1'><a href="writing.html">Writing</a></div>
+    </div>
+  </div>
+
+  <div id="side-bar-nav"
+    style="
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+    ">
+    <div style="height:30px; display:flex; flex-direction: row; margin:10px 0px 40px 0px;">
+    </div>
+    <div class="ps-4 pb-5" style ="line-height: 1.6em;">
+      <div class='side-nav pb-2'><a href="#nav-01" style="font-weight: 700;">INTRO</a></div>
+      <div class='side-nav ms-2'><a href="#nav-01">Tl;dr</a></div>
+      <div class='side-nav ms-2'><a href="#nav-4a">The Problem</a></div>
+      <div class='side-nav ms-2'><a href="#nav-04">Role and Team</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-4b" style="font-weight: 700;">STRATEGY</a></div>
+      <div class='side-nav ms-2'><a href="#nav-05">Business Case</a></div>
+      <div class='side-nav ms-2'><a href="#nav-07">Design Strategy</a></div>
+      <div class='side-nav ms-2'><a href="#nav-08">Experience Mapping</a></div>
+      <div class='side-nav ms-2'><a href="#nav-09">Competitive Analysis</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-10" style="font-weight: 700;">IDEATION</a></div>
+      <div class='side-nav ms-2'><a href="#nav-11">Design Studio</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-12" style="font-weight: 700;">RAPID PROTOTYPING</a></div>
+      <div class='side-nav ms-2'><a href="#nav-13">RITE</a></div>
+      <div class='side-nav ms-2'><a href="#nav-14">Findings</a></div>
+      <div class='side-nav ms-2'><a href="#nav-15">Design Approach</a></div>
+      <div class='side-nav ms-2'><a href="#nav-16">Design Solution</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-17" style="font-weight: 700;">CONCLUSION</a></div>
+      <div class='side-nav ms-2'><a href="#nav-17">Impact</a></div>
+    </div>
+  </div>
+  <div id="menu-toggle" onclick="toggleNav()" style="
+    background-color: #111; 
+    color:#ccc; 
+    position:fixed;
+    margin-left: 160px;
+    margin-top: 70px;
+    padding: 4px;
+    width: 34px;
+    z-index: 60;
+    font-size: 24px;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+  ">☰</div>
+
+<div id="main-body-cont" style="margin-left: 200px;">
+  <div class="container-fluid-content-02" style="max-width: 900px; 
+      margin-top:120px; ;">
+    <div class="row p-4">
+      <div class="pb-3 mb-3"style="display:flex; flex-direction: row; 
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);"> 
+        <div class="regular-lg bold-5" style="width:100px;">
+          Tl; dr
+        </div> 
+        <div class="regular-lg" style="flex:1;">
+          <ul>
+            <li>
+              In the world of cloud computing, memory is expensive&mdash;Amazon charges for it by the hour. KNative, a popular open-source tool, automatically frees up unused memory, which can mean major cost savings. 
+            </li>
+            <li>
+              KNative is complex and difficult to learn, and most app developers in large enterprises are not comforatable working with cloud infrastructure.
+            </li>
+            <li>
+              We created a UX that lowers barriers to adoption and enables cost savings to scale. 
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pb-3 mb-3"style="display:flex; flex-direction: row; 
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);"> 
+        <div class="regular-lg bold-5" style="width:100px">
+          Impact
+        </div> 
+        <div class="regular-lg" style="flex:1;">
+          <ul>
+          <li>Our collaborative approach to design produced two market-differentiating features.</li>
+          <li>Initial feedback from our field team was very positive. (As of this writing, the project was going into an internal alpha release.)</li>
+          <li>Our framework for targeting users by skill level was adopted for other projects.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pb-3 mb-5"style="display:flex; flex-direction: row; 
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);"> 
+        <div class="regular-lg bold-5" style="width:100px">
+          Learnings
+        </div> 
+        <div class="regular-lg" style="flex:1;">
+          <ul>
+            <li>Designing a good UX ontop of an opinionated API can be very challenging.</li>
+            <li>Embedding competitive analysis in the journey map is highly effective.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid-content-01 overflow-hidden pt-5" style="padding-bottom: 120px;">
+    <div class="row mt-5" style="max-width: 600px;">
+      <div class="col">
+        <div class='headline-heavy pb-5'>An Experiement in DIY Air Pollution Monitoring</div>
+        <div class='headline-small mb-4'>A Dataset and a Challenge</div>  
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md">
+
+        <!--<div class="regular-lg pb-4">
+          When a PM and I started this project, we thought it would be quick and easy. 
+        </div>
+        <div class="regular-lg pb-4">
+          When a product manager and I kicked off this project, our company, VMWare, had acquired a start-up that makes KNative, an open source technology that helps developers deploy apps on Kubernetes, a popular cloud-based operating system. 
+        </div>-->
+        <div class="regular-lg pb-4">
+          When a product manager and I kicked off this project, our initial idea was to perform a heuristic evaluation of KNative’s open-source GUI, make a few recommendations, and that would be the end of it. 
+        </div>
+        <div class="regular-lg pb-0">
+          Instead, what we found was a UI that had been given little attention. We couldn’t fix it half way&mdash;it needed a redesign from the ground up. 
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <a id="nav-4a"></a>
+  <div class="" style="border-top: 1px solid #ccc;">
+    
+    <div class="container-fluid-content-02" style="max-width: 1000px; padding-bottom:120px; padding-top:180px;">
+      <div class="row m-0 pb-0">
+        <div class="col-md">
+          <div class="pb-4">
+            <img src="images/seeing-02.png" class="img-fluid bg-white" alt="image" 
+              style="padding: 0px 45px 0px 45px;">
+          </div>
+      </div>
+    </div>
+
+    <!--
+    <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:120px;">
+      <div class="row m-0 pb-0">
+        <div class="col-md">
+          <div class="regular-lg pb-4 text-light">
+            What we would go on to learn in our design process is that the database-tables-as-the-UI is a good interface for a segment of users, but for others it is awful. We would discover real tension and complexity pulling from different directions.
+          </div> 
+        </div>
+      </div>
+    </div>
+    -->
+  </div>
+
+
+
+<!--
+<div class="bg-dark-gray"> 
+  <div class="bg-dark-gray" style="background-color: #000;
+      height:900px; 
+      width:105%;  
+      background-image: url('images/serverless-10.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right:-25px;">
+    
+  </div>
+</div>
+
+
+    <div style="
+        background-image: url('images/serverless-02-04.png');
+        background-position: center;
+        background-repeat: repeat-y;
+        background-size: cover;
+        height:800px;
+      "></div>
+   
+    <div class="bg-dark-gray" style="">
+      <img src="images/serverless-02-04.png" class="img-fluid" alt="Image">
+    </div>
+ -->  
+  <a id="nav-04"></a>
+  <div class="bg-light-gray">
+    
+    <div class="container-fluid-content-01 overflow-hidden" style="padding-top:120px; padding-bottom: 120px;">
+      
+      <section class="row">
+        <div class="col-md section-header-no-border pb-5">
+          Role and Team
+        </div>
+      </section>
+      <div class="row">
+        <div class="col-md">
+          <!--<div class="bold-5 pb-4">Problem</div>
+          <div class="regular-lg pb-4">
+            Once we realized we needed to redesign the GUI from the ground up, we decided to make make it part of out propritary offering. There were a couple key drivers in our decision:
+          </div>
+          <div class="regular-lg pb-5">
+            <ul>
+              <li><b>We were trailing competitors:</b> IBM, Google and others were already providing KNative serverless solutions with proprietary GUIs.</li>
+              <li><b>GUIs are not a nice-to-haves:</b> Large enterprises don't allow many of their developers direct access to software-building tools, so GUIs are often requirements for adoption.</li>
+            </ul>
+          </div>-->
+          <div class="bold-5 pb-4">My Role</div>
+          <div class="regular-lg pb-5">
+            
+            Over a period of six weeks, I drove the overall approach to design as the design lead. I worked closely with a PM in planning workshops, conducting user interviews, and rapid prototyping. 
+          </div>
+          <div class="bold-5 pb-4">Skills</div>
+          <div class="regular-lg pb-5">
+            Design strategy, competitive analysis, collaborative ideation, rapid prototyping, usability testing 
+          </div>
+          <div class="bold-5 pb-4">Collaborators</div>
+          <div class="regular-lg pb-0">
+            On a daily basis, I worked with a product manager and engineering lead. Two visual designers rotated onto the project towards the end. 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--***********************************************-->
+
+<a id="nav-4b"></a>
+<div class="bg-dark-gray"> 
+  <div class="bg-dark-gray" style="background-color: #000;
+      height:900px; 
+      width:105%;  
+      background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url('images/console-30-01.png');
+      /*background-color: #222;*/
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      ">
+    <div class="headline-heavy text-extra-light" style="
+      margin:auto;
+      text-align: center; 
+      width:33%; 
+      height:100%;">
+      <div style="position: relative; top: 50%; 
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);">Strategy</div>
+    </div>
+  </div>
+</div>
+
+<!--***********************************************-->
+    
+    <a id="nav-05"></a>
+    <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom: 60px;">
+      <section class="row">
+        <div class="col-md section-header-no-border pb-4">
+          Business Case
+        </div>
+      </section>
+      <div class="row">
+        <div class="col-md">
+          <div class="headline-medium pb-5">
+            Assessing Risk in the World of Open Source
+          </div>
+          <div class="regular-lg pb-4">
+            We were building on open-source technology that had already survived contact with reality. That shaped how we thought about the risk.
+          </div>
+          <div class="bold-5 pb-4">Demand</div>
+          <div class="regular-lg pb-4">
+              Demand for serverless technology is well-established and growing. According to the 
+              <a style="color:#0066cc; text-decoration: underline;" href="https://www.cncf.io/wp-content/uploads/2020/11/CNCF_Survey_Report_2020.pdf">
+              2020 Cloud Native Computing Foundation (CNCF) survey</a>:
+          </div>
+
+          <div class="regular-lg pb-0">
+            <ul>
+              <li>30% of organizations polled have production apps running on serverless and another 35% are considering it. The CNCF "fully expect growth to continue".</li>
+              <li class="pb-0">82% of organizations who are using serverless are using hosted solutions.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid-content-02" style="max-width: 1000px; padding-bottom:0px;">
+      <div class="row m-0 pb-4">
+        <div class="col-md ">
+          <div class="regular-lg" style="text-align: center; color:#999; font-style: italic;">
+            Is your organization using serverless?
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="regular-lg" style="text-align: center; color:#999; font-style: italic;">
+            How is your organization using serverless technology?
+          </div>
+        </div>
+      </div>
+      <div class="row m-0 pb-5">
+        <div class="col-md">
+          <img src="images/serverless-03-01.png" class="img-fluid" alt="image">
+        </div>
+        <div class="col-md">
+          <img src="images/serverless-03-02.png" class="img-fluid" alt="image">
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:120px;">
+      <div class="row">
+        <div class="col-md">
+          <div class="bold-5 pb-4">Value</div>
+          <div class="regular-lg pb-4">
+            KNative has been validated in the marketplace and demonstrably solves well-known IT problems: 
+          </div>
+
+          <div class="regular-lg pb-0">
+            <ul>
+              <li><b>Developer efficiency:</b> Serverless reduces complexity of pushing code to the Kubernetes-enabled cloud.</li> 
+              <li><b>Resource efficiency:</b> Serverless automatically frees up unused memory and CPU allocations in the cloud (“scales to zero”). </li>
+              <li><b>Emergency recovery:</b> Serverless automatically creates application backups.</li>
+              <li class="pb-0"><b>Traffic splitting:</b> Serverless makes it easy to split traffic between versions for A/B testing and gradual rollouts.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!--***********************************************-->
+
+<a id="nav-07"></a>
+<div class="bg-light-gray">
+  <div class="container-fluid-content-01" style="padding-bottom:0px;">
+    <section class="row">
+      <div class="col-md section-header-no-border pb-4">
+        Design Strategy
+      </div>
+    </section>
+    <div class="row">
+      <div class="col-md">
+        <div class="headline-medium pb-5" style="max-width:500px;">
+          Targeting Users By Skill Level
+        </div>
+        <div class="regular-lg pb-4">
+          Near the start of the design process, I like the team to imagine it's two years after launch and the product is very successful. I then ask, "Who is the average user? What are they like?"
+        </div>
+        <ul class="regular-lg">
+          <li class="pb-4 ">For most large-scale enterprises, <b>97 to 99% of developers are early-career or contractors</b>, and don’t have skills in managing and configuring cloud-based infrastructure.</li>
+        </ul>
+        <div class="regular-lg pb-5">
+          Our design strategy took this into account: We assumed most developers will be early-career and new to serverless, but will gain skill over time. 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 1000px; padding-bottom:120px;">
+    <div class="row">
+      <div class="col-md">
+        <img src="images/serverless-04.png" class="img-fluid" alt="image">
+        <div class="caption pt-3" style="width:1200px;">This matrix shows how we targeted users by skill level, and who by definition should be the largest user cohort.</div>
+      </div>
+    </div>
+  </div>
+    
+</div>
+
+
+<!--***********************************************-->
+
+<a id="nav-08"></a>
+  <div class="container-fluid-content-01" style="padding-bottom:60px;">
+    <section class="row">
+      <div class="col-md section-header-no-border pb-4">
+        Experience Mapping
+      </div>
+    </section>
+    <div class="row">
+      <div class="col-md">
+        <div class="headline-medium pb-5">
+          Laying Out a Goal-Directed Narrative
+        </div>
+        <div class="regular-lg pb-4">
+          The PM had created story maps by analyzing the open-source functionality, which did a good job at outlining features and aligning them with outcomes. 
+        </div>
+
+        <div class="regular-lg pb-5">
+          The problem is they didn't capture the narrative of the experience. User experiences are a series of activities that take place in the physical world in service of people achieving goals, which are often interconnected in logical ways. 
+        </div>
+        <div class="headline-small pb-4">
+          <a id="proto-journey-map">Proto-Journey Map</a>
+        </div>
+        <div class="regular-lg pb-0">
+          I facilitated a workshop in which we deconstructed the story maps and created a narrative in the form of what I call a proto-journey map.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:60px;">
+    <div class="row">
+      <div class="col-md">
+        <img src="images/serverless-06.png" class="img-fluid" alt="image" style="width:100%">
+        <div class="caption pt-3">
+          Our proto-journey map layed out a flow centered on user goals. 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:0px;">
+    <div class="row ">
+      <div class="col-md">
+        <div class="regular-lg pb-4">
+          <div class="regular-lg pb-4">
+            First and foremost, we wanted to have a foundation for ideation sessions in which we rethink the journey. In addition, we wanted to:
+          </div>
+          <ul>
+            <li>Have a linear narrative which allow us to see the big picture and how tasks are connected and in service of the user reaching goals.</li> 
+            <li>Have a way to fold in and organize other materials such as research findings and competitive analysis.</li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:120px;">
+    <div class="row">
+      <div class="col-md">
+        <img src="images/serverless-07.png" class="img-fluid" alt="image" style="width:100%">
+        <div class="caption pt-2" style="width:600px;">
+          Anatomy of a proto-journey map. Stories were deconstructed and arranged a linear narrative with tasks, goals and milestones.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  
+<!--***********************************************-->
+
+<a id="nav-09"></a>
+<div class="bg-light-gray" style="background-color: #333;">
+  
+  <div class="container-fluid-content-01" style="padding-bottom:120px;">
+    <section class="row">
+      <div class="col-md section-header-no-border pb-4" style="color:#FF9788;">
+        Competitive Analysis
+      </div>
+    </section>
+    <div class="row">
+      <div class="col-md">
+        <div class="headline-medium pb-5  text-extra-light">
+          Understanding the Competition
+          <!--Identifying Strengths and Weaknesses-->
+        </div>
+        <div class="regular-lg pb-0 text-light">
+          We took screenshots of our competitor's UIs and pasted them along our journey map, aligning them to user tasks. Our goal was to make sure we had parity with Google, IBM and the OS version, and to find inspiration in things they do well.
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:120px;">
+    <div class="row">
+      <div class="col-md">
+        <img src="images/serverless-08.png" class="img-fluid" alt="image" style="width:100%">
+        <div class="caption pt-3 text-medium-light">
+          Screenshots of our competitor's UIs were aligned with user goals (left). Miro's zoom feature allowed us to zoom into screenshots and see details.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:120px;">
+    <div class="row">
+      <div class="col-md">
+        <div class="regular-lg text-light">
+          <div class="bold-5 pb-4 text-extra-light" style="text-align: center;">Competitor strengths</div>
+          <ul>
+            <!--<li>Google’s UI is generally well thought through and adhered to good UX heuristics.</li>-->
+            <li>We liked Google’s stepper approach to creating and updating serverless apps and contextual help.</li> 
+            <li>RedHat had advanced features we liked, such as allowing more experienced users to paste configurations into the UI rather than fill out a form.</li> 
+          </ul>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="regular-lg text-light">
+          <div class="bold-5 pb-4 text-extra-light" style="text-align: center;">Competitor weaknesses</div>
+          <ul>
+            <li>Most UIs reflected data structures, not user mental models. Elements in UI not logically grouped together.</li> 
+            <li>Poor / confusing wayfinding</li> 
+            <li>System status messages incoherent</li> 
+            <li>Lack of guided step-by-step flows or beginners (“Paste YAML here”)</li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!--***********************************************-->
+
+<a id="nav-10"></a>
+<div class="bg-dark-gray"> 
+  <div class="bg-dark-gray" style="background-color: #000;
+      height:900px; 
+      width:105%;  
+      background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url('images/serverless-10.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      ">
+    <div class="headline-heavy text-extra-light" style="
+      margin:auto;
+      text-align: center; 
+      width:33%; 
+      height:100%;">
+      <div style="position: relative; top: 50%; 
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);">Ideation</div>
+    </div>
+  </div>
+</div>
+
+<!--***********************************************-->
+
+<a id="nav-11"></a>
+  <div class="container-fluid-content-01" style="padding-bottom: 60px;">
+    <section class="row">
+      <div class="col-md section-header-no-border pb-4">
+        <a id="designstudio">Design Studio
+      </div>
+    </section>
+    <div class="row">
+      <div class="col-md">
+        <div class="headline-medium pb-5" style="margin-bottom: 0px; max-width:400px;">
+          <!--Conjuring the Doable, Desirable, and Differentiating-->
+          Collaboratively Reimagining the UX
+        </div>
+        <div class="regular-lg pb-4">
+          Now that we understood something about our competitors and we had a model of the user journey, we set up an ideation workshop (a.k.a., design studio) in which everyone (engineers, field engineers, design and PM) would sketch concepts. The goal was to get diverse perspectives to seed our creative process. 
+        </div>
+        <div class="regular-lg pb-5">
+          To get participants into the heads of our target users, we reviewed the journey map and introduced personas. We then prompted the sketching session by reading aloud a scneario in which an app dev creates a KNative service, then deploys an A/B test. 
+        </div>
+        <div class="headline-small pb-4">
+          Top Ideas: One Good UX and Two Potential Market Differentiators
+        </div>
+        <div class="regular-lg">
+          We dot-voted sketches and discussed what we liked. A few solved key user problems in creative ways, and had the potential to differentiate us from competitors
+        </div>
+
+        <!--
+        <div class="regular-lg pb-4">
+          I've found there are a few key attributes of effective workshops: 
+        </div>
+
+        <div class="regular-lg pb-0">
+          <ul>
+            <li><b>Getting the right people in the room:</b> In my experience, this means customer advocates (if not actual customers), people from related projects, engineers, and domain experts.</li>
+            
+            <li><b>Getting everyone into a creative mindset</b> That means getting people comfortable with the process, encouraging them to think laterally and, getting them into the user's shoes.</li>
+            
+            <li><b>Do away with role boundaries:</b> Everyone is a designer in my ideation workshops, but maintain a perspective of the world that comes from their past.  </li>
+            
+            <li class="pb-0"><b>Discouraging ownership of ideas:</b> I sometimes require participants to steal ideas from others and explain what they stole and why. If two ideas work great together, that will be good for customers. Allowing ownership of ideas impedes that.</li>
+          </ul>
+        </div>
+        -->
+        <!--<div class="regular-lg pb-4">
+          To get participants into the heads of our target users, we reviewed the journey map and introduced personas. We then prompted the sketching session by reading aloud a scneario in which an app dev creates a KNative service, then deploys an A/B test. 
+        </div>-->
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02 nav-margin" style="max-width: 1200px; padding-bottom:60px; padding-top:0px;">
+    <div class="row pb-4">
+      <div class="col-md">
+        <div class="p-1" style="border:1px solid #ccc;">
+          <img src="images/serverless-11-01.png" class="img-fluid p-2" alt="image">
+        </div>
+        <div class="bold-5 pb-4 ps-2 pe-2 pt-4">
+          Intuitive information layout
+        </div> 
+        <div class="regular-lg pb-4 ps-2 pe-2">
+          Several people came up with similar designs that merged information from multiple sources into intuitive tables. Many had a visual representation of status. 
+        </div>
+      </div>
+  
+      <div class="col-md">
+        <div class="p-1" style="border:1px solid #ccc;">
+          <img src="images/serverless-11-03.png" class="img-fluid p-2" alt="image">
+        </div>
+        <div class="bold-5 pb-4 ps-2 pe-2 pt-4">
+          Performance analysis
+        </div>
+        <div class="regular-lg pb-4 ps-2 pe-2">
+          Serverless technology will automatically free up system resources when an app has no traffic. When traffic returns, starting up cold can be slow. Exercising the scaling functionality, then showing how long cold starts take would enable developers to optimize for more responsiveness.
+        </div>
+      </div>
+   
+      <div class="col-md">
+        <div class="p-1" style="border:1px solid #ccc;">
+          <img src="images/serverless-11-04.png" class="img-fluid p-2" alt="image">
+        </div>
+        <div class="bold-5 pb-4 ps-2 pe-2 pt-4">
+          Change Log
+        </div>
+        <div class="regular-lg pb-4 ps-2 pe-2">        
+          Changes to apps (revisions) are described in YAML. This feature would create a diff between revisions, allowing developers to see exactly what changed. This could be an interesting place to start debugging.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02 pb-5" style="max-width: 600px; margin-bottom: 120px;">
+    <div class="row">
+      <div class="col-md">
+        <div class="headline-small pb-4">Solution Grooming</div>
+        <div class="regular-lg pb-5">
+          At this point, we had a lot of ideas to work with from the creative workshop and competitive analysis. We set a timer, and the PM and I independently sketched out concepts. When we were done, we compared notes. 
+        </div>
+        <img src="images/serverless-12.png" class="img-fluid" alt="image">
+        <div class="caption pt-3">
+          Our initial attempts at grooming solutions showed the PM and I were largely in alignment.
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  
+<a id="nav-12"></a>
+<!--***********************************************-->
+
+<div class="bg-dark-gray"> 
+  <div class="bg-dark-gray" style="background-color: #000;
+      height:900px; 
+      width:105%;  
+      background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url('images/serverless-13-01.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-right:-25px;">
+    <div class="headline-heavy text-extra-light" style="
+      margin:auto;
+      text-align: center; 
+      width:33%; 
+      height:100%;">
+      <div style="position: relative; top: 50%; 
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);">Rapid Prototyping</div>
+    </div>
+  </div>
+</div>
+
+<!--***********************************************-->
+
+<a id="nav-13"></a>
+<div class="bg-light-gray">
+  <div class="container-fluid-content-01" style="padding-bottom:0px;">
+    <section class="row">
+      <div class="col-md section-header-no-border pb-4">
+        RITE
+      </div>
+    </section>
+    <div class="row">
+      <div class="col-md">
+        <div class="headline-medium pb-5">
+          RITE: Rapid Iterative Testing and Evaluation
+        </div>
+        <div class="regular-lg pb-4">
+          Cloud computing is very complex, and most designs I've worked on in the domain are like multivariate problems: There are many possible outcomes, which are dependent on many variables, which are often related in unknown ways. 
+        </div>
+        <div class="regular-lg pb-5">
+          These types of problems can be very challenging, and I've found an iterative approach with constant feedback is the best way to work through them. As soon as we learned something that we had confidence in, we created an iteration.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px;">
+    <div class="row">
+      <div class="col-md">
+        <div class="headline-small pb-4">Setting Up User Feedback</div>
+        <div class="regular-lg pb-4">
+          We set feedback from many types of users: experts, novices, field engineers, internal engineers. For each of these, we had two types of learning goals: 
+        </div>
+        <div class="regular-lg pb-5">
+          <ul>
+            <li><b>Evaluative (a.k.a., usability):</b> Can the user complete given tasks? What about developers with no experience with serverless, can they understand everything?</li>
+            <li><b>Generative:</b> When do developers use GUIs versus command lines? Why do they use them? What would they change in our UI, if anything?</li> 
+          </ul>
+        </div>
+        <div class="headline-small pb-4">Initial Wireframes</div>
+        <div class="regular-lg pb-4">
+          With the PM and I largely aligned on our approach, I created our first set of wireframes. Before our first users tests, we went through a couple of iterations based on feedback from our engineering lead, but quickly had a direction we had some confidence in.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 1400px; padding-bottom:120px;">
+    <div class="row">
+      <div class="col-md">
+        <div class="">
+          <img src="images/serverless-14.png" class="img-fluid" alt="image">
+        </div>
+        <div class="caption pt-3">
+          Our usability tests had three primary user scenarios: Create, update and route traffic.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--***********************************************-->
+
+<a id="nav-14"></a>
+<div class="bg-dark-gray"> 
+
+ <div class="container-fluid-content-01" style="padding-bottom:60px;">
+    <section class="row">
+      <div class="col-md section-header-no-border pb-4" style="color:#FF9788;">
+        Findings
+      </div>
+    </section>
+    <div class="row">
+      <div class="col-md">
+        <div class="headline-medium pb-5 text-extra-light">Accumulating Insights</div>
+        <div class="regular-lg pb-4 text-light">
+          We synthesized feedback inline by affinity mapping stickies directly on the wireframes to maintain context. We moved quickly through many iterations and let the designs evolve as we learned.
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+   <div class="container-fluid-content-02" style="max-width: 1200px; padding-top:0px; padding-bottom:60px;">
+    <div class="row">
+      <div class="col-md pb-0">
+        <div class="regular-lg pb-0 text-light">
+          <img src="images/serverless-13-01-00.png" class="img-fluid" alt="image">
+          <div class="caption text-light mt-3">We synthesized findings inline. This example has feedback from three users, each represented by a different color sticky.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  <!--
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-top:60px; padding-bottom:0px;">
+    <div class="row">
+      <div class="col-md pb-5">
+        <div class="headline-small pb-4 gunmetal-light" style="text-align: left;">
+          Evolution of the Create Service Flow
+        </div>
+        <div class="regular-lg pb-0 text-light">
+          Our designs started with seed ideas from our ideation workshop with engineering. The PM and I then sketched initial versions. After that, I drove wireframing. The example below shows the evolution of the "Create" flow.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 1400px; padding-top:0px; padding-bottom:60px;">
+    <div class="row">
+      <div class="col-md pb-4">
+        <img src="images/serverless-13-02-00.png" class="img-fluid" alt="image">
+        <div class="caption text-light mt-3">Early versions of the create service design</div>
+      </div>
+    </div>
+  </div>
+  -->
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-top:60px; padding-bottom:60px;">
+    <div class="row">
+      <div class="headline-small pb-4 text-extra-light" style="text-align: left;">
+        Uncovering Big Frustrations Hidden in Small Details
+      </div>
+      <div class="col-md">
+        <div class="regular-lg pb-5 text-light">
+          Some changes, such as the need for form defaults, at first seemed trivial, but ended up solving a significant pain point. 
+        </div>
+        <div class="pb-5">
+          <img src="images/serverless-13-02-02.png" class="img-fluid" alt="image">
+        </div>
+        <div class="regular-lg pb-4 text-light">
+          Our first versions did not have default settings for memory allocations (1). The problem is that when the user is filling this field out, their app is likely in its early stages, and they would have no idea how much memory they would need at launch. 
+        </div>
+        <div class="regular-lg pb-5 text-light">
+          This was a required field, so when you put everything together, we were forcing the user to answer a question they could not answer. Very frustrating.
+        </div>
+
+        <div class="headline-small pb-4 text-extra-light">Additional Findings</div>
+        <div class="regular-lg pb-0 text-light">
+          <ul>
+           
+            <!--<li><span class="text-extra-light" style="font-weight:700;">We strayed too far from the underlying technology:</span> We weren't staying true to underlying concepts and language used in Kubernetes and serverless functionality. This risked introducing confusion and disharmony, especially when users toggle between the GUI and CLI.</li>-->
+            
+            <li><span class="text-extra-light" style="font-weight:700;">Novice users were confused:</span> A big part of the confusion was caused by a few terms associated with serverless technology that were overloaded (in particular, "service" and "traffic"). One tester thought he was configuring a database for the first 10 minutes of the interview. </li>
+             
+            <li class="pb-0"><span class="text-extra-light" style="font-weight:700;">GUIs can provide value for all users:</span> GUIs can provide value for new users, early-career developers, seasoned veterans, and even expert users. This reinforced our initial assumptions.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:120px; padding-top:0px;">
+    <div class="row">
+      <div class="col-md p-3 pullquote text-extra-light">
+        We discovered a big frustration for users: We were forcing them to answer a question that could not be answered.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--***********************************************-->
+
+<a id="nav-15"></a>
+<div class="">
+  
+  <div class="container-fluid-content-01" style="padding-bottom:60px;">
+    <section class="row">
+      <div class="col-md section-header-no-border pb-4">
+        Design Approach
+      </div>
+    </section>
+    <div class="row">
+      <div class="col-md">
+        <div class="headline-medium pb-5">
+          Aligning Competing Forces
+        </div>
+        <div class="regular-lg pb-4">
+          After several iterations and feedback sessions, our wireframes started to feel more and more solid. There were several forces aligning in our designs:
+        </div>
+        <div class="regular-lg pb-4 ps-4">
+          <div class="pb-2" style="display: flex;">
+            <div style="background-color: #75C636; width:16px; height:16px; margin:3px 12px 0px 0px"></div>
+            <div style="flex:1;"><span style="font-weight: 500;">Business strategy:</span> Lower barriers to adoption</div>
+          </div>
+          <div class="pb-2" style="display: flex;">
+            <div style="background-color: #FF679E; width:16px; height:16px; margin:3px 12px 0px 0px"></div>
+            <div style="flex:1"><span style="font-weight: 500;">Design strategy:</span> Target users by skill level</div>
+          </div>
+          <div class="pb-2" style="display: flex;">
+            <div style="background-color: #43A6DD; width:16px; height:16px; margin:3px 12px 0px 0px"></div>
+            <div style="flex:1"><span style="font-weight: 500;">Harmony:</span> Stay true to KNative conventions</div>
+          </div>
+          <div class="pb-2" style="display: flex;">
+            <div style="background-color: #B0B0B0; width:16px; height:16px; margin:3px 12px 0px 0px"></div>
+            <div style="flex:1"><span style="font-weight: 500;">User experience:</span> Use well-known UX patterns</div>
+          </div>
+        </div>
+        <div class="regular-lg pb-0">
+          Sometimes these forces were complementary; sometimes they were competing. Below are examples of how they manifest themselves after many iterations and feedback sessions:
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid-content-02" style="max-width: 1000px; padding-bottom:60px;">
+    <div class="row" style="padding-bottom: 120px;">
+      <div class="col-md">
+        <img src="images/serverless-15-01.png" class="img-fluid" alt="image" style="width:100%">
+        
+        <div class="pb-2" style="display: flex; font-size:1em; max-width:600px; margin:auto; justify-content: space-between;">
+          <div style="display: flex;">
+            <div style="background-color: #75C636; width:12px; height:12px; margin:4px 8px 0px 0px"></div>
+            <div style="flex:1; display: flex; "><span style="">Business strategy</span></div>
+          </div>
+          <div style="display: flex;">
+            <div style="background-color: #FF679E; width:12px; height:12px; margin:4px 8px 0px 0px"></div>
+            <div style="flex:1"><span style="">Design strategy</span></div>
+          </div>
+          <div style="display: flex;">
+            <div style="background-color: #43A6DD; width:12px; height:12px; margin:4px 8px 0px 0px"></div>
+            <div style="flex:1"><span style="">Harmony</span></div>
+          </div>
+          <div style="display: flex;">
+            <div style="background-color: #B0B0B0; width:12px; height:12px; margin:4px 8px 0px 0px"></div>
+            <div style="flex:1"><span style="">User experience</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    <div class="row" style="padding-bottom: 120px;">
+      <div class="col-md">
+        <img src="images/serverless-15-02.png" class="img-fluid" alt="image" style="width:100%">
+        <div class="pb-2" style="display: flex; font-size:1em; max-width:600px; margin:auto; justify-content: space-between;">
+          <div style="display: flex;">
+            <div style="background-color: #75C636; width:12px; height:12px; margin:4px 8px 0px 0px"></div>
+            <div style="flex:1; display: flex; "><span style="">Business strategy</span></div>
+          </div>
+          <div style="display: flex;">
+            <div style="background-color: #FF679E; width:12px; height:12px; margin:4px 8px 0px 0px"></div>
+            <div style="flex:1"><span style="">Design strategy</span></div>
+          </div>
+          <div style="display: flex;">
+            <div style="background-color: #43A6DD; width:12px; height:12px; margin:4px 8px 0px 0px"></div>
+            <div style="flex:1"><span style="">Harmony</span></div>
+          </div>
+          <div style="display: flex;">
+            <div style="background-color: #B0B0B0; width:12px; height:12px; margin:4px 8px 0px 0px"></div>
+            <div style="flex:1"><span style="">User experience</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+
+    <div class="row" style="padding-bottom: 60px;">
+      <div class="col-md">
+        <img src="images/serverless-15-03.png" class="img-fluid" alt="image" style="width:100%">
+        <div class="pb-2" style="display: flex; font-size:1em; max-width:600px; margin:auto; justify-content: space-between;">
+          <div style="display: flex;">
+            <div style="background-color: #75C636; width:12px; height:12px; margin:4px 8px 0px 0px"></div>
+            <div style="flex:1; display: flex; "><span style="">Business strategy</span></div>
+          </div>
+          <div style="display: flex;">
+            <div style="background-color: #FF679E; width:12px; height:12px; margin:4px 8px 0px 0px"></div>
+            <div style="flex:1"><span style="">Design strategy</span></div>
+          </div>
+          <div style="display: flex;">
+            <div style="background-color: #43A6DD; width:12px; height:12px; margin:4px 8px 0px 0px"></div>
+            <div style="flex:1"><span style="">Harmony</span></div>
+          </div>
+          <div style="display: flex;">
+            <div style="background-color: #B0B0B0; width:12px; height:12px; margin:4px 8px 0px 0px"></div>
+            <div style="flex:1"><span style="">User experience</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="padding-bottom: 0px;">
+      <div class="col-md">
+        <img src="images/serverless-15-04.png" class="img-fluid" alt="image" style="width:100%">
+        <div class="pb-2" style="display: flex; font-size:1em; max-width:600px; margin:auto; justify-content: space-between;">
+          <div style="display: flex;">
+            <div style="background-color: #75C636; width:12px; height:12px; margin:4px 8px 0px 0px"></div>
+            <div style="flex:1; display: flex; "><span style="">Business strategy</span></div>
+          </div>
+          <div style="display: flex;">
+            <div style="background-color: #FF679E; width:12px; height:12px; margin:4px 8px 0px 0px"></div>
+            <div style="flex:1"><span style="">Design strategy</span></div>
+          </div>
+          <div style="display: flex;">
+            <div style="background-color: #43A6DD; width:12px; height:12px; margin:4px 8px 0px 0px"></div>
+            <div style="flex:1"><span style="">Harmony</span></div>
+          </div>
+          <div style="display: flex;">
+            <div style="background-color: #B0B0B0; width:12px; height:12px; margin:4px 8px 0px 0px"></div>
+            <div style="flex:1"><span style="">User experience</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+    <div class="row pb-5">
+      <div class="col-md">
+        <img src="images/serverless-15-05.png" class="img-fluid" alt="image" style="width:100%">
+        <div class="pb-2" style="display: flex; font-size:1em; max-width:600px; margin:auto; justify-content: space-between;">
+          <div style="display: flex;">
+            <div style="background-color: #75C636; width:12px; height:12px; margin:4px 8px 0px 0px"></div>
+            <div style="flex:1; display: flex; "><span style="">Business strategy</span></div>
+          </div>
+          <div style="display: flex;">
+            <div style="background-color: #FF679E; width:12px; height:12px; margin:4px 8px 0px 0px"></div>
+            <div style="flex:1"><span style="">Design strategy</span></div>
+          </div>
+          <div style="display: flex;">
+            <div style="background-color: #43A6DD; width:12px; height:12px; margin:4px 8px 0px 0px"></div>
+            <div style="flex:1"><span style="">Harmony</span></div>
+          </div>
+          <div style="display: flex;">
+            <div style="background-color: #B0B0B0; width:12px; height:12px; margin:4px 8px 0px 0px"></div>
+            <div style="flex:1"><span style="">User experience</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+
+</div>
+
+
+<!--***********************************************-->
+
+<a id="nav-16"></a>
+<div class="bg-dark-gray" style="background-color: #111;">
+  <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:60px; padding-top:120px;">
+    <section class="row" style="max-width:600px; margin:auto;">
+      <div class="col-md section-header-no-border pb-4" style="color:#FF9788;">
+        Design Solution
+      </div>
+    </section>
+    <div class="row" style="max-width:600px; margin:auto;">
+      <div class="col-md pb-5">
+        <div class="headline-medium pb-2 text-extra-light">
+          A UX to Lower Barriers to<br>Adoption and Enable Scale 
+        </div> 
+      </div>
+    </div>
+    <div class="row pb-3 pt-0">
+      <div class="col-lg">
+        <img src="images/serverless-16-01.png" class="img-fluid" alt="image">
+      </div>
+      <div class="col-lg">
+        <img src="images/serverless-16-02.png" class="img-fluid" alt="image"> 
+      </div>
+    </div>
+    <div class="row pb-0">
+      <div class="col-lg">
+        <div class="caption pb-0 text-light" style="text-align: center; ">
+          Designs for our alpha release (visual design by Stephy Mathew.)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-01 overflow-hidden" style="padding-top:0px; padding-bottom: 120px;">
+    <div class="row">
+      <div class="col-md">
+        <div class="headline-small pb-4 text-extra-light">
+          Key Value Props:
+        </div>
+        <ul class="pb-0 text-light  regular-lg">
+          <li><span style="font-weight: 700; color: #fff;">Users don't have to think about infrastructure:</span> We aimed to allow users with no knowledge of Kubernetes or KNative to easily access their benefits.</li>
+          <li><span style="font-weight: 700; color: #fff;">Features for all skill levels:</span> We designed for early-career developers, but also included  features that allow for more efficient workflows for our advanced users.</li>
+          <li class="pb-0"><span style="font-weight: 700; color: #fff;">Cost savings at scale:</span> KNative  manages memory allocation automatically which results in big cost savings. Making KNative easily accessible to developers allows those savings to scale.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--***********************************************-->
+
+<a id="nav-17"></a>
+<div class="bg-light-gray">
+  <div class="container-fluid-content-01" style="padding-bottom:240px">
+    <section class="row">
+      <div class="col-md section-header-no-border pb-4">
+        Conclusion
+      </div>
+    </section>
+    <div class="row">
+      <div class="col-md">
+        <div class="headline-medium pb-5">
+          Impact
+        </div>
+        <div class="headline-small pb-4">
+          Initial Feedback From the Field
+        </div>
+        <div class="regular-lg pb-5">
+          As of this writing, the project was going into an internal alpha release. Initial feedback from our field team was very positive. “When a developer doesn’t know much about a new technology, just clicking a box is powerful.” was a response from a field engineer in EMEA.
+        </div> 
+        <div class="headline-small pb-4">
+          Differentiating Features
+        </div>
+        <div class="regular-lg pb-5">
+          Our design studio produced two features that our competitors do not have: change logs and scaling analysis. These features address the top two pain points for serverless technology: debugging and cold starts (according to the Serverless Community Survey). 
+        </div> 
+        <div class="headline-small pb-4">
+          Impact on the Design Practice
+        </div>
+        <div class="regular-lg pb-5">
+          Our "target skill level" matrix went over well with other design teams, and was adopted for other projects.
+        </div> 
+        <div class="headline-small pb-4">
+          Learnings
+        </div>
+        <div class="regular-lg pb-4">
+          <b>Opinionated APIs can be challenging:</b> 
+          <ul class="pt-4 regular-lg">
+            <li class="pb-0">We designed a UI on top of two very opinionated APIs (KNative and Kubernetes) and those opinions were often at odds with good UX principles.</li>
+          </ul>
+        </div>
+        <div class="regular-lg pb-4">
+          <b>Putting competitive analysis in the journey map worked:</b> 
+          <ul class="pt-4 regular-lg">
+            <li class="pb-0">We found ourselves referring back to the analysis often, and I got feedback that others were doing the same.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
