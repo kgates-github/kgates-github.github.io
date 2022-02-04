@@ -1084,20 +1084,18 @@
     
     <section class="row">
       <div class="col-md section-header-no-border pb-4">
-        Prototyping Example
+        Rapid Prototyping Example
       </div>
     </section>
     <div class="row">
       <div class="col-md">
         <div class="headline-medium pb-5" style="width:600px;">
-          Design as Learning
+          Rapid Prototyping Example: <span style="text-decoration: line-through;">Routers</span> HTTP Requests
         </div>
         <div class="regular-lg pb-5">
           In our situation, it was almost impossible to thoroughly understand metrics and all their implications up front. We needed to just get ideas out of our heads and into the world quickly and start learning. Rapid prototyping means being wrong constantly until you gain confidence that you aren't. 
         </div>
-        <div class="headline-small pb-4" style="width:600px;">
-          Example: <span style="text-decoration: line-through;">Routers</span> HTTP Requests
-        </div>
+        
       </div>
     </div>
   </div>
@@ -1143,6 +1141,13 @@
         <div class="regular-lg pb-5">
           What we learned from the expert panel is that operators care first about overall traffic and whether it is trending up or down. If something is concerning, they then will want router details, such as latency and errors. 
         </div> 
+        <div class="headline-small pb-4">Escaping the Zone of Excess Complexity</div>
+        <div class="regular-lg pb-4">
+          Most customers have eight to 12 routers, and aggregating HTTP requests is a realtime problem. In other words, we had a feature with medium-high user value and high complexity. 
+        </div>
+        <div class="regular-lg pb-5">
+          The solution was to not aggregate. Routers load balance traffic, so our solution, showing throughput by router, was actually superior to aggregation: we could show if a router was not load balancing.
+        </div>
         
         <div class="headline-small pb-4">Layout and Hierarchy</div>
         <div class="regular-lg pb-4">
