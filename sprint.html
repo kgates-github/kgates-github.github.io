@@ -1,0 +1,823 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66268413-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-66268413-1');
+    </script>
+
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    // G-54V1L5T0G0
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+
+    <script src="js.js"></script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Kevin Gates, UX Design Portfolio</title>
+  </head>
+  <body>
+
+  
+  <div class="ps-4 pe-4" 
+    style="height:60px; width: 100%; display:flex; 
+      flex-direction:row; align-items: center; 
+      position:fixed; background-color: white; z-index: 100;">
+    <div style="flex:1; align-items: center; padding-top:5px;">
+      <a href="index.html" style="line-height: 1.1em;">
+        <div class='nav-header'>Kevin Gates</div>
+        <div class='nav-subheader'>UX Designer</div>
+      </a>
+    </div>
+    <div style="max-width:262px; text-align:right; display: flex; 
+        flex-direction: row; justify-content: space-between;">
+      <div class='top-nav ml-1'><a class='top-nav-on' href="index.html">Case Studies</a></div>
+      <div class='top-nav ml-1'><a href="miscellany.html">Projects</a></div>
+      <div class='top-nav ml-1'><a href="writing.html">Writing</a></div>
+    </div>
+  </div>
+
+  <div id="side-bar-nav"
+    style="
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      z-index: 50;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+    ">
+    <div style="height:30px; display:flex; flex-direction: row; margin:10px 0px 40px 0px;">
+    </div>
+    <div class="ps-4 pb-5" style ="line-height: 1.6em;">
+      <div class='side-nav pb-2'><a href="#nav-01" style="font-weight: 700;">INTRO</a></div>
+      <div class='side-nav ms-2'><a href="#nav-01">Tl;dr</a></div>
+      <div class='side-nav ms-2'><a href="#nav-03">Role and team</a></div>
+      <div class='side-nav ms-2'><a href="#nav-04">Roadmapping</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-05" style="font-weight: 700;">RESEARCH</a></div>
+      <div class='side-nav ms-2'><a href="#nav-06">Interviews</a></div>
+      <div class='side-nav ms-2'><a href="#nav-07">Personas</a></div>
+      <div class='side-nav ms-2'><a href="#nav-08">Findings</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-09" style="font-weight: 700;">IDEATION</a></div>
+      <div class='side-nav ms-2'><a href="#nav-10">Workshop prep</a></div>
+      <div class='side-nav ms-2'><a href="#nav-11">Prioritization</a></div>
+      <div class='side-nav ms-2'><a href="#nav-12">Causal mapping</a></div>
+      <div class='side-nav ms-2'><a href="#nav-13">Solutioning</a></div>
+      <div class='side-nav ms-2'><a href="#nav-14">Vision</a></div>
+      <div class='side-nav ms-2'><a href="#nav-15">Storyboard</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-16" style="font-weight: 700;">CONCLUSION</a></div>
+      <div class='side-nav ms-2'><a href="#nav-17">Impact</a></div>
+    </div>
+  </div>
+  <div id="menu-toggle" onclick="toggleNav()" style="
+    background-color: #111; 
+    color:#ccc; 
+    position:fixed;
+    margin-left: 160px;
+    margin-top: 70px;
+    padding: 4px;
+    width: 34px;
+    z-index: 60;
+    font-size: 24px;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+  ">☰</div>
+
+<div id="main-body-cont" style="margin-left: 200px;">
+  <a id="nav-01"></a>
+   
+  <div class="bg-dark-gray mt-0 nav-padding" style="
+    background-color: #000;
+    background: linear-gradient( rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.60) ), url('images/console-30-01.png'); 
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+  "> 
+  
+  <div class="container-fluid-content-02" style="max-width: 900px; margin-top:120px;">
+    <div class="p-4" style="background-color: rgba(255, 255, 255, 0.7); max-width: 900px;">
+      <div class="pb-3 mb-3"style="display:flex; flex-direction: row;  
+        border-bottom: 1px solid rgba(0, 0, 0, 0.4);"> 
+        <div class="regular-lg bold-5" style="width:100px;">
+          Tl; dr
+        </div> 
+        <div class="regular-lg" style="flex:1;">
+          <ul>
+            <li>
+              For enterprise developers, getting access to software-building tools on cloud platforms is rife with bottlenecks and red tape. 
+            </li>
+            <li>
+              We reimagined a better experience by anchoring product ideas around a nuanced understanding of customer problems. Our solutions were not just informed by the fact that bottle necks and red tape exist, but by <span style="font-style:italic;">why</span> they exist.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pb-3 mb-3"style="display:flex; flex-direction: row; 
+        border-bottom: 1px solid rgba(0, 0, 0, 0.4);"> 
+        <div class="regular-lg bold-5" style="width:100px">
+          Impact
+        </div> 
+        <div class="regular-lg" style="flex:1;">
+          <ul>
+          <li>Our product vision laid the foundation for a compact, two-day design sprint and product kickoff informed by a clear understanding of customer needs.</li>
+          <li>Our research had an impact far beyond the scope of this project&mdash;it informed several other teams working in a similar domain.</li>
+          </ul>
+        </div>
+      </div>
+      <div class=""style="display:flex; flex-direction: row;"> 
+        <div class="regular-lg bold-5" style="width:100px">
+          Learnings
+        </div> 
+        <div class="regular-lg" style="flex:1;">
+          <ul>
+            <li>If a design process is not working, nip it in the bud and pivot.</li>
+            <li>Transdisciplinary ideation is energizing and fruitful.</li>
+            <li>Storyboards are a powerful way to convey product visions.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-01 overflow-hidden pt-4">
+    <div class="row mt-5" style="max-width: 600px;">
+      <div class="col">
+        <div class='headline-heavy text-extra-light' style="margin-bottom: 60px;">
+          <!--Satisfying Developer Need While Keeping an Eye on the Big Picture-->
+          A Compact Design Sprint in an Expansive Problem Space
+        </div>
+        <div class='headline-small mb-4 text-extra-light'>When You Have a Direction But Need Velocity</div> 
+      	<div class="regular-lg pb-4 text-extra-light">
+					This project started as a challenge posed by Pivotal's director of product for its London R&D org. She wanted me to do two things:
+          <ol class="pt-4">
+            <li class="pb-4 text-extra-light">
+              Discover the top problems engineers in large enterprises have in getting the tools they need to build software. 
+            </li>
+            <li class="pb-0 text-extra-light">
+              Organize a product team anchored around those problems and come up with solutions.
+            </li>
+          </ol>
+				</div> 
+      	<div class="regular-lg pb-0 text-extra-light">
+					It was a big ask, but also a big opportunity. 
+				</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 	<!--***********************************************-->
+
+  <a id="nav-03"></a>
+  <div class="bg-light-gray">
+  	<div class="container-fluid-content-01 overflow-hidden" style="padding-top:0px;">
+      <section class="row" style="padding-top:120px;">
+        <div class="col-md section-header-no-border pb-5">
+          Role and Team
+        </div>
+      </section>
+      <div class="row">
+        <!--<div class="headline-medium pb-5" style="max-width: 600px;">
+          Entering the World of Red Tape and Shadow IT...
+        </div>
+        <div class="bold-5 pb-4">Problem</div>
+        <div class="regular-lg pb-5">
+          For enterprise developers, getting access to software-building tools on cloud platforms is rife with bottlenecks and red tape. We set out to reimagine a better experience for deveolpers using Pivotal's enterprise cloud platform.
+        </div>
+        -->
+        <!--
+        <div class="regular-lg pb-5">
+					Pivotal's customers are Fortune-500 companies who each employ thousands of engineers, all of whom need a diverse set of tools, such as databases and APIs to do their jobs. 
+        </div> 
+        
+        <div class="bold-5 pb-4">Additional Goals</div>
+        <div class="regular-lg pb-5">
+          <ul class="pb-0">
+            <li><b>Come up with actionable ideas:</b> An R&D product team should be able to start writing code shortly after the end of the creative process.</li>
+            <li class="pb-0"><b>Be transdiscliplinary:</b> Infuse the whole design process with diverse perspectives. There are many facets to a successful product&mdash;engineering, design, marketing and more. All should have a role in the creative process.</li>
+            
+          </ul>
+        </div>
+        -->
+        <div class="regular-lg pb-5">
+          <div class="bold-5 pb-4">My Role</div>
+            As design lead, I drove the research and synthesis over a period of several weeks. After that, I facilitated a week-long ideation workshop and design sprint.
+        </div>
+        <div class="bold-5 pb-4">Skills</div>
+        <div class="regular-lg pb-5">
+          User research, workshop facilitation, collaborative ideation, storyboarding
+        </div>
+        <div class="regular-lg pb-0">
+          <div class="bold-5 pb-4">Collaborators</div>
+            For the research, I paired with an engineer (and aspiring designer) on a daily basis. After that, I facilitated  design workshops which included an R&D engineering team, a PM, and a new-hire designer. I also had weekly one-on-ones with the director of product. 
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+
+<!--***********************************************-->
+
+
+	<div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:100px;">
+    <section class="row">
+      <div class="col-md section-header-no-border pb-4">
+        Design Sprint 
+      </div>
+    </section>
+    <div class="row">
+      <div class="col-md">
+        <div class="headline-medium pb-5">
+          Delegating the Curation and Management of Dev Tools
+        </div>
+        <div class="regular-lg pb-0">
+          We decided to first focus on enabling operators to deligate responsibilities. In particular, developer-created tools (a.k.a., APIs) through a marketplace-like experience. This resonated with data we learned in our research: Enterprises manage tens of thousands of APIs, which is painful and challenging.
+				</div>
+        
+				<div class="regular-lg pb-0">
+          Enterprises manage tens of thousands of APIs. It’s painful and challenging. We started there. It’s a tough problem space. Our customer can have up to 80,000 APIs. These APIs are a tangled mess of overlapping functionality and varying levels of quality. On top of that, there are established competitors.
+				</div>
+      
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:120px;">
+    <div class="row">
+      <div class="col-md p-3 pullquote">
+        Our customers can have up to 80,000 APIs. These APIs are a tangled mess of overlapping functionality and varying levels of quality.
+      </div>
+    </div>
+  </div>
+
+
+<!--***********************************************-->
+
+
+<div class="bg-light-gray">
+  <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:0px;">
+    <section class="row">
+      <div class="col-md section-header-no-border pb-4">
+        UX Flows
+      </div>
+    </section>
+    <div class="row">
+      <div class="col-md">
+        <div class="headline-medium pb-5">
+        	Mapping the Journey
+        </div>
+        <div class="regular-lg pb-4">
+          We decided to first focus on enabling operators to deligate responsibilities. In particular, developer-created tools (a.k.a., APIs) through a marketplace-like experience. This resonated with data we learned in our research: Enterprises manage tens of thousands of APIs, which is painful and challenging.
+        </div>
+        <div class="regular-lg pb-4">
+        	We needed a journey map. By Wednesday.
+        </div>
+        <div class="regular-lg pb-4">
+          Under tight time constraints, I facilitated a proto-journey mapping workshop with four field engineers who work onsite for companies in different industries. We brainstormed user tasks in finding APIs, rolled those up into goals and folded in pain points and other context.
+				</div>
+        <div class="regular-lg pb-5">
+            (Read more about proto journey mapping <a href="serverless.html#proto-journey-map" 
+            style="color:#0066cc; text-decoration: underline;">here</a>.) 
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02 pb-5" style="max-width: 900px; padding-top:0px; ">
+    <div class="row gx-3">
+      <div class="col-md">
+        <img src="images/console-30-01.png" class="img-fluid" alt="image"> 
+        <div class="caption pt-3">
+        	Field engineers helped us map out how app devs find APIs within their organizations.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02 overflow-hidden" style="max-width: 600px; padding-bottom:0px;">
+    <div class="row">
+      <div class="col-md">
+        <div class="regular-lg pb-5">
+					Our proto-journey map defined four phases: find, analyze, test and wire (FAT Wire). Each phase had goals and pain points. This model of the journey would be the template we would use to reimagine the API discovery experience.
+				</div>
+				<div class="regular-lg pb-5">
+					<div class="bold-5 pb-4">Key drivers for app devs looking for an API:</div>
+					App devs want to find existing functionality through APIs that meets their needs so they don’t have to create it themselves.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid-content-02" style="max-width: 900px; padding-top:0px; padding-bottom:120px;">
+    <div class="row gx-3">
+      <div class="col-md">
+        <img src="images/console-30-02.png" class="img-fluid" alt="image"> 
+        <div class="caption pt-3">
+        	Each field engineer had their own swim lane to describe their version of the journey. We then consolidated everything into one flow. 
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="bg-dark-gray">
+	<div class="container-fluid-content-02 overflow-hidden" style="max-width: 900px; padding-top:240px; padding-bottom:120px;">
+		<div class="row">
+			<div class="regular-lg pb-5">
+				<div class="headline-medium text-extra-light">The API Discovery Journey</div>
+			</div>
+		</div>
+		<div class="row">
+      <div class="col-md">
+				<div class="regular-lg pb-5 text-light">
+					<span class="text-extra-light" style="font-weight:700;">Overall goal:</span> App devs want to find an API that meets their needs so they don’t have to create needed functionality themselves.
+				</div>
+			</div>
+		</div>
+	  <div class="row gx-4 pb-2 mb-3 border-bottom border-secondary">
+	    <div class="col-2" style="width:100px;"><div class="text-extra-light">Phase</div></div>
+	    <div class="col-md"><div class="text-extra-light">User goals</div></div>
+	    <div class="col-md"><div class="text-extra-light">Pain points</div></div>
+	  </div>
+
+	  <div class="row gx-4 pb-2 mb-3 border-bottom border-secondary">
+	    <div class="col-2" style="width:100px;">
+	      <div class='mt-0 mb-0 text-center'><span class="material-icons md-48 text-extra-light">search</span></div>
+	      <div class='mt-0 mb-2 text-center text-extra-light'>Find</div>
+	    </div>
+	    <div class="col-md">
+	      <div class='mt-0 mb-2 text-light'>Find an API given a set of needs (e.g., given a passport ID, confirm citizenship.)</div>
+	    </div>
+	    <div class="col-md">
+	      <div class='mt-0 mb-2 text-light'>Searches for API functionality in existing systems can return hundreds of results, which are difficult to decipher.</div>
+	    </div>
+	  </div>
+
+	  <div class="row gx-4 pb-2 mb-3 border-bottom border-secondary">
+	    <div class="col-2" style="width:100px;">
+	      <div class='mt-0 mb-0 text-center'><span class="material-icons md-48 text-extra-light">bar_chart</span></div>
+	      <div class='mt-0 mb-2 text-center text-extra-light'>Analyze</div>
+	    </div>
+	    <div class="col-md">
+	      <div class='mt-0 mb-2'>
+	        <div class='mt-0 mb-3 text-light'>Understand how API works and what it can provide.</div>
+	        <div class='mt-0 mb-3 text-light'>Discover any deal breakers such as SLAs that don't meet teams needs.</div>
+	      </div>
+	    </div>
+	    <div class="col-md">
+	      <div class='mt-0 mb-2 text-light'>APIs are of varying quality. Quality is difficult to evaluate.</div>
+	    </div>
+	  </div>
+
+	  <div class="row gx-4 pb-2 mb-3 border-bottom border-secondary">
+	    <div class="col-2" style="width:100px;">
+	      <div class='mt-0 mb-0 text-center'><span class="material-icons md-48 text-extra-light">science</span></div>
+	      <div class='mt-0 mb-2 text-center text-extra-light'>Test</div>
+	    </div>
+	    <div class="col-md">
+	      <div class='mt-0 mb-3 text-light'>Be confident that the API will be performant under load and work as desired.</div>
+	      <div class='mt-0 mb-3 text-light'>Experiment to understand how API works (rather than read documentation.)</div>
+	    </div>
+	    <div class="col-md">
+	      <div class='mt-0 mb-2 text-light'>Access isn’t always readily available.</div>
+	    </div>
+	  </div>
+
+	  <div class="row gx-4 pb-5 mb-0">
+	    <div class="col-2" style="width:100px;">
+	      <div class='mt-0 mb-0 text-center'><span class="material-icons md-48 text-extra-light">electrical_services</span></div>
+	      <div class='mt-0 mb-2 text-center text-extra-light'>Wire</div>
+	    </div>
+	    <div class="col-md">
+	      <div class='mt-0 mb-2 text-light'>Get the API working with codebase.</div>
+	    </div>
+	    <div class="col-md">
+	      <div class='mt-0 mb-2 text-light'>Credentials are often (up to 80 percent of the time) sent through email, posing significant security risks.</div>
+	    </div>
+	  </div>
+	</div>
+</div>
+
+
+<!--***********************************************-->
+
+
+  <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:0px;">
+    <section class="row">
+      <div class="col-md section-header-no-border pb-4">
+        Competitive Analysis 
+      </div>
+    </section>
+    <div class="row">
+      <div class="col-md">
+        <div class="headline-medium pb-5">
+          Putting Our Rival’s Strengths and Weaknesses in Context
+        </div>
+        <div class="regular-lg pb-4">
+          Two engineers on the team performed a competitive analysis of two rivals. We took this and mapped it onto our journey: A green check showed competitor strength, a red “x” weakness / opportunity, and a question mark a mixed bag. This mapping helped us visually see where we need to have parity and where there might be opportunities to differentiate.
+				</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02 pb-5" style="max-width: 900px; padding-top:0px; ">
+    <div class="row gx-3">
+      <div class="col-md">
+        <img src="images/console-31.png" class="img-fluid center-block d-block mx-auto" alt="image"> 
+        <div class="caption pt-3">
+        	A digitized version of our proto journey map. The checks and x's in the center rows show where competitors have strengths and weaknesses.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02 overflow-hidden" style="max-width: 600px; padding-bottom:120px;">
+    <div class="row">
+      <div class="col-md">
+				<div class="regular-lg pb-0">
+					<div class="bold-5 pb-4">Potential strategic advantage</div>
+						In the process of mapping our journey and competitive analysis, a potential advantage appeared: Security. Credentials are often sent through email, posing significant security risks. We effectively “own” the network on our platform and know user access rights. We could grant API access without credentials being passed around.
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--***********************************************-->
+
+<div class="bg-dark-gray"> 
+  <a id="nav-10"></a>
+  <div class="bg-dark-gray" style="background-color: #fff;
+      height:900px; 
+      width:105%;  
+      background: linear-gradient( rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30) ), url('images/console-32.png');
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right:-25px;">
+    <div class="headline-heavy text-extra-light" style="
+      margin:auto;
+      text-align: center; 
+      width:33%; 
+      height:100%;">
+      <div style="position: relative; top: 50%; 
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);">Design Studio</div>
+    </div>
+  </div>
+</div>
+
+<!--***********************************************-->
+
+
+<div class="bg-light-gray">
+  <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:0px;">
+    <section class="row">
+      <div class="col-md section-header-no-border pb-4">
+        Design Studio 
+      </div>
+    </section>
+    <div class="row">
+      <div class="col-md">
+        <div class="headline-medium pb-5">
+          Reimagining the Journey
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02 pb-5" style="max-width: 900px; padding-top:0px; ">
+    <div class="row gx-3">
+      <div class="col-md">
+        <img src="images/console-32.png" class="img-fluid" alt="image"> 
+        <div class="caption pt-3">
+        	Gallery walk. Pictured are product engineers and field engineers.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02 overflow-hidden" style="max-width: 600px; padding-bottom:0px;">
+    <div class="row">
+      <div class="col-md">
+        <div class="regular-lg pb-4">
+					Now that we understood something about the developer user journey around getting access to APIs, we set out to reimagine it. We set up a design studio in which everyone would sketch concepts that would seed our initial designs. 
+				</div>
+        <div class="regular-lg pb-5" style="font-style: italic;">
+          (Read more about design studios <a href="serverless.html#designstudio" style="color:#0066cc; text-decoration: underline;">here</a>.)
+        </div>
+			</div>
+		</div>
+	</div>
+
+  <div class="container-fluid-content-02 overflow-hidden" style="max-width: 600px; padding-top:0px;">
+    <div class="row">
+      <div class="col-md">
+      	<div class="headline-small pb-4">
+          Finding Inspiration Outside Our Domain
+        </div>
+        <div class="regular-lg pb-4">
+					Everyone had a homework assignment: Find designs in different domains that do well what we want to do (find, analyse, test, wire) and present what they like and why. This exercise gets participants to think laterally. There were a couple highlights:
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid-content-02 overflow-hidden" style="max-width: 600px; padding-bottom:0px;">
+		<div class="row gx-4 pb-2 mb-3 border-bottom">
+	    <div class="col-3">
+	      <div class='mt-2 mb-1 text-center'>
+	        <img src="images/amazon.png" width=70 alt="Amazon logo">
+	      </div>
+	      <div class='mt-0 mb-2 text-center'>Amazon.com</div>
+	    </div>
+	    <div class="col-md">
+	      <div class='mt-0 mb-2 regular-lg'>Presenters pointed out name bands are important in evaluating quality when making a purchase decision on Amazon. This resonated with our research: Certain engineering teams who create APIs have reputations for creating high-quality code.</div>
+	    </div>
+	  </div>
+
+	  <div class="row gx-4 pb-5">
+	    <div class="col-3">
+	      <div class='mt-2 mb-0 text-center'><span class="material-icons md-72">downhill_skiing</span></div>
+	      <div class='mt-0 mb-2 text-center'>Ski demo day</div>
+	    </div>
+	    <div class="col-md">
+	      <div class='mt-0 mb-2 regular-lg'>These days, skiers can test out new skis during demo days at ski resorts. How is this relevant to APIs? The presenter explained there is no substitute for seeing how skis actually perform in different conditions like powder and groomed runs. Might the user “test drive” APIs? </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="container-fluid-content-02" style="max-width: 1000px; padding-bottom:60px; padding-top:60px;">
+    <div class="row">
+      <div class="col-md p-3 pullquote">
+        Everyone had a homework assignment: Find designs in different domains that do well what we want to do.
+      </div>
+    </div>
+  </div>
+
+
+	<div class="container-fluid-content-02 overflow-hidden" style="max-width: 600px; padding-bottom:0px;">
+    <div class="row">
+      <div class="col-md">
+      	<div class="headline-small pb-4">
+          Sketching and Evaluating
+        </div>
+        <div class="regular-lg pb-5">
+					I read out a user scenario as a prompt, reviewed pain points and goals, and everyone started drawing. After than, we taped drawings to the wall and I facilitated a gallery walk in which everyone presented their ideas. We then dot voted and discussed our favorites.
+				</div>
+			</div>
+    </div>
+  </div>
+
+  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:120px; padding-top:0px;">
+    <div class="row pb-4">
+      <div class="col-md">
+        <img src="images/console-33-01.png" class="img-fluid" alt="image">
+        <div class="caption pt-2">"Cheatsheets" I handed out reminding sketching participants about user goals and pain points.</div>
+      </div> 
+    </div> 
+    <div class="row pb-4">
+      <div class="col-md">
+        <img src="images/console-33-03.png" class="img-fluid" alt="image">
+        <div class="caption pt-2">Our design studio during a coffee break</div>
+      </div> 
+    </div>
+    <div class="row pb-0">
+      <div class="col-md">
+        <img src="images/console-33-02.png" class="img-fluid center-block d-block mx-auto" alt="image">
+        <div class="caption pt-2">Gallery walk. Participants studied concepts before dot voting.</div>
+      </div> 
+    </div>
+  </div>
+
+
+<!--=============================================-->
+
+
+  <div class="bg-dark-gray">
+    <div class="container-fluid-content-02 ps-5 pe-5" style="max-width: 600px; padding-bottom:60px; padding-top:240px;">
+      <div class="row">
+        <div class="col-md">
+          <div class="headline-medium pb-4 text-extra-light">
+            Up-Voted Ideas
+          </div> 
+          <div class="regular-lg text-light">
+            The value in ideation workshops is not in the sketches or other artifacts produced, but in the conversations about them. After everyone presented ideas, we dot voted, then discussed what we liked about the top ideas.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid-content-02 ps-5 pe-5" style="max-width: 1200px; padding-bottom:120px; padding-top:0px;">
+      <div class="row pb-5 g-4">
+        <div class="col-lg">
+          <div class="mb-4" style="background-color: #444;">
+            <img src="images/console-34.png" class="img-fluid p-2" alt="image">
+          </div>
+          <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>Two-part search query</b></div>
+          <div class="regular-lg text-light ps-3 pe-3">
+            The most up-voted idea was a search field that prompts the user to complete the sentence, "I have..." In this case, a person. Once that is entered, the next field "I need..." is auto-populated with choices. This resonated with the engineers, who pointed out this is exactly how you think when looking for an API.
+          </div>
+        </div>
+        <div class="col-lg">
+          <div class="mb-4" style="background-color: #444;">
+            <img src="images/console-35.png" class="img-fluid p-2" alt="image">
+          </div>
+          <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>Machine-Learning search</b></div>
+          <div class="regular-lg text-light ps-3 pe-3">
+            The two-part search query was tied to a network database that learns over time how to best associate the "haves" and "needs".
+          </div>
+        </div>
+      </div>
+      <div class="row pb-4 g-4">
+        <div class="col-lg">
+          <div class="mb-4" style="background-color: #444;">
+            <img src="images/console-36.png" class="img-fluid p-2" alt="image">
+          </div>
+          <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>Usage metrics</b></div>
+          <div class="regular-lg text-light ps-3 pe-3">
+            Another idea showed usage data so the user can see if the API is in use. This resonated especially with the field engineers who explained that there tends to be a lot of "dead wood" when searching for APIs.
+          </div>
+        </div>
+        <div class="col-lg">
+          <div class="mb-4" style="background-color: #444;">
+            <img src="images/console-37.png" class="img-fluid p-2" alt="image">
+          </div>
+          <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>In-browser querries</b></div>
+          <div class="regular-lg text-light ps-3 pe-3">
+            This concept conveyed an easy way to test drive the API by querying it from the browser.
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+<!--***********************************************-->
+
+  <a id="nav-16"></a>
+  <a id="nav-17"></a>
+  <div class="container-fluid-content-01" style="padding-bottom:240px">
+    <section class="row">
+      <div class="col-md section-header-no-border pb-4">
+        Conclusion
+      </div>
+    </section>
+    <div class="row">
+      <div class="col-md">
+        <div class="headline-medium pb-5">
+          Impact
+        </div>
+        
+        <div class="headline-small pb-4">
+          Design Sprint
+        </div>
+        <div class="regular-lg pb-5">
+          Our ideation session was the foundation for a compact, two-day design sprint. (I plan to include the sprint as a separate case study.)
+        </div> 
+        <div class="headline-small pb-4">
+          Research Impact
+        </div>
+        <div class="regular-lg pb-4">
+          Our research deck got a lot of attention. I presented it several times as part of our integration process. At several points there were dozens of people in the Google doc, including vice presidents. One PM told me she had been referring to the deck on a regular basis.
+        </div> 
+        <div class="regular-lg pb-5">
+          In addition, I later used the research findings to inform two other related projects.
+        </div> 
+        <div class="headline-small pb-4">
+          Design Practice Impact
+        </div>
+        <div class="regular-lg pb-5">
+          I documented the design process and presented it internally and externally, including two times for the U.K. Government Digital Services.
+        </div>
+
+        <div class="headline-small pb-4">
+          Learnings
+        </div>
+        <div class="regular-lg pb-4">
+          <b>If something is not working, nip it in the bud and pivot:</b> 
+          <ul class="pt-4 regular-lg">
+            <li>Our initial scenario-based presentation didn't gel. We took the outcome we were after and came up with a solution that worked.</li>
+            <li class="pb-0">High trust enables critical feedback, which was necessary for us to recover from mistakes.</li>
+          </ul>
+        </div>
+        <div class="regular-lg pb-4">
+          <b>Transdisciplinary ideation is powerful:</b> 
+          <ul class="pt-4 regular-lg">
+            <li>We gained insights that only came about because designers, engineers and field engineers were working together on the same problem.</li>
+            <li class="pb-0">Marketing team members on our advisory panel had feedback that the rest of us would not have thought of.</li>
+          </ul>
+        </div>
+        <div class="regular-lg pb-0">
+          <b>Don't underestimate the impact of vision storyboards:</b> 
+          <ul class="pt-4 regular-lg">
+            <li>I got feedback that people had no idea of what we were up to until they saw the storyboard.</li>
+             <li class="pb-0">In large organizations, I've found people will hear about your project, assume worst-case scenario, and imagine conflict that doesn't exist. A good vision storyboard can dispell mistrust and open doors for collaboration.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--=============================================-->
+  <!--
+  <div class="container-fluid-content-02 overflow-hidden" style="max-width: 600px; padding-bottom: 120px;">
+		
+	  <div class="row gx-4 pb-2 mb-3 border-bottom">
+	    <div class="col-md">
+	    	<div class="headline-small pb-4">
+          Ideas That Surfaced to the Top
+        </div>
+        <div class='mb-4'>The most up-voted idea was a search field that prompts the user to complete the sentence, "I have..." In this case, a passport ID. Once that is entered, the next field "I need..." is auto-populated with possible results. </div>
+	      <div class='mt-1 mb-1 text-center'>
+	        <img src="images/console-35.png" class="img-fluid" alt="Amazon logo">
+	      </div>
+	      <div class='pt-4 mb-2'>This resonated with the engineers, who pointed out this is exactly how you think when looking for an API.</div>
+	    </div>
+	  </div>
+
+	  <div class="row gx-4 pb-2 mb-3 border-bottom">
+	    <div class="col-md">
+	      <div class='mt-1 mb-1 text-center'>
+	        <img src="images/console-36.png" class="img-fluid" alt="Amazon logo">
+	      </div>
+	    </div>
+	    <div class="col-md">
+	      <div class='mt-0 mb-2'>The above concept was tied to a network database that learns over time how to best associate the "haves" and "needs".</div>
+	    </div>
+	  </div>
+
+	  <div class="row gx-4 pb-2 mb-3 border-bottom">
+	    <div class="col-md">
+	      <div class='mt-1 mb-1 text-center'>
+	        <img src="images/console-37.png" class="img-fluid" alt="Amazon logo">
+	      </div>
+	    </div>
+	    <div class="col-md">
+	      <div class='mt-0 mb-2'>Another idea showed usage data so the user can see if the API is in use.</div>
+	      <div class='mt-0 mb-2'>It also conveyed an easy way to test drive the API by querying it from the browser.</div>
+	    </div>
+	  </div>
+
+	  <div class="row gx-4 pb-2 mb-3 border-bottom">
+	    <div class="col-md">
+	      <div class='mt-1 mb-1 text-center'>
+	        <img src="images/console-34.png" class="img-fluid" alt="Amazon logo">
+	      </div>
+	    </div>
+	    <div class="col-md">
+	      <div class='mt-0 mb-2'>A number of ideas included metrics and charts showing historic performance against things like SLOs.</div>
+	    </div>
+	  </div>
+	</div>
+-->
+
+</div>
+
+
+
+<!--***********************************************-->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
