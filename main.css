@@ -35,11 +35,14 @@ body { padding: 16px; }
 .fw-6 {
   font-weight:900;
 }
-.line-height-1-5 {
+.line-height-m {
   line-height:1.5;
 }
-.line-height-2-0 {
+.line-height-l {
   line-height:2;
+}
+.all-caps {
+  text-transform: capitalize !important;
 }
 
 /* Margins */

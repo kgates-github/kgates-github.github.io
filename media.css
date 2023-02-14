@@ -2,7 +2,7 @@
   .content-narrow { max-width: 100%; margin: 0 0; }
   .card { padding-bottom:55px; }
   #side-bar-nav { display: none; }
-  #menu { left: -3px; }
+  #menu { left: -40px; }
   .header { padding-left: 32px; }
 }
 @media (min-width: 600px) {
@@ -11,7 +11,7 @@
   .grid-3 { grid-template-columns: repeat(2, 1fr); gap: 42px; }
   .card { padding-bottom:55px; }
   #side-bar-nav { display: none; }
-  #menu { left: -3px; }
+  #menu { left: -40px; }
   .header { padding-left: 32px; }
 }
 @media (min-width: 900px) {
