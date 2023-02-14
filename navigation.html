@@ -1,0 +1,154 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kevin Gates</title>
+    <meta name="description" content="UX designer and researcher with experience in enterprise SaaS and data products.">
+    <meta content="Kevin Gates" property="og:site_name">
+    <meta content="Kevin Gates" property="og:title">
+    <meta content="website" property="og:type">
+    <meta content="UX designer with experience in enterprise SaaS and data products." property="og:description">
+    
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="components.css" type="text/css">
+    <link rel="stylesheet" href="media.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@0,200;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script>
+      /* Set the width of the side navigation to 250px */
+      function openNav() {
+        document.getElementById("side-bar-nav").style.display = "block";
+        document.getElementById("side-bar-nav").style.left = "0px";
+        document.getElementById("menu").style.left = "-40px";
+      }
+
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+        document.getElementById("side-bar-nav").style.left = "-200px";
+        document.getElementById("menu").style.left = "-3px";
+      }
+    </script>
+  </head>
+  <body class="layout-home">
+  <div class="bg-dark-gray" style="
+      background-color: #000;
+      background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.80) ), url('images/console-01-01a.png'); 
+      background-repeat: no-repeat;
+      background-position: 50% 100%;
+      background-size: cover;
+      margin-top: -30px;
+      margin-right: -30px;
+      margin-left: -30px;"> 
+
+    <div class="main" style="padding:30px;">
+
+      <!-- HEADER -->
+
+      <div id="menu" style="
+        background: rgba(255, 255, 255, 0.5);
+        color:#333;
+        position: fixed;
+        z-index: 10;
+        animation-delay: 1s;
+        transition: 0.3s;
+        top: 27;
+        padding:2px;
+        /*border-right:  1px solid #ccc;
+        border-top:  1px solid #ccc;
+        border-bottom:  1px solid #ccc;*/
+        border-radius: 0px 5px 5px 0px; 
+        cursor:pointer;" onClick="openNav()">
+        <span class="material-symbols-outlined" style="font-size:30px;">menu</span>
+      </div>
+
+      <div class="header">
+        <div>
+          <div class="color-red-lt fw-6">Kevin Gates</div>
+          <div class="color-white">UX Designer</div>
+        </div>
+        <div style="margin-left:auto;">
+          <div style="display:flex; flex-direction: row;">
+            <a href="#" class="header-menu header-menu-on-lt">Case Studies</a>
+            <a href="#" class="header-menu">Projects</a>
+            <a href="#" class="header-menu">Writing</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="content-narrow mb-5" style="height:100%;">
+        <div style="font-face:Open Sans; font-size:63px; font-weight:900; margin-bottom:55px; color:#fff;">
+          A Human-Centered Approach to Enterprise Problems
+        </div>
+        <div style="font-face:Open Sans; font-size:28px; font-weight:900; margin-bottom:55px; color:#fff;">
+          A Big Ask
+        </div>
+        <div style="font-face:Roboto; font-size:24px; margin-bottom:96px; line-height: 1.66; color:#fff; font-weight: 300;">
+          <p>
+            This project started as a challenge posed by Pivotal's director of product for its London R&D org. She wanted me to do two things:
+          </p>
+          <ul>
+            <li>Discover the top problems engineers in large enterprises have in getting the tools they need to build software.</li>
+            <li>Organize a product team anchored around those problems and come up with solutions.</li>
+          </ul> 
+          <p>
+            It was a big ask, but also a big opportunity.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="side-bar-nav"
+      style="
+        height: 100%;
+        position: fixed;
+        z-index: 11;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.1s;
+        padding-top: 0px;
+        border-right: 1px solid #ddd;
+        background: rgba(255, 255, 255, 0.9);
+        padding-left: 16px;
+        padding-right: 16px;
+        line-height: 1.66em;
+        color: #333;
+      ">
+        <div style="height:130px; display:flex; flex-direction: row; margin:30px 0px 0px 0px; background: none;">
+          <div style="flex:1"></div>
+          <div onClick="closeNav()" style="cursor:pointer"><span class="material-symbols-outlined" style="font-size: 34; margin-right:-10">chevron_left</span></div>
+        </div>
+        <div class="" style ="line-height: 1.6em;">
+          <div class='side-nav nav-header'><a href="#nav-01" style="font-weight: 700;">INTRO</a></div>
+          <div class='side-nav'><a href="#nav-01">Tl;dr</a></div>
+          <div class='side-nav'><a href="#nav-03">Role and team</a></div>
+          <div class='side-nav mb-2'><a href="#nav-04">Roadmapping</a></div>
+          <div class='side-nav nav-header'><a href="#nav-05" style="font-weight: 700;">RESEARCH</a></div>
+          <div class='side-nav'><a href="#nav-06">Goals</a></div>
+          <div class='side-nav'><a href="#nav-07">Findings</a></div>
+          <div class='side-nav'><a href="#nav-07a">Persona</a></div>
+          <div class='side-nav'><a href="#nav-08">Strategy</a></div>
+          <div class='side-nav mb-2'><a href="#nav-09">Journey Map</a></div>
+          <div class='side-nav nav-header'><a href="#nav-10" style="font-weight: 700;">RAPID PROTOTYPING</a></div>
+          <div class='side-nav'><a href="#nav-11">Collaboration</a></div>
+          <div class='side-nav mb-2'><a href="#nav-12">Prototyping</a></div>
+          <div class='side-nav nav-header'><a href="#nav-13" style="font-weight: 700;">DOG FOODING</a></div>
+          <div class='side-nav'><a href="#nav-14">Card Sorting</a></div>
+          <div class='side-nav mb-2'><a href="#nav-15">Feature Vetting</a></div>
+          <div class='side-nav nav-header'><a href="#nav-16" style="font-weight: 700;">CONCLUSION</a></div>
+          <div class='side-nav'><a href="#nav-16">Impact</a></div>
+        </div>
+      </div>
+
+  </body>
+</html>

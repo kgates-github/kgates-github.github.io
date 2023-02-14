@@ -1,0 +1,69 @@
+/* Header */
+
+.header {
+  margin-bottom:96px;
+  display: flex;
+  flex-direction: row;
+  font-family:Open Sans;
+  padding-left: 0px;
+}
+.header-menu {
+  display:block; 
+  margin-left:16px;
+  color: #fff;
+  text-decoration: none;
+}
+.header-menu-on {
+  text-decoration: underline;
+  font-weight: 900;
+  color:#D02500;
+  text-decoration-thickness: 3px;
+}
+.header-menu-on-lt {
+  text-decoration: underline;
+  font-weight: 900;
+  color:#FF6060;
+  text-decoration-thickness: 3px;
+}
+
+/* Navigation */
+
+.side-bar-nav {
+  
+}
+.side-nav a {
+  color: #333;
+  text-decoration: none;
+}
+.nav-header a {
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* Cards */
+
+.card-image {
+  background: #F4F4F4; 
+  padding:4px; 
+  overflow-y:hidden;
+}
+.card-header {
+  line-height:1.0em; 
+  font-size: 21px; 
+  font-family: Open Sans;  
+  padding: 16px 0px 16px 0px;
+  font-weight: 900;
+}
+.card-body {
+  padding-top:0px; 
+  padding-bottom:0px; 
+  line-height:1.5em; 
+  font-size:16px;
+}
+.card-link-wrapper {
+  padding-top: 42px;
+}
+.card-link {
+  color:#333; 
+  font-weight: 900;
+}

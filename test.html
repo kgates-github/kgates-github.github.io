@@ -27,10 +27,10 @@
     .line-height-2-0 {
       line-height:2;
     }
-
     .main {
       margin: 0 auto;
-      max-width: 1200px;
+      max-width: 1000px;
+      margin-bottom: 96px;
     }
     .header {
       margin-bottom:96px;
@@ -62,13 +62,14 @@
     .intro-text {
       grid-column-start: 2; 
       grid-column-end: 7; 
-      font-size:21px; 
+      font-size:24px; 
       font-weight:300;
     }
     .intro-text-large {
-      font-size: 63px; 
+      font-size: 255px; 
       font-weight:200; 
       padding-bottom: 28px; 
+      line-height: 1.2em;
     }
     .cards {
       display: grid;
@@ -83,21 +84,26 @@
       overflow-y:hidden;
     }
     .card-header {
-      line-height:1.0em; 
-      font-size: 24px; 
-      font-family: Open Sans; 
-      font-weight: 700; 
+      line-height:1.2em; 
+      font-size: 21px; 
+      font-family: Open Sans;  
       padding: 16px 0px 16px 0px;
+      font-weight: 900;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
     }
     .card-body {
-      padding-top:26px; 
-      padding-bottom:28px; 
+      padding-top:0px; 
+      padding-bottom:0px; 
       line-height:1.5em; 
-      font-size:18px;
+      font-size:16px;
+    }
+    .card-link-wrapper {
+      padding-top: 42px;
     }
     .card-link {
       color:#333; 
-      font-weight: 700;
+      font-weight: 900;
     }
     .pill {
       pointer-events: none;
@@ -112,26 +118,38 @@
       margin-right: -2px;
       margin-bottom: 2px;
     }
+    .pills {
+      margin-top: 21px;
+    }
     @media (min-width: 0px) {
       .intro-image { display:none; }
-      .card { padding-bottom:42px; }
+      .card { padding-bottom:55px; }
       .intro-text-large { font-size: 48px; line-height:  1.2em;}
+      .side-bar-nav { display: none; }
     }
     @media (min-width: 600px) {
       .cards { grid-template-columns: repeat(2, 1fr); gap: 42px; }
-      .card { padding-bottom:42px; }
+      .card { padding-bottom:55px; }
       .intro { grid-template-columns: repeat(1, 1fr); gap: 55px; }
       .intro-image { display: none; }
       .intro-text { grid-column-start: 1; grid-column-end: 7; }
       .intro-text-large { font-size: 48px; line-height: 1.2em;}
+      .side-bar-nav { display: none; }
     }
     @media (min-width: 900px) {
       .cards { grid-template-columns: repeat(3, 1fr); gap: 55px; }
       .intro { grid-template-columns: repeat(6, 1fr); gap: 55px; }
       .intro-image { display:block; grid-column-start: 1; grid-column-end: 2;}
       .intro-text { grid-column-start: 2; grid-column-end: 7; }
-      .intro-text-large { font-size: 63px; line-height: 1.2em;}
+      .intro-text-large { font-size: 55px; line-height: 1.2em;}
+      .side-bar-nav { display: none; }
     }
+    @media (min-width: 1600px) {
+      .side-bar-nav { display: block; }
+    }
+
+
+    
   </style>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
@@ -146,7 +164,6 @@
         <div>
           <div class="color-red bold-900">Kevin Gates</div>
           <div>UX Designer</div>
-          <div>Researcher</div>
         </div>
         <div style="margin-left:auto;">
           <div style="display:flex; flex-direction: row;">
@@ -159,16 +176,16 @@
 
       <div class="intro">
         <div class="intro-image">
-          <img src="images/about-01.png" style="width:100%;" alt="Image"/>
+          <img src="images/about-01.png" style="width:100%; margin-top: 26px;" alt="Image"/>
         </div>
         <div class="intro-text">
           <div style="padding-bottom: 28px;">Hi, I'm Kevin!</div>
           <div>
             <div class="intro-text-large">
-              I'm a <span class="bold-700">UX designer</span> and <span class="bold-700">researcher</span> with extensive experience in <span class="bold-700">enterprise SaaS</span> and <span class="bold-700">data products</span>.
+              I'm a <span class="bold-700">UX designer</span> with extensive experience in <span class="bold-700">enterprise SaaS</span> and <span class="bold-700">data products</span>.
             </div>
-            <div class="line-height-2-0" style="font-weight:300; padding-bottom: 28px;">
-              I've worn many hats. At <span class="bold-700">Google</span>, I was part of a three-person team that built the company's early business intelligence tools. For the <span class="bold-700">Obama 2012 campaign</span>, I designed an app that reached 40 million voters. More recently, I've applied design thinking to cloud computing at <span class="bold-700">Pivotal</span> and global trade logistics at <span class="bold-700">Flexport</span>.
+            <div class="line-height-1-5" style="font-weight:300; padding-bottom:28px; line-height:1.66em; font-size: 24px;">
+              I've worn many hats. At <span class="bold-700">Google</span>, I was part of a three-person team that built the company's early business intelligence tools. For the <span class="bold-700">Obama 2012 campaign</span>, I designed an app that reached 40 million voters. More recently, I've applied lean UX practices to cloud computing at <span class="bold-700">Pivotal</span> and global trade logistics at <span class="bold-700">Flexport</span>.
             </div>
             <div class="line-height-2-0" style="font-weight:300;">
               I'm always open to new adventures and meeting like-minded people. Feel free to reach out: <span class="bold-700">kgates@gmail.com</span>
@@ -177,7 +194,7 @@
         </div>
       </div>
 
-      <div style="font-face:Open Sans; font-size:21px; font-weight:900; margin-bottom:55px;">
+      <div style="font-face:Open Sans; font-size:21px; font-weight:900; margin-bottom:55px; color:#333;">
         CASE STUDIES
       </div>
 
@@ -187,16 +204,17 @@
             <img src="images/main_img_00.png" style="width:100%;" alt="Image"/>
           </div>
           <div class="card-header">Pivotal<br>HealthWatch</div>
-          <div>
+          <div class="card-body">
+            How I led design for a data analytics product that went on to gain 100% adoption with key Fortune-500 customers we tracked.
+            <!--How I embedded domain experts in the design process to create an enterprise analytics product. HealthWatch gained 100% traction with key Fortune-500 customers we tracked.-->
+          </div>
+          <div class="pills">
             <button class="pill">User research</button>
             <button class="pill">Data dashboard design</button>
             <button class="pill">Co-creation</button>
             <button class="pill">Rapid prototyping</button>
           </div>
-          <div class="card-body">
-            Using co-creation and rapid prototyping to design an enterprise analytics product.
-          </div>
-          <div><a href="#" class="card-link">Read more</a></div>
+          <div class="card-link-wrapper"><a href="#" class="card-link">Read more</a></div>
         </div>
 
         <div class="card">
@@ -204,16 +222,16 @@
             <img src="images/main_img_01.png" style="width:100%;" alt="Image"/>
           </div>
           <div class="card-header">Pivotal Developer<br>Console</div>
-          <div>
+          <div class="card-body">
+            How I guided a product team through a large, complex problem space to reimagine developer tool access in the cloud.
+          </div>
+          <div class="pills">
             <button class="pill">User research</button>
             <button class="pill">Workshop facilitation</button>
             <button class="pill">Collaborative ideation</button>
             <button class="pill">Storyboarding</button>
           </div>
-          <div class="card-body">
-            How I guided a product team through a large, complex problem space to reimagine developer tool access in the cloud.
-          </div>
-          <div><a href="#" class="card-link">Read more</a></div>
+          <div class="card-link-wrapper"><a href="#" class="card-link">Read more</a></div>
         </div>
 
         <div class="card">
@@ -221,16 +239,16 @@
             <img src="images/main_img_02.png" style="width:100%;" alt="Image"/>
           </div>
           <div class="card-header">KNative Graphical<br>User Interface</div>
-          <div>
+          <div class="card-body">
+            How I led a collaborative design process to rethink the UI for KNative, an opinionated open-source developer tool.
+          </div>
+          <div class="pills">
             <button class="pill">Design strategy</button>
             <button class="pill">Competitive analysis</button>
             <button class="pill">Collaborative ideation</button>
             <button class="pill">Rapid prototyping</button>
           </div>
-          <div class="card-body">
-            Employing a collaborative design process to rethink the UI for KNative, an opinionated open-source developer tool.
-          </div>
-          <div><a href="#" class="card-link">Read more</a></div>
+          <div class="card-link-wrapper"><a href="#" class="card-link">Read more</a></div>
         </div>
 
         <div class="card">
@@ -238,19 +256,148 @@
             <img src="images/main_img_03.png" style="width:100%;" alt="Image"/>
           </div>
           <div class="card-header">Obama for America:<br>Project Atlas</div>
-           <div>
+          <div class="card-body">
+            While working under a hard deadline (election day), I took a big data set, a fuzzy concept and created an app that reached 40 million voters. 
+            <!--How I took a fuzzy idea, wrangled a big data set, and produced a voter-facing app in time for election day.-->
+          </div>
+          <div class="pills">
             <button class="pill">Concept development</button>
             <button class="pill">PostGIS</button>
             <button class="pill">JavaScript</button>
             <button class="pill">Google Maps API</button>
           </div>
-          <div class="card-body">
-            How I took a fuzzy idea, wrangled a big data set, and produced a voter-facing app in time for election day.
-          </div>
-          <div><a href="#" class="card-link">Read more</a></div>
+          <div class="card-link-wrapper"><a href="#" class="card-link">Read more</a></div>
         </div>
       </div>
+    
+
+      <div style="font-face:Open Sans; font-size:21px; font-weight:900; margin-bottom:55px; margin-top:55px">
+        PROJECTS
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/main_img_04.png" style="width:100%;" alt="Image"/>
+          </div>
+          <div class="card-header">PracticeFusion:<br>Rx Treatment Flow</div>
+          <div class="card-body">
+            Using 80 million de-identified medical records, I created an experimental UI for exploring diabetes patient journeys.
+          </div>
+          <div class="pills">
+            <button class="pill">Data visualization</button>
+            <button class="pill">JavaScript</button>
+            <button class="pill">d3.js</button>
+          </div>
+          <div class="card-link-wrapper"><a href="#" class="card-link">See prototype</a></div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="images/main_img_05.png" style="width:100%;" alt="Image"/>
+          </div>
+          <div class="card-header">Sense Your City:<br>Seeing the Air</div>
+          <div class="card-body">
+            I designed and built a winning entry for "Sense Your City", a data visualization competition sponsored by the Swiss Consulate, Gray Area and Lift.
+          </div>
+          <div class="pills">
+            <button class="pill">JavaScript</button>
+            <button class="pill">IoT</button>
+            <button class="pill">Data visualization</button>
+            <button class="pill">d3.js</button>
+          </div>
+          <div class="card-link-wrapper"><a href="#" class="card-link">See contest results</a></div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="images/main_img_06.png" style="width:100%;" alt="Image"/>
+          </div>
+          <div class="card-header">Weather and Air <br>Quality Forecaster</div>
+          <div class="card-body">
+            How I designed and built a React Native prototype from the ground up.
+          </div>
+          <div class="pills">
+            <button class="pill">React / ReactNative</button>
+            <button class="pill">Data visualization</button>
+          </div>
+          <div class="card-link-wrapper"><a href="#" class="card-link">Read more</a></div>
+        </div>
+      </div>
+
+      <div style="font-face:Open Sans; font-size:21px; font-weight:900; margin-bottom:55px; margin-top:55px">
+        WRITING
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/main_img_07.png" style="width:100%;" alt="Image"/>
+          </div>
+          <div class="card-header">Code Complexity is a<br>Design Problem</div>
+          <div class="card-body">
+            How lean UX design can build bridges between designers and engineers. This essay was republished by 
+                <a href="https://www.pcworld.idg.com.au/article/642315/code-complexity-design-problem/" 
+                    style="color:#0066cc; text-decoration: underline;">PC World</a> and translated into 
+                <a href="https://jaxenter.de/design-thinking-komplexer-code-73044" 
+                    style="color:#0066cc; text-decoration: underline;">German</a>.
+          </div>
+          <div class="card-link-wrapper"><a href="#" class="card-link">Read on Medium</a></div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="images/main_img_08.png" style="width:100%;" alt="Image"/>
+          </div>
+          <div class="card-header">A UX Designer’s Guide to <br>Overcoming Imposter Syndrome</div>
+          <div class="card-body">
+            How designers in complex domains can build their own education into the design process.
+          </div>
+          <div class="card-link-wrapper"><a href="#" class="card-link">Read on Medium</a></div>
+        </div>
+      </div>
+    
     </div>
 
+
+  <div class="side-bar-nav"
+  style="
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    border-right: 1px solid #ddd;
+    background: #fff;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: none;
+  ">
+    <div style="height:30px; display:flex; flex-direction: row; margin:10px 0px 40px 0px;">
+    </div>
+    <div class="ps-4 pb-5" style ="line-height: 1.6em;">
+      <div class='side-nav pb-2'><a href="#nav-01" style="font-weight: 700;">INTRO</a></div>
+      <div class='side-nav ms-2'><a href="#nav-01">Tl;dr</a></div>
+      <div class='side-nav ms-2'><a href="#nav-03">Role and team</a></div>
+      <div class='side-nav ms-2'><a href="#nav-04">Roadmapping</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-05" style="font-weight: 700;">RESEARCH</a></div>
+      <div class='side-nav ms-2'><a href="#nav-06">Goals</a></div>
+      <div class='side-nav ms-2'><a href="#nav-07">Findings</a></div>
+      <div class='side-nav ms-2'><a href="#nav-07a">Target Persona</a></div>
+      <div class='side-nav ms-2'><a href="#nav-08">Strategy</a></div>
+      <div class='side-nav ms-2'><a href="#nav-09">Experience Mapping</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-10" style="font-weight: 700;">RAPID PROTOTYPING</a></div>
+      <div class='side-nav ms-2'><a href="#nav-11">Collaboration Models</a></div>
+      <div class='side-nav ms-2'><a href="#nav-12">Prototyping Example</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-13" style="font-weight: 700;">DOG FOODING</a></div>
+      <div class='side-nav ms-2'><a href="#nav-14">Card Sorting</a></div>
+      <div class='side-nav ms-2'><a href="#nav-15">Feature Vetting</a></div>
+      <div class='side-nav pt-4 pb-2'><a href="#nav-16" style="font-weight: 700;">CONCLUSION</a></div>
+      <div class='side-nav ms-2'><a href="#nav-16">Impact</a></div>
+    </div>
+  </div>
   </body>
 </html>

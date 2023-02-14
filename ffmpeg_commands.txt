@@ -1,4 +1,9 @@
-ffmpeg -ss 7 -t 24 -i weather-alert.mov -vf "fps=10,scale=900:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 weather-alert.gif
+ffmpeg -ss 4 -t 26 -i weather-basic.mov -vf "fps=10,scale=340:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 weather-basic.gif
+
+
+ffmpeg -ss 1 -t 12 -i rx.mov -vf "fps=10,scale=500:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 rx.gif
+
 
 ffmpeg -ss 1 -t 13  -i weather-screen.mov -vf "fps=10,scale=900:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse,setpts=0.5*PTS" -loop 0 weather-screen.gif
 
+ ≈b
