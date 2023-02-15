@@ -10,7 +10,7 @@
 .header-menu {
   display:block; 
   margin-left:16px;
-  color: #fff;
+  color: #333;
   text-decoration: none;
 }
 .header-menu-on {
@@ -24,6 +24,12 @@
   font-weight: 900;
   color:#FF6060;
   text-decoration-thickness: 3px;
+}
+.header-menu-lt {
+  display:block; 
+  margin-left:16px;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Navigation */
@@ -42,17 +48,27 @@
 
 /* Cards */
 
+.cards {
+  display: grid;
+}
+.card {
+  cursor: pointer;
+  color: #333;
+  min-height: 4rem;
+}
 .card-image {
   background: #F4F4F4; 
   padding:4px; 
   overflow-y:hidden;
 }
 .card-header {
-  line-height:1.0em; 
+  line-height:1.2em; 
   font-size: 21px; 
   font-family: Open Sans;  
   padding: 16px 0px 16px 0px;
   font-weight: 900;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 .card-body {
   padding-top:0px; 

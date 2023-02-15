@@ -23,17 +23,23 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <script>
-      /* Set the width of the side navigation to 250px */
+      window.addEventListener("resize", closeMenu);
+
+      function closeMenu() {
+        if (window.innerWidth > 900 && document.getElementById("side-bar-nav").style.left != "0px") document.getElementById("menu").style.left = "-3px";
+        else document.getElementById("menu").style.left = "-40px";
+      }
+      
       function openNav() {
         document.getElementById("side-bar-nav").style.display = "block";
         document.getElementById("side-bar-nav").style.left = "0px";
         document.getElementById("menu").style.left = "-40px";
       }
 
-      /* Set the width of the side navigation to 0 */
+      
       function closeNav() {
         document.getElementById("side-bar-nav").style.left = "-200px";
-        document.getElementById("menu").style.left = "-3px";
+        if (window.innerWidth > 900) document.getElementById("menu").style.left = "-3px";
       }
     </script>
   </head>
@@ -50,7 +56,6 @@
       background-repeat: no-repeat;
       background-position: 50% 100%;
       background-size: cover;
-      min-height: 1400px;
       margin-top: -30px;
       margin-right: -30px;
       margin-left: -30px;"> 
@@ -64,8 +69,8 @@
         color:#333;
         position: fixed;
         z-index: 10;
-        animation-delay: 1s;
-        transition: 0.3s;
+        animation-delay: 5.0s;
+        transition: 0.5s;
         top: 27;
         padding:2px;
         /*border-right:  1px solid #ccc;
@@ -78,34 +83,46 @@
 
       <div class="header">
         <div>
-          <div class="color-red-lt fw-6">Kevin Gates</div>
+          <div class="color-red-lt fw-6">Kevin Ashley Gates</div>
           <div class="color-white">UX Designer</div>
         </div>
         <div style="margin-left:auto;">
           <div style="display:flex; flex-direction: row;">
-            <a href="#" class="header-menu header-menu-on-lt">Case Studies</a>
-            <a href="#" class="header-menu">Projects</a>
-            <a href="#" class="header-menu">Writing</a>
+            <a href="#" class="header-menu-on-lt">Case Studies</a>
+            <a href="#" class="header-menu-lt">Projects</a>
+            <a href="#" class="header-menu-lt">Writing</a>
           </div>
         </div>
       </div>
 
-      <div class="content-narrow mb-5" style="height:100%;">
-        <div class="color-white mb-4 line-height-m mb-1">
-          <p class="fw-5 all-caps">TL;DR</p>
-          <ul>
-            <li>For enterprise developers, getting access to software-building tools on cloud platforms is rife with bottlenecks and red tape.</li>
-            <li>We reimagined a better experience by anchoring product ideas around a nuanced understanding of customer problems..</li>
-          </ul> 
-          <div class="fw-5 all-caps" style="text-transform: capitalize;">IMPACT</div>
-          <ul>
-            <li>Our product vision laid the foundation for a compact, two-day design sprint and product kickoff clearly focused on concrete customer needs.</li>
-          </ul> 
-          <p class="fw-5 all-caps">LEARNINGS</p>
-          <ul>
-            <li>Our product vision laid the foundation for a compact, two-day design sprint and product kickoff clearly focused on concrete customer needs.</li>
-          </ul>
+      <div class="content-narrow mb-5">
+        <div class="color-white line-height-m mb-1" style="display: flex; flex-direction: row;">
+          <div class="fw-5" style="width: 120px;">TL;DR</div>
+          <div style="flex:1">
+            <ul style="padding: 0; margin:0; line-height:1.5em;">
+              <li>For enterprise developers, getting access to software-building tools on cloud platforms is rife with bottlenecks and red tape.</li>
+              <li>We reimagined a better experience by anchoring product ideas around a nuanced understanding of customer problems.</li>
+            </ul>
+          </div>
         </div>
+        <div class="color-white line-height-m mb-1" style="display: flex; flex-direction: row;">
+          <div class="fw-5" style="width: 120px;">IMPACT</div>
+          <div style="flex:1">
+            <ul style="padding: 0; margin:0; line-height:1.5em;">
+              <li> Our product vision laid the foundation for a compact, two-day design sprint and product kickoff informed by a clear understanding of customer needs..</li>
+            </ul>
+          </div>
+        </div>
+        <div class="color-white line-height-m mb-4" style="display: flex; flex-direction: row;">
+          <div class="fw-5" style="width: 120px;">LEARNINGS</div>
+          <div style="flex:1">
+            <ul style="padding: 0; margin:0; line-height:1.5em;">
+              <li>If a design process is not working, nip it in the bud and pivot.</li>
+              <li>Transdisciplinary ideation is energizing and fruitful.</li>
+            </ul>
+          </div>
+        </div>
+           
      
         <div style="font-face:Open Sans; font-size:63px; font-weight:900; margin-bottom:55px; color:#fff;">
           A Human-Centered Approach to Enterprise Problems
@@ -147,7 +164,7 @@
         line-height: 1.66em;
         color: #333;
       ">
-        <div style="height:130px; display:flex; flex-direction: row; margin:30px 0px 0px 0px; background: none;">
+        <div style="height:91px; display:flex; flex-direction: row; margin:30px 0px 0px 0px; background: none;">
           <div style="flex:1"></div>
           <div onClick="closeNav()" style="cursor:pointer"><span class="material-symbols-outlined" style="font-size: 34; margin-right:-10">chevron_left</span></div>
         </div>

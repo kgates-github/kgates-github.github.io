@@ -32,25 +32,7 @@
       max-width: 1000px;
       margin-bottom: 96px;
     }
-    .header {
-      margin-bottom:96px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); 
-      gap: 42px;
-      font-family:Open Sans;
-    }
-    .header-menu {
-      display:block; 
-      margin-left:16px;
-      color: #333;
-      text-decoration: none;
-    }
-    .header-menu-on {
-      text-decoration: underline;
-      font-weight: 900;
-      color:#D02500;
-      text-decoration-thickness: 3px;
-    }
+   
     .intro {
       display: grid; 
       margin-bottom:96px;
@@ -66,7 +48,6 @@
       font-weight:300;
     }
     .intro-text-large {
-      font-size: 255px; 
       font-weight:200; 
       padding-bottom: 28px; 
       line-height: 1.2em;
@@ -77,6 +58,8 @@
     .card {
       color: #333;
       min-height: 4rem;
+      cursor: pointer;
+      background: #fff;
     }
     .card-image {
       background: #F4F4F4; 
@@ -121,11 +104,11 @@
     .pills {
       margin-top: 21px;
     }
+    
     @media (min-width: 0px) {
       .intro-image { display:none; }
       .card { padding-bottom:55px; }
       .intro-text-large { font-size: 48px; line-height:  1.2em;}
-      .side-bar-nav { display: none; }
     }
     @media (min-width: 600px) {
       .cards { grid-template-columns: repeat(2, 1fr); gap: 42px; }
@@ -134,7 +117,6 @@
       .intro-image { display: none; }
       .intro-text { grid-column-start: 1; grid-column-end: 7; }
       .intro-text-large { font-size: 48px; line-height: 1.2em;}
-      .side-bar-nav { display: none; }
     }
     @media (min-width: 900px) {
       .cards { grid-template-columns: repeat(3, 1fr); gap: 55px; }
@@ -145,24 +127,26 @@
       .side-bar-nav { display: none; }
     }
     @media (min-width: 1600px) {
-      .side-bar-nav { display: block; }
+      
     }
-
-
-    
   </style>
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <link rel="stylesheet" href="components.css" type="text/css">
+  <link rel="stylesheet" href="media.css" type="text/css">
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@0,200;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   
-  <body class="layout-home">
+  <body>
     <div class="main">
-      <div class="header">
+      <div class="header" style="margin-bottom: 96px;">
         <div>
-          <div class="color-red bold-900">Kevin Gates</div>
+          <div class="color-red fw-6">Kevin Gates</div>
           <div>UX Designer</div>
         </div>
         <div style="margin-left:auto;">
@@ -199,14 +183,13 @@
       </div>
 
       <div class="cards">
-        <div class="card">
+        <div class="card" onclick="window.location.assign('healthwatch.html');">
           <div class="card-image">
             <img src="images/main_img_00.png" style="width:100%;" alt="Image"/>
           </div>
           <div class="card-header">Pivotal<br>HealthWatch</div>
           <div class="card-body">
             How I led design for a data analytics product that went on to gain 100% adoption with key Fortune-500 customers we tracked.
-            <!--How I embedded domain experts in the design process to create an enterprise analytics product. HealthWatch gained 100% traction with key Fortune-500 customers we tracked.-->
           </div>
           <div class="pills">
             <button class="pill">User research</button>
@@ -217,24 +200,7 @@
           <div class="card-link-wrapper"><a href="#" class="card-link">Read more</a></div>
         </div>
 
-        <div class="card">
-          <div class="card-image">
-            <img src="images/main_img_01.png" style="width:100%;" alt="Image"/>
-          </div>
-          <div class="card-header">Pivotal Developer<br>Console</div>
-          <div class="card-body">
-            How I guided a product team through a large, complex problem space to reimagine developer tool access in the cloud.
-          </div>
-          <div class="pills">
-            <button class="pill">User research</button>
-            <button class="pill">Workshop facilitation</button>
-            <button class="pill">Collaborative ideation</button>
-            <button class="pill">Storyboarding</button>
-          </div>
-          <div class="card-link-wrapper"><a href="#" class="card-link">Read more</a></div>
-        </div>
-
-        <div class="card">
+        <div class="card" onclick="window.location.assign('serverless.html');">
           <div class="card-image">
             <img src="images/main_img_02.png" style="width:100%;" alt="Image"/>
           </div>
@@ -251,7 +217,24 @@
           <div class="card-link-wrapper"><a href="#" class="card-link">Read more</a></div>
         </div>
 
-        <div class="card">
+        <div class="card" onclick="window.location.assign('console.html');">
+          <div class="card-image">
+            <img src="images/main_img_01.png" style="width:100%;" alt="Image"/>
+          </div>
+          <div class="card-header">Pivotal Developer<br>Console</div>
+          <div class="card-body">
+            How I guided a product team through a large, complex problem space to reimagine developer tool access in the cloud.
+          </div>
+          <div class="pills">
+            <button class="pill">User research</button>
+            <button class="pill">Workshop facilitation</button>
+            <button class="pill">Collaborative ideation</button>
+            <button class="pill">Storyboarding</button>
+          </div>
+          <div class="card-link-wrapper"><a href="#" class="card-link">Read more</a></div>
+        </div>
+
+        <div class="card" onclick="window.location.assign('obama.html');">
           <div class="card-image">
             <img src="images/main_img_03.png" style="width:100%;" alt="Image"/>
           </div>
@@ -276,7 +259,7 @@
       </div>
 
       <div class="cards">
-        <div class="card">
+        <div class="card" onclick="window.location.assign('treatment/index.html');">
           <div class="card-image">
             <img src="images/main_img_04.png" style="width:100%;" alt="Image"/>
           </div>
@@ -292,7 +275,7 @@
           <div class="card-link-wrapper"><a href="#" class="card-link">See prototype</a></div>
         </div>
 
-        <div class="card">
+        <div class="card" onclick="window.location.assign('http://www.liftglobal.org/news/2015/03/27/winning-projects-data-canvas-sense-your-city-have-been-chosen');">
           <div class="card-image">
             <img src="images/main_img_05.png" style="width:100%;" alt="Image"/>
           </div>
@@ -309,7 +292,7 @@
           <div class="card-link-wrapper"><a href="#" class="card-link">See contest results</a></div>
         </div>
 
-        <div class="card">
+        <div class="card" onclick="window.location.assign('weather.html');">
           <div class="card-image">
             <img src="images/main_img_06.png" style="width:100%;" alt="Image"/>
           </div>
@@ -330,7 +313,7 @@
       </div>
 
       <div class="cards">
-        <div class="card">
+        <div class="card" onclick="window.location.assign('https://medium.com/built-to-adapt/code-complexity-is-a-design-problem-e53e4229b5de')">
           <div class="card-image">
             <img src="images/main_img_07.png" style="width:100%;" alt="Image"/>
           </div>
@@ -345,13 +328,13 @@
           <div class="card-link-wrapper"><a href="#" class="card-link">Read on Medium</a></div>
         </div>
 
-        <div class="card">
+        <div class="card" onclick="window.location.assign('https://medium.com/built-to-adapt/a-ux-designers-guide-to-overcoming-imposter-syndrome-116446727f9c')">
           <div class="card-image">
             <img src="images/main_img_08.png" style="width:100%;" alt="Image"/>
           </div>
           <div class="card-header">A UX Designer’s Guide to <br>Overcoming Imposter Syndrome</div>
           <div class="card-body">
-            How designers in complex domains can build their own education into the design process.
+            How product teams in complex domains can build their own education into the design process.
           </div>
           <div class="card-link-wrapper"><a href="#" class="card-link">Read on Medium</a></div>
         </div>
