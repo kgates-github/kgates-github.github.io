@@ -21,29 +21,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@0,200;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <script>
-      window.addEventListener("resize", closeMenu);
-
-      function closeMenu() {
-        if (window.innerWidth > 900 && document.getElementById("side-bar-nav").style.left != "0px") document.getElementById("menu").style.left = "-3px";
-        else document.getElementById("menu").style.left = "-40px";
-      }
-      
-      function openNav() {
-        document.getElementById("side-bar-nav").style.display = "block";
-        document.getElementById("side-bar-nav").style.left = "0px";
-        document.getElementById("menu").style.left = "-40px";
-      }
-
-      
-      function closeNav() {
-        document.getElementById("side-bar-nav").style.left = "-200px";
-        if (window.innerWidth > 900) document.getElementById("menu").style.left = "-3px";
-      }
-    </script>
+    <script src="javascript.js"></script>
   </head>
-  <body class="layout-home">
+  <body>
   <div class="bg-dark-gray" style="
       background-color: #000;
       background: linear-gradient( 
@@ -59,38 +39,24 @@
       margin-top: -30px;
       margin-right: -30px;
       margin-left: -30px;"> 
-
     <div class="main" style="padding:30px;">
 
       <!-- HEADER -->
 
-      <div id="menu" style="
-        background: rgba(255, 255, 255, 0.5);
-        color:#333;
-        position: fixed;
-        z-index: 10;
-        animation-delay: 5.0s;
-        transition: 0.5s;
-        top: 27;
-        padding:2px;
-        /*border-right:  1px solid #ccc;
-        border-top:  1px solid #ccc;
-        border-bottom:  1px solid #ccc;*/
-        border-radius: 0px 3px 3px 0px; 
-        cursor:pointer;" onClick="openNav()">
-        <span class="material-symbols-outlined" style="font-size:30px;">menu</span>
+      <div id="menu" onClick="openNav()">
+        <span class="material-symbols-outlined" style="font-size:27px;">menu</span>
       </div>
 
       <div class="header">
-        <div>
+        <div class="header-main" onclick="window.location.assign('index.html');">
           <div class="color-red-lt fw-6">Kevin Gates</div>
           <div class="color-white">UX Designer</div>
         </div>
         <div style="margin-left:auto;">
           <div style="display:flex; flex-direction: row;">
-            <a href="#" class="header-menu-on-lt">Case Studies</a>
-            <a href="#" class="header-menu-lt">Projects</a>
-            <a href="#" class="header-menu-lt">Writing</a>
+            <a href="index.html" class="header-menu-on-lt">Case Studies</a>
+            <a href="miscellany.html" class="header-menu-lt">Projects</a>
+            <a href="writing.html" class="header-menu-lt">Writing</a>
           </div>
         </div>
       </div>
@@ -197,8 +163,6 @@
           <div class="card-body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis lacus ante, et tempus lectus malesuada a. Proin vel enim at lacus pharetra vulputate nec non tortor. Nunc ac finibus tellus. 
           </div>
-          
-          <div class="card-link-wrapper"><a href="#" class="card-link">Read more</a></div>
         </div>
 
         <div class="card">
@@ -209,8 +173,6 @@
           <div class="card-body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis lacus ante, et tempus lectus malesuada a. Proin vel enim at lacus pharetra vulputate nec non tortor. Nunc ac finibus tellus. 
           </div>
-          
-          <div class="card-link-wrapper"><a href="#" class="card-link">Read more</a></div>
         </div>
 
         <div class="card">
@@ -221,54 +183,57 @@
           <div class="card-body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis lacus ante, et tempus lectus malesuada a. Proin vel enim at lacus pharetra vulputate nec non tortor. Nunc ac finibus tellus. 
           </div>
-          
-          <div class="card-link-wrapper"><a href="#" class="card-link">Read more</a></div>
+        </div>
+      </div>
+      <div class="grid grid-2">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/main_img_00.png" style="width:100%;" alt="Image"/>
+          </div>
+          <div class="card-header">Card Header</div>
+          <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis lacus ante, et tempus lectus malesuada a. Proin vel enim at lacus pharetra vulputate nec non tortor. Nunc ac finibus tellus. 
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="images/main_img_00.png" style="width:100%;" alt="Image"/>
+          </div>
+          <div class="card-header">Card Header</div>
+          <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis lacus ante, et tempus lectus malesuada a. Proin vel enim at lacus pharetra vulputate nec non tortor. Nunc ac finibus tellus. 
+          </div>
         </div>
       </div>
   </div>
 
-  <div id="side-bar-nav"
-      style="
-        height: 100%;
-        position: fixed;
-        z-index: 11;
-        top: 0;
-        left: 0;
-        overflow-x: hidden;
-        transition: 0.1s;
-        padding-top: 0px;
-        border-right: 1px solid #ddd;
-        background: rgba(255, 255, 255, 0.9);
-        padding-left: 16px;
-        padding-right: 16px;
-        line-height: 1.66em;
-        color: #333;
-      ">
-        <div style="height:91px; display:flex; flex-direction: row; margin:30px 0px 0px 0px; background: none;">
-          <div style="flex:1"></div>
-          <div onClick="closeNav()" style="cursor:pointer"><span class="material-symbols-outlined" style="font-size: 34; margin-right:-10">chevron_left</span></div>
-        </div>
-        <div class="" style ="line-height: 1.6em;">
-          <div class='side-nav nav-header'><a href="#nav-01" style="font-weight: 700;">INTRO</a></div>
-          <div class='side-nav'><a href="#nav-01">Tl;dr</a></div>
-          <div class='side-nav'><a href="#nav-03">Role and team</a></div>
-          <div class='side-nav mb-2'><a href="#nav-04">Roadmapping</a></div>
-          <div class='side-nav nav-header'><a href="#nav-05" style="font-weight: 700;">RESEARCH</a></div>
-          <div class='side-nav'><a href="#nav-06">Goals</a></div>
-          <div class='side-nav'><a href="#nav-07">Findings</a></div>
-          <div class='side-nav'><a href="#nav-07a">Persona</a></div>
-          <div class='side-nav'><a href="#nav-08">Strategy</a></div>
-          <div class='side-nav mb-2'><a href="#nav-09">Journey Map</a></div>
-          <div class='side-nav nav-header'><a href="#nav-10" style="font-weight: 700;">RAPID PROTOTYPING</a></div>
-          <div class='side-nav'><a href="#nav-11">Collaboration</a></div>
-          <div class='side-nav mb-2'><a href="#nav-12">Prototyping</a></div>
-          <div class='side-nav nav-header'><a href="#nav-13" style="font-weight: 700;">DOG FOODING</a></div>
-          <div class='side-nav'><a href="#nav-14">Card Sorting</a></div>
-          <div class='side-nav mb-2'><a href="#nav-15">Feature Vetting</a></div>
-          <div class='side-nav nav-header'><a href="#nav-16" style="font-weight: 700;">CONCLUSION</a></div>
-          <div class='side-nav'><a href="#nav-16">Impact</a></div>
-        </div>
-      </div>
+  <div id="side-bar-nav">
+    <div style="height:91px; display:flex; flex-direction: row; margin:30px 0px 0px 0px; background: none;">
+      <div style="flex:1"></div>
+      <div onClick="closeNav()" style="cursor:pointer"><span class="material-symbols-outlined" style="font-size: 34; margin-right:-10">chevron_left</span></div>
+    </div>
+    <div class="" style ="line-height: 1.6em;">
+      <div class='side-nav nav-header'><a href="#nav-01" style="font-weight: 700;">INTRO</a></div>
+      <div class='side-nav'><a href="#nav-01">Tl;dr</a></div>
+      <div class='side-nav'><a href="#nav-03">Role and team</a></div>
+      <div class='side-nav mb-2'><a href="#nav-04">Roadmapping</a></div>
+      <div class='side-nav nav-header'><a href="#nav-05" style="font-weight: 700;">RESEARCH</a></div>
+      <div class='side-nav'><a href="#nav-06">Goals</a></div>
+      <div class='side-nav'><a href="#nav-07">Findings</a></div>
+      <div class='side-nav'><a href="#nav-07a">Persona</a></div>
+      <div class='side-nav'><a href="#nav-08">Strategy</a></div>
+      <div class='side-nav mb-2'><a href="#nav-09">Journey Map</a></div>
+      <div class='side-nav nav-header'><a href="#nav-10" style="font-weight: 700;">RAPID PROTOTYPING</a></div>
+      <div class='side-nav'><a href="#nav-11">Collaboration</a></div>
+      <div class='side-nav mb-2'><a href="#nav-12">Prototyping</a></div>
+      <div class='side-nav nav-header'><a href="#nav-13" style="font-weight: 700;">DOG FOODING</a></div>
+      <div class='side-nav'><a href="#nav-14">Card Sorting</a></div>
+      <div class='side-nav mb-2'><a href="#nav-15">Feature Vetting</a></div>
+      <div class='side-nav nav-header'><a href="#nav-16" style="font-weight: 700;">CONCLUSION</a></div>
+      <div class='side-nav'><a href="#nav-16">Impact</a></div>
+    </div>
+  </div>
 
   </body>
 </html>

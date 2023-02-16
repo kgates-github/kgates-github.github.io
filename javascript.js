@@ -1,0 +1,21 @@
+window.addEventListener("resize", closeMenu);
+
+function closeMenu() {
+  if (window.innerWidth > 900) {
+    //if (document.getElementById("side-bar-nav").style.left == "0px") document.getElementById("menu").style.left = "-40px";
+    document.getElementById("menu").style.left = "-3px";
+  } else {
+    document.getElementById("menu").style.left = "-40px";
+  }
+}
+
+function openNav() {
+  document.getElementById("side-bar-nav").style.display = "block";
+  document.getElementById("side-bar-nav").style.left = "0px";
+  document.getElementById("menu").style.left = "-40px";
+}
+
+function closeNav() {
+  document.getElementById("side-bar-nav").style.left = "-200px";
+  if (window.innerWidth > 900) document.getElementById("menu").style.left = "-3px";
+}
