@@ -1,6 +1,5 @@
 @media (min-width: 0px) {
   .content-narrow { max-width: 100%; margin: 0 0; }
-  .card { padding-bottom:55px; }
   #side-bar-nav { display: none; }
   #menu { left: -40px; }
   .header { padding-left: 0px; }
@@ -10,7 +9,6 @@
   .content-narrow { max-width: 100%; margin: 0 0; }
   .grid-2 { grid-template-columns: repeat(1, 1fr); gap: 42px; }
   .grid-3 { grid-template-columns: repeat(2, 1fr); gap: 42px; }
-  .card { padding-bottom:55px; }
   #side-bar-nav { display: none; }
   #menu { left: -40px; }
   .header { padding-left: 0px; }

@@ -47,7 +47,7 @@
   transition: 0.1s;
   padding-top: 0px;
   border-right: 1px solid #ddd;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 1);
   padding-left: 16px;
   padding-right: 16px;
   line-height: 1.66em;
@@ -81,6 +81,7 @@
 
 .cards {
   display: grid;
+  padding-bottom: 55px;
 }
 .card {
   cursor: pointer;
