@@ -14,7 +14,7 @@
   .header { padding-left: 0px; }
 }
 @media (min-width: 900px) {
-  .content-narrow { max-width: 66.66%; margin: 0 auto; }
+  .content-narrow { max-width: 66.66%; margin-left: auto; margin-right: auto;}
   .grid-2 { grid-template-columns: repeat(2, 1fr); gap: 55px; }
   .grid-3 { grid-template-columns: repeat(3, 1fr); gap: 55px; }
   #side-bar-nav { display: none; }

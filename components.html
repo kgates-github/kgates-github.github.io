@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@0,200;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="javascript.js"></script>
   </head>
   <body class="layout-home">
     <div class="main">
@@ -41,11 +42,11 @@
       <!-- LAYOUT -->
 
       <div class="content-narrow">
-        <div style="font-face:Open Sans; font-size:63px; font-weight:900; margin-bottom:55px; color:#333;">
+        <div class="header-medium">
           Main Header For Case Studies
         </div>
 
-        <div style="font-face:Robato; font-size:18px; font-weight:400; margin-bottom:55px; color:#D02500; text-transform: capitalize;">
+        <div style="font-face:Robato; font-size:18px; font-weight:400; margin-bottom:55px; color:#D02500; ">
           Section Eyebrow
         </div>
 
@@ -57,7 +58,7 @@
           Header Small
         </div>
 
-        <div style="font-face:Open Sans; font-size:18px; font-weight:900; margin-bottom:55px; color:#333; text-transform: capitalize;">
+        <div style="font-face:Open Sans; font-size:18px; font-weight:900; margin-bottom:55px; color:#333; text-transform: uppercase;">
           HEADER SMALL ALT
         </div>
 
@@ -84,7 +85,7 @@
         </div>
       </div>
 
-      <div class="grid grid-3">
+      <div class="grid grid-3 mb-4">
         <div class="card">
           <div class="card-image">
             <img src="images/main_img_00.png" style="width:100%;" alt="Image"/>
@@ -164,7 +165,6 @@
         <div><img src="images/console-01-01a.png" style="width:100%;" alt="Image"/></div>
         <div style="max-width:600px; margin: 10px auto 0px auto; text-align:center; color:#999; font-size:14px;">Quisque sem elit, porta in odio at, dictum vestibulum nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
       </div>
-
       <div class="mb-4 content-wide" style="margin-bottom: 55px;">
         <div class="grid grid-2">
           <div class="card">
@@ -180,40 +180,102 @@
       </div>
 
     </div>
-  </div>
 
-  <div class="bg-dark-gray mt-0 nav-padding" style="
-    background-color: #000;
-    background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.80) ), url('images/console-01-01a.png'); 
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
-    background-size: cover;
-    margin: 0px -30px;
-  "> 
-  
-    <div class="main" style="padding-top:400px; padding-bottom:55px; padding-left:30px; padding-right:30px;">
-      <div class="content-narrow mb-5">
-        <div style="font-face:Open Sans; font-size:63px; font-weight:900; margin-bottom:55px; color:#fff;">
-          A Human-Centered Approach to Enterprise Problems
+    <div class="main border-top mb-3">
+      <div class="collapsable content-narrow">
+        <div class="eyebrow color-red pt-2 mb-2">Business Case</div>
+        <div class="header-small fw-6 mb-2">
+          Assessing Risk in the World of Open Source
         </div>
-        <div style="font-face:Open Sans; font-size:28px; font-weight:900; margin-bottom:55px; color:#fff;">
-          A Big Ask
+        <div class="mb-2">
+          <div class="line-clamped line-height-m">
+            We were building on open-source technology that had already survived contact with reality. That meant the functionality had already been proven useful, but we still needed to figure out what value-add we could bring.
+          </div>
+          <div class="line-height-m mb-2" style="text-align: right; display:block;"><a onclick="seeMore(this)" class="see-more">...see more</a></div>
         </div>
-        <div style="font-face:Roboto; font-size:24px; margin-bottom:96px; line-height: 1.66; color:#fff; font-weight: 300;">
-          <p>
-            This project started as a challenge posed by Pivotal's director of product for its London R&D org. She wanted me to do two things:
-          </p>
+        <div class="collapsed mb-4 line-height-m" style="display:none;">
+          <div class="header-xsmall fw-5 mb-1">Demand</div>
+          <div class="mb-1">
+            Demand for serverless technology is well-established and growing. According to the 2020 Cloud Native Computing Foundation (CNCF) survey:
+          </div>
+          <ul class="mb-2">
+            <li><b>Growth:</b> 30% of organizations polled have production apps running on serverless and another 35% are considering it. The CNCF "fully expect growth to continue".</li>
+            <li><b>Hosted:</b> 82% of organizations who are using serverless are using hosted solutions.</li>
+          </ul>
+          <div class="header-xsmall fw-5 mb-1">VALUE</div>
+          <div class="mb-1">
+            KNative has been validated in the marketplace and demonstrably solves well-known IT problems:
+          </div>
           <ul>
-            <li>Discover the top problems engineers in large enterprises have in getting the tools they need to build software.</li>
-            <li>Organize a product team anchored around those problems and come up with solutions.</li>
-          </ul> 
-          <p>
-            It was a big ask, but also a big opportunity.
-          </p>
+            <li><b>Resource efficiency:</b> Serverless automatically frees up unused memory and CPU allocations in the cloud (“scales to zero”).</li>
+            <li><b>Emergency recovery:</b> Serverless automatically creates application backups.</li>
+            <li><b>Traffic splitting:</b> Serverless makes it easy to split traffic between versions for A/B testing and gradual rollouts.</li>
+          </ul>  
+        </div>
+      </div>
+      <div class="grid grid-2">
+        <div class="card">
+          <div class="header-chart fw-2 mb-2">
+            Is your organization using serverless?  
+          </div>
+          <div class="card-image" style="padding:0px;">
+            <img src="images/serverless-03-01.png" style="width:100%;" alt="Image"/>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="header-chart fw-2 mb-2">
+            How is your organization using serverless technology?  
+          </div>
+          <div class="card-image" style="padding:0px;">
+            <img src="images/serverless-03-02.png" style="width:100%;" alt="Image"/>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+
+    <div class="main border-top mb-5">
+      <div class="color-red" style="text-align:center; font-size:42px; font-family:Rokkitt; padding:96px 0px 151px 0px;">
+      Quisque sem elit, porta in odio at, dictum vestibulum nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
+      <div class="grid grid-3 mb-4">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/main_img_00.png" style="width:100%;" alt="Image"/>
+          </div>
+          <div class="card-header">Card Header</div>
+          <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis lacus ante, et tempus lectus malesuada a. Proin vel enim at lacus pharetra vulputate nec non tortor. Nunc ac finibus tellus. 
+          </div>
+          
+          <div class="card-link-wrapper"><a href="#" class="card-link">Read more</a></div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="images/main_img_00.png" style="width:100%;" alt="Image"/>
+          </div>
+          <div class="card-header">Card Header</div>
+          <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis lacus ante, et tempus lectus malesuada a. Proin vel enim at lacus pharetra vulputate nec non tortor. Nunc ac finibus tellus. 
+          </div>
+          
+          <div class="card-link-wrapper"><a href="#" class="card-link">Read more</a></div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="images/main_img_00.png" style="width:100%;" alt="Image"/>
+          </div>
+          <div class="card-header">Card Header</div>
+          <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis lacus ante, et tempus lectus malesuada a. Proin vel enim at lacus pharetra vulputate nec non tortor. Nunc ac finibus tellus. 
+          </div>
+          
+          <div class="card-link-wrapper"><a href="#" class="card-link">Read more</a></div>
+        </div>
+      </div>
+    </div>
+    </div>
 
   </body>
 </html>

@@ -19,3 +19,20 @@ function closeNav() {
   document.getElementById("side-bar-nav").style.left = "-200px";
   if (window.innerWidth > 900) document.getElementById("menu").style.left = "-3px";
 }
+
+function seeMore(obj) {
+  let elem = obj.parentNode;
+  elem.style.display = "none";
+
+  while (true) {
+    if (elem.className.includes("collapsable")) {
+      Array.from(elem.getElementsByClassName('collapsed')).forEach((el) => {
+        el.style.display = "block";
+      });
+      elem.getElementsByClassName('line-clamped')[0].style.display = "block";
+      break;
+    } else {
+      elem = elem.parentNode;
+    }
+  }
+}

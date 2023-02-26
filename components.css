@@ -35,6 +35,22 @@
   text-decoration: none;
 }
 
+.pull-quote {
+  text-align:center; font-size:42px; font-family:Rokkitt; line-height: 1.2em;"
+}
+.header-medium {
+  font-face:Open Sans; font-size:63px; font-weight:900; margin-bottom:55px; line-height: 1.02em; letter-spacing: -0.02em;
+}
+.header-small {
+  font-face:Open Sans; font-size:32px; color:#000; line-height: 1.2em;
+}
+.header-xsmall {
+  font-face:Open Sans; font-size:18px; color:#000; text-transform: uppercase;
+}
+.header-chart {
+  color: #666; text-align: center;
+}
+
 /* Navigation */
 
 #side-bar-nav {
@@ -57,9 +73,12 @@
   color: #333;
   text-decoration: none;
 }
+.nav-header {
+  /*border-bottom: 1px solid #ccc;*/
+}
 .nav-header a {
-  font-weight: 900;
-  text-decoration: none;
+  font-weight: 500;
+  text-decoration: underline;
 }
 #menu {
   background: rgba(255, 255, 255, 1.0);
@@ -77,6 +96,15 @@
   cursor:pointer;
 }
 
+.see-more {
+  color: #888;
+  cursor: pointer;
+}
+.see-more:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
 /* Cards */
 
 .cards {
@@ -89,17 +117,18 @@
   min-height: 4rem;
 }
 .card-image {
-  background: #F4F4F4; 
-  padding:4px; 
+  background: none; 
+  padding:0px; 
   overflow-y:hidden;
 }
 .card-header {
   line-height:1.2em; 
-  font-size: 18px; 
+  font-size: 21px; 
   font-family: Open Sans;  
   padding: 16px 0px 16px 0px;
   font-weight: 900;
-  text-transform: uppercase !important;
+  text-transform: capitalize !important;
+  text-decoration: underline;
 }
 .card-body {
   padding-top:0px; 
@@ -119,10 +148,13 @@
 
 .caption {
   max-width:600px; 
-  margin: 10px auto 0px auto; 
+  margin-top: 6px; 
+  margin-left: auto;
+  margin-right: auto;
   text-align:center; 
   color:#999; 
   font-size:14px;
+  line-height:1.2em;
 }
 
 
