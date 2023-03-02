@@ -47,9 +47,12 @@
       font-weight:300;
     }
     .intro-text-large {
+      font-face:Open Sans; 
+      font-size:163px; 
       font-weight:200; 
       padding-bottom: 28px; 
       line-height: 1.02em;
+      letter-spacing: -0.02em;
     }
     .cards {
       display: grid;
@@ -119,7 +122,14 @@
       .intro { grid-template-columns: repeat(6, 1fr); gap: 55px; }
       .intro-image { display:block; grid-column-start: 1; grid-column-end: 2;}
       .intro-text { grid-column-start: 2; grid-column-end: 7; }
-      .intro-text-large { font-size: 55px; line-height: 1.2em;}
+      .intro-text-large {
+        font-face:Open Sans; 
+        font-size:55px; 
+        font-weight:200; 
+        padding-bottom: 28px; 
+        line-height: 1.2em;
+        letter-spacing: -0.00em;
+      }
     }
     
   </style>
@@ -274,7 +284,7 @@
           </div>
           <div class="card-header">Sense Your City: Seeing the Air</div>
           <div class="card-body">
-            I designed and built a winning entry for "Sense Your City", a data visualization competition sponsored by the Swiss Consulate, Gray Area and Lift.
+            I designed a winning entry for "Sense Your City", a data visualization competition sponsored by the Swiss Consulate, Gray Area and Lift. Seeing the Air was featured in exhibits in Geneva and Shanghai.
           </div>
           <div class="pills">
             <button class="pill">JavaScript</button>
@@ -321,7 +331,8 @@
           <div class="card-link-wrapper"><a href="#" class="card-link">Read on Medium</a></div>
         </div>
 
-        <div class="card" onclick="window.location.assign('https://medium.com/built-to-adapt/a-ux-designers-guide-to-overcoming-imposter-syndrome-116446727f9c')">
+        <div class="card" onclick="window.location.assign(
+          'https://medium.com/built-to-adapt/a-ux-designers-guide-to-overcoming-imposter-syndrome-116446727f9c')">
           <div class="card-image">
             <img src="images/main_img_28.png" style="width:100%;" alt="Image"/>
           </div>

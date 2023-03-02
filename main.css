@@ -1,7 +1,7 @@
 
  
 html  { font-size: 16px; font-family: Roboto; }
-body  { padding: 16px; color: #000; line-height:1.5em; }
+body  { padding: 21px 21px 109px 21px; color: #000; line-height:1.5em; }
 
 ul    { padding: 0px 0px 0px 28px; margin: 0px; }
 ul li { padding-bottom: 16px; }
@@ -108,6 +108,10 @@ b { font-weight: 600; text-transform: none;}
 }
 .pb-5 {
   padding-bottom: 96px;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Layout */

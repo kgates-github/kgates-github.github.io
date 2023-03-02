@@ -74,7 +74,7 @@
           <div style="flex:1">
             <ul style="padding: 0; margin:0; line-height:1.5em;">
               <li>For cloud operations teams, understanding platform health is critical but challenging.</li>
-              <li>We created a solution that embodies best practices, enabling operators to get up and running quickly.</li>
+              <li>HealthWatch embodies best practices out of the box, enabling operators to get up and running quickly.</li>
             </ul>
           </div>
         </div>
@@ -102,8 +102,8 @@
       </div>
     </div>
 
-    <div class="main pt-1">
-      <div class="content-narrow mb-5">
+    <div class="main">
+      <div class="content-narrow">
         <div class="header-medium">
           <!--Finding a Niche in a Crowded Market-->
           The Road to 100% Customer Adoption
@@ -129,15 +129,15 @@
 
     <div class="main pt-1">
       <div class="content-narrow">
-        <div class="mb-3">
+        <div class="mb-4">
           <div class="header-small fw-6 mb-3">
-            Designing for User Value
+            Value-Driven Design
           </div>
           <div class="line-height-m mb-2">
             Fast forward several months. Despite our initial misgivings, we found a direction that would go on to gain 100% adoption with 30+ Fortune 500 companies we tracked.
           </div>
           <div class="line-height-m mb-2">
-            The road getting to a viable product was not easy. It involved a highly iterative design process. Low fidelity, co-creation and continuous feedback were part of our daily lives.
+            The road getting to a viable product was not easy. It involved a highly iterative design process. Low fidelity, co-creation and rapid prototyping were part of our daily lives. Thsi path to success was guided by our north star: user value. 
           </div>
           <div class="line-height-m header-xsmall fw-5 mb-2">Product-wide:</div>
           <ul class="mb-2 line-height-m">
@@ -259,7 +259,7 @@
           <div class="line-height-m mb-2" style="text-align: right; display:block;"><a onclick="seeMore(this)" class="see-more">...see more</a></div>
         </div>
         <div class="collapsed mb-4 line-height-m" style="display:none;">
-          <div class="header-xsmall fw-5 mb-2">Key Learning Goals</div>
+          <div class="header-xsmall fw-5 mb-2">Research Goals</div>
           <ul class="mb-2">
             <li><b>Validation of an out-of-the-box GUI:</b> Would customers even use our GUI? Our top concern was that we would have to displace entrenched competitors in order for our GUI to get traction.</li>
             <li><b>Understanding the reality of customer platform monitoring:</b> How do customers currently monitor their platforms? What works well? What is painful?</li>
@@ -341,7 +341,7 @@
       
       <div class="collapsed mb-4 content-narrow" style="display:none;">
         <div class="mb-4 line-height-m">
-          <div class="header-xsmall fw-5 mb-1">A Non-linear Journey</div>
+          <div class="header-xsmall fw-5 mb-2">A Non-linear Journey</div>
           <div class="mb-2 line-height-m">
             Our experience map captured that we would be part of a larger ecosystem: When there is a potential issue with the platform, our users go on a journey through an constellation of alerts, dashboards, and Slack conversations. Our work would manifest as touchpoints along that journey—sometimes as UIs, sometimes not.
           </div>
@@ -403,7 +403,7 @@
         <div class="content-narrow">
           <div class="eyebrow color-red pt-2 mb-2">Collaboration</div>
           <div class="header-small fw-6 mb-2">
-            Embedding Domain Experts in the Design Process
+            Making Feedback a Forcing Function
           </div>
           <div class="mb-2">
             <div class="line-clamped line-height-m">
@@ -497,7 +497,7 @@
         <div class="content-narrow">
           <div class="eyebrow color-red pt-2 mb-2">Rapid Prototyping</div>
           <div class="header-small fw-6 mb-2">
-            Rapid Prototyping Example: <span style="text-decoration: line-through;">Routers</span> HTTP Requests
+            Rapid Prototyping Example:<br><span style="text-decoration: line-through;">Routers</span> HTTP Requests
           </div>
           <div class="mb-3">
             <div class="line-clamped line-height-m">
@@ -516,30 +516,281 @@
           <div class="mb-2 line-height-m">
             The design above on the left was our initial attempt at a router health design we presented to the advisory panel. It did not go over well. During our first feedback session, one panel member's first comment was, "I don't like anything about this."
           </div>
-          <div style="max-width:300px; margin-left:auto; margin-right:auto;">
+          <div style="max-width:250px; margin-left:auto; margin-right:auto;">
             <img src="images/healthwatch-23-01.png" style="width:100%;" alt="Image"/>
           </div>
           <div class="caption mb-2" style="margin-top:-10px;">Our first router panel design didn't go over well.</div>
           <div class="mb-2 line-height-m">
             I probed the panel by asking, "What about this don't you like?" We quickly learned what we got wrong: We focused too much on router CPU and tried to force everything into a stoplight visualization. We didn't include overall traffic. So we went back to the drawing board. (Literally.)
           </div>
+          <div class="mb-2 line-height-m">
+            The design above on the left was our initial attempt at a router health design we presented to the advisory panel. It did not go over well. During our first feedback session, one panel member's first comment was, "I don't like anything about this."
+          </div>
+          <div style="max-width:450px; margin-left:auto; margin-right:auto;">
+            <img src="images/healthwatch-23-00.png" style="width:100%;" alt="Image"/>
+          </div>
+          <div class="caption mb-2">Two more versions. We increased fidelity as our confidence in the design grew.</div>
+          <div class="mb-2 line-height-m">
+            What we learned from the expert panel is that operators care first about overall traffic and whether it is trending up or down. If something is concerning, they then will want router details, such as latency and errors.
+          </div>
+
+          <div class="line-height-m header-xsmall fw-5 mb-2">
+            Layout and Hierarchy
+          </div>
+          <div class="mb-2 line-height-m">
+            For data dashboards, like in typography, meaning drives layout.
+          </div>
+          <div class="mb-2 line-height-m">
+            Through our iterative design process, we first understood the implications of metrics and how they naturally hung together with others. That drove layout decisions. For example, some indicators, like HTTP throughput, are key to interpreting others, and therefore are given prominence.
+          </div>
         </div>
-          
+        <div class="content-wide collapsed" style="max-width:900px">
+          <div class="grid grid-2">
+            <div class="card">
+              <div class="card-image" style="padding:0px;">
+                <img src="images/healthwatch-23-04.png" style="width:100%;" alt="Image"/>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image mb-1" style="padding:0px;">
+                <img src="images/healthwatch-23-05.png" style="width:100%;" alt="Image"/>
+              </div>
+            </div>
+          </div>
+          <div class="caption mb-2">Interpreting a metric is often contingent on others. This informed layout decisions.</div>
+        </div>
       </div>
     </div>
 
+    <!-- LOGIC DESIGN -->
+
+    <div class="collapsable">
+      <div class="main border-top mb-3">
+        <div class="content-narrow">
+          <div class="eyebrow color-red pt-2 mb-2">Logic Design</div>
+          <div class="header-small fw-6 mb-2">
+            What Goes On Behind the Scenes for a Dashboard Stoplight
+          </div>
+          <div class="mb-2">
+            <div class="line-clamped line-height-m">
+              The simplicity of our CLI command stoplights belies the complex logic behind them. 
+            </div>
+            <div class="line-height-m mb-2" style="text-align: right; display:block;"><a onclick="seeMore(this)" class="see-more">...see more</a></div>
+          </div>
+          <div class="collapsed">
+            <div class="line-height-m header-xsmall fw-5 mb-2">
+              Drivers: Simplicity and Reliability
+            </div>
+            <div class="mb-2 line-height-m">
+              A core feature of Cloud Foundry is the ability for developers to push code onto the cloud easily. 
+              Behind the scenes are several systems all of which emit hundreds of metrics. 
+            </div>
+            <div class="mb-3 line-height-m"> 
+              Rather than burdening users with interpreting these, HealthWatch provides an automated battery of tests. 
+              The system automatically creates a minimal-footprint app, pushes it to the cloud, then tests it's health. 
+            </div>
+          </div>
+        </div>
+        
+        <div class="content-narrow">
+          <div class="grid grid-3 mb-3">
+            <div class="card mb-1">
+              <div class="card-image center mb-1" style="max-width: 200px; margin-left: auto; margin-right: auto;">
+                <img src="images/healthwatch-14-01.png" style="width:100%;" alt="Image"/>
+              </div>
+              <div class="caption">
+                Green stoplights should reliably convey everything is healthy.
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image center mb-1" style="max-width: 200px; margin-left: auto; margin-right: auto;">
+                <img src="images/healthwatch-14-02.png" style="width:100%;" alt="Image"/>
+              </div>
+              <div class="caption">
+                Yellow means there is a potential problem, but the system might self-correct.
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image center mb-1" style="max-width: 200px; margin-left: auto; margin-right: auto;">
+                <img src="images/healthwatch-14-03.png" style="width:100%;" alt="Image"/>
+              </div>
+              <div class="caption">
+                Red means users need to investigate. This needs to be relaible&mdash;false alarms are the bain of platform operators.
+              </div>
+            </div>
+          </div>
+        
+          <div class="collapsed">
+            <div class="line-height-m header-xsmall fw-5 mb-2">
+               Complexity behind the scenes
+            </div>
+            <ul class="mb-2 line-height-m">
+              <li><b>Interdependencies:</b> First, the functionality tested (push, start, etc.) are interdependent. If a push fails, other tests are not possible. If the app doesn't start, delete can still be tested.</li>
+              <li><b>Concurrent tests:</b> In order to be highly available, every few minutes, three tests are run at the same time.</li>
+            </ul>
+            <div class="line-height-m header-xsmall fw-5 mb-2">
+               Detailed Logic Diagrams
+            </div>
+            <div class="mb-2 line-height-m"> 
+              We created diagrams that detailed all test scenarios while taking into account interdependencies and concurrent tests.  
+            </div>
+            <img src="images/healthwatch-00-logic.png" style="width:100%;" alt="Image"/>
+            <div class="collapsed caption mb-2">
+              This example
+              shows how a self-correcting system can result in failed tests without displaying red stop lights.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- DOG FOODING -->
+
+    <div class="collapsable">
+      <div class="main border-top mb-3">
+        <div class="content-narrow">
+          <div class="eyebrow color-red pt-2 mb-2">Dogfooding</div>
+          <div class="header-small fw-6 mb-2">
+            Making First Contact with Reality
+          </div>
+          <div class="mb-2">
+            <div class="line-clamped line-height-m">
+              HealthWatch would need to help operations teams navigate through unexpected disruptions, the nature of which can't be predicted. That meant we needed to test under real-world circumstances with real data.
+            </div>
+            <div class="line-height-m mb-2" style="text-align: right; display:block;"><a onclick="seeMore(this)" class="see-more">...see more</a></div>
+          </div>
+          <div class="collapsed">
+            <img src="images/healthwatch-18.png" style="width:100%;" alt="Image"/>
+            <div class="collapsed caption mb-2">
+              HealthWatch in the wild. Our ops team in Dublin installed and used our alpha version and gave us weekly feedback.
+            </div>
+          </div>
+          <div class="collapsed mb-2 line-height-m">
+            Pivotal’s cloud operations team in Ireland agreed to be the first to use HealthWatch in a production environment. That team hosted a SaaS product called Pivotal Tracker, an agile project management tool which has several hundred-thousand active users.
+          </div>
+          <div class="collapsed header-xsmall fw-6 mb-2">
+            Weekly Check-Ins
+          </div>
+          <div class="collapsed mb-2 line-height-m">
+            We conducted weekly check-in sessions. In these sessions, members of the operations teams walked us through scenarios where they used HealthWatch. We got a lot of usability feedback, but also validated that the app helped them get through unexpected problems, such as failed upgrades.
+          </div>
+          <div class="collapsed header-xsmall fw-6 mb-2">
+            Card Sorting
+          </div>
+          <div class="collapsed mb-2 line-height-m">
+            Once the operations team had been using HealthWatch for several weeks, we gave operations team members workbooks in Google Draw that contained movable metrics panels. We then asked them to arrange the dashboard the way they would like it.
+          </div>
+          <div class="collapsed mb-3 line-height-m">
+            After that, we interviewed the operators to understand the thinking behind their layouts. This eventually led us to grouping metrics into three areas of impact.
+          </div>
+        </div>
+        <div class="content-wide mb-4">
+          <div style="padding: 24px 0px; background: #eee;">
+            <img src="images/healthwatch-20-01.png" style="width:100%;" alt="Image"/>
+          </div>
+          <div class="caption mb-4">
+            After using the app for a few weeks, alpha testers arranged their ideal dashboard layout.
+          </div>
+          <div class="collapsed">
+            <div class="mb-1" style="padding: 24px 16px; background: #eee;">
+              <img src="images/healthwatch-21.png" style="width:100%;" alt="Image"/>
+            </div>
+            <div class="grid grid-3">
+              <div class="card">
+                <div class="header-xsmall fw-5 mb-1">END-USER IMPACT</div>
+                <div class="card-body">
+                  End users affected. Generally urgent.
+                </div>
+              </div>
+              <div class="card">
+                <div class="header-xsmall fw-5 mb-1">DEVELOPER IMPACT</div>
+                <div class="card-body">
+                  Not as urgent as end-user impact, but potentially important.
+                </div>
+              </div>
+              <div class="card">
+                <div class="header-xsmall fw-5 mb-1">PLATFORM IMPACT</div>
+                <div class="card-body">
+                  Underlying VMs and other platform infrastructure.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-narrow">
+          <div class="collapsed header-xsmall fw-6 mb-2">
+            Feature Vetting
+          </div>
+          <div class="collapsed mb-2 line-height-m">
+            After the card sort, we had team members independently tell us what metrics they would remove from the main dashboard and why. This got us to declutter and move about 25 percent of the main dashboard to deep dive views.
+          </div>
+        </div>
+        <div class="collapsed">
+          <div class="content-wide">
+            <img src="images/healthwatch-19.png" style="width:100%;" alt="Image"/>
+          </div>
+          <div class="caption mb-4">
+              Alpha testers voted metrics off the island.
+          </div>
+        </div>
+      </div>
+    </div>
     
-<!--
+    <!-- CONCLUSION -->
+
+    <div class="collapsable">
+      <div class="main border-top mb-3">
+        <div class="content-narrow">
+          <div class="eyebrow color-red pt-2 mb-2">Conclusion</div>
+          <div class="header-small fw-6 mb-2">
+            Impact
+          </div>
+          <div class="header-xsmall fw-6 mb-2">
+            Measurable Outcomes
+          </div>
+          <div class="line-height-m mb-2">
+            We hypothesized that five of seven potential customers would install our closed beta and give us three feedback sessions. This tested whether customers would be willing to "pay" for beta access and worked as a leading indicator of adoption. The first five signed up.
+          </div>
+          <div class="header-xsmall fw-6 mb-2">
+            Customer Impact
+          </div>
+          <div class="mb-2 line-height-m">
+            In one of our beta feedback sessions, a customer kept repeating the phrase, "This is golden". A few weeks before, his team started hearing complaints from developers that they couldn't push their apps onto the platform.
+          </div>
+          <div class="line-height-m mb-2">
+            What nobody knew at the time was that the platform had run out of memory. That resulted in days of frustration that would not have occurred if they had our product—the team would have been alerted to low memory long before running out.
+          </div>
+          <div class="header-xsmall fw-6 mb-2">
+            U.S. Patent
+          </div>
+          <div class="line-height-m mb-1">
+            About one year after our GA (generally available) release, I shared a U.S. patent with the PM and engineering lead.
+          </div>
+          <img src="images/healthwatch-22.png" style="width:100%;" alt="Image"/>
+          <div class="caption mb-3">
+            Diagram from patent No. US20190188107A1 for “Health monitoring for cloud computing platforms”.
+          </div>
+          <div class="header-xsmall fw-6 mb-2">
+            Impact on Pivotal's Design Practice
+          </div>
+          <div class="line-height-m mb-2">
+            User-centered design was not widely practiced in Pivotal's R&D department when we started. After launch, I gave two lightning talks and wrote an essay on our process (which was published in PC World and translated into German).
+          </div>
+          <div class="header-xsmall fw-6 mb-2">
+            Impact on Marketing and Sales
+          </div>
+          <div class="line-height-m mb-6">
+            Dogfooding allowed for our sales and marketing teams to say, “We use this product ourselves.” I also heard from the field that the out-of-the-box UI played well in sales demos.
+          </div>
+          <div class="mb-6" style="max-width:300px; margin-left:auto; margin-right: auto;">
+            <img src="images/healthwatch-00.png" style="width:100%;" alt="Image"/>
+          </div>
+        </div>
+      </div>
+    </div>    
 
 
-imageimage
-Two more versions. We increased fidelity as our confidence in the design grew.
-What we learned from the expert panel is that operators care first about overall traffic and whether it is trending up or down. If something is concerning, they then will want router details, such as latency and errors.
-Layout and Hierarchy
-For data dashboards, like in typography, meaning drives layout.
-Through our iterative design process, we first understood the implications of metrics and how they naturally hung together with others. That drove layout decisions. For example, some indicators, like HTTP throughput, are key to interpreting others, and therefore are given prominence.
-
--->
 
     <!--
     <div id="side-bar-nav">
@@ -584,8 +835,9 @@ Through our iterative design process, we first understood the implications of me
         <div class='side-nav nav-header'><a href="#nav-05" style="font-weight: 400;">Strategy</a></div>
         <div class='side-nav nav-header'><a href="#nav-10" style="font-weight: 400;">Collaboration</a></div>
         <div class='side-nav nav-header'><a href="#nav-10" style="font-weight: 400;">Rapid prototyping</a></div>
+        <div class='side-nav nav-header'><a href="#nav-10" style="font-weight: 400;">Logic design</a></div>
         <div class='side-nav nav-header'><a href="#nav-13" style="font-weight: 400;">Dog fooding</a></div>
-        <div class='side-nav nav-header'><a href="#nav-16" style="font-weight: 400;">Impact</a></div>
+        <div class='side-nav nav-header'><a href="#nav-16" style="font-weight: 400;">Conclusion</a></div>
 
       </div>
     </div>
