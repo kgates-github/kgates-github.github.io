@@ -1,5 +1,6 @@
 /* Header */
 
+
 .header {
   margin-bottom:55px;
   display: flex;
@@ -60,7 +61,7 @@
   top: 0;
   left: 0;
   overflow-x: hidden;
-  transition: 0.1s;
+  transition: 0.3s;
   padding-top: 0px;
   border-right: 1px solid #ddd;
   background: rgba(255, 255, 255, 1);
@@ -85,8 +86,8 @@
   color:#333;
   position: fixed;
   z-index: 10;
-  animation-delay: 5.0s;
-  transition: 0.5s;
+  animation-delay: 0.3s;
+  transition: 0.3s;
   top: 28;
   padding:4px;
   /*border-right:  1px solid #ccc;
@@ -122,19 +123,26 @@
   overflow-y:hidden;
 }
 .card-header {
-  line-height:1.2em; 
   font-size: 21px; 
   font-family: Open Sans;  
   padding: 16px 0px 16px 0px;
   font-weight: 900;
-  text-transform: capitalize !important;
+  text-transform: uppercase !important;
   text-decoration: underline;
+  color:#000;
+}
+.card-header-xsmall { 
+  font-size: 18px; 
+  font-family: Open Sans;  
+  /*padding-left:21px; 
+  padding-right:21px;*/
+  text-transform: uppercase !important;
 }
 .card-body {
-  padding-top:0px; 
-  padding-bottom:0px; 
   line-height:1.5em; 
   font-size:16px;
+  /*padding-left:21px; 
+  padding-right:21px;*/
 }
 .card-link-wrapper {
   padding-top: 42px;

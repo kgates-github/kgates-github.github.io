@@ -66,18 +66,18 @@
       padding:4px; 
       overflow-y:hidden;
     }
-    /*.card-header {
+    .card-header-1 {
       line-height:1.2em; 
       font-size: 21px; 
       font-family: Open Sans;  
       padding: 16px 0px 16px 0px;
       font-weight: 900;
       text-decoration: underline;
-      text-decoration-thickness: 2px;
-    }*/
+      text-decoration-thickness: 4px;
+      text-decoration-color: #D02500;
+    }
     .card-body {
-      padding-top:0px; 
-      padding-bottom:0px; 
+      padding:0px; 
       line-height:1.5em; 
       font-size:16px;
     }
@@ -85,13 +85,13 @@
       padding-top: 42px;
     }
     .card-link {
-      color:#333; 
+      color:#000; 
       font-weight: 900;
     }
     .pill {
       pointer-events: none;
       background-color: #eee;
-      color: #333;
+      color: #000;
       font-size: 14px;
       border: none;
       padding: 4px 16px 4px 16px;
@@ -104,7 +104,6 @@
     .pills {
       margin-top: 21px;
     }
-    
     @media (min-width: 0px) {
       .intro-image { display:none; }
       .intro-text-large { font-size: 48px; line-height:  1.2em; }
@@ -118,7 +117,7 @@
       .intro-text-large { font-size: 48px; line-height: 1.2em;}
     }
     @media (min-width: 900px) {
-      .cards { grid-template-columns: repeat(2, 1fr); gap: 55px; }
+      .cards { grid-template-columns: repeat(3, 1fr); gap: 55px; }
       .intro { grid-template-columns: repeat(6, 1fr); gap: 55px; }
       .intro-image { display:block; grid-column-start: 1; grid-column-end: 2;}
       .intro-text { grid-column-start: 2; grid-column-end: 7; }
@@ -131,7 +130,6 @@
         letter-spacing: -0.00em;
       }
     }
-    
   </style>
   <link rel="stylesheet" href="main.css" type="text/css">
   <link rel="stylesheet" href="components.css" type="text/css">
@@ -186,12 +184,12 @@
       </div>
 
       <div class="cards">
-        <div class="card" onclick="window.location.assign('healthwatch.html');">
+        <div class="card" onclick="window.location.assign('healthwatch-v2.html');">
           <div class="card-image">
             <img src="images/main_img_20.png" style="width:100%;" alt="Image"/>
           </div>
-          <div class="card-header">Pivotal HealthWatch</div>
-          <div class="card-body">
+          <div class="card-header-1">Pivotal HealthWatch</div>
+          <div class="card-body-1">
             How I led design for a data analytics product that went on to gain 100% adoption with key Fortune-500 customers we tracked.
           </div>
           <div class="pills">
@@ -207,8 +205,8 @@
           <div class="card-image">
             <img src="images/main_img_21.png" style="width:100%;" alt="Image"/>
           </div>
-          <div class="card-header">KNative Graphical User Interface</div>
-          <div class="card-body">
+          <div class="card-header-1">KNative Graphical User Interface</div>
+          <div class="card-body-1">
             How I led a collaborative design process to rethink the UI for KNative, an opinionated open-source developer tool.
           </div>
           <div class="pills">
@@ -224,8 +222,8 @@
           <div class="card-image">
             <img src="images/main_img_22.png" style="width:100%;" alt="Image"/>
           </div>
-          <div class="card-header">Pivotal Developer Console</div>
-          <div class="card-body">
+          <div class="card-header-1">Pivotal Developer Console</div>
+          <div class="card-body-1">
             How I guided a product team through a large, complex problem space to reimagine developer tool access in the cloud.
           </div>
           <div class="pills">
@@ -241,8 +239,8 @@
           <div class="card-image">
             <img src="images/main_img_24.png" style="width:100%;" alt="Image"/>
           </div>
-          <div class="card-header">Obama for America: Project Atlas</div>
-          <div class="card-body">
+          <div class="card-header-1">Obama for America: Project Atlas</div>
+          <div class="card-body-1">
             While working under a hard deadline (election day), I took a big data set, a fuzzy concept and created an app that reached 40 million voters. 
             <!--How I took a fuzzy idea, wrangled a big data set, and produced a voter-facing app in time for election day.-->
           </div>
@@ -266,8 +264,8 @@
           <div class="card-image" style="border:1px solid #ddd;">
             <img src="images/main_img_25.png" style="width:100%;" alt="Image"/>
           </div>
-          <div class="card-header">PracticeFusion: Rx Treatment Flow</div>
-          <div class="card-body">
+          <div class="card-header-1">PracticeFusion: Rx Treatment Flow</div>
+          <div class="card-body-1">
             Using 80 million de-identified medical records, I created an experimental UI for exploring diabetes patient journeys.
           </div>
           <div class="pills">
@@ -282,8 +280,8 @@
           <div class="card-image" style="border:1px solid #ddd;">
             <img src="images/main_img_26.png" style="width:100%;" alt="Image"/>
           </div>
-          <div class="card-header">Sense Your City: Seeing the Air</div>
-          <div class="card-body">
+          <div class="card-header-1">Sense Your City: Seeing the Air</div>
+          <div class="card-body-1">
             I designed a winning entry for "Sense Your City", a data visualization competition sponsored by the Swiss Consulate, Gray Area and Lift. Seeing the Air was featured in exhibits in Geneva and Shanghai.
           </div>
           <div class="pills">
@@ -299,8 +297,8 @@
           <div class="card-image">
             <img src="images/main_img_30.png" style="width:100%;" alt="Image"/>
           </div>
-          <div class="card-header">Weather and Air Quality Forecaster</div>
-          <div class="card-body">
+          <div class="card-header-1">Weather and Air Quality Forecaster</div>
+          <div class="card-body-1">
             How I designed and built a React Native prototype from the ground up.
           </div>
           <div class="pills">
@@ -320,8 +318,8 @@
           <div class="card-image">
             <img src="images/main_img_27.png" style="width:100%;" alt="Image"/>
           </div>
-          <div class="card-header">Code Complexity is a Design Problem</div>
-          <div class="card-body">
+          <div class="card-header-1">Code Complexity is a Design Problem</div>
+          <div class="card-body-1">
             How lean UX design can build bridges between designers and engineers. This essay was republished by 
                 <a href="https://www.pcworld.idg.com.au/article/642315/code-complexity-design-problem/" 
                     style="text-decoration: underline;">PC World</a> and translated into 
@@ -336,8 +334,8 @@
           <div class="card-image">
             <img src="images/main_img_28.png" style="width:100%;" alt="Image"/>
           </div>
-          <div class="card-header">A UX Designer’s Guide to <br>Overcoming Imposter Syndrome</div>
-          <div class="card-body">
+          <div class="card-header-1">A UX Designer’s Guide to <br>Overcoming Imposter Syndrome</div>
+          <div class="card-body-1">
             How product teams in complex domains can build their own education into the design process.
           </div>
           <div class="card-link-wrapper"><a href="#" class="card-link">Read on Medium</a></div>
