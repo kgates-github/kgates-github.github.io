@@ -43,6 +43,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@0,200;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="javascript.js"></script>
   </head>
   <body>
@@ -472,8 +473,8 @@
             <div class="card-image mb-1 border-lt">
               <img src="images/healthwatch-eval-01.png" style="width:100%;" alt="Image"/>
             </div>
-            <div class="card-header-xsmall fw-5 mb-1">No-brainers</div>
-            <div class="card-body">
+            <div class="collapsed card-header-xsmall fw-5 mb-1">No-brainers</div>
+            <div class="collapsed card-body">
               Low-cost, high-value features can go into the backlog.
             </div>
           </div>
@@ -481,8 +482,8 @@
             <div class="card-image mb-1 border-lt">
               <img src="images/healthwatch-eval-02.png" style="width:100%;" alt="Image"/>
             </div>
-            <div class="card-header-xsmall fw-5 mb-1">ZONE OF EXCESS COMPLEXITY</div>
-            <div class="card-body">
+            <div class="collapsed card-header-xsmall fw-5 mb-1">ZONE OF EXCESS COMPLEXITY</div>
+            <div class="collapsed card-body">
               Some features have user value, but are costly. Design should collaborate with engineering to lower costs.
             </div>
           </div>
@@ -490,8 +491,8 @@
             <div class="card-image mb-1 border-lt">
               <img src="images/healthwatch-eval-03.png" style="width:100%;" alt="Image"/>
             </div>
-            <div class="card-header-xsmall fw-5 mb-1">Required or Differentiating</div>
-            <div class="card-body">
+            <div class="collapsed card-header-xsmall fw-5 mb-1">Required or Differentiating</div>
+            <div class="collapsed card-body">
               High-cost, high-value features are either must-be's (the product doesn't work without them), or market differentiators.
             </div>
           </div>
@@ -632,6 +633,7 @@
             <ul class="mb-2 line-height-m">
               <li><b>Interdependencies:</b> First, the functionality tested (push, start, etc.) are interdependent. If a push fails, other tests are not possible. If the app doesn't start, delete can still be tested.</li>
               <li><b>Concurrent tests:</b> In order to be highly available, every few minutes, three tests are run at the same time.</li>
+              <li><b>Fault tolerance:</b> Cloud Foundry is self correcting. That means a single failure might self-correct and not be a reason for concern.</li>
             </ul>
             <div class="line-height-m header-xsmall fw-5 mb-2">
                Detailed Logic Diagrams

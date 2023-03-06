@@ -38,7 +38,6 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@0,200;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
@@ -74,8 +73,8 @@
             <div class="fw-5" style="width: 130px;">TL;DR</div>
             <div style="flex:1">
               <ul style="padding: 0; margin:0; line-height:1.5em;">
-                <li>In the world of cloud computing, memory is expensive—Amazon charges for it by the hour. KNative, a popular open-source tool, automatically frees up unused memory, which can mean major cost savings.</li>
-                <li>We created a UX that lowers barriers to adoption and enables cost savings to scale.</li>
+                <li>In the world of cloud computing, memory is expensive. KNative, a popular open-source tool, automatically frees up unused memory, creating massive cost savings for IT departments.</li>
+                <li>We created a UX that lowers barriers to adoption, which in turn, enables cost savings to scale.</li>
               </ul>
             </div>
           </div>
@@ -187,17 +186,19 @@
     <!-- STRATEGY -->
 
     <div class="collapsable">
-      <div class="main border-top mb-3">
+      <div class="main border-top mb-2">
         <div class="content-narrow">
           <div class="eyebrow color-red pt-2 mb-2">Strategy</div>
           <div class="header-small fw-6 mb-2">
             Assessing Risk in the World of Open Source
           </div>
           <div class="mb-2">
-            <div class="line-clamped line-height-m">
+            <div class="line-clamped line-height-m mb-0">
               We were building on open-source technology that had already survived contact with reality. That meant the functionality had already been proven useful, but we still needed to figure out what value-add we could bring.
             </div>
-            <div class="line-height-m mb-2" style="text-align: right; display:block;"><a onclick="seeMore(this)" class="see-more">...see more</a></div>
+            <div class="line-height-m mb-2" style="text-align: right; display:block;">
+              <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red" style="font-size: 28; font-weight: 700; vertical-align: bottom; margin-bottom: -2px;">expand_more</span></a>
+            </div>
           </div>
           <div class="collapsed">
             <div class="line-height-m header-xsmall fw-5 mb-2">
@@ -242,7 +243,7 @@
             <div class="mb-2 line-height-m">
               KNative has been validated in the marketplace and demonstrably solves well-known IT problems:
             </div>
-            <ul class="mb-3 line-height-m">
+            <ul class="mb-4 line-height-m">
               <li><b>Resource efficiency:</b> Serverless automatically frees up unused memory and CPU allocations in the cloud (“scales to zero”).</li>
               <li><b>Emergency recovery:</b> Serverless automatically creates application backups.</li>
               <li><b>Traffic splitting:</b> Serverless makes it easy to split traffic between versions for A/B testing and gradual rollouts.</li>
@@ -263,7 +264,9 @@
             <div class="line-clamped line-height-m">
               Near the start of the design process, I like the team to imagine it's two years after launch and the product is very successful. I then ask, "Who is the average user? What are they like?"
             </div>
-            <div class="line-height-m mb-2" style="text-align: right; display:block;"><a onclick="seeMore(this)" class="see-more">...see more</a></div>
+            <div class="line-height-m mb-2" style="text-align: right; display:block;">
+              <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red" style="font-size: 28; font-weight: 700; vertical-align: bottom; margin-bottom: -2px;">expand_more</span></a>
+            </div>
           </div>
           <div class="collapsed mb-2">
             For most large-scale enterprises, 97 to 99% of developers are early-career or contractors, and don’t have skills in managing and configuring cloud-based infrastructure.
@@ -296,13 +299,15 @@
             <div class="line-clamped line-height-m">
               The PM had created story maps by analyzing the open-source functionality, which did a good job at outlining features and aligning them with outcomes.
             </div>
-            <div class="line-height-m mb-2" style="text-align: right; display:block;"><a onclick="seeMore(this)" class="see-more">...see more</a></div>
+            <div class="line-height-m mb-2" style="text-align: right; display:block;">
+              <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red" style="font-size: 28; font-weight: 700; vertical-align: bottom; margin-bottom: -2px;">expand_more</span></a>
+            </div>
           </div>
           <div class="collapsed mb-2">
             The problem is they didn't capture the narrative of the experience. User experiences are a series of activities that take place in the physical world in service of people achieving goals, which are often interconnected in logical ways.
           </div>
           <div class="collapsed line-height-m header-xsmall fw-5 mb-2">
-            Proto-Journey Map
+            Story Map
           </div>
           <div class="collapsed mb-3">
             I facilitated a workshop in which we deconstructed the story maps and created a narrative in the form of what I call a proto-journey map.
@@ -336,7 +341,7 @@
       </div>
     </div>
 
-    <!-- Competitive Analysis -->
+    <!-- COMPETITIVE ANALYSIS -->
 
     <div class="collapsable">
       <div class="main border-top mb-4">
@@ -347,7 +352,9 @@
             <div class="line-clamped line-height-m">
               We took screenshots of our competitor's UIs and pasted them along our journey map, aligning them to user tasks. Our goal was to make sure we had parity with Google, IBM and the OS version, and to find inspiration in things they do well.
             </div>
-            <div class="line-height-m mb-2" style="text-align: right; display:block;"><a onclick="seeMore(this)" class="see-more">...see more</a></div>
+            <div class="line-height-m mb-2" style="text-align: right; display:block;">
+              <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red" style="font-size: 28; font-weight: 700; vertical-align: bottom; margin-bottom: -2px;">expand_more</span></a>
+            </div>
           </div>
         </div>
         <div class="content-wide line-height-m mb-3">
@@ -386,6 +393,140 @@
       </div>
     </div>
 
+    <!-- IDEATION -->
+
+    <div class="collapsable">
+      <div class="main border-top mb-2">
+        <div class="content-narrow line-height-m">
+          <div class="eyebrow color-red pt-2 mb-2">Ideation</div>
+          <div class="header-small fw-5 mb-1">Reimagining the UX</div>
+          <div class="mb-2">
+            <div class="line-clamped line-height-m">
+              Now that we understood something about our competitors and we had a model of the user journey, we set up an ideation workshop (a.k.a., design studio) in which everyone (engineers, field engineers, design and PM) would sketch concepts. The goal was to get diverse perspectives to seed our creative process.
+            </div>
+            <div class="line-height-m mb-2" style="text-align: right; display:block;">
+              <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red" style="font-size: 28; font-weight: 700; vertical-align: bottom; margin-bottom: -2px;">expand_more</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="collapsed content-narrow line-height-m">
+          <div class="line-height-m header-xsmall fw-5 mb-2">
+            Market Differentiators
+          </div>
+          <div class="mb-4">
+            We dot-voted sketches and discussed what we liked. A few solved key user problems in creative ways, and had the potential to differentiate us from competitors.
+          </div>
+        </div>
+      </div>
+
+      <div class="content-extra-wide" style="max-width:1000px;">
+        <div class="grid grid-3 mb-2">
+          <div class="card mb-2">
+            <div class="card-image mb-1 border-lt">
+              <img src="images/serverless-11-01.png" style="width:100%;" alt="Image"/>
+            </div>
+            <div class="card-header-xsmall fw-5 mb-1">INTUITIVE LAYOUT</div>
+            <div class="collapsed card-body">
+              Several people came up with similar designs that merged information from multiple sources into intuitive tables. Many had a visual representation of status.
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-image mb-1 border-lt">
+              <img src="images/serverless-11-03.png" style="width:100%;" alt="Image"/>
+            </div>
+            <div class="card-header-xsmall fw-5 mb-1">PERFORMANCE ANALYSIS</div>
+            <div class="collapsed card-body">
+              Serverless technology will automatically free up system resources when an app has no traffic. When traffic returns, starting up cold can be slow. Exercising the scaling functionality, then showing how long cold starts take would enable developers to optimize for more responsiveness.
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-image mb-1 border-lt">
+              <img src="images/serverless-11-04.png" style="width:100%;" alt="Image"/>
+            </div>
+            <div class="card-header-xsmall fw-5 mb-1">CHANGE LOG</div>
+            <div class="collapsed card-body">
+              Changes to apps (revisions) are described in YAML. This feature would create a diff between revisions, allowing developers to see exactly what changed. This could be an interesting place to start debugging.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RAPID PROTOTYPING -->
+
+    <div class="collapsable">
+      <div class="main border-top mb-4">
+        <div class="content-narrow line-height-m">
+          <div class="eyebrow color-red pt-2 mb-2">Rapid Prototyping</div>
+          <div class="header-small fw-5 mb-1">Iterative Testing and Evaluation</div>
+          <div class="mb-2">
+            <div class="line-clamped line-height-m">
+              UX design for cloud computing requires navigating a lot of complexity. I've found an iterative approach with constant feedback is the best way to work through it.
+            </div>
+            <div class="line-height-m mb-2" style="text-align: right; display:block;">
+              <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red" style="font-size: 28; font-weight: 700; vertical-align: bottom; margin-bottom: -2px;">expand_more</span></a>
+            </div>
+          </div>
+          <div class="collapsed">
+            <div class="collapsed line-height-m header-xsmall fw-5 mb-2">
+              Setting Up User Feedback
+            </div>
+            <div class="mb-2"> 
+              We set feedback from many types of users: experts, novices, field engineers, internal engineers. For each of these, we had two types of learning goals:
+            </div>
+            <ul class="mb-3 line-height-m">
+              <li><b>Evaluative (a.k.a., usability):</b>Can the user complete given tasks? What about developers with no experience with serverless, can they understand everything? </li>
+              <li><b>Generative:</b>When do developers use GUIs versus command lines? Why do they use them? What would they change in our UI, if anything?</li>
+            </ul>
+            <div class="collapsed line-height-m header-xsmall fw-5 mb-2">
+              Prototyping and Testing
+            </div>
+            <div class="mb-3"> 
+              With the PM and I largely aligned on our approach, I created our first prototype based on our key user scenarios.
+            </div>
+          </div>
+        </div>
+        <div class="collapsed content-wide line-height-m mb-4">
+          <div class="border-lt pb-1">
+            <img src="images/serverless-feedback.png" class="mb-1" style="width:100%;" alt="Image"/>
+          </div>
+          <div class="caption">
+            Our usability tests had three primary user scenarios: Create, update and route traffic. We sythesized results directly on the wire frames to maintain context.
+          </div>
+        </div>
+        <div class="collapsed content-narrow line-height-m mb-3">
+          <div class="collapsed line-height-m header-xsmall fw-5 mb-2">
+            Uncovering Big Frustrations in the Details
+          </div>
+          <div class="mb-2"> 
+            Some changes, such as the need for form defaults, at first seemed trivial, but ended up solving a significant pain point.
+          </div>
+        </div>
+        <div class="content-wide line-height-m mb-3" style="max-width:700px;">
+          <div class="border-lt">
+            <img src="images/serverless-13-02-02.png" class="" style="width:100%; padding:0px;" alt="Image"/>
+          </div>
+          <div class="caption">
+            Usability tests helped us understand subtle, but very frustrating problems.
+          </div>
+        </div>
+        <div class="collapsed content-narrow line-height-m mb-3">
+          <div class="mb-2"> 
+            Our first versions did not have default settings for memory allocations (1). The problem is that when the user is filling this field out, their app is likely in its early stages, and they would have no idea how much memory they would need at launch. This was a required field, so when you put everything together, we were forcing the user to answer a question they could not answer. 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+<!--
+Our first versions did not have default settings for memory allocations (1). The problem is that when the user is filling this field out, their app is likely in its early stages, and they would have no idea how much memory they would need at launch.
+This was a required field, so when you put everything together, we were forcing the user to answer a question they could not answer. Very frustrating.
+Additional Findings
+Novice users were confused: A big part of the confusion was caused by a few terms associated with serverless technology that were overloaded (in particular, "service" and "traffic"). One tester thought he was configuring a database for the first 10 minutes of the interview.
+GUIs can provide value for all users: GUIs can provide value for new users, early-career developers, seasoned veterans, and even expert users. This reinforced our initial assumptions.
+We discovered a big frustration for users: We were forcing them to answer a question that could not be answered.
+-->
     <!-- CONCLUSION -->
 
     <div class="collapsable">
