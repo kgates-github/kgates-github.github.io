@@ -104,6 +104,15 @@
 .see-more:hover {
   text-decoration: underline;
 }
+.see-more-wrapper {
+  text-align: right;
+}
+.see-more-icon {
+  font-size: 28; 
+  font-weight: 700 !important; 
+  vertical-align: bottom; 
+  margin-bottom: -1px;
+}
 
 /* Cards */
 
@@ -112,7 +121,6 @@
   padding-bottom: 55px;
 }
 .card {
-  cursor: pointer;
   color: #333;
   min-height: 4rem;
 }

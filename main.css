@@ -65,6 +65,9 @@ b { font-weight: 600; text-transform: none;}
 
 /* Margins & padding */
 
+.ml-2 {
+  margin-left: 28px;
+}
 .mb-0 {
   margin-bottom: 8px;
 }
