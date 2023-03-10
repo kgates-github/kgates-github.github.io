@@ -48,11 +48,12 @@
     }
     .intro-text-large {
       font-face:Open Sans; 
-      font-size:163px; 
-      font-weight:200; 
+      font-size:96px; 
+      font-weight:400; 
       padding-bottom: 28px; 
       line-height: 1.02em;
       letter-spacing: -0.02em;
+      color: #333;
     }
     .cards {
       display: grid;
@@ -72,7 +73,7 @@
       font-family: Open Sans;  
       padding: 16px 0px 16px 0px;
       font-weight: 900;
-      text-decoration: underline;
+      text-decoration: none;
       text-decoration-thickness: 3px;
       /*text-decoration-color: #D02500;*/
     }
@@ -82,7 +83,7 @@
       font-size:16px;
     }
     .card-link-wrapper {
-      padding-top: 42px;
+      /*padding-top: 42px;*/
     }
     .card-link {
       color:#000; 
@@ -90,19 +91,21 @@
     }
     .pill {
       pointer-events: none;
-      background-color: #eee;
-      color: #000;
+      /*background-color: #efefef;*/
+      color: #333;
       font-size: 14px;
+      font-weight:  300;
       border: none;
-      padding: 4px 16px 4px 16px;
-      text-align: center;
+      /*padding: 4px 16px 4px 16px;*/
+      /*text-align: center;*/
       text-decoration: none;
-      display: inline-block;
+      /*display: inline-block;
       margin-right: -2px;
-      margin-bottom: 2px;
+      margin-bottom: 2px;*/
     }
     .pills {
       margin-top: 21px;
+      display: none;
     }
     @media (min-width: 0px) {
       .intro-image { display:none; }
@@ -117,17 +120,18 @@
       .intro-text-large { font-size: 48px; line-height: 1.2em;}
     }
     @media (min-width: 900px) {
-      .cards { grid-template-columns: repeat(3, 1fr); gap: 55px; }
+      .cards { grid-template-columns: repeat(2, 1fr); gap: 55px; }
       .intro { grid-template-columns: repeat(6, 1fr); gap: 55px; }
       .intro-image { display:block; grid-column-start: 1; grid-column-end: 2;}
       .intro-text { grid-column-start: 2; grid-column-end: 7; }
       .intro-text-large {
-        font-face:Open Sans; 
+        font-face:Open Sans !important; 
         font-size:55px; 
-        font-weight:200; 
+        font-weight:300; 
         padding-bottom: 28px; 
-        line-height: 1.2em;
+        line-height: 1.3em;
         letter-spacing: -0.00em;
+        color: #333;
       }
     }
   </style>
@@ -146,8 +150,7 @@
     <div class="main">
       <div class="header" style="margin-bottom: 96px; padding:0px;">
         <div class="header-main" onclick="window.location.assign('index.html');">
-          <div class="color-red fw-6">Kevin Gates</div>
-          <div>UX Designer</div>
+          <div class="color-red">Kevin Gates</div>
         </div>
         <div style="margin-left:auto;">
           <div style="display:flex; flex-direction: row;">
@@ -158,28 +161,23 @@
         </div>
       </div>
 
-      <div class="intro">
+      <div class="intro" style="margin-top:150px; margin-bottom:150px;">
         <div class="intro-image">
           <img src="images/about-01.png" style="width:100%; margin-top: 26px;" alt="Image"/>
         </div>
         <div class="intro-text">
-          <div style="padding-bottom:28px;">Hi, I'm Kevin!</div>
           <div>
             <div class="intro-text-large">
-              I'm a <span class="fw-6">UX designer</span> with extensive experience in <span class="fw-6">enterprise SaaS</span> and <span class="fw-6">data products</span>.
+              I'm a <span class="fw-5">UX designer</span> with extensive experience in <span class="fw-5">enterprise SaaS</span> and <span class="fw-5">data products</span>.
             </div>
-            <div style="font-weight:300; padding-bottom:28px; line-height:1.66em; font-size: 24px;">
-              I've worn many hats. At <span class="fw-6">Google</span>, I was part of a three-person team that built the company's early business intelligence tools. For the <span class="fw-6">Obama 2012 campaign</span>, I designed an app that reached 40 million voters. More recently, I've applied lean UX practices to cloud computing at <span class="fw-6">Pivotal</span> and global trade logistics at <span class="fw-6">Flexport</span>.
+            <div style="font-weight:300; padding-bottom:28px; line-height:1.66em; font-size: 21px;">
+              I've worn many hats. At <span class="fw-5">Google</span>, I was part of a three-person team that built the company's early business intelligence tools. For the <span class="fw-5">Obama 2012 campaign</span>, I designed an app that reached 40 million voters. More recently, I've applied lean UX practices to cloud computing at <span class="fw-5">Pivotal</span> and global trade logistics at <span class="fw-5">Flexport</span>.
             </div>
-            <div style="font-weight:300; line-height:1.66em; font-size: 24px;">
+            <div style="font-weight:300; line-height:1.66em; font-size: 21px;">
               I'm always open to new adventures and meeting like-minded people. Feel free to reach out: <span class="fw-5">kgates@gmail.com</span>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="header-xsmall fw-5 mb-3" style="border-top:1px solid #999; padding-top:16px;">
-        CASE STUDIES
       </div>
 
       <div class="cards">
@@ -188,15 +186,12 @@
             <img src="images/main_img_20.png" style="width:100%;" alt="Image"/>
           </div>
           <div class="card-header-1">Pivotal HealthWatch</div>
-          <div class="card-body-1">
+          <div class="card-body-1 mb-2">
             How I led design for a data analytics product that went on to gain 100% adoption with key Fortune-500 customers we tracked.
           </div>
-          <div class="pills">
-            <button class="pill">User research</button>
-            <button class="pill">Data dashboard design</button>
-            <button class="pill">Co-creation</button>
-            <button class="pill">Rapid prototyping</button>
-          </div>
+          <!--<div class="line-height-m">
+            <span class="fw-5">Skills:</span> User research, dashboard design, co-creation, rapid prototyping
+          </div>-->
           <div class="card-link-wrapper"><a href="#" class="card-link">Read more</a></div>
         </div>
 
@@ -205,15 +200,12 @@
             <img src="images/main_img_21.png" style="width:100%;" alt="Image"/>
           </div>
           <div class="card-header-1">KNative UI</div>
-          <div class="card-body-1">
+          <div class="card-body-1 mb-2">
             How I led a collaborative design process to rethink the UI for KNative, an opinionated open-source developer tool.
           </div>
-          <div class="pills">
-            <button class="pill">Design strategy</button>
-            <button class="pill">Competitive analysis</button>
-            <button class="pill">Collaborative ideation</button>
-            <button class="pill">Rapid prototyping</button>
-          </div>
+          <!--<<div class="line-height-m">
+            <span class="fw-5">Skills:</span> Design strategy, competitive analysis, collaborative ideation, rapid prototyping
+          </div>-->
           <div class="card-link-wrapper"><a href="#" class="card-link">Read more</a></div>
         </div>
 
@@ -222,15 +214,12 @@
             <img src="images/main_img_22.png" style="width:100%;" alt="Image"/>
           </div>
           <div class="card-header-1">Pivotal Developer Console</div>
-          <div class="card-body-1">
+          <div class="card-body-1 mb-2">
             How I guided a product team through a large, complex problem space to reimagine developer tool access in the cloud.
           </div>
-          <div class="pills">
-            <button class="pill">User research</button>
-            <button class="pill">Workshop facilitation</button>
-            <button class="pill">Collaborative ideation</button>
-            <button class="pill">Storyboarding</button>
-          </div>
+          <!--<<div class="line-height-m">
+            <span class="fw-5">Skills:</span> User research, workshop facilitation, collaborative ideation, storyboarding
+          </div>-->
           <div class="card-link-wrapper"><a href="#" class="card-link">Read more</a></div>
         </div>
 
@@ -239,21 +228,18 @@
             <img src="images/main_img_24.png" style="width:100%;" alt="Image"/>
           </div>
           <div class="card-header-1">Obama for America: Project Atlas</div>
-          <div class="card-body-1">
-            While working under a hard deadline (election day), I took a big data set, a fuzzy concept and created an app that reached 40 million voters. 
+          <div class="card-body-1 mb-2">
+            How I took a big data set, a fuzzy concept and created an app that reached 40 million voters. 
             <!--How I took a fuzzy idea, wrangled a big data set, and produced a voter-facing app in time for election day.-->
           </div>
-          <div class="pills">
-            <button class="pill">Concept development</button>
-            <button class="pill">PostGIS</button>
-            <button class="pill">JavaScript</button>
-            <button class="pill">Google Maps API</button>
-          </div>
+          <!--<<div class="line-height-m">
+            <span class="fw-5">Skills:</span> Concept development, PostGIS, JavaScript, Google Maps API
+          </div>-->
           <div class="card-link-wrapper"><a href="#" class="card-link">Read more</a></div>
         </div>
       </div>
     
-
+      <!--
       <div class="header-xsmall fw-5 mb-3" style="border-top:1px solid #999; padding-top:16px;">
         PROJECTS
       </div>
@@ -264,13 +250,11 @@
             <img src="images/main_img_25.png" style="width:100%;" alt="Image"/>
           </div>
           <div class="card-header-1">PracticeFusion: Rx Treatment Flow</div>
-          <div class="card-body-1">
+          <div class="card-body-1 mb-2">
             Using 80 million de-identified medical records, I created an experimental UI for exploring diabetes patient journeys.
           </div>
-          <div class="pills">
-            <button class="pill">Data visualization</button>
-            <button class="pill">JavaScript</button>
-            <button class="pill">d3.js</button>
+          <div class="line-height-m">
+            <span class="fw-5">Skills:</span> Concept development, data visualization, JavaScript, d3.js
           </div>
           <div class="card-link-wrapper"><a href="#" class="card-link">See prototype</a></div>
         </div>
@@ -280,14 +264,11 @@
             <img src="images/main_img_26.png" style="width:100%;" alt="Image"/>
           </div>
           <div class="card-header-1">Sense Your City: Seeing the Air</div>
-          <div class="card-body-1">
+          <div class="card-body-1 mb-2">
             I designed a winning entry for "Sense Your City", a data visualization competition sponsored by the Swiss Consulate, Gray Area and Lift. Seeing the Air was featured in exhibits in Geneva and Shanghai.
           </div>
-          <div class="pills">
-            <button class="pill">JavaScript</button>
-            <button class="pill">IoT</button>
-            <button class="pill">Data visualization</button>
-            <button class="pill">d3.js</button>
+          <div class="line-height-m">
+            <span class="fw-5">Skills:</span> Concept development, data visualization, JavaScript, d3.js
           </div>
           <div class="card-link-wrapper"><a href="#" class="card-link">See contest results</a></div>
         </div>
@@ -297,12 +278,11 @@
             <img src="images/main_img_30.png" style="width:100%;" alt="Image"/>
           </div>
           <div class="card-header-1">Weather and Air Quality Forecaster</div>
-          <div class="card-body-1">
+          <div class="card-body-1 mb-2">
             How I designed and built a React Native prototype from the ground up.
           </div>
-          <div class="pills">
-            <button class="pill">React / ReactNative</button>
-            <button class="pill">Data visualization</button>
+          <div class="line-height-m">
+            <span class="fw-5">Skills:</span> ReactNative, data visualization
           </div>
           <div class="card-link-wrapper"><a href="#" class="card-link">Read more</a></div>
         </div>
@@ -340,7 +320,7 @@
           <div class="card-link-wrapper"><a href="#" class="card-link">Read on Medium</a></div>
         </div>
       </div>
-    
+      -->
     </div>
   </body>
 </html>

@@ -50,19 +50,18 @@
     <div class="main mb-4">
 
       <!-- HEADER -->
-
+      
       <div id="menu" onClick="openNav()">
         <span class="material-symbols-outlined" style="font-size:27px;">menu</span>
       </div>
 
-      <div class="header">
+      <div class="header" style="margin-bottom: 96px; padding:0px;">
         <div class="header-main" onclick="window.location.assign('index.html');">
-          <div class="color-red fw-6">Kevin Gates</div>
-          <div class="">UX Designer</div>
+          <div class="color-red">Kevin Gates</div>
         </div>
         <div style="margin-left:auto;">
           <div style="display:flex; flex-direction: row;">
-            <a href="index.html" class="header-menu-on">Case Studies</a>
+            <a href="index.html" class="header-menu header-menu-on">Case Studies</a>
             <a href="miscellany.html" class="header-menu">Projects</a>
             <a href="writing.html" class="header-menu">Writing</a>
           </div>
@@ -204,12 +203,8 @@
           User research, data dashboard design, co-creation, rapid prototyping
         </div>
         <div class="header-xsmall fw-5 mb-1">COLLABORATORS</div>
-        <div class="mb-2">
-          I worked closely with the PM at first, as I was the sole designer for the first several months. Later on, two designers joined the project on temporary rotations. By enlarge, I worked remotely from San Francisco, while the rest of the team was based in Denver.
-        </div>
-        <div class="header-xsmall fw-5 mb-1">TIMEFRAME</div>
         <div class="mb-4">
-          I worked on this project for just over a year. 
+          I worked closely with the PM at first, as I was the sole designer for the first several months. Later on, two designers joined the project on temporary rotations. By enlarge, I worked remotely from San Francisco, while the rest of the team was based in Denver.
         </div>
       </div>
     </div>
@@ -359,7 +354,7 @@
         <div class="mb-4 line-height-m">
           <div class="header-xsmall fw-5 mb-2">A Non-linear Journey</div>
           <div class="mb-2 line-height-m">
-            Our experience map captured that we would be part of a larger ecosystem: When there is a potential issue with the platform, our users go on a journey through an constellation of alerts, dashboards, and Slack conversations. 
+            Our experience map captured that we would be part of a larger ecosystem: When there is a potential issue with the platform, our users go on a journey through a constellation of alerts, dashboards, and Slack conversations. 
           </div>
           <div class="mb-2 line-height-m">
             Our work would manifest as touchpoints along that journey—sometimes as UIs, sometimes not.
@@ -401,8 +396,8 @@
           <div class="mb-4">
             <ul>
               <li><b>Define KPIs:</b> A lot of monitoring know-how was in the heads of our field and R&D engineers. The PM consolidated and documented this know-how in the form of KPIs.</li>
-              <li><b>Design a GUI:</b> We used the KPIs as a basis for a UI that would be exemplar of how to visualize and organize metrics. This ended up being a two-way street as some of our designs defined KPIs.</li>
               <li><b>Provide an API: </b> We knew that our customers would eventually create custom solutions, so we made our metrics available by API.</li>
+              <li><b>Design a GUI:</b> We used the KPIs as a basis for a UI that would be exemplar of how to visualize and organize metrics. This ended up being a two-way street as some of our designs defined KPIs.</li>
             </ul>
           </div>
         </div>
@@ -444,12 +439,12 @@
             <div class="mb-2">
               We made feedback a forcing function. This is how it worked: I committed to presenting to the panel whatever I was working on, in whatever state it was in, every Friday morning.
             </div>
-            <div class="mb-4">
+            <div class="mb-5">
               It worked well—In addition to getting continuous feedback, we built our own education into the process.
             </div> 
           </div>
         </div>
-        <div class="collapsed color-red pull-quote pb-4">
+        <div class="collapsed color-red pull-quote pb-5">
           We faced a seemingly insurmountable task: We needed to become experts in a complex domain in order to help users become experts in the domain.
         </div>
         <div class="collapsed content-narrow line-height-m">
@@ -644,20 +639,36 @@
           </div>
         
           <div class="collapsed">
-            <div class="line-height-m header-xsmall fw-5 mb-2">
+            <!--<div class="line-height-m header-xsmall fw-5 mb-2">
                Complexity behind the scenes
             </div>
             <ul class="mb-2 line-height-m">
               <li><b>Interdependencies:</b> First, the functionality tested (push, start, etc.) are interdependent. If a push fails, other tests are not possible. If the app doesn't start, delete can still be tested.</li>
               <li><b>Concurrent tests:</b> In order to be highly available, every few minutes, three tests are run at the same time.</li>
               <li><b>Fault tolerance:</b> Cloud Foundry is self correcting. That means a single failure might self-correct and not be a reason for concern.</li>
-            </ul>
+            </ul>-->
             <div class="line-height-m header-xsmall fw-5 mb-2">
-               Detailed Logic Diagrams
+               Logic design
             </div>
-            <div class="mb-2 line-height-m"> 
-              We created logic and diagrams that detailed all test scenarios while taking into account interdependencies and concurrent tests.  
+            <!--<div class="mb-2 line-height-m fw-5"> 
+              Given the following: 
             </div>
+            <ul class="mb-2 line-height-m">
+              <li>Sequential failures are a good sign that something is wrong.</li>
+              <li>Different test failures give off different scents. For example, a push failure is likely related to specific systems.</li>
+              <li>Concurent test all come in at once</li>
+            </ul>
+            <div class="mb-2 line-height-m fw-5"> 
+              Test results will be interpreted as follows: 
+            </div>-->
+            <ul class="mb-4 line-height-m">
+              <li>Each test (push, start, stop, etc.) are treated independentaly.</li>
+              <li>For each suite of tests, individual stoplight error states are determined given the available information we have for each.</li>
+              <li>For an isolated failure, the stoplight will be yellow.</li>
+              <li>For sequnetial faillures (e.g., two push failure in a row), the stoplight will be red.</li>
+              <li>Test that don't run are not counted.</li>
+              <li>If all test do not run for a stoplight, stoplight will be gray.</li>
+            </ul>
             
           </div>
         </div>
@@ -820,8 +831,6 @@
         </div>
       </div>
     </div>    
-
-
 
     <!--
     <div id="side-bar-nav">

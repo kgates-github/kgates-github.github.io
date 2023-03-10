@@ -53,20 +53,18 @@
         <span class="material-symbols-outlined" style="font-size:27px;">menu</span>
       </div>
 
-      <div class="header">
+      <div class="header" style="margin-bottom: 96px; padding:0px;">
         <div class="header-main" onclick="window.location.assign('index.html');">
-          <div class="color-red fw-6">Kevin Gates</div>
-          <div class="">UX Designer</div>
+          <div class="color-red">Kevin Gates</div>
         </div>
         <div style="margin-left:auto;">
           <div style="display:flex; flex-direction: row;">
-            <a href="index.html" class="header-menu-on">Case Studies</a>
+            <a href="index.html" class="header-menu header-menu-on">Case Studies</a>
             <a href="miscellany.html" class="header-menu">Projects</a>
             <a href="writing.html" class="header-menu">Writing</a>
           </div>
         </div>
       </div>
-
       <div class="main border-bottom">
         <div class="content-narrow pb-4">
           <div class="line-height-m mb-1" style="display: flex; flex-direction: row;">
@@ -168,7 +166,7 @@
     <div class="main border-top mb-3">
       <div class="content-narrow line-height-m">
         <div class="eyebrow color-red pt-2 mb-2">Role and Team</div>
-        <div class="header-small fw-5 mb-1">My Role</div>
+        <div class="header-small fw-5 mb-2">My Role</div>
         <div class="mb-2">
           Over a period of six weeks, I drove the overall approach to design as the design lead. I worked closely with a PM in planning workshops, conducting user interviews, and rapid prototyping.
         </div>
@@ -259,7 +257,7 @@
       <div class="main border-top mb-4">
         <div class="content-narrow line-height-m">
           <div class="eyebrow color-red pt-2 mb-2">Design Strategy</div>
-          <div class="header-small fw-5 mb-1">Targeting Users By Skill Level</div>
+          <div class="header-small fw-5 mb-2">Targeting Users By Skill Level</div>
           <div class="mb-2">
             <div class="line-clamped line-height-m">
               Near the start of the design process, I like the team to imagine it's two years after launch and the product is very successful. I then ask, "Who is the average user? What are they like?"
@@ -269,8 +267,13 @@
             </div>
           </div>
           <div class="collapsed mb-2">
-            For most large-scale enterprises, 97 to 99% of developers are early-career or contractors, and don’t have skills in managing and configuring cloud-based infrastructure.
+            From previous research, we knew a few things relevant to our project:
           </div>
+          <ul class="collapsed mb-2">
+            <li>Most large-scale enterprises, 97 to 99% of developers are early-career and don’t have skills in managing and configuring cloud-based infrastructure.</li>
+            <li>Many developers at large organizations are contrators (up to 50%) who often don't have direct access to the cloud platform and rely on GUIs.</li>
+            <li>Some customers have elite engineering teams who use commandline tools and automate processes.</li>
+          </ul>
           <div class="collapsed mb-3">
             Our design strategy took this into account: We assumed most developers will be early-career and new to serverless, but will gain skill over time.
           </div>
@@ -294,7 +297,7 @@
       <div class="main border-top mb-4">
         <div class="content-narrow line-height-m">
           <div class="eyebrow color-red pt-2 mb-2">Story Mapping</div>
-          <div class="header-small fw-5 mb-1">Laying Out a Goal-Directed Narrative</div>
+          <div class="header-small fw-5 mb-2">Laying Out a Goal-Directed Narrative</div>
           <div class="mb-2">
             <div class="line-clamped line-height-m">
               The PM had created story maps by analyzing the open-source functionality, which did a good job at outlining features and aligning them with outcomes.
@@ -347,7 +350,7 @@
       <div class="main border-top mb-4">
         <div class="content-narrow line-height-m">
           <div class="eyebrow color-red pt-2 mb-2">Competitive Analysis</div>
-          <div class="header-small fw-5 mb-1">Understanding the Competition</div>
+          <div class="header-small fw-5 mb-2">Understanding the Competition</div>
           <div class="mb-2">
             <div class="line-clamped line-height-m">
               We took screenshots of our competitor's UIs and pasted them along our journey map, aligning them to user tasks. Our goal was to make sure we had parity with Google, IBM and the OS version, and to find inspiration in things they do well.
@@ -399,7 +402,7 @@
       <div class="main border-top mb-2">
         <div class="content-narrow line-height-m">
           <div class="eyebrow color-red pt-2 mb-2">Ideation</div>
-          <div class="header-small fw-5 mb-1">Sketching the User Experience</div>
+          <div class="header-small fw-5 mb-2">Sketching a Differentiating UX</div>
           <div class="mb-2">
             <div class="line-clamped line-height-m">
               Now that we understood something about our competitors and we had a model of the user journey, we set up an ideation workshop (a.k.a., design studio) in which everyone (engineers, field engineers, design and PM) would sketch concepts. The goal was to get diverse perspectives to seed our creative process.
@@ -458,7 +461,7 @@
       <div class="main border-top mb-4">
         <div class="content-narrow line-height-m">
           <div class="eyebrow color-red pt-2 mb-2">Rapid Prototyping</div>
-          <div class="header-small fw-5 mb-1">Iterative Testing and Evaluation</div>
+          <div class="header-small fw-5 mb-2">Iterative Testing and Evaluation</div>
           <div class="mb-2">
             <div class="line-clamped line-height-m">
               UX design for cloud computing requires navigating a lot of complexity. I've found an iterative approach with constant feedback is the best way to work through it.
@@ -519,7 +522,7 @@
       <div class="main border-top">
         <div class="content-narrow line-height-m">
           <div class="eyebrow color-red pt-2 mb-2">Wireframing</div>
-          <div class="header-small fw-5 mb-1">Aligning Competing Forces</div>
+          <div class="header-small fw-5 mb-2">Aligning Competing Forces</div>
           <div class="mb-2">
             <div class="line-clamped line-height-m">
               After several iterations and feedback sessions, our wireframes started to feel more and more solid. There were several forces aligning in our designs:
@@ -601,7 +604,7 @@
       <div class="main border-top">
         <div class="content-narrow line-height-m">
           <div class="eyebrow color-red pt-2 mb-2">Visual Design</div>
-          <div class="header-small fw-5 mb-1">A UX to Lower Barriers to Adoption and Enable Scale</div>
+          <div class="header-small fw-5 mb-2">A UX to Lower Barriers to Adoption and Enable Scale</div>
           <div class="line-height-m header-xsmall fw-5 mb-2">
             Key Value Props
           </div>

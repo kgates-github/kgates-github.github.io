@@ -1,39 +1,46 @@
 /* Header */
 
-
 .header {
-  margin-bottom:55px;
+  margin-bottom: 55px;
   display: flex;
   flex-direction: row;
-  font-family:Open Sans;
+  font-family: Open Sans;
   padding-left: 0px;
+  font-size: 16px;
 }
 .header-main {
   cursor: pointer;
+  line-height: 1.3em;
+  padding-top: 3px;
+  font-weight: 700;
 }
 .header-menu {
-  display:block; 
-  margin-left:16px;
-  color: #333;
+  display: block; 
+  margin-left: 28px;
+  color: #D02500;
   text-decoration: none;
+  text-underline-offset: 10px;
 }
 .header-menu-on {
   text-decoration: underline;
-  font-weight: 900;
-  color:#D02500;
-  text-decoration-thickness: 3px;
+  color: #D02500;
+  text-decoration-thickness: 2px;
+  font-weight: 700;
+  text-underline-offset: 10px;
 }
 .header-menu-on-lt {
   text-decoration: underline;
-  font-weight: 900;
+  font-weight: 700;
   color:#FF6060;
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
 }
 .header-menu-lt {
   display:block; 
-  margin-left:16px;
-  color: #fff;
+  margin-left:28px;
+  color: #FF6060;
   text-decoration: none;
+  text-underline-offset: 10px;
 }
 
 .pull-quote {
@@ -46,7 +53,7 @@
   font-face:Open Sans; font-size:32px; color:#000; line-height: 1.2em;
 }
 .header-xsmall {
-  font-face:Open Sans; font-size:18px; color:#000; text-transform: uppercase;
+  font-face:Open Sans; font-size:18px; color:#333; text-transform: uppercase;
 }
 .header-chart {
   color: #666; text-align: center;
@@ -88,7 +95,7 @@
   z-index: 10;
   animation-delay: 0.3s;
   transition: 0.3s;
-  top: 28;
+  top: 25;
   padding:4px;
   /*border-right:  1px solid #ccc;
   border-top:  1px solid #ccc;
@@ -152,7 +159,7 @@
   padding-right:21px;*/
 }
 .card-link-wrapper {
-  padding-top: 42px;
+  /*padding-top: 42px;*/
 }
 .card-link {
   color:#333; 
@@ -168,8 +175,9 @@
   margin-right: auto;
   text-align:center; 
   color:#999; 
-  font-size:14px;
+  font-size:18px;
   line-height:1.2em;
+  font-style: italic;
 }
 
 /* ICONS */
