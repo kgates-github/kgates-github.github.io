@@ -510,7 +510,7 @@
 
     <!-- RAPID PROTOTYPING -->
 
-    <div class="collapsable">
+    
       <div class="main border-top mb-3">
         <div class="content-narrow">
           <div class="eyebrow color-red pt-2 mb-2">Rapid Prototyping</div>
@@ -518,12 +518,12 @@
             Rapid Prototyping Example:<br><span style="text-decoration: line-through;">Routers</span> HTTP Requests
           </div>
           <div class="mb-3">
-            <div class="line-clamped line-height-m">
+            <div class="line-height-m">
               In our situation, it was almost impossible to thoroughly understand metrics and all their implications up front. We needed to just get ideas out of our heads and into the world quickly and start learning. Rapid prototyping means being wrong constantly until you gain confidence that you aren't.
             </div>
-            <div class="line-height-m mb-2 see-more-wrapper">
+            <!--<div class="line-height-m mb-2 see-more-wrapper">
               <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red see-more-icon">expand_more</span></a>
-            </div>
+            </div>-->
           </div>
         </div>
         <div class="content-wide">
@@ -532,7 +532,7 @@
           </div>
           <div class="caption mb-2">Evolution of a metrics panel.</div>
         </div>
-        <div class="collapsed content-narrow" style="display:none;">
+        <div class="content-narrow">
           <div class="mb-2 line-height-m">
             The design above on the left was our initial attempt at a router health design we presented to the advisory panel. It did not go over well. During our first feedback session, one panel member's first comment was, "I don't like anything about this."
           </div>
@@ -564,7 +564,7 @@
             Through our iterative design process, we first understood the implications of metrics and how they naturally hung together with others. That drove layout decisions. For example, some indicators, like HTTP throughput, are key to interpreting others, and therefore are given prominence.
           </div>
         </div>
-        <div class="content-wide collapsed" style="max-width:900px">
+        <div class="content-wide" style="max-width:900px">
           <div class="grid grid-2">
             <div class="card">
               <div class="card-image" style="padding:0px;">
@@ -580,7 +580,7 @@
           <div class="caption mb-4" style="max-width:350px;">Interpreting a metric is often contingent on others. This informed layout decisions.</div>
         </div>
       </div>
-    </div>
+  
 
     <!-- LOGIC DESIGN -->
 
@@ -695,14 +695,14 @@
             Making First Contact with Reality
           </div>
           <div class="mb-2">
-            <div class="line-clamped line-height-m">
+            <div class="line-height-m">
               HealthWatch would need to help operations teams navigate through unexpected disruptions, the nature of which can't be predicted. That meant we needed to test under real-world circumstances with real data.
             </div>
-            <div class="line-height-m mb-2 see-more-wrapper">
+            <!--<div class="line-height-m mb-2 see-more-wrapper">
               <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red see-more-icon">expand_more</span></a>
-            </div>
+            </div>-->
           </div>
-          <div class="collapsed">
+          <div class="">
             <img src="images/healthwatch-18.png" style="width:100%;" alt="Image"/>
             <div class="collapsed caption mb-2">
               HealthWatch in the wild. Our ops team in Dublin installed and used our alpha version and gave us weekly feedback.

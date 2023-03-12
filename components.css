@@ -7,6 +7,7 @@
   font-family: Open Sans;
   padding-left: 0px;
   font-size: 16px;
+  margin-bottom: 96px;
 }
 .header-main {
   cursor: pointer;
@@ -53,7 +54,7 @@
   font-face:Open Sans; font-size:32px; color:#333; line-height: 1.2em;
 }
 .header-xsmall {
-  font-face:Open Sans; font-size:18px; color:#333; text-transform: uppercase;
+  font-face:Open Sans; font-size:18px; color:#000; text-transform: uppercase;
 }
 .header-chart {
   color: #666; text-align: center;
