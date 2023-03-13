@@ -48,16 +48,22 @@
   text-align:center; font-size:42px; font-family:Rokkitt; line-height: 1.2em;"
 }
 .header-medium {
-  font-face:Open Sans; font-size:63px; font-weight:900; margin-bottom:55px; line-height: 1.02em; letter-spacing: -0.02em;
+  font-family:Open Sans; font-size:63px; font-weight:900; margin-bottom:55px; line-height: 1.02em; letter-spacing: -0.02em;
 }
 .header-small {
-  font-face:Open Sans; font-size:32px; color:#333; line-height: 1.2em;
+  font-family:Open Sans; font-size:32px; color:#333; line-height: 1.2em; 
 }
 .header-xsmall {
-  font-face:Open Sans; font-size:18px; color:#000; text-transform: uppercase;
+  font-family:Open Sans; font-size:18px; color:#000; text-transform: uppercase;
 }
 .header-chart {
   color: #666; text-align: center;
+}
+.eyebrow {
+  font-family: Open Sans, sans-serif;
+  color: #777 !important;
+  font-weight: 400;
+  margin-top: 38px;
 }
 
 /* Navigation */
