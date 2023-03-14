@@ -1,19 +1,20 @@
 /* Header */
 
 .header {
-  margin-bottom: 55px;
   display: flex;
   flex-direction: row;
   font-family: Open Sans;
   padding-left: 0px;
   font-size: 16px;
   margin-bottom: 96px;
+  margin-top: 32px;
+  font-weight: 500;
 }
 .header-main {
   cursor: pointer;
   line-height: 1.3em;
   padding-top: 3px;
-  font-weight: 700;
+  font-weight: 500;
 }
 .header-menu {
   display: block; 
@@ -26,12 +27,12 @@
   text-decoration: underline;
   color: #D02500;
   text-decoration-thickness: 2px;
-  font-weight: 700;
+  font-weight: 500;
   text-underline-offset: 10px;
 }
 .header-menu-on-lt {
   text-decoration: underline;
-  font-weight: 700;
+  font-weight: 500;
   color:#FF6060;
   text-decoration-thickness: 2px;
   text-underline-offset: 10px;
@@ -102,7 +103,7 @@
   z-index: 10;
   animation-delay: 0.3s;
   transition: 0.3s;
-  top: 25;
+  top: 54px;
   padding:4px;
   /*border-right:  1px solid #ccc;
   border-top:  1px solid #ccc;
