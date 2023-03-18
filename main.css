@@ -67,6 +67,9 @@ b { font-weight: 600; text-transform: none;}
 .mt-1 {
   margin-top: 16px;
 }
+.mt-2 {
+  margin-top: 28px;
+}
 .ml-2 {
   margin-left: 28px;
 }

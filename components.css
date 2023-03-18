@@ -7,7 +7,6 @@
   padding-left: 0px;
   font-size: 16px;
   margin-bottom: 96px;
-  margin-top: 32px;
   font-weight: 500;
 }
 .header-main {
@@ -103,7 +102,7 @@
   z-index: 10;
   animation-delay: 0.3s;
   transition: 0.3s;
-  top: 54px;
+  top: 22px;
   padding:4px;
   /*border-right:  1px solid #ccc;
   border-top:  1px solid #ccc;

@@ -20,6 +20,7 @@
     ga('create', 'UA-XXXXX-Y', 'auto');
     ga('send', 'pageview');
     </script>
+
     <!-- End Google Analytics -->
 
     <meta charset="utf-8">
@@ -42,7 +43,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@0,200;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
     <script src="javascript.js"></script>
+
   </head>
   <body>
     <div class="bg-dark-gray" style="
@@ -66,7 +69,7 @@
           <span class="material-symbols-outlined" style="font-size:27px;">menu</span>
         </div>
 
-        <div class="header" style="padding-top:0px;">
+        <div class="header">
           <div class="header-main" onclick="window.location.assign('index.html');">
             <div class="color-red-lt">Kevin Gates</div>
           </div>
@@ -162,7 +165,7 @@
             <div class="line-clamped line-height-m mb-0">
               We prioritized team work by first understanding the problems we faced. I facilitated a workshop in which engineers, PMs and design formed open questions around our central theme of developer tool access. We then prioritized problems and brainstormed activities.
             </div>
-            <div class="line-height-m mb-2 see-more-wrapper">
+            <div class="line-height-m mb-4 see-more-wrapper">
               <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red see-more-icon">expand_more</span></a>
             </div>
           </div>
@@ -267,477 +270,206 @@
 
     <!-- PERSONAS -->
 
-    <div class="main collapsable border-top mb-3">
-      <div class="content-narrow">
-        <div class="eyebrow color-red pt-2 mb-2">Personas</div>
-        <div class="header-small fw-6 mb-2">
-          Understanding How Our Users Think About Dev Tools
-        </div>
-        <div class="mb-4 line-height-m">
-          <div class="header-xsmall fw-5 mb-2">Persona: App Developer</div>
-          <div class="line-height-m mb-1" style="display: flex; flex-direction: row;">
-            <div class="fw-5" style="width: 130px; margin-top:0px;">
-              <img src="images/avatar-03.png" class="mb-1" style="width:100px" alt="Image"/>
-            </div>
-            <div style="flex:1">
-              <div class="mb-3">
-                App developers build apps and other types of software. They can have diverse roles ranging from data science to mobile app development. Large organizations can employ thousands of developers.
-              </div>
-            </div>
-          </div>
-          <div class="mb-2">
-            <div class="line-height-m mb-1" style="display: flex; flex-direction: row;">
-              <div class="fw-5" style="width: 130px;">Character-<br>istics</div>
-              <div style="flex:1">
-                <ul style="padding: 0; margin:0; line-height:1.5em;">
-                  <li>97 to 99 percent of our customers’ developers are early in their careers.</li>
-                  <li>Most are focused on writing code and are not comfortable working with cloud infrastructure.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="line-height-m mb-1" style="display: flex; flex-direction: row;">
-              <div class="fw-5" style="width: 130px;">Key driver</div>
-              <div style="flex:1">
-                <ul style="padding: 0; margin:0; line-height:1.5em;">
-                  <li>App devs want access to a wide variety of tools and the latest hot tech.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="line-height-m mb-1" style="display: flex; flex-direction: row;">
-              <div class="fw-5" style="width: 130px;">Underlying motovators</div>
-              <div style="flex:1">
-                <ul style="padding: 0; margin:0; line-height:1.5em;">
-                  <li><b>Role-specific needs: </b>Developers come in many forms. A data scientist requires a very different set of tools than a mobile app developer.</li>
-                  <li><b>Task-specific needs: </b>Engineers sometimes start with specific needs related to the task at hand. For example, an aerospace engineering team creating flight control tests might need a time-series database with specified level of latency.</li>
-                  <li><b>Resume value: </b>Developers often want the latest hot tech. This is partly due to resume value, which can determine their viability in the job market.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="color-red pull-quote pb-5">
-        Developers want the latest hot tech. Having the right tech on a resume can determine viability in the job market.
-      </div>
-      <div class="collapsed mb-4 content-narrow" style="display:none;">
-        <div class="mb-4 line-height-m">
-          <div class="header-xsmall fw-5 mb-2">Target Persona: New Operators</div>
-          <div class="mb-2">
-              Our target users were platform operators who were new to monitoring. Despite that their teams tend to be small, with four to ten members, there can be more than a thousand developers using the platform once it is at scale.
-          </div>
-          <div class="mb-2">
-            <!--
-            <div class="line-height-m mb-1" style="display: flex; flex-direction: row;">
-              <div class="fw-5" style="width: 130px;">Role</div>
-              <div style="flex:1">
-                <ul style="padding: 0; margin:0; line-height:1.5em;">
-                  <li>Platform operators maintain the cloud platform. They are responsible for providing tools for developers, keeping the platform up-to-date, and troubleshooting when something goes wrong.</li>
-                </ul>
-              </div>
-            </div>
-            
-            <div class="line-height-m mb-1" style="display: flex; flex-direction: row;">
-              <div class="fw-5" style="width: 130px;">Attributes</div>
-              <div style="flex:1">
-                <ul style="padding: 0; margin:0; line-height:1.5em;">
-                  <li>Learning how to monitor CloudFoundry</li>
-                  <li>Troubleshoots problems, but doesn't actively monitor</li>
-                  <li>Is often in the process of setting up and learning Cloud Foundry, which can take 8 to 12 months</li>
-                </ul>
-              </div>
-            </div>
-            -->
-            <div class="line-height-m mb-1" style="display: flex; flex-direction: row;">
-              <div class="fw-5" style="width: 130px;">Frustrations</div>
-              <div style="flex:1">
-                <ul style="padding: 0; margin:0; line-height:1.5em;">
-                  <li>Data overload—There is too much data and it's difficult to make sense of</li>
-                  <li>Platform-monitoring software is difficult to learn</li>
-                  <li>Flying blind—Doesn't know about issues until there is an outtage</li>
-                </ul>
-              </div>
-            </div>
-            <div class="line-height-m mb-1" style="display: flex; flex-direction: row;">
-              <div class="fw-5" style="width: 130px;">Quotes</div>
-              <div style="flex:1">
-                <ul style="padding: 0; margin:0; line-height:1.5em;">
-                  <li>“The last thing we want is the end user telling us about problems with our applications.”</li>
-                  <li>"Platform issues are almost always caused by humans, and it's almost always because someone was doing an update."</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="collapsed mb-4 content-narrow" style="display:none;">
-        <div class="mb-4 line-height-m">
-          <div class="header-xsmall fw-5 mb-2">A Non-linear Journey</div>
-          <div class="mb-2 line-height-m">
-            Our experience map captured that we would be part of a larger ecosystem: When there is a potential issue with the platform, our users go on a journey through a constellation of alerts, dashboards, and Slack conversations. 
-          </div>
-          <div class="mb-2 line-height-m">
-            Our work would manifest as touchpoints along that journey—sometimes as UIs, sometimes not.
-          </div>
-        </div>
-      </div>
-      <!--
-      <div class="collapsed mb-4">
-        <div class="content-wide">
-          <div><img src="images/healthwatch-09-01.png" style="width:100%;" alt="Image"/></div>
-          <div class="caption">User goals and pain points for each part of the journey.</div>
-        </div>
-      </div>
-      -->
-    </div>
-    <div class="mb-4">
-      <div class="content-extra-wide" style="max-width: 1200px;">
-        <img src="images/healthwatch-09.png" style="width:100%;" alt="Image"/>
-      </div>
-    </div>
-
-
-    <!-- STORY MAPPING -->
-
     <div class="collapsable">
-      <div class="main border-top mb-4">
-        <div class="content-narrow line-height-m">
-          <div class="eyebrow color-red pt-2 mb-2">Story Mapping</div>
-          <div class="header-small fw-5 mb-2">Laying Out a Goal-Directed Narrative</div>
-          <div class="mb-2">
-            <div class="line-clamped line-height-m">
-              The PM had created story maps by analyzing the open-source functionality, which did a good job at outlining features and aligning them with outcomes.
+      <div class="main border-top mb-3">
+        <div class="content-narrow">
+          <div class="eyebrow color-red pt-2 mb-2">Personas</div>
+          <div class="header-small fw-6 mb-2">
+            Understanding Misaligned Interests Between Users
+          </div>
+          <div class="line-height-m">
+            <div class="">
+              At the heart of everything we learned was a fundamental conflict: While app developers want a wide variety of tools and the latest, hot technology, platform operators want to offer a small, manageable set of tools.
             </div>
-            <div class="line-height-m mb-2 see-more-wrapper">
+             <div class="line-height-m mb-3 see-more-wrapper">
               <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red see-more-icon">expand_more</span></a>
             </div>
-          </div>
-          <div class="collapsed mb-2">
-            The problem is they didn't capture the narrative of the experience. User experiences are a series of activities that take place in the physical world in service of people achieving goals, which are often interconnected in logical ways.
-          </div>
-          <div class="collapsed line-height-m header-xsmall fw-5 mb-2">
-            Story Map Workshop
-          </div>
-          <div class="collapsed mb-3">
-            I facilitated a workshop in which we deconstructed the story maps and created a narrative in the form of what I call a proto-journey map.
-          </div>
-        </div>
-        <div class="collapsed content-wide line-height-m mb-3">
-          <div class="border-lt pb-1">
-            <img src="images/serverless-06.png" class="mb-1" style="width:100%;" alt="Image"/>
-          </div>
-          <div class="caption">
-            Our proto-journey map layed out a flow centered on user goals.
-          </div>
-        </div>
-        <div class="collapsed content-narrow line-height-m">
-          <div class="mb-2">
-            First and foremost, we wanted to have a foundation for ideation sessions in which we rethink the journey. In addition, we wanted to:
-          </div>
-          <ul class="mb-3 line-height-m">
-            <li>Create a narrative which allow us to see the big picture and how tasks are connected and in service of the user reaching goals.</li>
-            <li>Have a way to fold in and organize other materials such as research findings and competitive analysis.</li>
-          </ul>
-        </div>
-        <div class="content-narrow line-height-m mb-3">
-          <div>
-            <img src="images/serverless-07.png" style="width:100%;" alt="Image"/>
-          </div>
-          <div class="caption">
-            Anatomy of an experience map. Stories were deconstructed and arranged a linear narrative with tasks, goals and milestones.
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- COMPETITIVE ANALYSIS -->
-
-    <div class="collapsable">
-      <div class="main border-top mb-4">
-        <div class="content-narrow line-height-m">
-          <div class="eyebrow color-red pt-2 mb-2">Competitive Analysis</div>
-          <div class="header-small fw-5 mb-2">Understanding the Competition</div>
-          <div class="mb-2">
-            <div class="line-clamped line-height-m">
-              We took screenshots of our competitor's UIs and pasted them along our journey map, aligning them to user tasks. Our goal was to make sure we had parity with Google, IBM and the OS version, and to find inspiration in things they do well.
-            </div>
-            <div class="line-height-m mb-2 see-more-wrapper">
-              <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red see-more-icon">expand_more</span></a>
-            </div>
-          </div>
-        </div>
-        <div class="content-wide line-height-m mb-3">
-          <div class="mb-1">
-            <img src="images/serverless-08.png" style="width:100%;" alt="Image"/>
-          </div>
-          <div class="caption">
-            Screenshots of our competitor's UIs were aligned with user goals (left). Miro's zoom feature allowed us to zoom into screenshots and see details.
-          </div>
-        </div>
-
-        <div class="collapsed content-wide">
-          <div class="grid grid-2">
-            <div class="card">
-              <div class="header-xsmall fw-5 mb-1">COMPETITOR STRENGTHS</div>
-              <div class="card-body" style="padding:0px;">
-                <ul class="line-height-m">
-                  <li>We liked Google’s stepper approach to creating and updating serverless apps and contextual help.</li>
-                  <li>RedHat had advanced features we liked, such as allowing more experienced users to paste configurations into the UI rather than fill out a form.</li>
-                </ul>
+            <div class="collapsed">
+              <div class="mb-2"></div>
+              <div class="header-xsmall fw-5 mb-2">App Developer</div>
+              <div class="line-height-m" style="display: flex; flex-direction: row;">
+                <div class="fw-5" style="width: 130px; margin-top:0px;">
+                  <img src="images/avatar-03.png" class="mb-1" style="width:100px" alt="Image"/>
+                </div>
+                <div style="flex:1">
+                  <div class="">
+                    App developers build apps and other types of software. They can have diverse roles ranging from data science to mobile app development. Large organizations can employ thousands of developers.
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card">
-              <div class="header-xsmall fw-5 mb-1">COMPETITOR WEAKNESSES</div>
-              <div class="card-body" style="padding:0px;">
-                <ul class="line-height-m">
-                  <li>Most UIs reflected data structures, not user mental models. Elements in UI not logically grouped together.</li>
-                  <li>Poor / confusing wayfinding.</li>
-                  <li>System status messages incoherent.</li>
-                  <li>Lack of guided step-by-step flows or beginners (“Paste YAML here”).</li>
-                </ul>
+           
+            <div class="collapsed mb-2">
+              <div class="line-height-m mb-1 mt-2" style="display: flex; flex-direction: row;">
+                <div class="fw-5" style="width: 130px;">Character-<br>istics</div>
+                <div style="flex:1">
+                  <ul style="padding: 0; margin:0; line-height:1.5em;">
+                    <li>97 to 99 percent of our customers’ developers are early in their careers.</li>
+                    <li>Most are focused on writing code and are not comfortable working with cloud infrastructure.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="line-height-m mb-1" style="display: flex; flex-direction: row;">
+                <div class="fw-5" style="width: 130px;">Key driver</div>
+                <div style="flex:1">
+                  <ul style="padding: 0; margin:0; line-height:1.5em;">
+                    <li>App devs want access to a wide variety of tools and the latest hot tech.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="line-height-m mb-4" style="display: flex; flex-direction: row;">
+                <div class="fw-5" style="width: 130px;">Underlying motovators</div>
+                <div style="flex:1">
+                  <ul style="padding: 0; margin:0; line-height:1.5em;">
+                    <li><b>Role-specific needs: </b>Developers come in many forms. A data scientist requires a very different set of tools than a mobile app developer.</li>
+                    <li><b>Task-specific needs: </b>Engineers sometimes start with specific needs related to the task at hand. For example, an aerospace engineering team creating flight control tests might need a time-series database with specified level of latency.</li>
+                    <li><b>Resume value: </b>Developers often want the latest hot tech. This is partly due to resume value, which can determine their viability in the job market.</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- IDEATION -->
-
-    <div class="collapsable">
-      <div class="main border-top mb-2">
-        <div class="content-narrow line-height-m">
-          <div class="eyebrow color-red pt-2 mb-2">Ideation</div>
-          <div class="header-small fw-5 mb-2">Sketching a Differentiating UX</div>
-          <div class="mb-2">
-            <div class="line-clamped line-height-m">
-              Now that we understood something about our competitors and we had a model of the user journey, we set up an ideation workshop (a.k.a., design studio) in which everyone (engineers, field engineers, design and PM) would sketch concepts. The goal was to get diverse perspectives to seed our creative process.
-            </div>
-            <div class="line-height-m mb-2 see-more-wrapper">
-              <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red see-more-icon">expand_more</span></a>
-            </div>
-          </div>
+        <div class="collapsed color-red pull-quote pb-5">
+          Developers want the latest hot tech. Having the right tech on a resume can determine viability in the job market.
         </div>
-        <div class="collapsed content-narrow line-height-m">
-          <div class="line-height-m header-xsmall fw-5 mb-2">
-            Market Differentiators
-          </div>
-          <div class="mb-4">
-            We dot-voted sketches and discussed what we liked. A few solved key user problems in creative ways, and had the potential to differentiate us from competitors.
-          </div>
-        </div>
-      </div>
-
-      <div class="content-extra-wide" style="max-width:1000px;">
-        <div class="grid grid-3 mb-2">
-          <div class="card mb-2">
-            <div class="card-image mb-1 border-lt">
-              <img src="images/serverless-11-01.png" style="width:100%;" alt="Image"/>
-            </div>
-            <div class="collapsed card-header-xsmall fw-5 mb-1">INTUITIVE LAYOUT</div>
-            <div class="collapsed card-body">
-              Several people came up with similar designs that merged information from multiple sources into intuitive tables. Many had a visual representation of status.
-            </div>
-          </div>
-          <div class="card mb-2">
-            <div class="card-image mb-1 border-lt">
-              <img src="images/serverless-11-03.png" style="width:100%;" alt="Image"/>
-            </div>
-            <div class="collapsed card-header-xsmall fw-5 mb-1">PERFORMANCE ANALYSIS</div>
-            <div class="collapsed card-body">
-              Serverless technology will automatically free up system resources when an app has no traffic. When traffic returns, starting up cold can be slow. Exercising the scaling functionality, then showing how long cold starts take would enable developers to optimize for more responsiveness.
-            </div>
-          </div>
-          <div class="card mb-2">
-            <div class="card-image mb-1 border-lt">
-              <img src="images/serverless-11-04.png" style="width:100%;" alt="Image"/>
-            </div>
-            <div class="collapsed card-header-xsmall fw-5 mb-1">CHANGE LOG</div>
-            <div class="collapsed card-body">
-              Changes to apps (revisions) are described in YAML. This feature would create a diff between revisions, allowing developers to see exactly what changed. This could be an interesting place to start debugging.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- RAPID PROTOTYPING -->
-
-    <div class="collapsable">
-      <div class="main border-top mb-4">
-        <div class="content-narrow line-height-m">
-          <div class="eyebrow color-red pt-2 mb-2">Rapid Prototyping</div>
-          <div class="header-small fw-5 mb-2">Iterative Testing and Evaluation</div>
-          <div class="mb-2">
-            <div class="line-clamped line-height-m">
-              UX design for cloud computing requires navigating a lot of complexity. I've found an iterative approach with constant feedback is the best way to work through it.
-            </div>
-            <div class="line-height-m mb-2 see-more-wrapper">
-              <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red see-more-icon">expand_more</span></a>
-            </div>
-          </div>
-          <div class="collapsed">
-            <div class="collapsed line-height-m header-xsmall fw-5 mb-2">
-              Setting Up User Feedback
-            </div>
-            <div class="mb-2"> 
-              We set feedback from many types of users: experts, novices, field engineers, internal engineers. For each of these, we had two types of learning goals:
-            </div>
-            <ul class="mb-3 line-height-m">
-              <li><b>Evaluative (a.k.a., usability):</b>Can the user complete given tasks? What about developers with no experience with serverless, can they understand everything? </li>
-              <li><b>Generative:</b>When do developers use GUIs versus command lines? Why do they use them? What would they change in our UI, if anything?</li>
-            </ul>
-            <div class="collapsed line-height-m header-xsmall fw-5 mb-2">
-              Prototyping and Testing
-            </div>
-            <div class="mb-3"> 
-              With the PM and I largely aligned on our approach, I created our first prototype based on our key user scenarios.
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="content-extra-wide line-height-m mb-4">
-        <div class="border-lt pb-1">
-          <img src="images/serverless-feedback.png" class="mb-1" style="width:100%;" alt="Image"/>
-        </div>
-        <div class="caption">
-          Our usability tests had three primary user scenarios: Create, update and route traffic. We sythesized results directly on the wire frames to maintain context.
-        </div>
-      </div>
-      <div class="main">
-        <div class="collapsed content-narrow line-height-m mb-3">
-          <div class="collapsed line-height-m header-xsmall fw-5 mb-2">
-            Key Findings
-          </div>
-          <ul class="mb-3 line-height-m">
-            <li><b>Big frustrations were hidden in the details:</b> Our first versions did not have default settings for memory allocations. The problem is that when the user is filling this field out, their app is likely in its early stages, and they would have no idea how much memory they would need at launch. This was a required field, so when you put everything together, we were forcing the user to answer a question they could not answer.</li>
-            <li><b>Novice users were confused:</b> A big part of the confusion was caused by a few terms associated with serverless technology that were overloaded (in particular, "service" and "traffic"). One tester thought he was configuring a database for the first 10 minutes of the interview.</li>
-            <li><b>GUIs can provide value for all users:</b> GUIs can provide value for all users: GUIs can provide value for new users, early-career developers, seasoned veterans, and even expert users. This reinforced our initial assumptions.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  
-    <!-- WIREFRAMING -->
-
-    <div class="collapsable">
-      <div class="main border-top">
-        <div class="content-narrow line-height-m">
-          <div class="eyebrow color-red pt-2 mb-2">Wireframing</div>
-          <div class="header-small fw-5 mb-2">Aligning Competing Forces</div>
-          <div class="mb-2">
-            <div class="line-clamped line-height-m">
-              After several iterations and feedback sessions, our wireframes started to feel more and more solid. There were several forces aligning in our designs:
-            </div>
-            <div class="line-height-m mb-2 see-more-wrapper">
-              <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red see-more-icon">expand_more</span></a>
-            </div>
-          </div>
-          <div class="collapsed">
-            <div class="line-height-m ml-2 mb-2">
-              <div class="mb-0" style="display: flex;">
-                <div style="background-color: #75C636; width:12px; height:12px; margin:6px 12px 0px 0px"></div>
-                <div style="flex:1;"><span style="font-weight: 700;">Business strategy:</span> Lower barriers to adoption</div>
+        
+        <div class="collapsed content-narrow">
+          <div class="mb-4 line-height-m">
+            <div class="header-xsmall fw-5 mb-2">Platform Operator</div>
+            <div class="line-height-m" style="display: flex; flex-direction: row;">
+              <div class="fw-5" style="width: 130px; margin-top:0px;">
+                <img src="images/avatar-02.png" class="mb-1" style="width:100px" alt="Image"/>
               </div>
-              <div class="mb-0" style="display: flex;">
-                <div style="background-color: #FF679E; width:12px; height:12px; margin:6px 12px 0px 0px"></div>
-                <div style="flex:1"><span style="font-weight: 700;">Design strategy:</span> Target users by skill level</div>
-              </div>
-              <div class="mb-0" style="display: flex;">
-                <div style="background-color: #43A6DD; width:12px; height:12px; margin:6px 12px 0px 0px"></div>
-                <div style="flex:1"><span style="font-weight: 700;">Harmony:</span> Stay true to KNative conventions</div>
-              </div>
-              <div class="mb-0" style="display: flex;">
-                <div style="background-color: #B0B0B0; width:12px; height:12px; margin:6px 12px 0px 0px"></div>
-                <div style="flex:1"><span style="font-weight: 700;">User experience:</span> Use well-known UX patterns</div>
+              <div style="flex:1">
+                <div class="">
+                  Platform operators maintain the cloud platform. They are responsible for providing tools for developers, keeping the platform up-to-date, and troubleshooting when something goes wrong.
+                </div>
               </div>
             </div>
-            <div class="line-height-m mb-4">
-              Sometimes these forces were complementary; sometimes they were competing. Below are examples of how they manifest themselves after many iterations and feedback sessions:
+           
+            <div class="mb-2">
+              <div class="line-height-m mb-1 mt-2" style="display: flex; flex-direction: row;">
+                <div class="fw-5" style="width: 130px;">Character-<br>istics</div>
+                <div style="flex:1">
+                  <ul style="padding: 0; margin:0; line-height:1.5em;">
+                    <li>Even in large organizations, operator teams tend to be small, with 10 - 20 people.</li>
+                    <li>Their small team sizes contrast with the fact that their platforms can be used by hundreds, even thousands of developers.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="line-height-m mb-1" style="display: flex; flex-direction: row;">
+                <div class="fw-5" style="width: 130px;">Key driver</div>
+                <div style="flex:1">
+                  <ul style="padding: 0; margin:0; line-height:1.5em;">
+                    <li>Operators want to offer a small, manageable set of tools that cover a wide surface area.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="line-height-m mb-4" style="display: flex; flex-direction: row;">
+                <div class="fw-5" style="width: 130px;">Underlying motovators</div>
+                <div style="flex:1">
+                  <ul style="padding: 0; margin:0; line-height:1.5em;">
+                    <li><b>Risk aversion: </b>Cloud platforms are extremely complex, but tend to be stable as long as nothing changes. Introducing new tools means introducing change, and change brings risk of something going wrong.</li>
+                    <li><b>Developing expertise: </b>If an operations team offers a new technology on their platform, they are expected to be experts at that technology. When something goes wrong, the operations teams are expected to fix it.</li>
+                    <li><b>Not enough demand: </b>Operations teams are inherently small and they tend to be unwilling to support tools for which there is little demand.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="header-xsmall fw-5 mb-2">Our Primary Personas Are Fundamentally Misaligned</div>
+            <div class="line-height-m mb-2">
+              At the heart of everything was a fundamental conflict: While app developers want a wide variety of tools and the latest, hot technology, platform operators want to offer a small, manageable set of tools.
+            </div>
+            <div class="header-xsmall fw-5 mb-2">Seeing the Journey as a Series of Conflicts Between Personas</div>
+            <div class="line-height-m mb-2">
+              We visualized the misalignment between personas as a cartoon argument. We then mapped the argument onto a skeleton version of the journey. That conveyed where on the journey misalignment can lead to bottle necks and frustration.
             </div>
           </div>
         </div>
       </div>
+
       <div class="content-extra-wide">
-        <div class="grid grid-2 mb-2" style="gap: 0px;">
+        <div class="grid grid-3 mb-4">
           <div class="card mb-2">
             <div class="card-image mb-1">
-              <img src="images/serverless-15-01.png" class="" style="width:100%;" alt="Image"/>
+              <img src="images/console-06-01.png" class="" style="width:100%;" alt="Image"/>
+            </div>
+            <div class="caption center" style="max-width:400px;">
+              Appdev wants cool tech.<br>vs.<br>Operator wants to serve the larger organization.
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-image mb-1">
+              <img src="images/console-06-02.png" class="" style="width:100%;" alt="Image"/>
+            </div>
+            <div class="caption center" style="max-width:400px;">
+              App dev wants help learning a new tool.<br>vs.<br>Operator doesn't have the time to help individuals.
+            </div>
+          </div>
+          <!--<div class="card mb-2">
+            <div class="card-image mb-1">
+              <img src="images/console-06-03.png" class="" style="width:100%;" alt="Image"/>
             </div>
             <div class="caption center" style="max-width:400px;">
               Contextual help supported all of our objectives.
             </div>
-          </div>
+          </div>-->
           <div class="card mb-2">
             <div class="card-image mb-1">
-              <img src="images/serverless-15-02.png" class="" style="width:100%;" alt="Image"/>
+              <img src="images/console-06-04.png" class="" style="width:100%;" alt="Image"/>
             </div>
             <div class="caption center" style="max-width:400px;">
-              Keeping open-sources terminology is important, especially when users go bewteen the UI and commandline.
+              Areas of conflict were represented as red dots on the journey.
             </div>
           </div>
         </div>
       </div>
+
+      <div class="collapsed main mb-2">
+        <div class="content-narrow">
+          <div class="header-xsmall fw-5 mb-2">Dev Tool Access Patterns</div>
+          <div class="line-height-m mb-2">
+            One way or another, developers tend to get the tools they need, often through off-platform sources. Some of these, such as dedicated service teams, are sanctioned, while others, such as developers going "DIY", are not, which can lead to security and compliance risk.
+          </div>
+        </div>
+      </div>
+
       <div class="collapsed content-extra-wide">
-        <div class="grid grid-2 mb-2" style="gap: 0px;">
-          <div class="card mb-2">
-            <div class="card-image mb-1">
-              <img src="images/serverless-15-03.png" class="mb-1" style="width:100%;" alt="Image"/>
-            </div>
-            <div class="caption center" style="max-width:400px;">
-              We merged version information into a single table and included visual icons to represent status.
-            </div>
-          </div>
-          <div class="card mb-2">
-            <div class="card-image mb-1">
-              <img src="images/serverless-15-04.png" class="mb-1" style="width:100%;" alt="Image"/>
-            </div>
-            <div class="caption center" style="max-width:400px;">
-              Our UI shows diffs between versions. The UI uses source control conventions well-known to developers.
-            </div>
-          </div>
+        <img src="images/console-06-10.png" class="mb-1" style="width:100%;" alt="Image"/>
+        <div class="caption center mb-4" style="max-width:700px;">
+          Diagrams from our research findings deck that depict the various ways developers get the tools they need from a variety of sources.
         </div>
       </div>
     </div>
 
-    <!-- VISUAL DESIGN -->
-
-    <div class="collapsable">
-      <div class="main border-top">
-        <div class="content-narrow line-height-m">
-          <div class="eyebrow color-red pt-2 mb-2">Visual Design</div>
-          <div class="header-small fw-5 mb-2">A UX to Lower Barriers to Adoption and Enable Scale</div>
-          <div class="line-height-m header-xsmall fw-5 mb-2">
-            Key Value Props
+      <!--<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner ps-4 pe-4">
+            <div class="carousel-item active">
+              <img src="images/console-06-01.png" class="img-fluid center-block d-block mx-auto" alt="image">
+            </div>
+            <div class="carousel-item">
+              <img src="images/console-06-02.png" class="img-fluid center-block d-block mx-auto" alt="image">
+            </div>
+            <div class="carousel-item">
+              <img src="images/console-06-03.png" class="img-fluid center-block d-block mx-auto" alt="image">
+            </div>
+            <div class="carousel-item">
+              <img src="images/console-06-04.png" class="img-fluid center-block d-block mx-auto" alt="image">
+            </div>
           </div>
-          <ul class="mb-3 line-height-m">
-            <li><b>Users don't have to think about infrastructure:</b> We aimed to allow users with no knowledge of Kubernetes or KNative to easily access their benefits.</li> 
-            <li><b>Features for all skill levels:</b> We designed for early-career developers, but also included features that allow for more efficient workflows for our advanced users.</li>
-            <li><b>Cost savings at scale: </b> KNative manages memory allocation automatically which results in big cost savings. Making KNative easily accessible to developers allows those savings to scale.</li>
-          </ul>
+          
+        </div>
+        <div class="caption pt-5">
+          In our research findings presentation, we imagined a series of fictional arguments between personas to convey misaligned interests.
         </div>
       </div>
-      <div class="content-extra-wide">
-        <div class="grid grid-2 mb-2">
-          <div class="card mb-2">
-            <div class="card-image mb-1">
-              <img src="images/serverless-16-01.png" class="" style="width:100%;" alt="Image"/>
-            </div>
-            <div class="caption center" style="max-width:400px;">
-              Early design for our alpha release
-            </div>
-          </div>
-          <div class="card mb-2">
-            <div class="card-image mb-1">
-              <img src="images/serverless-16-02.png" class="" style="width:100%;" alt="Image"/>
-            </div>
-            <div class="caption center" style="max-width:400px;">
-              Early design for our alpha release
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      -->
+    
 
     <!-- CONCLUSION -->
 
