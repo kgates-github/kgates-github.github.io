@@ -65,7 +65,7 @@
       margin-left: -30px;"> 
 
       <div class="main" style="padding:30px;">
-        <div id="menu" onClick="openNav()">
+        <div id="menu" onClick="openNav()" style="display:none;">
           <span class="material-symbols-outlined" style="font-size:27px;">menu</span>
         </div>
 
@@ -386,12 +386,19 @@
               At the heart of everything was a fundamental conflict: While app developers want a wide variety of tools and the latest, hot technology, platform operators want to offer a small, manageable set of tools.
             </div>
             <div class="header-xsmall fw-5 mb-2">Seeing the Journey as a Series of Conflicts Between Personas</div>
-            <div class="line-height-m mb-2">
+            <div class="line-height-m mb-5">
               We visualized the misalignment between personas as a cartoon argument. We then mapped the argument onto a skeleton version of the journey. That conveyed where on the journey misalignment can lead to bottle necks and frustration.
             </div>
           </div>
         </div>
       </div>
+
+      <!--
+      Be wrong a cheaply as possible
+      Keep the computer in the human loop (Ben Schneiderman)
+      Don't invite criticism; impose it
+      User experiences exist the physical world
+      -->
 
       <div class="content-extra-wide">
         <div class="grid grid-3 mb-4">
@@ -446,29 +453,6 @@
         </div>
       </div>
     </div>
-
-      <!--<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner ps-4 pe-4">
-            <div class="carousel-item active">
-              <img src="images/console-06-01.png" class="img-fluid center-block d-block mx-auto" alt="image">
-            </div>
-            <div class="carousel-item">
-              <img src="images/console-06-02.png" class="img-fluid center-block d-block mx-auto" alt="image">
-            </div>
-            <div class="carousel-item">
-              <img src="images/console-06-03.png" class="img-fluid center-block d-block mx-auto" alt="image">
-            </div>
-            <div class="carousel-item">
-              <img src="images/console-06-04.png" class="img-fluid center-block d-block mx-auto" alt="image">
-            </div>
-          </div>
-          
-        </div>
-        <div class="caption pt-5">
-          In our research findings presentation, we imagined a series of fictional arguments between personas to convey misaligned interests.
-        </div>
-      </div>
-      -->
   
     <!-- COLLABORATION -->
 
@@ -610,18 +594,18 @@
     <!-- CAUSAL MAPPING -->
 
     <div class="collapsable">
-      <div class="main border-top mb-3">
+      <div class="main border-top">
         <div class="content-narrow">
           <div class="eyebrow color-red pt-2 mb-2">Problem Prioritization</div>
-          <div class="header-small fw-6 mb-2">
+          <div class="header-small fw-6">
             Seeing the Big Picture
           </div>
         </div>
       </div>
 
       <div class="content-extra-wide mb-4">
-        <div class="center">
-          <img src="images/console-22-03-01.png" style="max-width:1300px" alt="Image"/>
+        <div class="">
+          <img src="images/console-22-03-01.png" style="max-width:100%" alt="Image"/>
         </div>
         <div class="caption line-height-m" style="max-width:600px;">
           Our causal map starts with a customer problem at the left (there is a lot more demand for developer ltoos than supply). The <span style="background-color: #FDF248;">yellow nodes are root causes</span> and the <span style="background-color: #CFEBFF;">blue nodes are possible solutions</span>.
@@ -665,7 +649,7 @@
       </div>
     </div>
 
-    <!-- PROBLEM PRIORITIZATION -->
+    <!-- SOLUTIONING -->
 
     <div class="collapsable">
       <div class="main  border-top mb-3">
@@ -729,43 +713,173 @@
       </div>
     </div>
 
+    <!-- PRODUCT VISION -->
+
+    <div class="collapsable">
+      <div class="main  border-top mb-3">
+        <div class="content-narrow">
+          <div class="eyebrow color-red pt-2 mb-2">Product Vision</div>
+          <div class="header-small fw-6 mb-2">
+            Tying the Story Together
+          </div>
+          <div class="mb-3">
+            <div class="header-xsmall fw-5 mb-2">Scenario writing</div>
+            <div class="line-height-m mb-2">
+              On Thursday, we took our top ideas and wrote scenarios describing a future in which our customers are enjoying the value of our not-yet-existent products. We were envisioning presenting a storyboard to the advisory panel on Friday and wanted our ideas to be approachable and expressive.
+            </div>
+            
+            <!--
+            <div class="line-height-m mb-1 see-more-wrapper">
+              <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red see-more-icon">expand_more</span></a>
+            </div>
+            -->
+          </div>
+          <div class="mb-1 center">
+            <img src="images/console-27.png" style="width:100%;" alt="Image"/>
+          </div>
+          <div class="caption mb-5">
+            Scenario writing session
+          </div>
+        </div>
+
+        <div class=" color-red pull-quote pb-5">
+          Our scenario writing didn't work out as planned. We would need to improvise.
+        </div>
+        
+        <div class=" content-narrow">
+          <div class="header-xsmall fw-5 mb-2">A Misfire and Redress</div>
+          <div class="line-height-m mb-2">
+            “What is the point of scenario writing? Have we learned anything?”, asked an engineer on Friday morning. I probed the room. “What do we think?”, I asked.
+          </div>
+          <div class="line-height-m mb-2">
+            In short, our solution ideas were not solid enough technically for our engineers. For a lot of types of projects, safe assumptions can be made about the tech. That was not the case for us.
+          </div>
+          <div class="line-height-m mb-2">
+            We went back to the whiteboard and discussed. The solution was to group ideas into product concepts. Those allowed the engineers to envision the "how" to a level that was acceptable.
+          </div>
+          <div class="header-xsmall fw-5 mb-2">Idea Boards and Advisory Panel Feedback, Round Two</div>
+          <div class="line-height-m mb-2">
+            We still needed something to present to the advisory panel. We came up with idea boards. Idea boards describe product concepts, and tie together outcomes, evidence and personas.
+          </div>
+          <div class="line-height-m mb-2">
+            We created an idea board for each of our top concepts and presented to the advisory panel for feedback.
+          </div>
+        </div>
+      </div>
+
+      <div class="content-extra-wide mb-1" style="background-color: #eee;">
+        <div class="mb-1 center">
+          <img src="images/console-28-01.png" style="width:100%;" alt="Image"/>
+        </div>
+      </div>
+      <div class="caption mb-4">
+        Idea board example
+      </div>
+
+      <div class="content-extra-wide mb-4">
+        <div class=" content-wide">
+          <div class="grid grid-3">
+            <div class="card mb-1">
+              <div class="card-image center mb-1 border-lt">
+                <img src="images/console-28-01-01.png" style="width:100%;" alt="Image"/>
+              </div>
+              <div class=" card-header-xsmall fw-5 mb-1">INDEPENDENT SERVICE OFFERINGS</div>
+              <div class=" card-body">
+                Outcome: Operators can delegate the curation and management of services to non-operators, effectively increasing the offerings.
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image center mb-1 border-lt">
+                <img src="images/console-28-01-02.png" style="width:100%;" alt="Image"/>
+              </div>
+              <div class=" card-header-xsmall fw-5 mb-1">DIFFERENT LEVELS OF SUPPORT</div>
+              <div class=" card-body">
+                Outcome: Developers can provision a wider variety of tools that are not mission-critical (such as databases with lower uptime) and are managed by non-operators.
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image center mb-1 border-lt">
+                <img src="images/console-28-01-03.png" style="width:100%;" alt="Image"/>
+              </div>
+              <div class=" card-header-xsmall fw-5 mb-1">AUTOMATED TOOL INTEGRATION TESTS</div>
+              <div class=" card-body">
+                Outcome: Third-party tool providers have increased confidence in an integration before releasing it. Operators have increased confidence in an integration before managing it.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STORYBOARD -->
+
+    <div class="collapsable">
+      <div class="main  border-top mb-3">
+        <div class="content-narrow">
+          <div class="eyebrow color-red pt-2 mb-2">Storyboard</div>
+          <div class="header-small fw-6 mb-2">
+            Externalizing the Product Vision
+          </div>
+          <div class="mb-3">
+            <div class="line-height-m mb-2">
+              After ideation week, I worked with marketing and an illustrator to bring the prodct vision to life.
+            </div>
+            
+            <!--
+            <div class="line-height-m mb-1 see-more-wrapper">
+              <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red see-more-icon">expand_more</span></a>
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+
+      <div class="content-extra-wide mb-3">
+        <div class="mb-1 center">
+          <img src="images/storyboard.png" style="width:100%;" alt="Image"/>
+        </div>
+      </div>
+    </div>
+
     <!-- CONCLUSION -->
 
     <div class="collapsable">
-      <div class="main border-top mb-5">
+      <div class="main mb-5">
         <div class="content-narrow">
           <div class="eyebrow color-red pt-2 mb-2">Conclusion</div>
           <div class="header-small fw-6 mb-2">
             Impact
           </div>
           <div class="header-xsmall fw-6 mb-2">
-            Initial Feedback From the Field
+            Design Sprint
           </div>
           <div class="line-height-m mb-2">
-            As of this writing, the project was going into an internal alpha release. Initial feedback from our field team was very positive. “When a developer doesn’t know much about a new technology, just clicking a box is powerful.” was a response from a field engineer in EMEA.
+            Our ideation session was the foundation for a compact, two-day design sprint. (I plan to include the sprint as a separate case study.)
           </div>
           <div class="header-xsmall fw-6 mb-2">
-            Differentiating Features
+            Research Impact
           </div>
           <div class="mb-2 line-height-m">
-            Our design studio produced two features that our competitors do not have: change logs and scaling analysis. These features address the top two pain points for serverless technology: debugging and cold starts (according to the Serverless Community Survey).
+            Our research deck got a lot of attention. I presented it several times as part of our integration process. At several points there were dozens of people in the Google doc, including vice presidents. One PM told me she had been referring to the deck on a regular basis. In addition, I later used the research findings to inform two other related projects.
           </div>
           <div class="header-xsmall fw-6 mb-2">
-            Impact on the Design Practice
+            Design Practice Impact
           </div>
           <div class="mb-2 line-height-m">
-            Our "target skill level" matrix went over well with other design teams, and was adopted for other projects.
+            I documented the design process and presented it internally and externally, including two times for the U.K. Government Digital Services.
           </div>
           <div class="header-xsmall fw-6 mb-2">
             Learnings
           </div>
           <ul class="mb-3 line-height-m">
-            <li><b>Opinionated APIs can be challenging:</b> We designed a UI on top of two very opinionated APIs (KNative and Kubernetes) and those opinions were often at odds with good UX principles.</li> 
-            <li><b>Putting competitive analysis in the journey map worked:</b> We found ourselves referring back to the analysis often, and I got feedback that others were doing the same.</li>
+            <li><b>If something is not working, nip it in the bud and pivot:</b> Our initial scenario-based presentation didn't gel. We took the outcome we were after and came up with a solution that worked.</li> 
+            <li><b>High-trust between team members enables efficiency:</b> High trust enables critical feedback, which was necessary for us to recover from mistakes.</li>
+            <li><b>Transdisciplinary ideation is powerful:</b> We gained insights that only came about because designers, engineers and field engineers were working together on the same problem. Marketing team members on our advisory panel had feedback that the rest of us would not have thought of.</li>
+            <li><b>Storyboards are great tools for conveying vision:</b> I got feedback that people had no idea of what we were up to until they saw the storyboard. In large organizations, I've found people will hear about your project, assume worst-case scenario, and imagine conflict that doesn't exist. A good vision storyboard can dispell mistrust and open doors for collaboration.</li>
           </ul>
         </div>
       </div>
-    </div>    
+    </div>  
 
     <div id="side-bar-nav">
       <div style="height:91px; display:flex; flex-direction: row; margin:30px 0px 0px 0px;">
