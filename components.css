@@ -71,6 +71,7 @@
 #side-bar-nav {
   height: 100%;
   position: fixed;
+  width: 180px;
   z-index: 11;
   top: 0;
   left: 0;
@@ -78,7 +79,7 @@
   transition: 0.3s;
   padding-top: 0px;
   border-right: 1px solid #ddd;
-  background: rgba(255, 255, 255, 1);
+  background: #fff;
   padding-left: 16px;
   padding-right: 16px;
   line-height: 1.66em;

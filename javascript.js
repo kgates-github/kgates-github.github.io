@@ -16,7 +16,7 @@ function openNav() {
 }
 
 function closeNav() {
-  document.getElementById("side-bar-nav").style.left = "-200px";
+  document.getElementById("side-bar-nav").style.left = "-230px";
   if (window.innerWidth > 900) document.getElementById("menu").style.left = "-3px";
 }
 
