@@ -19,7 +19,7 @@
   .grid-3 { grid-template-columns: repeat(3, 1fr); gap: 55px; }
   #side-bar-nav { display: none; }
   #menu { left: -3px; }
-  .header { padding-left: 32px; }
+  .header { padding-left: 0px; }
 }
 @media (min-width: 1100px) {
   .header { padding-left: 0px; }
