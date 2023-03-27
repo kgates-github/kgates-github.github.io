@@ -114,10 +114,19 @@
       </div>
 
       <div class="intro-text" style="margin-bottom:42px;">
-        My portfolio is about 7,000 words&mdash;a lot, I know. I tokenized all of the content and trained OpenAI's answer API to tell you about me. Ask me anything : )
+        My portfolio is about 7,000 words&mdash;a lot, I know. To help those who want to learn about my experience quickly, I tokenized all of my case study content and trained <span class="fw-5">OpenAI's answer API</span> to tell you about me. Ask me anything : )
       </div>
       <div>
-        <input type="text-input" style="max-width:100%; height: 30px;"/>
+        <form action="">
+          <div style="display: flex; flex-direction: row;">
+            <div style="flex:1">
+              <input type="text" id="question" name="question" placeholder="What kinds of projects has Kevin worked on?" style="width:100%; padding: 10px; font-size: 21px; font-family: Roboto;">
+            </div>
+            <div style="padding-left:21px;">
+              <input type="button" value="Ask" style="padding:10px;">
+            </div>
+          </div>
+        </form>
       </div>
     
     </div>
