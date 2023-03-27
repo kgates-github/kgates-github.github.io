@@ -1,113 +1,125 @@
-<!doctype html>
 <html lang="en">
-  <head> 
-  	<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-66268413-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-66268413-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-		  gtag('config', 'UA-66268413-1');
-		</script>
+	  gtag('config', 'UA-66268413-1');
+	</script>
 
-  	<!-- Google Analytics -->
-		<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	<!-- Google Analytics -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-		// G-54V1L5T0G0
-		ga('create', 'UA-XXXXX-Y', 'auto');
-		ga('send', 'pageview');
-		</script>
-		<!-- End Google Analytics -->
-	  
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	// G-54V1L5T0G0
+	ga('create', 'UA-XXXXX-Y', 'auto');
+	ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="style.css">
-
-    <title>Kevin Gates, UX Design Portfolio</title>
-  </head>
-  <body class="pt-3 gray-bg" style="padding-left: 25px !important; padding-right: 25px !important;">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kevin Gates</title>
+  <meta name="description" content="UX designer and researcher with experience in enterprise SaaS and data products.">
+  <meta content="Kevin Gates" property="og:site_name">
+  <meta content="Kevin Gates" property="og:title">
+  <meta content="website" property="og:type">
+  <meta content="UX designer with experience in enterprise SaaS and data products." property="og:description">
+  <style>
+    .intro-text {
+      font-size:24px; 
+      font-weight:300;
+      line-height: 1.5em;
+      font-family: Open Sans, arial, sans-serif;
+      margin-top:150px; 
+      margin-bottom:150px;
+    }
+    .cards {
+      display: grid;
+    }
+    .card {
+      color: #333;
+      cursor: pointer;
+    }
+    .card-image {
+      background: #ff0000; 
+      padding:4px; 
+      overflow-y:hidden;
+    }
+    .card-header-1 {
+      line-height:1.2em; 
+      font-size: 21px; 
+      font-family: Open Sans;  
+      padding: 28px 0px 16px 0px;
+      font-weight: 900;
+      text-decoration: none;
+      text-decoration-thickness: 3px;
+      /*text-decoration-color: #D02500;*/
+    }
+    .card-body {
+      padding:0px; 
+      line-height:1.5em; 
+      font-size:16px;
+    }
+    .card-link-wrapper {
+      /*padding-top: 42px;*/
+    }
+    .card-link {
+      color:#000; 
+      font-weight: 900;
+    }
     
-  <div class="container-fluid overflow-hidden" 
-  			style="height:180px; /*padding-left: 0px !important; padding-right: 0px !important;*/">
-	  
-	  <div class="row">
-      <div class="col pt-0">
-        <a href="index.html">
-          <div class='nav-header'>Kevin Gates</div>
-          <div class='nav-subheader'>Product Designer</div>
-        </a>
-      </div>
-      <div class="col" style="max-width:300px; text-align:right; display: flex; 
-          flex-direction: row; justify-content: space-between;">
-        <div class='top-nav ml-1'>
-            <a href="index.html">Case Studies</a>  
-        </div>
-        <div class='top-nav ml-1'><a href="miscellany.html">Writing</a></div>
-        <div class='top-nav ml-1'><a class='top-nav-on' href="about.html">About</a></div>
-      </div>
-    </div>
+    @media (min-width: 0px) {
+      .cards { grid-template-columns: repeat(1, 1fr); gap: 55px; }
+    }
+    @media (min-width: 600px) {
+      .cards { grid-template-columns: repeat(2, 1fr); gap: 55px; }
+    }
+    @media (min-width: 900px) {
+      .cards { grid-template-columns: repeat(2, 1fr); gap: 55px; }
+    }
+  </style>
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <link rel="stylesheet" href="components.css" type="text/css">
+  <link rel="stylesheet" href="media.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@0,200;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   
-	</div>
-	<div class="gray-bg" style="padding-bottom: 120px; padding-top: 0px;">
-
-		<div class="container-fluid overflow-hidden" style="max-width:900px;">
-    	<div style="display:flex;">
-
-    		<div class="pt-2" style="flex:1">
-    			<div>
-    				<img src="images/about-01.png" style="width:100%;" alt="image">
-    			</div>
-    			<div class="pt-4" style="flex:1; text-align: center;">
-	    			<p class="pb-2">
-							kgates@gmail.com 
-							<a href="https://www.linkedin.com/in/kevingatesproduct/" 
-	          		style="color:#0066cc; text-decoration: underline;">LinkedIn</a>
-						</p>
-	    		</div>
-				</div>
-				<div class='ps-4' style="flex:3; ">
-					<div class="regular-lg pb-4">
-						I've worn many hats. At Google, I was on a three-person team that built the company's early business intelligence tools. For the Obama 2012 campaign, I designed and led the creation of a voter-facing app that reached millions of voters. More recenty, I've been applying design thinking to the complexities of cloud computing at Pivotal and VMWare.
-					</div>
-					<div class="headline-light pb-4" style="line-height: 1.5 !important; font-weight: 400 !important;">
-          	I'm a staff product designer, most recently at Pivotal Software (now VMWare). 
+  <body>
+    <div class="main">
+      <div class="header">
+        <div class="header-main" onclick="window.location.assign('index.html');">
+          <div class="color-red">Kevin Gates</div>
+        </div>
+        <div style="margin-left:auto;">
+          <div style="display:flex; flex-direction: row;">
+            <div style="display:flex; flex-direction: row;">
+              <a href="index.html" class="header-menu">Case Studies</a>
+              <a href="projects.html" class="header-menu">Projects & Writing</a>
+              <a href="about.html" class="header-menu header-menu-on">About</a>
+            </div>
           </div>
-					<div class="regular-lg pb-4">
-          	I believe diverse perspectives bring clarity. I weave collaboration and feedback into all aspects of the design process. 
-        	</div>
-					<div class="regular-lg pb-4">
-						I approach design holistically. User experiences exist in the physical world; screens are types of touchpoints. 
-					</div>
-					
-					
-				</div>
-  		</div>
-		</div>
-	</div>
+        </div>
+      </div>
 
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
+      <div class="intro-text" style="margin-bottom:42px;">
+        My portfolio is about 7,000 words&mdash;a lot, I know. I tokenized all of the content and trained OpenAI's answer API to tell you about me. Ask me anything : )
+      </div>
+      <div>
+        <input type="text-input" style="max-width:100%; height: 30px;"/>
+      </div>
+    
+    </div>
   </body>
 </html>
