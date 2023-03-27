@@ -56,7 +56,8 @@
       line-height:1.2em; 
       font-size: 21px; 
       font-family: Open Sans;  
-      padding: 28px 0px 16px 0px;
+      padding-top: 28px;
+      padding-bottom: 16px;
       font-weight: 900;
       text-decoration: none;
       text-decoration-thickness: 3px;
@@ -77,12 +78,15 @@
     
     @media (min-width: 0px) {
       .cards { grid-template-columns: repeat(1, 1fr); gap: 55px; }
+      .card-header-1 { padding-top: 0px; }
     }
     @media (min-width: 600px) {
-      .cards { grid-template-columns: repeat(2, 1fr); gap: 55px; }
+      .cards { grid-template-columns: repeat(1, 1fr); gap: 55px; }
+      .card-header-1 { padding-top: 0px; }
     }
     @media (min-width: 900px) {
       .cards { grid-template-columns: repeat(2, 1fr); gap: 55px; }
+      .card-header-1 { padding-top: 28px; }
     }
   </style>
   <link rel="stylesheet" href="main.css" type="text/css">
@@ -107,14 +111,15 @@
             <div style="display:flex; flex-direction: row;">
               <a href="index.html" class="header-menu header-menu-on">Case Studies</a>
               <a href="projects.html" class="header-menu">Projects & Writing</a>
-              <a href="blank.html" class="header-menu">About</a>
+              <!--<a href="blank.html" class="header-menu">About</a>-->
             </div>
           </div>
         </div>
       </div>
 
       <div class="intro-text">
-        I'm a <span class="fw-5">UX designer</span> with extensive experience in <span class="fw-5">enterprise SaaS</span> and <span class="fw-5">data products</span>. I've worn many hats. At <span class="fw-5">Google</span>, I was part of a three-person team that built the company's early business intelligence tools. For the <span class="fw-5">Obama 2012 campaign</span>, I designed an app that reached millions of voters. More recently, I've applied lean UX practices to cloud computing at <span class="fw-5">Pivotal</span> and global trade logistics at <span class="fw-5">Flexport</span>.
+        I'm a UX designer with extensive experience in <span class="fw-5">enterprise SaaS</span> and <span class="fw-5">data products</span>. 
+        <p>My abilities were forged by a diverse background. At <span class="fw-5">Google</span>, I was part of a three-person team that built the company's early business intelligence tools. For the <span class="fw-5">Obama 2012 campaign</span>, I designed an app that reached millions of voters. More recently, I've applied lean UX practices to cloud computing at <span class="fw-5">Pivotal</span> and global trade logistics at <span class="fw-5">Flexport</span>.
       </div>
 
       <div class="cards">

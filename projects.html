@@ -77,12 +77,15 @@
     
     @media (min-width: 0px) {
       .cards { grid-template-columns: repeat(1, 1fr); gap: 55px; }
+      .card-header-1 { padding-top: 0px; }
     }
     @media (min-width: 600px) {
-      .cards { grid-template-columns: repeat(2, 1fr); gap: 55px; }
+      .cards { grid-template-columns: repeat(1, 1fr); gap: 55px; }
+      .card-header-1 { padding-top: 0px; }
     }
     @media (min-width: 900px) {
       .cards { grid-template-columns: repeat(2, 1fr); gap: 55px; }
+      .card-header-1 { padding-top: 28px; }
     }
   </style>
   <link rel="stylesheet" href="main.css" type="text/css">
@@ -112,7 +115,7 @@
 
       <div class="intro-text">
         <div class="mb-2">
-          <!--Thinking back to when I started programming computers as a child, I realize my attitude toward technology hasn't fundementally changed over the years. Back then, I didn't really want to write code; I wanted to make a video game. These days,--> I like to tinker with technology and see it a part of the creative process, be it d3, TensorFlow or React. I'm drawn to the possibilities it enables and how it might be shaped into doing something novel and useful. 
+          <!--Thinking back to when I started programming computers as a child, I realize my attitude toward technology hasn't fundementally changed over the years. Back then, I didn't really want to write code; I wanted to make a video game. These days,--> I like to tinker with new things and see that as a part of the creative process, be it with <span class="fw-5">d3, OpenAI</span> or <span class="fw-5">React</span>. I'm drawn to the possibilities technology enables and how they might be shaped into doing something novel, useful and good. 
         </div>
         <div>
           My writing tends toward two themes: Making engineering part of the design process and how designers can have impact in high-complexity domains.
@@ -144,7 +147,7 @@
         <div class="card" onclick="window.location.assign('treatment/index.html');">
           <div class="card-header-1">PracticeFusion: Rx Treatment Flow</div>
           <div class="card-body-1 mb-2">
-            While working on a medical informatics team, I created an experimental UI for exploring diabetes patient journeys. Using data from 80 million de-identified patient records, the prototype imagines how users might traverse the data at a high level, then view detatailed dashboards for specific patient cohorts
+            While working on a medical informatics team, I created an experimental UI for exploring diabetes patient journeys. Using data from 80 million de-identified patient records, the prototype imagines how users might traverse the data at a high level, then view detatailed dashboards for specific patient cohorts.
           </div>
           <div class="card-link-wrapper"><a href="#" class="card-link">See prototype</a></div>
         </div>
