@@ -1,0 +1,112 @@
+<html>
+Code Complexity is a Design Problem
+Why good design is good for engineering and vice versa
+
+Designers prototyping at Pivotal.
+As a designer, there is a scenario I’ve experienced far too many times. It goes like this: Everyone from the product team is gathered in a conference room. Design has just finished presenting a set of upcoming features, and there is a long, silent pause. Finally, a developer speaks up. “Do we really need to build this?”, she says, unsmiling. The room is filled with tension. Arms are crossed.
+
+The engineers are frustrated. To them, designers seem like they are simply foisting features onto them with little concern for their needs. They are the ones who in turn will bear the brunt of the work, and toil after hours when something goes wrong. To designers, developers seem uninterested in delighting users, or even satisfying their basic needs.
+
+This cats-and-dogs adversarial relationship between engineering and design needs to end. It’s bad for morale, bad for users, and makes products less competitive. Designers should actively understand and empathize with engineering, especially their concerns, and give them a prominent place in the design process.
+
+A Singularity of Purpose
+Design doesn’t deliver user value. Not directly. In the software business, code is the only vehicle through which value is delivered.
+
+Think of it this way: The best design in the world, when in the form of an image file, sketch, or prototype, can be admired for its beauty, clever interactions, and innovation, but it can’t deliver value to the user. Production code is the medium through which users interact with the product and get to it’s value. Because of this, designers need to learn to care about it’s quality.
+
+The Complexity Tax
+In some cases, the importance of code quality for a good user experience is obvious. Symptoms of suboptimal code — such as slowness — directly affect the user experience in predictable ways. The right bug at the wrong time can cause customers to flee, never to return.
+
+But the most important factor about code designers should concern themselves with is also the most subtle: creeping complexity, or entropy. Complexity is tricky. It often doesn’t appear suddenly; it accrues over time, and this accrued complexity will slow your product’s ability to change, adapt and grow. Think of code complexity as the opposite of a force multiplier. It’s a force diminisher. It imposes a tax on everything you might want to do with your product in the future.
+
+Excessive complexity is what is on the minds of developers when they push back on design. Furthermore, if a lot of it has been able to build up, they might feel backed into a corner when new features are presented to them. This is the scenario that can result in hostility.
+
+Code complexity. Entropy. These problems are really hard to understand unless you have been in the trenches as a developer. Before I was a designer, I spent years writing code at Google, the Obama 2012 campaign, and a healthcare startup. I know that much of software development seems arcane and even irrelevant to designers, but they should learn to take the initiative and collaborate with engineers to better understand software production.
+
+Code complexity weighs heavily on engineering, and they are usually the only ones paying attention to it. That needs to change.
+
+Think of code complexity as the opposite of a force multiplier. It’s a force diminisher. It imposes a tax on everything you might want to do with your product in the future.
+
+Bringing Complexity into the Conversation
+One of my goals as a designer at Pivotal has been to bring engineering complexity into the conversation as early as possible — the earlier, the better.
+
+Here’s how I make sense out of this. Most engineering teams primarily think of cost, while most design teams primarily think of user value. But potential future costs of features should be thought of in terms of technical cost and user value at the same time. To have productive conversations about cost and value, the whole team needs to collectively understand the problem being solved and why.
+
+Implicit in this is a major assumption: designers have done their jobs. That means they’ve spent most of their energy working with customers to understand their problems, and are skilled in working through solutions in low fidelity.
+
+
+Making Design Disposable
+When designers thoroughly understand user problems, solution ideas take on a couple of desirable characteristics. First, they are more securely anchored in concrete customer needs. Next, they tend to come more easily, and therefore are more abundant.
+
+When solutions are abundant and expressed in low fidelity, they take on a new quality: disposability. For any given user problem, designers should represent their ideas as cheaply as possible — wireframes and sharpie sketches. When ideas are disposable, they lose their preciousness, and become easy to throw away. That’s what you want.
+
+Killing Ideas to Benefit the User
+If two ideas are equally impactful to the user, but engineering expresses real concerns about one, you should be able to it kill on the basis of being high-cost, even if engineering just has a gut feeling. This can be done if you detect the excessive complexity early. Ideas are cheap and disposable; code is expensive and persistent.
+
+Designers should enthusiastically dispose of ideas that have a high cost/value ratio, and work with engineering to find a better way forward. Together, you are working to reduce the tax on future possibilities. That will benefit the user in the long run. A healthy design process should leave behind a wake of dead ideas angled toward the future success of the product.
+
+But just because you can kill an idea easily, doesn’t mean you should do it.
+
+Defending Ideas to Benefit the User
+A lot of my fellow designers get frustrated when engineering doesn’t want to build their solutions. Worse yet, they’ve handed off design “specs” and left engineering to fend for themselves, only to be surprised later by how poorly their designs translated into code.
+
+In the latter case, what’s likely to have happened is engineering ran into high complexity without a persuasive understanding of user value. Since the designer wasn’t there to collaborate, they likely improvised a solution without considering the value side of the equation.
+
+If you really feel strongly about a solution that engineering have concerns about, you should first understand its cost, and then make sure you can persuade engineering it is worth it. Help them understand why it is important, and show why alternate solutions won’t be satisfactory.
+
+
+Building Bridges
+Bringing engineering perspective into the design process can help build rapport. If you are willing to dispose of solutions to keep code complexity low, engineering should level with you when you feel strongly about a high-cost/high-value solution.
+
+Don’t expect this to be easy. Understand that engineers are not just building a feature set; they are designing a system with many, many moving parts, all the while trying to keep the complexity tax low. A high-functioning engineering team has high bars designers can’t see.
+
+Here are two techniques:
+
+1) Co-creation With Engineers
+What’s the best way to get engineering feedback early? Having engineers do design with you. By nature, engineers will think about the solutions in terms of technical possibilities. That is good for two reasons: One, they can guide your thinking towards what is solidly feasible; and two, they can guide your thinking towards ideas that are feasible, but until this point, unimaginable to the layperson.
+
+The best time for co-creation is in the early phases of a project — that’s where you will likely tackle the big problems up front, and establish a rapport with developers going forward.
+
+The best time for co-creation is in the early phases of a project
+
+This technique tends to not work well once engineering is in the thick of creating production code. When that’s the case, creating a hardened solution becomes their primary goal, and everything else tends to be thought of as a distraction. That said, you might be able to get engineers to collaborate now and again when they under pressure from the backlog, but I wouldn’t count on them be willing to do so on a regular basis.
+
+
+An engineer helps us design a dashboard.
+The above image is of an engineer helping us design a dashboard depicting the health of a database. She had recently had to troubleshoot a problem with MySQL. We first asked her to walk us through her experience, then we collaborated in designing the ideal dashboard she wished she had. We recorded the conversation and then annotated the designs. We later incorporated the insights from this into our solution.
+
+How to do it: Get an engineer or two and a whiteboard for an hour or so, depending on the scope.
+
+First, start the session with an informal discussion of research findings showing the user goal you are trying to solve for and any supporting evidence such as pain points. Next introduce some sort of flow that puts the product in the real world. There are many ways to do this. I like user scenarios, but something simpler will work too. What’s important is that you start by framing the problem, need, or desire, and end with a resolution. The screens you draw together with engineering will bridge those two points.
+
+I tend to lean toward less formal processes than some well-established design practices such as design studios, but those can work well to, especially if you have a lot of attendees and/or have cross-team participation.
+
+Also, if you are remote, I’ve had good experiences using video chat. Have everyone draw on paper with sharpie pens, then hold their ideas up to their cameras and discuss. Take screenshots of the drawings being shared to refer to later.
+
+Pro tip: If you are at a whiteboard with an engineer who is reluctant to draw (which happens fairly often), there is a trick you can use. It’s simple: start drawing a UI and make a mistake. When the engineer points it out, ask them what they might do. Have a pen ready to hand them. This works surprisingly well.
+
+Curing Handoff-itis
+How the waterfall methodology is exhausting your team and weakening your final product.
+builttoadapt.io
+
+2) Design Review
+While it would be great to co-create with engineering all the time, the reality is that they are usually too busy. Design reviews are a technique to institutionalize early engineering feedback that respects backlog cadence.
+
+How to do it: On a regular basis (once a week or once every two weeks), get the whole team together for 30 minutes and present whatever design is working on: low-fi sketches, user flows, wireframes, UI components, etc. Then get the engineering team to offer any thoughts or concerns they might have. What you are after is a gut-check for complexity, so you can get the value/cost discussion going early. If engineers express concern, ask questions back: “What makes that concerning to you?” or, “How might we approach this in a better way?”
+
+Try to schedule the review for the end of they day so it won’t break up the developers cadence. Also, bear in mind you are asking the developers to context switch and think about the future state of the product, so be sure to take time to prep a bit for the presentation.
+
+When to use it: Use design reviews when the product team is in production mode and engineers are busy building hardened solutions. Design reviews are designed to respect this.
+
+We’ve been running design reviews on a regular basis for more than a year. I’ve gotten feedback from developers that they make IPMs go more smoothly because everyone is already familiar with the solutions being presented, and the big kinks have been ironed out, or simply disposed of.
+
+Here’s an example of what came out of a Design Review:
+
+
+Despite being an extremely low-fi scribble, this sketch did everything we needed. We showed it to customers and got very positive feedback on the concept. But when we presented it to our engineering team, it surfaced some real concerns over scope.
+
+A Healthy Rapport
+My goal in using these techniques is not just to improve product outcomes, but to help establish a healthy working rapport between design and engineering. Code complexity weighs heavily on engineers. Design can help.
+</html>
+
+What have you done to foster collaboration between design and engineering?
