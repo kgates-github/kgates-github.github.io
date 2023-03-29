@@ -1,0 +1,87 @@
+<html>
+A UX Designer’s Guide to Overcoming Imposter Syndrome
+How designers in complex technical domains can quash self-doubt, wrangle tough problems, and deliver user value
+The Look
+I can spot it the moment it happens. The design new-hire’s eyes grow wide, as if they’ve just been given terrible news. They are silent. Very silent. A worried look falls across their face.
+
+I know exactly what’s going on in their head. We had been working together for a few days in a complex problem space, and having been given yet another technical detail, after days of unrelenting learning, the new hire realizes that nothing even remotely makes sense. They come to an obvious conclusion: They are, in fact, an imposter.
+
+The Path to Imposterhood
+In Pivotal’s domain, which is large-scale distributed computing, the paths to imposterhood follow a similar pattern. It begins when the complexity starts to pile on, and the new hire, already struggling to process what they’ve learned so far, starts to wonder, “How much worse can this get?”
+
+That’s when it happens. A bit of new information comes up — but this time, it’s not a detail to add to the rest of the details that have piled up. This time the new information introduces a whole new dimension to the problem space, and this new dimension works like a multiplier. The pile of complexity, instead of being one percent bigger, is now three times the size it was just a moment ago.
+
+Taming Your Internal Imposter
+I know what the new hire is going through because I’ve been there myself. Many times. Before becoming a designer at Pivotal, I worked in business intelligence at Google, medical informatics at a healthcare startup, and wrangled data for the Obama 2012 campaign.
+
+Because of the nature of UX design, designers might feel the need to accomplish the impossible task of having breadth and depth of knowledge about everything in their domain. But I’m here to tell you this: You cannot understand everything in a highly technical problem space, and that’s okay. I’ll show how you can use good design practices to wrangle complexity, navigate a torrent of swirling unknowns, and bring clarity to your product direction, all-the-while building up your domain knowledge.
+
+Lessons from the Trenches
+I’ll use Pivotal’s HealthWatch, a product for which I spearheaded design, and worked on for many months, as an example. HealthWatch is an out-of-the-box solution for monitoring the health and operability of Pivotal Cloud Foundry®, a cloud-based operating system, and our flagship product. I’m familiar with products that are ensconced in an abundance of complexity and what it takes to develop confidence in designing them.
+
+Multipliers in the Fog
+Bringing any product to market requires product teams to solve a web of fuzzy problems in a fog of uncertainty. But in a complex domain, the problems are fuzzy and technical, and therefore all-the-more daunting.
+
+Imagine yourself, in my shoes, at the onset of the project, reading documentation about the metrics that Pivotal Cloud Foundry® emits. Your goal is to design some kind of dashboard-like app. You find that it’s not too hard to understand any given metric to a decent degree. But then you realize there are hundreds and hundreds of metrics.
+
+
+Photo by Katie Moum on Unsplash.
+You start by asking yourself questions: What are the key metrics that will represent the overall picture of the health of hundreds of virtual machines (VMs)? How should they be represented? How do components affect each other and under what circumstances?
+
+As you digest this information, you learn that some computing resources need to be isolated for security reasons. Their metrics would need to be monitored independently. Multiplier one. Then you learn that customers can have dozens of Cloud Foundry installations. Multiplier two.
+
+This just scratches the surface. You learn of log-file ingress and egress. Databases with replication. Black box metrics and white box metrics. And then there are things with names like “ConvergenceLRPDuration.” You get the idea.
+
+It’s About Implications
+But the challenge of a designer isn’t just to understand the technical information by itself. It’s to understand the implications of that information. Understanding how those implications affect users is where design thinking should gravitate.
+
+On Cloud Foundry, a down VM might be reason to panic. Or it might not mean anything. It can depend on a lot of factors. What else is going on? Is there an update to the system in progress? If that’s the case, it’s normal for certain VMs to go down temporarily. On the other hand, some VMs are mission-critical, but only under certain circumstances. There is no one thing or easy answer.
+
+At this point, you might wonder how anyone could possibly make sense of all this, let alone create something that will help users. You might even feel intimidated. Don’t worry, those are normal responses. Here are some techniques that help me and my team get through any daunting process.
+
+1) We embedded domain experts in the design process
+At the beginning of the project, we faced what seemed like an insurmountable task: We needed to become experts in a complex domain in order to design for experts in the domain.
+
+The pressure was on. Engineers were assigned to the project. They would soon start writing code for something that didn’t yet have clear form or purpose. Our inner imposters stirred.
+
+We had already spent weeks talking to stakeholders and customers, and we didn’t have the luxury of doing more research. Instead, we made learning part of the process. To do this, we reached out through our networks and found coworkers with deep knowledge of platform monitoring. The idea was to create a panel of experts and have them fully embedded in the design process. They would scrutinize everything we did, and help us improve our ideas.
+
+This is how it worked: I committed to presenting to the panel whatever I was working on, in whatever state it was in, every Friday morning. There was to be no escape from the experts. We didn’t invite criticism. We imposed it.
+
+
+A session with the expert panel.
+It worked. The panel unceremoniously shot down anything that didn’t pass muster. But at the same time, they were also very engaged and shared their expertise freely. They exerted a kind of benign ruthlessness. They cared.
+
+As the project took off, we got into a routine. Every day, we worked through design problems in low fidelity, and on Friday, presented wireframes and sharpie sketches to the panel. Sometimes we got things right straight away; sometimes we were wrong and needed a lot of iterations. One thing we learned early on was that even a poorly drawn, half-baked design could inspire a highly-fruitful conversation.
+
+
+Sketches and wireframes showing the evolution of a visualization.
+The weekly sessions imbued us with confidence. They enabled us to design in low fidelity and to be wrong cheaply. We knew if something wasn’t right, it would not get anywhere near a backlog and into production code. And as designers, we wouldn’t care, because the time investment in a sharpie sketch is low.
+
+The expert panel session also did more than improve our designs. By regularly meeting every week, we built up confidence and domain knowledge.
+
+2) We modeled our user’s mental models
+As we were building up domain knowledge, we needed a way to think about the user journey without getting bogged down by the complexity.
+
+Early on, I paired with a Cloud Foundry engineer, and together we created a basic diagram of their workflows. Even though it was simple, this diagram did a great job of capturing the non-linear user experience, and how our product would be part of a larger ecosystem with many intertwined components:
+
+
+Around this time I recalled a dashboard-design-101 lesson I had learned in a previous life: Dashboards don’t tell the whole story. Instead, when a user looks at a data dashboard, they look for new information and use it to update their mental model of the whole system. They then make an assessment of the system based this new state. This can be applied to any kind of information dashboard: a regional sales report, a display in a NASA mission control center, or… wait for it… a Cloud Foundry health monitor.
+
+When we put these two models together, it gave us a way to put the user journey at the center of the our thinking, without getting ensnared in the complexity. It goes like this: When there is a potential issue with the platform, our users go on a journey through an constellation of alerts, dashboards, and Slack conversations. They pick up bits of information from one source, make a decision, then go on to another to get the next thing they are looking for, all-the-while continuously updating their mental model of the overall system.
+
+This model captured the essence of the user journey. It enabled us to think about the user and their needs without trying to comprehend everything at once, and therefore inviting imposterhood. We used it in just about every meeting with the expert panel.
+
+3) We didn’t design alone
+What’s the best way to design a feature intended for domain experts? Find some domain experts, and have them design the feature.
+
+Here is an example of what we did for HealthWatch. First, we had a Cloud Foundry operator walk us through a time when they had to troubleshoot a problem with their system. After they told us their story, we read through the metrics we were considering including in the dashboard to make sure everyone understood them. Then we went to a whiteboard and sketched together. The idea was to design the dashboard the operator wished they had when they experienced the problem. We recorded the sessions and annotated photos of the white board. We then used them as a guide when we got back to our desks. The real value was not in the drawings, but in the conversations we had at the whiteboard.
+
+
+
+Co-creating with experts didn’t get us fully-baked features. But it did help us get inside the heads of our users and see things through their eyes. Furthermore, designing artifacts together with domain experts was a great way to make complex, nebulous things tangible, which built up our knowledge. It allowed us to go deep without drowning.
+
+Success
+Bringing HealthWatch to market wasn’t easy. The design process had many ups and downs, but we got through it. When you are wrangling tough technical problems and the end is not in sight, the right design process at the right time, along with a good dose of humility and resilience, will get you through the fog.
+
+</html>
