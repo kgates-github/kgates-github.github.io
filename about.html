@@ -38,7 +38,20 @@
       line-height: 1.5em;
       font-family: Open Sans, arial, sans-serif;
       margin-top:150px; 
-      margin-bottom:150px; 
+      margin-bottom:96px; 
+    }
+    .loader {
+      border: 8px solid #ccc; /* Light grey */
+      border-top: 8px solid #666; /* Blue */
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
   </style>
   <script>
@@ -51,6 +64,7 @@
       "How do you approach user research?",
       "What is an example of a project you worked on?",
       "How do you know if a design is successful?",
+      "How do you think about technology as part of the design process?",
     ]
 
     function getRandomQuestion() {
@@ -84,16 +98,15 @@
             <div style="display:flex; flex-direction: row;">
               <a href="index.html" class="header-menu">Case Studies</a>
               <a href="projects.html" class="header-menu">Projects & Writing</a>
-              <a href="about.html" class="header-menu header-menu-on" style="margin-top: -3px;">About <sup style="font-weight: 400; font-size:10px;">ALPHA</sup></a>
+              <a href="about.html" class="header-menu header-menu-on" style="margin-top: 0px;">About</a> <sup class="color-red" style="font-weight: 400; font-size:10px; margin-top: -3px; padding-left: 4px;">ALPHA</sup>
             </div>
           </div>
         </div>
       </div>
 
-
       <div class="intro-text">
         <div class="mb-4">
-          My portfolio has about 6,000 words. Yes, I know, no one is going to read it. That's why I tokenized all of my case study content and trained <span class="fw-5">OpenAI's text completion API</span> to tell you about me. Now the interesting part: Will AI tell you what you want to know? <span class="fw-5">I invite you to give it a try&hellip;</span>
+          My portfolio has about 6,000 words. Yes, I know, no one is going to read it. That's why I tokenized all of my case study content and trained <span class="fw-5">OpenAI's text completion API</span> to tell you about me. Now the interesting part: Will it tell you what you want to know? <span class="fw-5">Give it a try&hellip;</span>
           </p>
         </div>
         <div>
@@ -103,51 +116,59 @@
                 <input type="text" id="input_question" placeholder="What is most important in a good design process?" style="width:100%; padding: 16px; font-size: 21px; font-family: Roboto;">
               </div>
               <div style="padding-left:21px;">
-                <button type="button" value="Ask away!" style="background: #333; color: #fff; padding:18px; font-size: 21px; font-family: Roboto; border: none; border-radius: 4px;">Ask away! <sup style="font-weight: 400; font-size:10px;">ALPHA</sup></button>
+                <button type="button" value="Ask away!" style="background: #333; color: #fff; padding:18px; font-size: 21px; font-family: Roboto; border: none; border-radius: 10px;">Ask away! <sup style="font-weight: 400; font-size:10px;">ALPHA</sup></button>
               </div>
             </div>
           </form>
         </div>
       </div>
 
-      <div class="line-height-m mb-4" style="padding:42px; background:#F3F3F3; border-radius: 30px;">
-        <div class="header-xsmall mb-2 fw-5">How do you use journey maps?</div>
-        <div class="mb-3" style="font-size: 21px;">
-          Journey maps are used to create a narrative which allows us to see the big picture and how tasks are connected and in service of the user reaching goals. They are also used to fold in and organize other materials such as research findings and competitive analysis.
-        </div>
-        <div class="mb-1 fw-3" style="font-size: 21px; border-top:1px solid #999; padding-top:21px;">
-          Jump to&hellip;
-        </div>
-        
-        <div class="" style="font-size: 21px;">
-          Pivotal HealthWatch: <a href="#" style="color:#333">A Non-linear Journey</a>
-        </div>
-        <div class="" style="font-size: 21px;">
-          KNative UI: <a href="#" style="color:#333">Laying Out a Goal-Directed Narrative</a>
-        </div>
-      </div>
-
-      <div class="line-height-m mb-4" style="padding:42px; background:#F3F3F3; border-radius: 30px;">
-        <div class="header-xsmall mb-2 fw-5">How do you know if a design is successful?</div>
-        <div class="mb-3" style="font-size: 21px;">
-          We can know if a design is successful by testing it under real-world circumstances with real data and getting feedback from stakeholders. We can also use rapid prototyping to test out ideas and gain confidence that the design is successful.
-        </div>
-        <div class="mb-1 fw-3" style="font-size: 21px; border-top:1px solid #999; padding-top:21px;">
-          Jump to&hellip;
-        </div>
-        
-        <div class="" style="font-size: 21px;">
-          Pivotal HealthWatch: <a href="#" style="color:#333">Rapid Prototyping Example</a>
-        </div>
-        <div class="" style="font-size: 21px;">
-          Pivotal HealthWatch: <a href="#" style="color:#333">Making First Contact with Reality</a>
+      <div class="line-height-m mb-3" style="padding:42px; background:#fff; border-radius: 30px; border:1px solid #aaa;">
+        <div class="header-xsmall mb-2 fw-5">What is the role of design on a product team?</div>
+        <div style="padding-top:18px; padding-bottom:18px;">
+          <div class="loader center"></div>
         </div>
       </div>
       
-
-      <div class="line-height-m mb-4" style="padding:42px; background:#F3F3F3; border-radius: 30px;">
-        <div class="header-xsmall fw-5">What is an example of when things didn't go as planned?</div>
+      <div class="line-height-m mb-3" style="padding:42px; background:#fff; border-radius: 30px; border:1px solid #aaa;">
+        <div class="header-xsmall mb-2 fw-5">How do you approach design?</div>
+        <div class="mb-2" style="font-size: 18px;">
+           I approach design by applying lean UX practices and anchoring product ideas around a nuanced understanding of customer problems.
+        </div>
+        <div class="fw-1 color-red" style="font-size: 18px;">
+          Pivotal Developer Console: <a href="#" class="color-red">Discovering the Reality of the Enterprise Developer Experience</a>
+        </div>
       </div>
+
+      
+      <div class="line-height-m mb-3" style="padding:42px; background:#fff; border-radius: 30px; border:1px solid #aaa;">
+        <div class="header-xsmall mb-2 fw-5">How do you think about technology as part of the design process?</div>
+        <div class="mb-2" style="font-size: 18px;">
+          When designing, I think about technology in terms of technical possibilities and the cost/value ratio of solutions. I also consider how to reduce the tax on future possibilities to benefit the user in the long run. I also try to collaborate with engineers to get their feedback early and understand their perspective.
+        </div>
+        <div class="fw-1 color-red" style="font-size: 18px;">
+          Pivotal HealthWatch: <a href="#" class="color-red">Making Feedback Continuous</a>
+        </div>
+        <div class="fw-1 color-red" style="font-size: 18px;">
+          Pivotal Developer Console: <a href="#" class="color-red">Determining Where We Can Have the Most Impact</a>
+        </div>
+      </div>
+
+      <div class="line-height-m mb-3" style="padding:42px; background:#fff; border-radius: 30px; border:1px solid #aaa;">
+        <div class="header-xsmall mb-2 fw-5">What is an example of when things didn't go as planned?</div>
+        <div class="mb-2" style="font-size: 18px;">
+           In short, our solution ideas were not solid enough technically for our engineers. For a lot of types of projects, safe assumptions can be made about the tech. That was not the case for us. We went back to the whiteboard and discussed. The solution was to group ideas into product concepts. Those allowed the engineers to envision the "how" to a level that was acceptable.
+        </div>
+        <div class="fw-1 color-red" style="font-size: 18px;">
+          Pivotal Developer Console: <a href="#" class="color-red">Tying the Story Together</a>
+        </div>
+      </div>
+
+      <!--
+      <div class="line-height-m mb-3" style="padding:42px; background:#F3F3F3; border-radius: 30px;">
+        <div class="header-xsmall fw-5">What is your design process like?</div>
+      </div>
+      -->
     
     </div>
   </body>
