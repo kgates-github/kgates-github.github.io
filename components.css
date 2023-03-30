@@ -20,28 +20,28 @@
   margin-left: 28px;
   color: #D02500;
   text-decoration: none;
-  text-underline-offset: 10px;
+  text-underline-offset: 8px;
 }
 .header-menu-on {
   text-decoration: underline;
   color: #D02500;
   text-decoration-thickness: 2px;
   font-weight: 500;
-  text-underline-offset: 10px;
+  text-underline-offset: 8px;
 }
 .header-menu-on-lt {
   text-decoration: underline;
   font-weight: 500;
   color:#FF6060;
   text-decoration-thickness: 2px;
-  text-underline-offset: 10px;
+  text-underline-offset: 8px;
 }
 .header-menu-lt {
   display:block; 
   margin-left:28px;
   color: #FF6060;
   text-decoration: none;
-  text-underline-offset: 10px;
+  text-underline-offset: 8px;
 }
 
 .pull-quote {
@@ -106,13 +106,12 @@
   transition: 0.3s;
   top: 31px;
   padding:4px;
-  /*border-right:  1px solid #ccc;
-  border-top:  1px solid #ccc;
-  border-bottom:  1px solid #ccc;*/
+  /*border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;*/
   border-radius: 0px 2px 2px 0px; 
   cursor:pointer;
 }
-
 .see-more {
   cursor: pointer;
   text-decoration: none;
