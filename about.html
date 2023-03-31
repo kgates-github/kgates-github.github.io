@@ -54,6 +54,7 @@
       100% { transform: rotate(360deg); }
     }
   </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script>
     const questions = [
       "How do you use journey maps?", 
@@ -66,11 +67,11 @@
       "How do you know if a design is successful?",
       "How do you think about technology as part of the design process?",
     ];
-    let index = Math.floor(Math.random() * questions.length)
+    let index = Math.floor(Math.random() * questions.length);
 
     function getRandomQuestion() {
       index = (index < questions.length - 1) ? index + 1 : 0;
-      return questions[index]
+      return questions[index];
     }
 
     function setQuestionValue() {
@@ -79,6 +80,10 @@
 
     function showResults() {
       document.getElementById("answers").style.display = "block";
+    }
+
+    function askMyAI() {
+      showResults();
     }
 
   </script>
@@ -104,26 +109,28 @@
           <div style="display:flex; flex-direction: row;">
             <div style="display:flex; flex-direction: row;">
               <a href="index.html" class="header-menu">Case Studies</a>
-              <a href="projects.html" class="header-menu">Projects / Writing</a>
-              <a href="about.html" class="header-menu header-menu-on" style="margin-top: 0px;">About</a><!-- <sup class="color-red" style="font-weight: 400; font-size:10px; margin-top: -3px; padding-left: 4px;">ALPHA</sup>-->
+              <a href="projects.html" class="header-menu">Projects & Writing</a>
+              <a href="about.html" class="header-menu header-menu-on" style="margin-top: 0px;">Ask My AI</a><!-- <sup class="color-red" style="font-weight: 400; font-size:10px; margin-top: -3px; padding-left: 4px;">ALPHA</sup>-->
             </div>
           </div>
         </div>
       </div>
 
       <div class="intro-text">
+        <div class="mb-2">
+          Welcome to <span class="fw-5">Ask My AI</span> <sup style="font-weight: 400; font-size:10px;">ALPHA</sup>
+        </div>
         <div class="mb-4">
-          <!--My portfolio has about 6,000 words. Yes, I know, no one is going to read it. That's why--> I tokenized all of my case study content (about 6,000 words) and trained <span class="fw-5">OpenAI's</span> text completion API to tell you about me. <!--Now the interesting part: Will it tell you what you want to know?--> <span class="fw-5">Give it a try!</span>
-          </p>
+          <!--My portfolio has about 6,000 words. Yes, I know, no one is going to read it. That's why--> I tokenized all of my case study content (about 6,000 words) and trained <span class="fw-5">OpenAI's</span> text completion API so it can tell you about me. <!--Now the interesting part: Will it tell you what you want to know?--> It's not perfect, but a lot of answers are pretty close to things I would say. <span class="fw-5">Give it a try!</span>
         </div>
         <div>
           <form action="">
-            <div class="" style="display: flex; flex-direction: row; margin-bottom:4px;">
+            <div class="mb-0" style="display: flex; flex-direction: row; margin-bottom:4px;">
               <div style="flex:1">
                 <input type="text" id="input_question" placeholder="Ask a question about my experience..." style="width:100%; padding: 16px; font-size: 21px; font-family: Roboto;">
               </div>
               <div style="padding-left:21px;">
-                <button type="button" value="Ask away" onclick="showResults()" style="background: #333; color: #fff; padding:18px; font-size: 21px; font-family: Roboto; border: none; border-radius: 10px; cursor: pointer;">Ask my AI <sup style="font-weight: 400; font-size:10px;">ALPHA</sup></button>
+                <button type="button" value="Ask away" onclick="askMyAI()" style="background: #333; color: #fff; padding:18px; font-size: 21px; font-family: Roboto; border: none; border-radius: 10px; cursor: pointer;">Ask my AI <sup style="font-weight: 400; font-size:10px;">ALPHA</sup></button>
               </div>
             </div>
             <div class="mb-0" style="display: flex; flex-direction: row;">
@@ -137,7 +144,10 @@
 
           </form>
         </div>
+        
       </div>
+
+
 
       <div id="answers" style="display: none;">
         <div class="line-height-m mb-3" style="padding:42px; background:#fff; border-radius: 30px; border:1px solid #aaa;">
@@ -193,4 +203,5 @@
     
     </div>
   </body>
+  
 </html>
