@@ -1,1882 +1,873 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66268413-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+{% extends "_base.html" %}
+{% block title %} {{ title }}{% endblock %}
+{% block content %}
 
-      gtag('config', 'UA-66268413-1');
-    </script>
+<a id="nav-01"></a>
+    <div class="bg-dark-gray" style="
+      background-color: #000;
+      background: linear-gradient( 
+        rgba(0, 0, 0, 0.90), 
+        rgba(0, 0, 0, 0.70),
+        rgba(0, 0, 0, 0.35),  
+        rgba(0, 0, 0, 0.80),
+        rgba(0, 0, 0, 0.80) ), 
+        url('images/console-01-01a.png'); 
+      background-repeat: no-repeat;
+      background-position: 50% 100%;
+      background-size: cover;
+      margin-top: -37px;
+      margin-right: -37px;
+      margin-left: -37px;"> 
 
-    <!-- Google Analytics -->
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    // G-54V1L5T0G0
-    ga('create', 'UA-XXXXX-Y', 'auto');
-    ga('send', 'pageview');
-    </script>
-    <!-- End Google Analytics -->
-
-    
-
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="js.js"></script>
-    
-    <title>Kevin Gates, UX Design Portfolio</title>
-  </head>
-  <body>
-
-  
-  <div class="ps-4 pe-4" 
-    style="height:60px; width: 100%; display:flex; 
-      flex-direction:row; align-items: center; 
-      position:fixed; background-color: white; z-index: 100;">
-    <div style="flex:1; align-items: center; padding-top:5px;">
-      <a href="index.html" style="line-height: 1.1em;">
-        <div class='nav-header'>Kevin Gates</div>
-        <div class='nav-subheader'>UX Designer</div>
-      </a>
-    </div>
-    <div style="max-width:262px; text-align:right; display: flex; 
-        flex-direction: row; justify-content: space-between;">
-      <div class='top-nav ml-1'><a class='top-nav-on' href="index.html">Case Studies</a></div>
-      <div class='top-nav ml-1'><a href="miscellany.html">Projects</a></div>
-      <div class='top-nav ml-1'><a href="writing.html">Writing</a></div>
-    </div>
-  </div>
-
-  <div id="side-bar-nav"
-    style="
-      height: 100%;
-      width: 200px;
-      position: fixed;
-      z-index: 50;
-      top: 0;
-      left: 0;
-      background-color: #111;
-      overflow-x: hidden;
-      transition: 0.3s;
-      padding-top: 60px;
-    ">
-    <div style="height:30px; display:flex; flex-direction: row; margin:10px 0px 40px 0px;">
-    </div>
-    <div class="ps-4 pb-5" style ="line-height: 1.6em;">
-      <div class='side-nav pb-2'><a href="#nav-01" style="font-weight: 700;">INTRO</a></div>
-      <div class='side-nav ms-2'><a href="#nav-01">Tl;dr</a></div>
-      <div class='side-nav ms-2'><a href="#nav-03">Role and team</a></div>
-      <div class='side-nav ms-2'><a href="#nav-04">Roadmapping</a></div>
-      <div class='side-nav pt-4 pb-2'><a href="#nav-05" style="font-weight: 700;">RESEARCH</a></div>
-      <div class='side-nav ms-2'><a href="#nav-06">Interviews</a></div>
-      <div class='side-nav ms-2'><a href="#nav-07">Personas</a></div>
-      <div class='side-nav ms-2'><a href="#nav-08">Findings</a></div>
-      <div class='side-nav pt-4 pb-2'><a href="#nav-09" style="font-weight: 700;">IDEATION</a></div>
-      <div class='side-nav ms-2'><a href="#nav-10">Workshop prep</a></div>
-      <div class='side-nav ms-2'><a href="#nav-11">Prioritization</a></div>
-      <div class='side-nav ms-2'><a href="#nav-12">Causal mapping</a></div>
-      <div class='side-nav ms-2'><a href="#nav-13">Solutioning</a></div>
-      <div class='side-nav ms-2'><a href="#nav-14">Vision</a></div>
-      <div class='side-nav ms-2'><a href="#nav-15">Storyboard</a></div>
-      <div class='side-nav pt-4 pb-2'><a href="#nav-16" style="font-weight: 700;">CONCLUSION</a></div>
-      <div class='side-nav ms-2'><a href="#nav-17">Impact</a></div>
-    </div>
-  </div>
-  <div id="menu-toggle" onclick="toggleNav()" style="
-    background-color: #111; 
-    color:#ccc; 
-    position:fixed;
-    margin-left: 160px;
-    margin-top: 70px;
-    padding: 4px;
-    width: 34px;
-    z-index: 60;
-    font-size: 24px;
-    border-radius: 0px 5px 5px 0px;
-    cursor: pointer;
-    transition-duration: 0.3s;
-  ">☰</div>
-
-<div id="main-body-cont" style="margin-left: 200px;">
-  <a id="nav-01"></a>
-   
-  <div class="bg-dark-gray mt-0 nav-padding" style="
-    background-color: #000;
-    background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url('images/console-01-01a.png'); 
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
-    background-size: cover;
-  "> 
-  
-  <div class="container-fluid-content-02" style="max-width: 900px; margin-top:120px;">
-    <div class="p-4" style="background-color: rgba(255, 255, 255, 0.7); max-width: 900px;">
-      <div class="pb-3 mb-3"style="display:flex; flex-direction: row;  
-        border-bottom: 1px solid rgba(0, 0, 0, 0.4);"> 
-        <div class="regular-lg bold-5" style="width:100px;">
-          Tl; dr
-        </div> 
-        <div class="regular-lg" style="flex:1;">
-          <ul>
-            <li>
-              For enterprise developers, getting access to software-building tools on cloud platforms is rife with bottlenecks and red tape. 
-            </li>
-            <li>
-              We reimagined a better experience by anchoring product ideas around a nuanced understanding of customer problems. Our solutions were not just informed by the fact that bottle necks and red tape exist, but by <span style="font-style:italic;">why</span> they exist.
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="pb-3 mb-3"style="display:flex; flex-direction: row; 
-        border-bottom: 1px solid rgba(0, 0, 0, 0.4);"> 
-        <div class="regular-lg bold-5" style="width:100px">
-          Impact
-        </div> 
-        <div class="regular-lg" style="flex:1;">
-          <ul>
-          <li>Our product vision laid the foundation for a compact, two-day design sprint and product kickoff informed by a clear understanding of customer needs.</li>
-          <li>Our research had an impact far beyond the scope of this project&mdash;it informed several other teams working in a similar domain.</li>
-          </ul>
-        </div>
-      </div>
-      <div class=""style="display:flex; flex-direction: row;"> 
-        <div class="regular-lg bold-5" style="width:100px">
-          Learnings
-        </div> 
-        <div class="regular-lg" style="flex:1;">
-          <ul>
-            <li>If a design process is not working, nip it in the bud and pivot.</li>
-            <li>Transdisciplinary ideation is energizing and fruitful.</li>
-            <li>Storyboards are a powerful way to convey product visions.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-01 overflow-hidden pt-4">
-    <div class="row mt-5" style="max-width: 600px;">
-      <div class="col">
-        <div class='headline-heavy text-extra-light' style="margin-bottom: 60px;">
-          <!--Satisfying Developer Need While Keeping an Eye on the Big Picture-->
-          A Human-Centered Approach to Enterprise Problems
-        </div>
-        <div class='headline-small mb-4 text-extra-light'>A Big Ask</div> 
-      	<div class="regular-lg pb-4 text-extra-light">
-					This project started as a challenge posed by Pivotal's director of product for its London R&D org. She wanted me to do two things:
-          <ol class="pt-4">
-            <li class="pb-4 text-extra-light">
-              Discover the top problems engineers in large enterprises have in getting the tools they need to build software. 
-            </li>
-            <li class="pb-0 text-extra-light">
-              Organize a product team anchored around those problems and come up with solutions.
-            </li>
-          </ol>
-				</div> 
-      	<div class="regular-lg pb-0 text-extra-light">
-					It was a big ask, but also a big opportunity. 
-				</div>
-      </div>
-    </div>
-  </div>
-</div>
-
- 	<!--***********************************************-->
-
-  <a id="nav-03"></a>
-  <div class="bg-light-gray">
-  	<div class="container-fluid-content-01 overflow-hidden" style="padding-top:0px;">
-      <section class="row" style="padding-top:120px;">
-        <div class="col-md section-header-no-border pb-5">
-          Role and Team
-        </div>
-      </section>
-      <div class="row">
-        <!--<div class="headline-medium pb-5" style="max-width: 600px;">
-          Entering the World of Red Tape and Shadow IT...
-        </div>
-        <div class="bold-5 pb-4">Problem</div>
-        <div class="regular-lg pb-5">
-          For enterprise developers, getting access to software-building tools on cloud platforms is rife with bottlenecks and red tape. We set out to reimagine a better experience for deveolpers using Pivotal's enterprise cloud platform.
-        </div>
-        -->
-        <!--
-        <div class="regular-lg pb-5">
-					Pivotal's customers are Fortune-500 companies who each employ thousands of engineers, all of whom need a diverse set of tools, such as databases and APIs to do their jobs. 
-        </div> 
+      <div class="main" style="padding:30px;">
         
-        <div class="bold-5 pb-4">Additional Goals</div>
-        <div class="regular-lg pb-5">
-          <ul class="pb-0">
-            <li><b>Come up with actionable ideas:</b> An R&D product team should be able to start writing code shortly after the end of the creative process.</li>
-            <li class="pb-0"><b>Be transdiscliplinary:</b> Infuse the whole design process with diverse perspectives. There are many facets to a successful product&mdash;engineering, design, marketing and more. All should have a role in the creative process.</li>
-            
-          </ul>
+        {% include 'header.html' %}
+        
+        <div class="header" style="padding-top:8px;">
+          <div class="header-main" onclick="window.location.assign('index.html');">
+            <div class="color-red-lt">Kevin Gates</div>
+          </div>
+          <div style="margin-left:auto;">
+            <div style="display:flex; flex-direction: row;">
+              <a href="index.html" class="header-menu header-menu-on-lt">Case Studies</a>
+              <a href="projects.html" class="header-menu-lt">Projects & Writing</a>
+            </div>
+          </div>
         </div>
-        -->
-        <div class="regular-lg pb-5">
-          <div class="bold-5 pb-4">My Role</div>
-            As design lead, I drove research and synthesis, facilitated a week-long ideation workshop and design sprint, and created a product vision storyboard.
+
+        <div class="content-narrow mb-5">
+          <div class="color-white line-height-m mb-1" style="display: flex; flex-direction: row;">
+            <div class="fw-5" style="width: 130px;">TL;DR</div>
+            <div style="flex:1">
+              <ul class="color-white" style="padding: 0; margin:0; line-height:1.5em;">
+                <li>For enterprise developers, getting access to software-building tools on cloud platforms is rife with bottlenecks and red tape.</li>
+                <li>We reimagined a better experience by anchoring product ideas around a nuanced understanding of customer problems.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="color-white line-height-m mb-1" style="display: flex; flex-direction: row;">
+            <div class="fw-5" style="width: 130px;">IMPACT</div>
+            <div style="flex:1">
+              <ul style="padding: 0; margin:0; line-height:1.5em;">
+                <li> Our product vision laid the foundation for a compact, two-day design sprint and product kickoff informed by a clear understanding of customer needs.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="color-white line-height-m mb-5" style="display: flex; flex-direction: row;">
+            <div class="fw-5" style="width: 130px;">LEARNINGS</div>
+            <div style="flex:1">
+              <ul style="padding: 0; margin:0; line-height:1.5em;">
+                <li>If a design process is not working, nip it in the bud and pivot.</li>
+                <li>Transdisciplinary ideation is energizing and fruitful.</li>
+              </ul>
+            </div>
+          </div>
+             
+          <div class="header-medium color-white">
+            A Human-Centered Approach to Enterprise Problems
+          </div>
+          <div style="font-face:Open Sans; font-size:28px; font-weight:900; margin-bottom:55px; color:#fff;">
+            A Big Ask
+          </div>
+          <div style="font-face:Roboto; font-size:24px; margin-bottom:96px; line-height: 1.66; color:#fff; font-weight: 300;">
+            <p>
+              This project started as a challenge posed by Pivotal's director of product for its London R&D org. She wanted me to do two things:
+            </p>
+            <ul>
+              <li>Discover the top problems engineers in large enterprises have in getting the tools they need to build software.</li>
+              <li>Organize a product team anchored around those problems and come up with solutions.</li>
+            </ul> 
+            <p>
+              It was a big ask, but also a big opportunity.
+            </p>
+          </div>
+        </div>  
+      </div>
+    </div>
+
+    <!-- ROLE AND TEAM -->
+
+    <a id="nav-02"></a>
+    <div class="main mb-3">
+      <div class="content-narrow line-height-m">
+        <div class="eyebrow color-red pt-2 mb-2">Role and Team</div>
+        <div class="header-small fw-5 mb-2">My Role</div>
+        <div class="mb-2">
+          As design lead, I drove research and synthesis, facilitated a week-long ideation workshop and design sprint, and created a product vision storyboard.
         </div>
-        <div class="bold-5 pb-4">Skills</div>
-        <div class="regular-lg pb-5">
+        <div class="header-xsmall fw-5 mb-1">SKILLS</div>
+        <div class="mb-2">
           User research, workshop facilitation, collaborative ideation, storyboarding
         </div>
-        <div class="regular-lg pb-0">
-          <div class="bold-5 pb-4">Collaborators</div>
-            For the research, I paired with an engineer (and aspiring designer) on a daily basis. After that, I facilitated  design workshops which included an R&D engineering team, a PM, and a new-hire designer. I also had weekly one-on-ones with the director of product. 
-        </div>
-        
-      </div>
-    </div>
-  </div>
-
-
-
-<!--***********************************************-->
-
-  <a id="nav-04"></a>
-  <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:0px;">
-    <section class="row">
-      <div class="col-md section-header-no-border pb-4">
-        Roadmapping
-      </div>
-    </section>
-    <div class="row">
-      <div class="col-md">
-        <div class="headline-medium pb-5">
-          A Collaborative Product Roadmap
-        </div>
-        <div class="regular-lg pb-4">
-          We prioritized team work by first understanding the problems we faced. I facilitated a workshop in which engineers, PMs and design formed open questions around our central theme of developer tool access. We then prioritized problems and brainstormed activities.
+        <div class="header-xsmall fw-5 mb-1">COLLABORATORS</div>
+        <div class="mb-4">
+          For the research, I paired with an engineer (and aspiring designer) on a daily basis. After that, I facilitated design workshops which included an R&D engineering team, a PM, and a new-hire designer. I also had weekly one-on-ones with the director of product.
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="container-fluid-content-02 nav-margin" style="max-width: 1200px; padding-bottom:120px; padding-top:60px;">
-    <div class="row pb-4">
-      <div class="col-md">
-        <img src="images/console-02-01.png" class="img-fluid center-block d-block mx-auto" alt="image">
-        <div class="caption p-3">My roadmapping workshops start with the whole team collectively agreeing on top problems, then brainstorming activities.</div>
-      </div> 
-      <div class="col-md">
-        <img src="images/console-03-01.png" class="img-fluid center-block d-block mx-auto" alt="image">
-        <div class="caption p-3">Each product activity has a description, outcome, output and timeframe. (This doc is from a more recent project.)</div>
-      </div> 
-    </div>
-  </div>
+    <!-- ROADMAPPING -->
 
-  <!--
-  <div class="container-fluid-content-02 overflow-hidden" style="max-width: 600px; padding-bottom: 240px;">
-    <div class="row">
-    	<div class="headline-small pb-4">
-         <a id="roadmap">Why Create a Design Roadmap?</a>
-      </div>
-      <div class="regular-lg pb-0">
-        <ul>
-          <li><b>The hammer and nail problem:</b> Designers (myself included), can be biased towards tackling problems we happen to know how to solve. Design roadmaps put problems first and solutions second. Not every problem is a nail.</li>
-          <li class="pb-o"><b>Considering urgency:</b> Design should meet the project where it is. If, say, the PM is anxious about an upcoming BETA release, we might give that our attention first.</li>
-          <li class="pb-0"><b>Personal growth:</b> Design roadmaps are a great way for designers to build personal growth into their day-to-day. They are free to suggest design activities that they have never done.</li>
-        </ul>
-      </div>
-
-      
-      <div class="regular-lg pb-4">
-        <div class="bold-5 pb-4">The hammer and nail problem</div>
-        Designers (myself included), can be biased towards tackling problems we happen to know how to solve. Design roadmaps put problems first and solutions second. Not every problem is a nail.
-      </div>
-      <div class="regular-lg pb-4">
-        <div class="bold-5 pb-4">Considering urgency</div>
-				Design should meet the project where it is. If, say, the PM is anxious about an upcoming BETA release, we might give that our attention first.
-			</div>
-      <div class="regular-lg pb-0">
-        <div class="bold-5 pb-4">Personal growth</div>
-				Design roadmaps are a great way for designers to build personal growth into their day-to-day. They are free to suggest design activities that they have never done.
-      </div>
-      
-    </div>
-  </div>
--->
-
-<!--***********************************************-->
-  
-  <a id="nav-05"></a>
-  <div class="bg-dark-gray" style="
-        background-color: #000;
-        height:900px; 
-        width:105%; 
-        background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url('images/console-08-01.png'); 
-        
-        background-repeat: no-repeat;
-        margin-right:-25px;">
-    <div class="headline-heavy text-extra-light" style="
-        margin:auto;
-        text-align: center; 
-        width:33%; 
-        height:100%;">
-        <div style="position: relative; top: 50%; 
-          -ms-transform: translateY(-50%);
-          transform: translateY(-50%);">
-          Research
+    <a id="nav-03"></a>
+    <div class="collapsable">
+      <div class="main border-top mb-2">
+        <div class="content-narrow">
+          <div class="eyebrow color-red pt-2 mb-2">Roadmapping</div>
+          <div class="header-small fw-6 mb-2">
+            A Collaborative Product Roadmap
+          </div>
+          <div class="mb-2">
+            <div class="line-clamped line-height-m mb-0">
+              We prioritized team work by first understanding the problems we faced. I facilitated a workshop in which engineers, PMs and design formed open questions around our central theme of developer tool access. We then prioritized problems and brainstormed activities.
+            </div>
+            <div class="line-height-m mb-4 see-more-wrapper">
+              <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red see-more-icon">expand_more</span></a>
+            </div>
+          </div>
+          
         </div>
-      </div>
-  </div>
 
-<!--***********************************************-->
-
-<a id="nav-06"></a>
-<div class="bg-light-gray">
-  <div class="container-fluid-content-01 pb-0">
-    <section class="row">
-      <div class="col-md section-header-no-border pb-4">
-        User Interviews
-      </div>
-    </section>
-    <div class="row">
-      <div class="col-md">
-        <div class="headline-medium pb-5">
-          Discovering the Reality of the Enterprise Developer Experience 
-        </div>
-        <div class="regular-lg pb-4">
-          In our roadmapping workshop, the consensus was that we needed to learn more about the app developer experience. 
-        </div>
-        <div class="regular-lg pb-4">
-          We interviewed around 30 customers, non-customers, and members of our consulting business who work on-site. The interviews were split between app devs and platform operators.
-        </div>
-        <div class="regular-lg pb-5">
-          We wanted to find out things like how developers decide what tools they need and what they find frustrating.
-        </div>
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02 nav-margin" style="max-width: 1200px; padding-bottom:60px; padding-top:0px;">
-    <div class="row pb-4">
-      <div class="col-md">
-        <img src="images/console-04-01.png" class="img-fluid center-block d-block mx-auto" alt="image">
-        <div class="caption p-3">Outline of a discussion guide. We start with learning goals, then organize them into sections.</div>
-      </div> 
-      <div class="col-md">
-        <img src="images/console-04-02.png" class="img-fluid center-block d-block mx-auto" alt="image">
-        <div class="caption p-3">We turned our outline into a discussion guide by figuring out how to actually ask questions (e.g., "Tell me about the last time...")</div>
-      </div>
-    </div>
-  </div>
-
-<!--
-  <div class="container-fluid-content-01 pb-5">
-    <section class="row">
-      <div class="col-md section-header-no-border pb-4">
-        Synthesis
-      </div>
-    </section>
-    <div class="row">
-      <div class="col-md">
-
-        <div class="headline-medium pb-0">
-          Making Research Synthesis a Team Effort
+        <div class="collapsed content-wide">
+          <div class="grid grid-2">
+            <div class="card mb-1">
+              <div class="card-image center mb-1">
+                <img src="images/console-02-01.png" style="width:100%;" alt="Image"/>
+              </div>
+              <div class="caption">
+                My roadmapping workshops start with the whole team collectively agreeing on top problems, then brainstorming activities.
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image center mb-1">
+                <img src="images/console-03-01.png" style="width:100%;" alt="Image"/>
+              </div>
+              <div class="caption">
+                Each product activity has a description, outcome, output and timeframe. (This doc is from a more recent project.)
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
--->
+    
+    <!-- RESEARCH -->
 
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px; padding-top:0px;">
-    <div class="row">
-      <div class="col-md">
-        <div class="headline-small pb-4">
-          Making Synthesis a Team Effort
+    <a id="nav-04"></a>
+    <div class="collapsable">
+      <div class="main border-top">
+        <div class="content-narrow line-height-m">
+          <div class="eyebrow color-red pt-2 mb-2">Research</div>
+          <div class="header-small fw-5 mb-2">Discovering the Reality of the Enterprise Developer Experience</div>
+          <div class="mb-2">
+            <div class="line-clamped line-height-m">
+              In our roadmapping workshop, the consensus was that we needed to learn more about the app developer experience. We interviewed around 30 customers, non-customers, and members of our consulting business who work on-site.
+            </div>
+            <div class="line-height-m mb-2 see-more-wrapper">
+              <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red see-more-icon">expand_more</span></a>
+            </div>
+          </div>
+          <div class="collapsed line-height-m mb-4">
+            The interviews were split between app devs and platform operators. We wanted to find out things like how developers decide what tools they need and what they find frustrating.
+          </div>
         </div>
-        <div class="regular-lg pb-4">
-          We rotated teammates onto the synthesis process so they could see for themselves how insights emerge from data. There are key benefits to doing this: 
+        <div class="collapsed content-wide mb-4">
+          <div class="grid grid-2">
+            <div class="card mb-1">
+              <div class="card-image center mb-1 border-lt">
+                <img src="images/console-04-01.png" style="width:100%;" alt="Image"/>
+              </div>
+              <div class="caption">
+                My roadmapping workshops start with the whole team collectively agreeing on top problems, then brainstorming activities.
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image center mb-1 border-lt">
+                <img src="images/console-04-02.png" style="width:100%;" alt="Image"/>
+              </div>
+              <div class="caption">
+                Each product activity has a description, outcome, output and timeframe. (This doc is from a more recent project.)
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="regular-lg pb-4">
-          <ul>
-            <li>
-              <b>Transparency:</b> Having teammates rotate onto design activities lets them see how we discover patterns. That builds credibility, which then builds trust in the data and paves the way for evidence-based decision making.
-            </li>
-            <li class="pb-0">
-					   <b>Alternate perspectives:</b> We were doing research in a very technical domain. Engineers were in a good position to help us find patterns we might not have found ourselves.
-            </li>
+      </div>
+
+      <div class="main">
+        <div class="collapsed content-narrow line-height-m">
+          <div class="collapsed line-height-m header-xsmall fw-5 mb-2">
+            Making Synthesis a Team Effort
+          </div>
+          <div class="line-height-m mb-2">
+            We rotated teammates onto the synthesis process so they could see for themselves how insights emerge from data. There are key benefits to doing this:
+          </div>
+          <ul class="line-height-m mb-4">
+            <li><b>Transparency: </b>Having teammates rotate onto design activities lets them see how we discover patterns. That builds credibility, which then builds trust in the data and paves the way for evidence-based decision making.</li>
+            <li><b>Alternate perspectives: </b>We were doing research in a very technical domain. Engineers were in a good position to help us find patterns we might not have found ourselves.</li>
           </ul>
         </div>
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:60px; padding-top:0px;">
-    <div class="row">
-      <div class="col-md">
-        <img src="images/console-05.png" class="img-fluid center-block d-block mx-auto" alt="image">
-        <div class="caption pt-3">Once our affinity map started taking shape, we asked for volunteers to help. In this picture, the engineer I collaborated with described affinity mapping to another engineer as “optimization through evolution”.</div>
-      </div> 
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02" style="max-width: 100%; padding-top:0px; padding-bottom:120px;">
-    <div class="row gx-3">
-      <div class="col-md">
-        <img src="images/console-08.jpg" class="img-fluid" alt="image"> 
-        <div class="caption pt-3">We organized our research into themes with an affinity map. With around 800 stickies, this behemoth worked as a reference that informed other artifacts and activities.</div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-<!--***********************************************-->
-
-<a id="nav-07"></a>
-<div class="bg-dark-gray">
-  <div class="container-fluid-content-01 pb-4">
-    <section class="row">
-      <div class="col-md section-header-no-border pb-4" style="color:#FF9788;">
-        Personas
-      </div>
-    </section>
-    <div class="row">
-      <div class="col-md">
-        <div class="headline-medium pb-0 text-extra-light">
-          Understanding How Our Users Think About Dev Tools
-        </div>
-      </div>
-    </div>
-  </div>
-<div class="container-fluid-content-02 p-4" style="max-width: 900px;">
-  <div class="p-5 mb-5" style="max-width: 900px; border:1px solid #ccc; background-color: #fff;">
-    <div class="row g-5 pt-5">
-      <div class="col-md">
-        <div class="pb-4" style="display:flex; flex-direction: row; align-items: center;">
-          <div style="width:120px; height:120px;">
-            <img src="images/avatar-03.png" style="float:left; margin: 0px 30px 0px 0px; width:120px; height:120px;"alt="image">
+        <div class="content-wide line-height-m mb-4">
+          <div class="pb-1">
+            <img src="images/console-05.png" class="mb-1" style="width:100%;" alt="Image"/>
           </div>
-          <div class="" style="flex:1; font-weight: 400 !important; font-size:1.5em; line-height: 1.2em; padding-left: 20px;">
-            App Developer<br>
-            <span style="font-weight: 200 !important;">Cody</span>
+          <div class="caption">
+           Once our affinity map started taking shape, we asked for volunteers to help. In this picture, the engineer I collaborated with described affinity mapping to another engineer as “optimization through evolution”.
           </div>
         </div>
-        <div class="regular-lg pb-4">
-          <span class="bold-5">Role:</span> App developers build apps and other types of software.
-        </div>
-        <div class="regular-lg pb-4">
-          <span class="bold-5">Characteristics:</span> 97 to 99 percent of our customers’ developers are early in their careers. Most are focused on writing code and are not comfortable working with cloud infrastructure. App devs work on small teams in large engineering departments that can range in size from hundreds to tens-of-thousands. 
-        </div>
-        
       </div>
-      <div class="col-md">
-        <div class="regular-lg pb-4">
-          <span class="bold-5">Key Driver:</span> App devs want access to a wide variety of tools and the latest hot tech. 
+      <div class="collapsed content-full line-height-m mb-4">
+        <div class="pb-1">
+          <img src="images/console-08.jpg" class="mb-1" style="width:100%;" alt="Image"/>
         </div>
-        <div class="regular-lg pb-4">
-          <span class="bold-5">Underlying Motivators:</span> There are a number of reasons driving app dev demand for tools:
-        </div>
-        <div class="regular-lg pb-4">
-					<ul>
-            <li><b>Role-specific needs:</b> Developers come in many forms. A data scientist requires a very different set of tools than a mobile app developer.</li>
-            <li><b>Task-specific needs:</b> Engineers sometimes start with specific needs related to the task at hand. For example, an aerospace engineering team creating flight control tests might need a time-series database with specified level of latency.</li>
-            <li class="pb-0"><b>Resume value:</b> Developers often want the latest hot tech. This is partly due to resume value, which can determine their viability in the job market.</li>
-          </ul>
+        <div class="caption">
+         Our affinity map was a work horse: it worked as a reference that informed many other artifacts and activities.
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-<div class="container-fluid-content-02 p-4" style="max-width: 900px;">
-  <div class="p-5 mb-5" style="max-width: 900px; border:1px solid #ccc; background-color: #fff;">
-    <div class="row g-5 pt-5">
-      <div class="col-md">
-        <div class="pb-4" style="display:flex; flex-direction: row; align-items: center;">
-          <div style="width:120px; height:120px;">
-            <img src="images/avatar-02.png" style="float:left; margin: 0px 30px 0px 0px; width:120px; height:120px;"alt="image">
+    <!-- PERSONAS -->
+
+    <a id="nav-05"></a>
+    <div class="collapsable">
+      <div class="main border-top mb-3">
+        <div class="content-narrow">
+          <div class="eyebrow color-red pt-2 mb-2">Personas</div>
+          <div class="header-small fw-6 mb-2">
+            Understanding Misaligned Priorities
           </div>
-          <div class="" style="flex:1; font-weight: 400 !important; font-size:1.5em; line-height: 1.2em; padding-left: 20px;">
-            Platform Operator<br>
-            <span style="font-weight: 200 !important;">Alana</span>
+          <div class="line-height-m">
+            <div class="">
+              At the heart of everything we learned was a fundamental conflict: While app developers want a wide variety of tools and the latest, hot technology, platform operators want to offer a small, manageable set of tools.
+            </div>
+             <div class="line-height-m mb-3 see-more-wrapper">
+              <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red see-more-icon">expand_more</span></a>
+            </div>
+
+            <div class="collapsed">
+              <div class="mb-2"></div>
+              <div class="header-xsmall fw-5 mb-2">App Developer</div>
+              <div class="line-height-m" style="display: flex; flex-direction: row;">
+                <div class="fw-5" style="width: 130px; margin-top:0px;">
+                  <img src="images/avatar-03.png" class="mb-1" style="width:100px" alt="Image"/>
+                </div>
+                <div style="flex:1">
+                  <div class="">
+                    App developers build apps and other types of software. They can have diverse roles ranging from data science to mobile app development. Large organizations can employ thousands of developers.
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="collapsed mb-2">
+              <div class="line-height-m mb-1 mt-2" style="display: flex; flex-direction: row;">
+                <div class="fw-5" style="width: 130px;">Character-<br>istics</div>
+                <div style="flex:1">
+                  <ul style="padding: 0; margin:0; line-height:1.5em;">
+                    <li>97 to 99 percent of our customers’ developers are early in their careers.</li>
+                    <li>Most are focused on writing code and are not comfortable working with cloud infrastructure.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="line-height-m mb-1" style="display: flex; flex-direction: row;">
+                <div class="fw-5" style="width: 130px;">Key driver</div>
+                <div style="flex:1">
+                  <ul style="padding: 0; margin:0; line-height:1.5em;">
+                    <li>App devs want access to a wide variety of tools and the latest hot tech.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="line-height-m mb-4" style="display: flex; flex-direction: row;">
+                <div class="fw-5" style="width: 130px;">Underlying motovators</div>
+                <div style="flex:1">
+                  <ul style="padding: 0; margin:0; line-height:1.5em;">
+                    <li><b>Role-specific needs: </b>Developers come in many forms. A data scientist requires a very different set of tools than a mobile app developer.</li>
+                    <li><b>Task-specific needs: </b>Engineers sometimes start with specific needs related to the task at hand. For example, an aerospace engineering team creating flight control tests might need a time-series database with specified level of latency.</li>
+                    <li><b>Resume value: </b>Developers often want the latest hot tech. This is partly due to resume value, which can determine their viability in the job market.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="regular-lg pb-4">
-          <span class="bold-5">Role:</span> Platform operators maintain the cloud platform. They are responsible for providing tools for developers, keeping the platform up-to-date, and troubleshooting when something goes wrong.
-        </div>
-        <div class="regular-lg pb-4">
-          <span class="bold-5">Characteristics:</span> Even in large organizations, operator teams tend to be small, with 10 - 20 people. This contrasts with the fact that their platforms can be used by hundreds, even thousands of developers.
+        <div class="collapsed color-red pull-quote pb-5">
+          Developers want the latest hot tech. Having the right tech on a resume can determine viability in the job market.
         </div>
         
-      </div>
-      <div class="col-md">
-        <div class="regular-lg pb-4">
-          <span class="bold-5">Key Driver:</span> Operators want to offer a small, manageable set of tools that cover a wide surface area. 
-        </div>
-        <div class="regular-lg pb-4">
-          <span class="bold-5">Underlying Motivators:</span> Despite app developer demands, operators are often unwilling or unable to provide all of the tools developers want. There are a number of reasons for this:
-        </div>
-        <div class="regular-lg pb-4">
-          <ul>
-            <li><b>Risk aversion:</b>
-              Cloud platforms are extremely complex, but tend to be stable as long as nothing changes. Introducing new tools means introducing change, and change brings risk of something going wrong.
-            </li>
-            <li><b>Developing expertise:</b> 
-              If an operations team offers a new technology on their platform, they are expected to be experts at that technology. When something goes wrong, the operations teams are expected to fix it.
-            </li>
-            <li class="pb-0"><b>Not enough demand:</b> 
-              Operations teams are inherently small and they tend to be unwilling to support tools for which there is little demand.
-            </li>
-            <!--<li><b>Remembering getting burned:</b> 
-              Consequences for problems with the platform can be severe. Downtime could mean lost revenue. A security breach might bring bad press and subpoenas. Audit teams can appear unannounced at any time, and if they uncover mistakes, shut things down for months.
-            </li>-->
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-  <!--
-  <div class="container-fluid-content-02" style="max-width: 900px; padding-top:0px; padding-bottom:100px;">
-    <div class="row">
-      <div class="col-md text-center regular-lg">
-      	<div class="bold-5 text-center">Diversity of needs</div>
-					Developers come in many forms. A data scientist requires a very different set of tools than a mobile app developer. 
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md text-center regular-lg">
-     
-        <div class="bold-5 text-center">Resume value</div>
-					Developers often want the latest hot tech. This is partly due to resume value, which can determine their viability in the job market.
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md text-center regular-lg">
-      	
-        <div class="bold-5 text-center">Specific needs</div>
-					Engineers sometimes start with specific needs. For example, they might need a time-series database with specified level of latency
-      </div>
-    </div>
-  </div>
-
--->
-
-<!--***********************************************-->
-
-  <a id="nav-08"></a>
-  <div class="container-fluid-content-01 pb-5">
-	  <section class="row">
-	    <div class="col-md section-header-no-border pb-4">
-	      Key Findings
-	    </div>
-	  </section>
-	  <div class="row">
-	    <div class="col-md">
-	      <div class="headline-medium pb-5" style="max-width: 600px">
-	        Our Primary Personas Are Fundamentally Misaligned
-	      </div>
-	      <div class="regular-lg pb-5">
-	        At the heart of everything was a fundamental conflict: While app developers want a wide variety of tools and the latest, hot technology, platform operators want to offer a small, manageable set of tools.
-	      </div>
-        <div class="headline-small pb-4">
-          Seeing the Journey as a Series of Conflicts Between Personas
-        </div>
-        <div class="regular-lg pb-4">
-          We visualized the misalignment between personas as a cartoon argument. We then mapped the argument onto a skeleton version of the journey. That conveyed where on the journey misalignment can lead to bottle necks and frustration.
-        </div>
-	    </div>
-	  </div>
-	</div>
-
-  <div class="container-fluid-content-02 nav-margin" style="max-width: 1400px; padding-bottom: 120px;">
-    <div class="row">
-      <div class="col-md">
-
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner ps-4 pe-4">
-            <div class="carousel-item active">
-              <img src="images/console-06-01.png" class="img-fluid center-block d-block mx-auto" alt="image">
+        <div class="collapsed content-narrow">
+          <div class="mb-4 line-height-m">
+            <div class="header-xsmall fw-5 mb-2">Platform Operator</div>
+            <div class="line-height-m" style="display: flex; flex-direction: row;">
+              <div class="fw-5" style="width: 130px; margin-top:0px;">
+                <img src="images/avatar-02.png" class="mb-1" style="width:100px" alt="Image"/>
+              </div>
+              <div style="flex:1">
+                <div class="">
+                  Platform operators maintain the cloud platform. They are responsible for providing tools for developers, keeping the platform up-to-date, and troubleshooting when something goes wrong.
+                </div>
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="images/console-06-02.png" class="img-fluid center-block d-block mx-auto" alt="image">
+           
+            <div class="mb-2">
+              <div class="line-height-m mb-1 mt-2" style="display: flex; flex-direction: row;">
+                <div class="fw-5" style="width: 130px;">Character-<br>istics</div>
+                <div style="flex:1">
+                  <ul style="padding: 0; margin:0; line-height:1.5em;">
+                    <li>Even in large organizations, operator teams tend to be small, with 10 - 20 people.</li>
+                    <li>Their small team sizes contrast with the fact that their platforms can be used by hundreds, even thousands of developers.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="line-height-m mb-1" style="display: flex; flex-direction: row;">
+                <div class="fw-5" style="width: 130px;">Key driver</div>
+                <div style="flex:1">
+                  <ul style="padding: 0; margin:0; line-height:1.5em;">
+                    <li>Operators want to offer a small, manageable set of tools that cover a wide surface area.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="line-height-m mb-4" style="display: flex; flex-direction: row;">
+                <div class="fw-5" style="width: 130px;">Underlying motovators</div>
+                <div style="flex:1">
+                  <ul style="padding: 0; margin:0; line-height:1.5em;">
+                    <li><b>Risk aversion: </b>Cloud platforms are extremely complex, but tend to be stable as long as nothing changes. Introducing new tools means introducing change, and change brings risk of something going wrong.</li>
+                    <li><b>Developing expertise: </b>If an operations team offers a new technology on their platform, they are expected to be experts at that technology. When something goes wrong, the operations teams are expected to fix it.</li>
+                    <li><b>Not enough demand: </b>Operations teams are inherently small and they tend to be unwilling to support tools for which there is little demand.</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="images/console-06-03.png" class="img-fluid center-block d-block mx-auto" alt="image">
+
+            <div class="header-xsmall fw-5 mb-2">Our Primary Personas Are Fundamentally Misaligned</div>
+            <div class="line-height-m mb-2">
+              At the heart of everything was a fundamental conflict: While app developers want a wide variety of tools and the latest, hot technology, platform operators want to offer a small, manageable set of tools.
             </div>
-            <div class="carousel-item">
-              <img src="images/console-06-04.png" class="img-fluid center-block d-block mx-auto" alt="image">
+            <div class="header-xsmall fw-5 mb-2">Seeing the Journey as a Series of Conflicts Between Personas</div>
+            <div class="line-height-m mb-5">
+              We visualized the misalignment between personas as a cartoon argument. We then mapped the argument onto a skeleton version of the journey. That conveyed where on the journey misalignment can lead to bottle necks and frustration.
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="visually-hidden">Previous</span>
-            <span class="material-icons md-72 pe-4" style="color:#bbb;">
-              arrow_back_ios
-            </span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="visually-hidden">Next</span>
-            <span class="material-icons md-72 ps-4" style="color:#bbb;">
-              arrow_forward_ios
-            </span>
-          </button>
-        </div>
-        <div class="caption pt-5">In our research findings presentation, we imagined a series of fictional arguments between personas to convey misaligned interests.</div>
         </div>
       </div>
-  </div>
 
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom: 0px;">
-    <div class="row">
-      <div class="col-md pb-0">
-        <div class="headline-small pb-4">
-          Dev Tool Access Patterns
-        </div>
-        <div class="regular-lg pb-5">
-          One way or another, developers tend to get the tools they need, often through off-platform sources. Some of these, such as dedicated service teams, are sanctioned, while others, such as developers going "DIY", are not, which can lead to security and compliance risk.
+      <!--
+      Be wrong a cheaply as possible
+      Keep the computer in the human loop (Ben Schneiderman)
+      Don't invite criticism; impose it
+      User experiences exist the physical world
+      -->
+
+      <div class="content-extra-wide">
+        <div class="grid grid-3 mb-4">
+          <div class="card mb-2">
+            <div class="card-image mb-1">
+              <img src="images/console-06-01.png" class="" style="width:100%;" alt="Image"/>
+            </div>
+            <div class="caption center" style="max-width:400px;">
+              Appdev wants cool tech.<br>vs.<br>Operator wants to serve the larger organization.
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-image mb-1">
+              <img src="images/console-06-02.png" class="" style="width:100%;" alt="Image"/>
+            </div>
+            <div class="caption center" style="max-width:400px;">
+              App dev wants help learning a new tool.<br>vs.<br>Operator doesn't have the time to help individuals.
+            </div>
+          </div>
+          <!--<div class="card mb-2">
+            <div class="card-image mb-1">
+              <img src="images/console-06-03.png" class="" style="width:100%;" alt="Image"/>
+            </div>
+            <div class="caption center" style="max-width:400px;">
+              Contextual help supported all of our objectives.
+            </div>
+          </div>-->
+          <div class="card mb-2">
+            <div class="card-image mb-1">
+              <img src="images/console-06-04.png" class="" style="width:100%;" alt="Image"/>
+            </div>
+            <div class="caption center" style="max-width:400px;">
+              Areas of conflict were represented as red dots on the journey.
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="container-fluid-content-02  nav-margin" style="max-width: 1200px; padding-top: 0px; padding-bottom: 120px;">
-    <div class="row">
-      <div class="col-md">
-        <div class="bg-white">
-          <img src="images/console-06-10.png" class="img-fluid center-block d-block mx-auto" alt="image"> 
+      <div class="collapsed main mb-2">
+        <div class="content-narrow">
+          <div class="header-xsmall fw-5 mb-2">Dev Tool Access Patterns</div>
+          <div class="line-height-m mb-2">
+            One way or another, developers tend to get the tools they need, often through off-platform sources. Some of these, such as dedicated service teams, are sanctioned, while others, such as developers going "DIY", are not, which can lead to security and compliance risk.
+          </div>
         </div>
-         <div class="caption pt-3">
+      </div>
+
+      <div class="collapsed content-extra-wide">
+        <img src="images/console-06-10.png" class="mb-1" style="width:100%;" alt="Image"/>
+        <div class="caption center mb-4" style="max-width:700px;">
           Diagrams from our research findings deck that depict the various ways developers get the tools they need from a variety of sources.
         </div>
       </div>
     </div>
-  </div>
-
-<!--***********************************************-->
   
-  <a id="nav-09"></a>
-   <div class="bg-dark-gray" style="background-color: #000;
-      height:900px; 
-      width:105%;  
-      background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url('images/console-00.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      margin-right:-25px;">
-		<div class="headline-center-heavy text-extra-light" style="
-			margin:auto;
-			text-align: center; 
-			width:33%; 
-			height:100%;">
-      <div style="position: relative; top: 50%; 
-      	-ms-transform: translateY(-50%);
-				transform: translateY(-50%);">Ideation Week
+    <!-- WORKSHOP PREP -->
+
+    <a id="nav-06"></a>
+    <div class="collapsable">
+      <div class="main  border-top mb-3">
+        <div class="content-narrow">
+          <div class="eyebrow color-red pt-2 mb-2">Workshop Prep</div>
+          <div class="header-small fw-6 mb-2">
+            Feedback as a Forcing Function
+          </div>
+          <div class="mb-3">
+            <div class="line-height-m">
+              Before ideation week began, I set up sources of feedback and embedded them into the whole process. Getting continuous feedback would help keep us sane as we navigated a vast problem space.
+            </div>
+            <!--
+            <div class="line-height-m mb-1 see-more-wrapper">
+              <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red see-more-icon">expand_more</span></a>
+            </div>
+            -->
+          </div>
+        </div>
+
+        <div class="content-extra-wide">
+          <div class="grid grid-3 mb-3">
+            <div class=" card mb-2">
+              <div class="mb-1" style="
+                background-image: url('images/console-16.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 400px;
+              "></div>
+              <div class=" card-header-xsmall fw-5 mb-1">PANEL OF ADVISORY EXPERTS</div>
+              <div class=" card-body">
+                I recruited a panel that included people from related product teams, field engineers and marketing from Europe and North America. I set up two sessions with them on Wednesday and Friday, and presented our progress. The panel brought relevant and diverse perspectives to the table.
+              </div>
+            </div>
+            <div class=" card mb-2">
+              <div class="mb-1" style="
+                background-image: url('images/console-17.png');
+                background-position: 100% 20%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 400px;
+              "></div>
+              <div class=" card-header-xsmall fw-5 mb-1">FIELD ENGINEERS</div>
+              <div class=" card-body">
+                Several field engineers volunteered their time. We included them in activities and asked them to evaluate early ideas. Field engineers are great because they often work on-site for months at a time and can bring the customer perspective to the table.
+              </div>
+            </div>
+            <div class=" card mb-2">
+              <div class="mb-1" style="
+                background-image: url('images/console-18.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 400px;
+              "></div>
+              <div class=" card-header-xsmall fw-5 mb-1">OPEN DOORS</div>
+              <div class=" card-body">
+                I invited the whole Pivotal office to stop by any time. When anyone showed up, one of us would take the lead and explain our current thinking, and how we got there. Random visits made sure we could clearly articulate everything we were doing at any time.
+              </div>
+            </div>
+          </div>
+          <div class="color-red pull-quote pb-4">
+            Getting continuous feedback would help keep us sane as we navigated a vast problem space.
+          </div>
+        </div>
+
       </div>
     </div>
-  </div>
 
-<!--***********************************************-->
+    <!-- PROBLEM PRIORITIZATION -->
 
-  <a id="nav-10"></a>
-  <div class="container-fluid-content-01 overflow-hidden" style="padding-top:10px; padding-bottom: 0px;">
-    
-    <div class="row">
-      <div class="col-md">
-        <div class="caption pt-0">Our design studio space in the middle of our week-long ideation sprint.</div>
+    <a id="nav-07"></a>
+    <div class="collapsable">
+      <div class="main  border-top mb-3">
+        <div class="content-narrow">
+          <div class="eyebrow color-red pt-2 mb-2">Problem Prioritization</div>
+          <div class="header-small fw-6 mb-2">
+            Determining Where We Can Have the Most Impact
+          </div>
+          <div class="mb-3">
+            <div class="line-height-m mb-2">
+              With many customer problems at hand, we needed to decide which ones to tackle. We used three techniques:
+            </div>
+            <ul>
+              <li>Surveying our field engineers to assess where we can impact customer needs.</li>
+              <li>Determining where we, as a product team, can move the needle.</li>
+              <li>Assessing any engineering risks.</li>
+            </ul>
+            <!--
+            <div class="line-height-m mb-1 see-more-wrapper">
+              <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red see-more-icon">expand_more</span></a>
+            </div>
+            -->
+          </div>
+        </div>
+
+        <div class="content-extra-wide">
+          <div class="grid grid-2 mb-2">
+            <div class=" card mb-2">
+              <div class="mb-1">
+                <img src="images/console-19.png" style="width:100%;" alt="Image"/>
+              </div>
+              <div class=" card-header-xsmall fw-5 mb-1">Wheelhouse check</div>
+              <div class=" card-body">
+                We sorted the top problems into three columns: Solvable by us, solvable through collaboration with another team, not in our wheelhouse.
+              </div>
+            </div>
+            <div class=" card mb-2">
+              <div class="mb-1">
+                <img src="images/console-20.png" style="width:100%;" alt="Image"/>
+              </div>
+              <div class=" card-header-xsmall fw-5 mb-1">Engineering Risk Assessment</div>
+              <div class=" card-body">
+                Engineers offered an early assessment of engineering risk. Even at this early stage, we felt we could get a sense of complexity early, and take than into consideration.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-narrow">
+          <div class="header-xsmall fw-5 mb-2">Top Customer Problems</div>
+          <div class="line-height-m mb-2">
+            By noon the first day, we had honed in on a handful of customer problems that were both high-impact (according to our field team survey) and problems for which an engineering R&D team could move the needle.
+          </div>
+        </div>
+        <div class="contect-wide mb-5">
+          <div class="mb-1 center" style="max-width:800px;">
+            <img src="images/console-21.png" style="width:100%;" alt="Image"/>
+          </div>
+          <div class="caption">
+            After our vetting process, a handful of customer problems rose to the top.
+          </div>
+        </div>
+
       </div>
     </div>
-    <div class="row" style="padding-top: 120px;">
-      <div class="col-md section-header-no-border pb-4">
-        Workshop Prep
-      </div>
-      <div class="headline-medium pb-5">
-        Feedback as a Forcing Function
-      </div>
-      <div class="regular-lg pb-5">
-        <!--In a week-long, open-ended ideation session, it’s impossible to imagine the product direction you’ll come up with by Friday.-->
-        Before ideation week began, I set up sources of feedback and embedded them into the whole process. Getting continuous feedback would help keep us sane as we navigated a vast problem space.
-      </div>
-    </div>
-  </div>
-  
-  <div class="container-fluid-content-02 nav-margin" style="max-width: 900px; padding-bottom:0px; padding-top:0px;">
-    <div class="row pb-4">
-      <div class="col-md">
-        <div style="
-          background-image: url('images/console-16.png');
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          height: 400px;
-          margin-bottom: 50px;
-        "></div>
-        <div class="bold-5 pb-4 ps-2 pe-2">
-          Panel of advisory experts
-        </div> 
-        <div class="regular-lg pb-4 ps-2 pe-2">
-          I recruited a panel that included people from related product teams, field engineers and marketing from Europe and North America. I set up two sessions with them on Wednesday and Friday, and presented our progress.
-        </div>
-        <div class="regular-lg pb-4 ps-2 pe-2">
-          The panel brought relevant and diverse perspectives to the table.
+
+    <!-- CAUSAL MAPPING -->
+
+    <a id="nav-08"></a>
+    <div class="collapsable">
+      <div class="main border-top">
+        <div class="content-narrow">
+          <div class="eyebrow color-red pt-2 mb-2">Causal Mapping</div>
+          <div class="header-small fw-6">
+            Seeing the Big Picture
+          </div>
         </div>
       </div>
-  
-      <div class="col-md">
-        <div style="
-          background-image: url('images/console-17.png');
-          background-position: 100% 20%;
-          background-repeat: no-repeat;
-          background-size: cover;
-          height: 400px;
-          margin-bottom: 50px;
-        "></div>
-        <div class="bold-5 pb-4 ps-2 pe-2">
-          Field engineers
+
+      <div class="content-extra-wide mb-4">
+        <div class="">
+          <img src="images/console-22-03-01.png" style="max-width:100%" alt="Image"/>
         </div>
-        <div class="regular-lg pb-4 ps-2 pe-2">
-          Several field engineers volunteered their time. We included them in activities and asked them to evaluate early ideas.
-        </div>
-        <div class="regular-lg pb-4 ps-2 pe-2">
-          Field engineers are great because they often work on-site for months at a time and can bring the customer perspective to the table.
+        <div class="caption line-height-m" style="max-width:600px;">
+          Our causal map starts with a customer problem at the left (there is a lot more demand for developer ltoos than supply). The <span style="background-color: #FDF248;">yellow nodes are root causes</span> and the <span style="background-color: #CFEBFF;">blue nodes are possible solutions</span>.
         </div>
       </div>
-   
-      <div class="col-md">
-        <div style="
-          background-image: url('images/console-18.png');
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          height: 400px;
-          margin-bottom: 50px;
-        "></div>
-        <div class="bold-5 pb-4 ps-2 pe-2">
-          Open doors
-        </div>
-        <div class="regular-lg pb-4 ps-2 pe-2">        
-          I invited the whole Pivotal office to stop by any time. When anyone showed up, one of us would take the lead and explain our current thinking, and how we got there.
-        </div>
-        <div class="regular-lg ps-2 pe-2">
-          Random visits made sure we could clearly articulate everything we were doing at any time.
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!--
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:120px;">
-    <div class="row">
-      <div class="col-md">
-        <div class="regular-lg pb-4">
-          <div class="bold-5 pb-4">Sanity</div>
-          In a long, open-ended ideation session, it’s impossible to imagine the product direction you’ll come up with by Friday. It was much easier to focus on what we needed to present to our advisory panel on Wednesday afternoon (see below).
-        </div>
-        <div class="regular-lg pb-4">
-          <div class="bold-5 pb-4">Clarity in thinking</div>
-          Articulating concepts clearly requires thinking clearly and is refined through practice. We built that practice into the design process.
-        </div>
-        <div class="regular-lg pb-4">
-          <div class="bold-5 pb-4">Countering group-think</div>
-          I sometimes worry that ideation workshops can create a group-think bubble. Constantly exposing what we were doing to people outside our immediate sphere brought scrutiny to everything we did. You can't reason about whether your thinking is biased or otherwise faulty in some way, unless you have something to compare it to. 
-        </div>
-      </div>
-    </div>
-	</div>
-  -->
-  
-  <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:120px; padding-top:60px;">
-    <div class="row">
-      <div class="col-md pullquote">
-        Articulating concepts clearly requires thinking clearly and is refined through practice. We built that practice into the design process.
-      </div>
-    </div>
-  </div>
-
-
-<!--
-<div class="bg-dark-gray">
-
-	<div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:0px; padding-top: 240px;">
-    <div class="row">
-    	<div class="col-md">
-	      <div class="headline-medium pb-5 text-extra-light" style="text-align: center">
-          Feedback Sources
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:120px; padding-top:0px;">
-    <div class="row pb-4">
-    	<div class="col-md">
-    		<div class="pb-4" style="
-    			background-image: url('images/console-16.png');
-    			background-position: center;
-					background-repeat: no-repeat;
-					background-size: cover;
-					height: 400px;
-	    	"></div>
-        <div class="regular-lg pt-4 pb-4 ps-2 pe-2 text-light">
-	        <div class="bold-5 pb-4 text-extra-light">
-	        	Panel of advisory experts
-	        </div> 
-						These included people from related product teams, field engineers and marketing from Europe and North America. I set up two sessions with them on Wednesday and Friday, and presented our progress.
-		    </div>
-		    <div class="regular-lg pb-4 ps-2 pe-2 text-light">
-					The panel brought relevant and diverse persectives to the table.
-		    </div>
-		  </div>
-  
-    	<div class="col-md">
-        <div class="pb-3" style="
-    			background-image: url('images/console-17.png');
-    			background-position: 100% 20%;
-					background-repeat: no-repeat;
-					background-size: cover;
-					height: 400px;
-	    	"></div>
-        <div class="regular-lg pb-4 ps-2 pe-2 pt-4 text-light">
-	        <div class="bold-5 pb-4 text-extra-light">
-	        	Field engineer participation
-	        </div> 	
-					Several field engineers volunteered their time. We included them in activities and asked them to evaluate early ideas.
-				</div>
-		    <div class="regular-lg pb-4 ps-2 pe-2 text-light">
-					Field engineers are great because they often work on-site for months at a time and can bring the customer perspective to the table.
-		    </div>
-		  </div>
-   
-    	<div class="col-md">
-        <div class="pb-3" style="
-    			background-image: url('images/console-18.png');
-    			background-position: center;
-					background-repeat: no-repeat;
-					background-size: cover;
-					height: 400px;
-	    	"></div>
-        <div class="regular-lg pb-4 ps-2 pe-2 pt-4 text-light">
-	        <div class="bold-5 pb-4 text-extra-light">
-	        	Open doors
-	        </div> 				
-						I invited the whole Pivotal office to stop by any time. When anyone showed up, one of us would take the lead and explain our current thinking, and how we got there.
-					</div>
-		    	<div class="regular-lg ps-2 pe-2 text-light">
-						Random visits made sure we could clearly articulate everything we were doing at any time.
-					</div>
-		  </div>
-    </div>
-  </div>
-
-</div>
--->
-
-<!--***********************************************-->
-
-<a id="nav-11"></a>
-<div class="bg-light-gray">
-  <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:0px;">
-    <section class="row">
-      <div class="col-md section-header-no-border pb-4">
-        Problem Prioritization
-      </div>
-    </section>
-    <div class="row">
-      <div class="col-md">
-         <div class="headline-medium pb-5">
-          Determining Where We Can Have the Most Impact
-        </div>
-        <div class="regular-lg pb-4">
-          With many customer problems at hand, we needed to decide which ones to tackle. We used three techniques:
-				</div>
-        <div class="regular-lg pb-5">
-          <ul>
-            <li>Surveying our field engineers to assess where we can impact customer needs.</li>
-            <li>Determining where we, as a product team, can move the needle.</li>
-            <li class="pb-0">Assessing any engineering risks.</li>
-          </ul>
-        </div>
-        <!--<div class="regular-lg pb-5">
-          <ul>
-            <li><b>Field survey:</b> We asked field engineers to choose the problems that, if solved, would have the highest impact on their customers. This helped us weight problems by customer impact.</li>
-            <li><b>Wheelhouse check:</b> We determined where an engineering-centric product team could have the most impact.</li>
-            <li class="pb-0"><b>Engineering risk:</b> Engineers estimated potential complexity for each top problem at the outset. We wanted to take into account whether any given problem might have high technical risk.</li>
-          </ul>
-        </div>-->
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02 overflow-hidden nav-margin" style="max-width: 1200px; padding-bottom:60px;">
-    <div class="row">
-      <div class="col-md">
-        <img src="images/console-19.png" class="img-fluid center-block d-block pb-4" alt="image">
-        <div class="caption">Our wheelhouse check exercise helped us determine what problems are best solved by a product team.</div>
-      </div>
-      <div class="col-md">
-        <img src="images/console-20.png" class="img-fluid center-block d-block pb-4" alt="image">
-        <div class="caption">Engineers assess risk</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02 overflow-hidden" style="max-width: 600px; padding-bottom:0px;">
-    <div class="row">
-      <div class="col-md">
-      	<div class="headline-small pb-4">Top Customer Problems</div>
-        <div class="regular-lg pb-5">
-          By noon the first day, we had honed in on a handful of customer problems that were both high-impact (according to our field team survey) and problems for which an engineering R&D team could move the needle.
-        </div>
-	    </div>
-		</div>
-	</div>
-
-	<div class="container-fluid-content-02" style="max-width: 900px; padding-bottom: 120px;">
-	  <div class="row">
-	    <div class="col-md">
-	    	<div class="bg-white p-4">
-	      	<img src="images/console-21.png" class="img-fluid center-block d-block mx-auto" alt="image"> 
-	      </div>
-	      <div class="caption pt-3">After our vetting process, a handful of customer problems rose to the top.</div>
-	    </div>
-	  </div>
-	</div>
-</div>
-
-<!--***********************************************-->
-
-  <a id="nav-12"></a>
-  <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:0px;">
-    <section class="row">
-      <div class="col-md section-header-no-border pb-4">
-        Causal Mapping
-      </div>
-    </section>
-    <div class="row">
-      <div class="col-md">
-        <div class="headline-medium pb-5" style="overflow:visible; max-width:600px;">
-          Seeing the Big Picture
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02 pb-5" style="max-width: 1000px; padding-top:0px; margin-top:0px;">
-    <div class="row">
-      <div class="col-md">
-        <img src="images/console-22-03-01.png" class="img-fluid center-block d-block mx-auto" alt="image"> 
-        <div class="caption pt-1" style="max-width: 600px;">
-        	Our causal map starts with a customer problem at the left (there is a lot more demand for developer ltoos than supply). The <span style="background-color:  
-						#FDF248;">yellow nodes</span> are root causes and the <span style="background-color:  
-						#CFEBFF;">blue nodes</span> are possible solutions.
-        </div>
-       
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02 overflow-hidden" style="max-width: 600px; padding-bottom:0px;">
-    <div class="row">
-      <div class="col-md">
-				<div class="headline-small pb-4">Five Whys</div>
-	      <div class="regular-lg pb-0">
-					With help from the field, we took our top problems and explored root causes by asking ourselves "why?" as many times as possible. This would help us:
-
-          <ul class="pt-4">
-            <li>
-              See relationships between problems and have a more holistic perspective. 
-            </li>
-            <li>
-              Identify big pain points that lead to a lot of down-stream problems.
-            </li>
-            <li>
-              Expanded the field of potential problems we could solve.
-            </li>
-          </ul>
-
-				</div>
-	    </div>
-		</div>
-	</div>
-
-<div style="">
-	<div class="container-fluid-content-02" style="max-width: 900px; padding-top:0px; padding-bottom: 80px;">
-    <div class="row gx-3">
-      <div class="col-md">
-        <img src="images/console-23-01.png" class="img-fluid" alt="image"> 
-      </div>
-    </div>
-  </div>
-</div>
-
-
-  <div class="container-fluid-content-02 overflow-hidden pb-0" style="border-bottom: 1px solid #ccc; max-width: 600px; padding-bottom:120px;">
-    <div class="row">
-      <div class="col-md">
-      	<div class="headline-small pb-4">Down-Stream Effects</div>
-				<div class="regular-lg pb-5">
-					We explored how problems often cascade into dysfunction, higher costs and frustration by asking ourselves "so what?" These down-stream effects link customer problems to value props.
-				</div>
-	    </div>
-	 	</div>
-	</div>
-	<div class="container-fluid-content-02" style="max-width: 600px; padding-top:60px; padding-bottom:120px;">
-    <div class="row gx-3">
-      <div class="col-md">
-        <img src="images/console-23-02.png" class="img-fluid" alt="image"> 
-        <div class="caption pt-3">
-        	Down-stream effects show cascade of customer problems. This diagram links a "how might we?" solution (top) to value (at the bottom).
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--
-  <div class="container-fluid-content-02 overflow-hidden pb-5" style="max-width: 600px; padding-top:0px; padding-bottom:0px;">
-    <div class="row">
-      <div class="col-md">
-	    <div class="headline-small pb-4">Linking Solutions to Value</div>
-				<div class="regular-lg pb-0">
-					I wanted the team to intuitively link a given problem we might solve, say "Operations are reluctant to offer technology that requires expertise they don’t have", to cascading effects, such as "inefficiency" and "non-compliance with regulations".
-				</div>
-	    	
-	    </div>
-		</div>
-	</div>
-
-	<div class="container-fluid-content-02" style="max-width: 600px; padding-top:0px; padding-bottom:120px;">
-    <div class="row gx-3">
-      <div class="col-md">
-        <img src="images/console-23-03.png" class="img-fluid" alt="image"> 
-        <div class="caption pt-3">
-        	Once we started ideating, the team should be able to chain solutions, such as "show average costs from other customers" to values, like "reduced compliance risk".
-        </div>
-      </div>
-    </div>
-  </div>
--->
-
-
-
-<!--***********************************************-->
-
-  <a id="nav-13"></a>
-	<div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:0px;">
-    <section class="row">
-      <div class="col-md section-header-no-border pb-4">
-        Solutioning
-      </div>
-    </section>
-    <div class="row">
-      <div class="col-md">
-        <div class="headline-medium pb-5" style="max-width: 600px;">
-          How Might We?
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02" style="max-width: 1200px; padding-bottom:0px; padding-top:0px;">
-    <div class="row pb-5">
-      <div class="col-md">
-        <img src="images/console-24.png" class="img-fluid" alt="image">
-        <div class="caption pt-2">Morning review of the previous day's work <br>(photo credit: Miguel Luna)</div>
-      </div> 
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02 overflow-hidden" style="max-width: 600px; padding-bottom:0px;">
-    <div class="row">
-      <div class="col-md">
-        <div class="regular-lg pb-5">
-          On Tuesday, after dot voting on root causes, we took the top problems and explored solution ideas with a “How might we?” exercise. We grouped ideas by theme, then discussed and dot-voted.
-        </div>
-        <div class="headline-small pb-4">Advisory Panel Feedback</div>
-        <div class="regular-lg pb-4">
-					On Wednesday we presented our top initial directions to the advisory panel and took notes. Two solution themes rose to the top. Both were under the question, “How might we allow more [tools] to be available?”.
-				</div>
-	    </div>
-		</div>
-	</div>
-
-	<div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:60px; padding-top:60px;">
-    <div class="row pb-4">
-      <div class="col-md">
-        <img src="images/console-25.png" class="img-fluid" alt="image">
-        <div class="caption pt-4">High-level solution directions that rose to the top.</div>
-      </div> 
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02 overflow-hidden" style="max-width:600px; padding-bottom:60px;">
-    <div class="row">
-      <div class="col-md">
-        <div class="headline-small pb-4">How Might We?... Round Two</div>
-        <div class="regular-lg pb-0">
-          We had a clear direction from the advisory panel, but our concepts were very high-level, and we needed to drill into them them further. We did this by taking each concept (e.g., "Tiered SLAs") and expanding through more "how might we?" exercises. 
-				</div>
-	    </div>
-		</div>
-	</div>
-
-	<div class="container-fluid-content-02" style="max-width: 1400px; padding-bottom:120px; padding-top:0px;">
-    <div class="row pb-0">
-      <div class="col-md">
-        <img src="images/console-26-01.png" class="img-fluid pb-4" alt="image" style="border:1px solid #fff;">
-        <div class="caption pt-3">Diagram showing chains of solutions that originate from “How might we allow more tools to be available?”.</div>
-      </div> 
-    </div>
-  </div>
-
-  <!--
-  <div class="container-fluid-content-02 overflow-hidden" style="max-width:600px; padding-bottom:120px;">
-    <div class="row">
-      <div class="col-md">
-        <div class="headline-small pb-4">Case Studies</div>
-        <div class="regular-lg pb-0">
-          Do to NDAs, I can't share too many details about the case studies we created. Two large-scale organizations had created their own ad hoc developer portals. At a high level, two things stood out: 
-        </div>
-        <ul class="pt-4 regular-lg">
-          <li>Beginner and advanced UX flows. This addressed that most devs are early-career, but some are not.</li>
-          <li class="pb-0">Automatically-generated GitHub repos with example code. This addressed the challenge of educating devs of how to use new tools.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  -->
-
-<!--***********************************************-->
-
-<a id="nav-14"></a>
-<div class="bg-light-gray">
-  <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:0px;">
-    <section class="row">
-      <div class="col-md section-header-no-border pb-4">
-        Product Vision
-      </div>
-    </section>
-    <div class="row">
-      <div class="col-md">
-        <div class="headline-medium pb-5">
-          Tying the Story Together
-        </div>
-        <div class="col-md pb-5">
-	        <img src="images/console-27.png" class="img-fluid center-block d-block mx-auto" alt="image"> 
-	        <div class="caption pt-3">
-	        	Scenario writing session
-	        </div>
-	      </div>
-        <div class="headline-small pb-4">Scenario Writing</div>
-        <div class="regular-lg pb-5">
-          On Thursday, we took our top ideas and wrote scenarios describing a future in which our customers are enjoying the value of our not-yet-existent products. We were envisioning presenting a storyboard to the advisory panel on Friday and wanted our ideas to be approachable and expressive.
-				</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02 overflow-hidden" style="max-width: 600px; padding-bottom:60px;">
-    <div class="row">
-      <div class="col-md">
-      	<div class="headline-small pb-4">A Misfire and Redress</div>
-        <div class="regular-lg pb-4">
-          “What is the point of scenario writing? Have we learned anything?”, asked an engineer on Friday morning.
-					I probed the room. “What do we think?”, I asked.
-				</div>
-				<div class="regular-lg pb-4">
-          In short, our solution ideas were not solid enough technically for our engineers. For a lot of types of projects, safe assumptions can be made about the tech. That was not the case for us.
-				</div>
-        <!--
-        <div class="regular-lg pb-4">
-          The problem with the scenarios was that we needed to tie the desired experiences to underlying technology. That's likely because, in building a greenfield experience like ours, there weren't safe assumptions about the tech (unlike, say, a Rails or iOS app). 
-        </div>-->
-        <div class="regular-lg pb-0">
-          We went back to the whiteboard and discussed. The solution was to group ideas into product concepts. Those allowed the engineers to envision the "how" to a level that was acceptable.
-        </div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:60px;">
-    <div class="row">
-      <div class="col-md p-3 pullquote">
-        Our scenario writing didn't work out as planned. We would need to improvise.
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:0px;">
-    <div class="row">
-    	<div class="col-md">
-        <div class="headline-small pb-4">Idea Boards and Advisory Panel Feedback, Round Two</div>
-        <div class="regular-lg pb-4">
-          We still needed something to present to the advisory panel. We came up with idea boards. Idea boards describe product concepts, and tie together outcomes, evidence and personas.
-				</div>
-        <div class="regular-lg pb-5">
-          We created an idea board for each of our top concepts and presented to the advisory panel for feedback.
-        </div>
-	    </div>
-		</div>
-	</div>
-
-	<div class="container-fluid-content-02" style="max-width: 1200px; padding-top:0px; padding-bottom:120px;">
-    <div class="row gx-3">
-      <div class="col-md">
-        <img src="images/console-28-01.png" class="img-fluid center-block d-block mx-auto" alt="image"> 
-        <div class="caption pt-0">
-        	Our improvised idea boards conveyed concepts and tied together outcomes, data and personas.
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02" style="max-width: 1400px; padding-bottom:120px; padding-top:0px;">
-    <div class="row">
-
-      <div class="col-sm">
-        <div class="mb-4">
-          <img src="images/console-28-01-01.png" class="img-fluid p-2" alt="image">
-        </div>
-        <div class="bold-5 ps-3 pe-3 pb-4 pt-2"><b>Independent Service Offerings</b></div>
-        <div class="regular-lg ps-3 pe-3 pb-4">
-          <b>Outcome:</b> Operators can delegate the curation and management of services to non-operators, effectively increasing the offerings. 
-        </div>
-        <!--<div class="regular-lg ps-3 pe-3 pb-4">
-          <b>Evidence:</b> Operators are reluctant to offer services that require time and expertise they don't have. 
-        </div>-->
-      </div>
-
-      <div class="col-sm">
-        <div class="mb-4">
-          <img src="images/console-28-01-02.png" class="img-fluid p-2" alt="image">
-        </div>
-        <div class="bold-5 ps-3 pe-3 pb-4 pt-2"><b>Different Levels of Support</b></div>
-        <div class="regular-lg ps-3 pe-3 pb-4">
-          <b>Outcome:</b> Developers can provision a wider variety of tools that are not mission-critical (such as databases with lower uptime) and are managed by non-operators.
-        </div>
-        <!--<div class="regular-lg ps-3 pe-3 pb-4">
-          <b>Evidence:</b> There is demand for many types of dev tools, and operations costs are a big factor is deciding what to offer.
-        </div>-->
-      </div>
-
-      <div class="col-sm">
-        <div class="mb-4">
-          <img src="images/console-28-01-03.png" class="img-fluid p-2" alt="image">
-        </div>
-        <div class="bold-5 ps-3 pe-3 pb-4 pt-2"><b>Automated Tool Integration Tests</b></div>
-        <div class="regular-lg ps-3 pe-3 pb-4">
-          <b>Outcome:</b> Third-party tool providers have increased confidence in an integration before releasing it. Operators have increased confidence in an integration before managing it.
-        </div>
-        <!--<div class="regular-lg ps-3 pe-3 pb-4">
-          <b>Evidence:</b> Many operators have been burned in the past by dev tools that were unreliable.
-        </div>-->
-      </div>
-     
-    </div>
-  </div>
-</div>
-
-
-<!--***********************************************-->
-
-<a id="nav-15"></a>
-<div class="bg-dark-gray" style="background-color: #000;"> 
-  <div class="container-fluid-content-02 nav-margin" style="max-width: 1800px; padding-bottom:120px; padding-top:120px;">
-    <div class="row">
-      <div class="col">
-        <img src="images/storyboard.png" class="img-fluid pb-2" alt="image">
-          <div class="caption pt-0 text-light pb-5"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--***********************************************-->
-
-<!--
-  <div class="bg-dark-gray" style="background-color: #000;
-      height:900px; 
-      width:105%;  
-      /*background-image: url('images/console-01-02.png');*/
-      background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url('images/console-32.png');
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      margin-right:-25px;">
-    <div class="headline-heavy text-extra-light" style="
-      margin:auto;
-      text-align: center; 
-      width:33%; 
-      height:100%;">
-      <div style="position: relative; top: 50%; 
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);">Design Sprint</div>
-    </div>
-    
-  </div>
--->
-
-<!--***********************************************-->
-
-<!--
-	<div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:100px;">
-    <section class="row">
-      <div class="col-md section-header-no-border pb-4">
-        Design Sprint 
-      </div>
-    </section>
-    <div class="row">
-      <div class="col-md">
-        <div class="headline-medium pb-5">
-          Delegating the Curation and Management of Dev Tools
-        </div>
-        <div class="regular-lg pb-0">
-          We decided to first focus on enabling operators to deligate responsibilities. In particular, developer-created tools (a.k.a., APIs) through a marketplace-like experience. This resonated with data we learned in our research: Enterprises manage tens of thousands of APIs, which is painful and challenging.
-				</div>
+      <div class="main mb-3">
+        <div class="content-narrow">
+          <div class="mb-3">
+            <div class="header-xsmall fw-5 mb-2">Root Cause Analysis</div>
+            <div class="line-height-m mb-2">
+              With help from the field, we took our top problems and explored root causes by asking ourselves "why?" as many times as possible. This would help us:
+            </div>
+            <ul>
+              <li>See relationships between problems and have a more holistic perspective.</li>
+              <li>Identify big pain points that lead to a lot of down-stream problems.</li>
+              <li>Expanded the field of potential problems we could solve.</li>
+            </ul>
+          </div>
         
-				<div class="regular-lg pb-0">
-          Enterprises manage tens of thousands of APIs. It’s painful and challenging. We started there. It’s a tough problem space. Our customer can have up to 80,000 APIs. These APIs are a tangled mess of overlapping functionality and varying levels of quality. On top of that, there are established competitors.
-				</div>
-      
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02" style="max-width: 900px; padding-bottom:120px;">
-    <div class="row">
-      <div class="col-md p-3 pullquote">
-        Our customers can have up to 80,000 APIs. These APIs are a tangled mess of overlapping functionality and varying levels of quality.
-      </div>
-    </div>
-  </div>
-
--->
-<!--***********************************************-->
-
-<!--
-<div class="bg-light-gray">
-  <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:0px;">
-    <section class="row">
-      <div class="col-md section-header-no-border pb-4">
-        UX Flows
-      </div>
-    </section>
-    <div class="row">
-      <div class="col-md">
-        <div class="headline-medium pb-5">
-        	Mapping the Journey
-        </div>
-        <div class="regular-lg pb-4">
-          We decided to first focus on enabling operators to deligate responsibilities. In particular, developer-created tools (a.k.a., APIs) through a marketplace-like experience. This resonated with data we learned in our research: Enterprises manage tens of thousands of APIs, which is painful and challenging.
-        </div>
-        <div class="regular-lg pb-4">
-        	We needed a journey map. By Wednesday.
-        </div>
-        <div class="regular-lg pb-4">
-          Under tight time constraints, I facilitated a proto-journey mapping workshop with four field engineers who work onsite for companies in different industries. We brainstormed user tasks in finding APIs, rolled those up into goals and folded in pain points and other context.
-				</div>
-        <div class="regular-lg pb-5">
-            (Read more about proto journey mapping <a href="serverless.html#proto-journey-map" 
-            style="color:#0066cc; text-decoration: underline;">here</a>.) 
+          <div class="mb-1 border-lt">
+            <img src="images/console-23-01.png" style="width:100%;" alt="Image"/>
           </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02 pb-5" style="max-width: 900px; padding-top:0px; ">
-    <div class="row gx-3">
-      <div class="col-md">
-        <img src="images/console-30-01.png" class="img-fluid" alt="image"> 
-        <div class="caption pt-3">
-        	Field engineers helped us map out how app devs find APIs within their organizations.
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02 overflow-hidden" style="max-width: 600px; padding-bottom:0px;">
-    <div class="row">
-      <div class="col-md">
-        <div class="regular-lg pb-5">
-					Our proto-journey map defined four phases: find, analyze, test and wire (FAT Wire). Each phase had goals and pain points. This model of the journey would be the template we would use to reimagine the API discovery experience.
-				</div>
-				<div class="regular-lg pb-5">
-					<div class="bold-5 pb-4">Key drivers for app devs looking for an API:</div>
-					App devs want to find existing functionality through APIs that meets their needs so they don’t have to create it themselves.
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container-fluid-content-02" style="max-width: 900px; padding-top:0px; padding-bottom:120px;">
-    <div class="row gx-3">
-      <div class="col-md">
-        <img src="images/console-30-02.png" class="img-fluid" alt="image"> 
-        <div class="caption pt-3">
-        	Each field engineer had their own swim lane to describe their version of the journey. We then consolidated everything into one flow. 
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<div class="bg-dark-gray">
-	<div class="container-fluid-content-02 overflow-hidden" style="max-width: 900px; padding-top:240px; padding-bottom:120px;">
-		<div class="row">
-			<div class="regular-lg pb-5">
-				<div class="headline-medium text-extra-light">The API Discovery Journey</div>
-			</div>
-		</div>
-		<div class="row">
-      <div class="col-md">
-				<div class="regular-lg pb-5 text-light">
-					<span class="text-extra-light" style="font-weight:700;">Overall goal:</span> App devs want to find an API that meets their needs so they don’t have to create needed functionality themselves.
-				</div>
-			</div>
-		</div>
-	  <div class="row gx-4 pb-2 mb-3 border-bottom border-secondary">
-	    <div class="col-2" style="width:100px;"><div class="text-extra-light">Phase</div></div>
-	    <div class="col-md"><div class="text-extra-light">User goals</div></div>
-	    <div class="col-md"><div class="text-extra-light">Pain points</div></div>
-	  </div>
-
-	  <div class="row gx-4 pb-2 mb-3 border-bottom border-secondary">
-	    <div class="col-2" style="width:100px;">
-	      <div class='mt-0 mb-0 text-center'><span class="material-icons md-48 text-extra-light">search</span></div>
-	      <div class='mt-0 mb-2 text-center text-extra-light'>Find</div>
-	    </div>
-	    <div class="col-md">
-	      <div class='mt-0 mb-2 text-light'>Find an API given a set of needs (e.g., given a passport ID, confirm citizenship.)</div>
-	    </div>
-	    <div class="col-md">
-	      <div class='mt-0 mb-2 text-light'>Searches for API functionality in existing systems can return hundreds of results, which are difficult to decipher.</div>
-	    </div>
-	  </div>
-
-	  <div class="row gx-4 pb-2 mb-3 border-bottom border-secondary">
-	    <div class="col-2" style="width:100px;">
-	      <div class='mt-0 mb-0 text-center'><span class="material-icons md-48 text-extra-light">bar_chart</span></div>
-	      <div class='mt-0 mb-2 text-center text-extra-light'>Analyze</div>
-	    </div>
-	    <div class="col-md">
-	      <div class='mt-0 mb-2'>
-	        <div class='mt-0 mb-3 text-light'>Understand how API works and what it can provide.</div>
-	        <div class='mt-0 mb-3 text-light'>Discover any deal breakers such as SLAs that don't meet teams needs.</div>
-	      </div>
-	    </div>
-	    <div class="col-md">
-	      <div class='mt-0 mb-2 text-light'>APIs are of varying quality. Quality is difficult to evaluate.</div>
-	    </div>
-	  </div>
-
-	  <div class="row gx-4 pb-2 mb-3 border-bottom border-secondary">
-	    <div class="col-2" style="width:100px;">
-	      <div class='mt-0 mb-0 text-center'><span class="material-icons md-48 text-extra-light">science</span></div>
-	      <div class='mt-0 mb-2 text-center text-extra-light'>Test</div>
-	    </div>
-	    <div class="col-md">
-	      <div class='mt-0 mb-3 text-light'>Be confident that the API will be performant under load and work as desired.</div>
-	      <div class='mt-0 mb-3 text-light'>Experiment to understand how API works (rather than read documentation.)</div>
-	    </div>
-	    <div class="col-md">
-	      <div class='mt-0 mb-2 text-light'>Access isn’t always readily available.</div>
-	    </div>
-	  </div>
-
-	  <div class="row gx-4 pb-5 mb-0">
-	    <div class="col-2" style="width:100px;">
-	      <div class='mt-0 mb-0 text-center'><span class="material-icons md-48 text-extra-light">electrical_services</span></div>
-	      <div class='mt-0 mb-2 text-center text-extra-light'>Wire</div>
-	    </div>
-	    <div class="col-md">
-	      <div class='mt-0 mb-2 text-light'>Get the API working with codebase.</div>
-	    </div>
-	    <div class="col-md">
-	      <div class='mt-0 mb-2 text-light'>Credentials are often (up to 80 percent of the time) sent through email, posing significant security risks.</div>
-	    </div>
-	  </div>
-	</div>
-</div>
--->
-
-<!--***********************************************-->
-
-<!--
-  <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:0px;">
-    <section class="row">
-      <div class="col-md section-header-no-border pb-4">
-        Competitive Analysis 
-      </div>
-    </section>
-    <div class="row">
-      <div class="col-md">
-        <div class="headline-medium pb-5">
-          Putting Our Rival’s Strengths and Weaknesses in Context
-        </div>
-        <div class="regular-lg pb-4">
-          Two engineers on the team performed a competitive analysis of two rivals. We took this and mapped it onto our journey: A green check showed competitor strength, a red “x” weakness / opportunity, and a question mark a mixed bag. This mapping helped us visually see where we need to have parity and where there might be opportunities to differentiate.
-				</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02 pb-5" style="max-width: 900px; padding-top:0px; ">
-    <div class="row gx-3">
-      <div class="col-md">
-        <img src="images/console-31.png" class="img-fluid center-block d-block mx-auto" alt="image"> 
-        <div class="caption pt-3">
-        	A digitized version of our proto journey map. The checks and x's in the center rows show where competitors have strengths and weaknesses.
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02 overflow-hidden" style="max-width: 600px; padding-bottom:120px;">
-    <div class="row">
-      <div class="col-md">
-				<div class="regular-lg pb-0">
-					<div class="bold-5 pb-4">Potential strategic advantage</div>
-						In the process of mapping our journey and competitive analysis, a potential advantage appeared: Security. Credentials are often sent through email, posing significant security risks. We effectively “own” the network on our platform and know user access rights. We could grant API access without credentials being passed around.
-				</div>
-			</div>
-		</div>
-	</div>
--->
-
-<!--***********************************************-->
-
-<!--
-<div class="bg-light-gray">
-  <div class="container-fluid-content-01 overflow-hidden" style="padding-bottom:0px;">
-    <section class="row">
-      <div class="col-md section-header-no-border pb-4">
-        Design Studio 
-      </div>
-    </section>
-    <div class="row">
-      <div class="col-md">
-        <div class="headline-medium pb-5">
-          Reimagining the Journey
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02 pb-5" style="max-width: 900px; padding-top:0px; ">
-    <div class="row gx-3">
-      <div class="col-md">
-        <img src="images/console-32.png" class="img-fluid" alt="image"> 
-        <div class="caption pt-3">
-        	Gallery walk. Pictured are product engineers and field engineers.
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02 overflow-hidden" style="max-width: 600px; padding-bottom:0px;">
-    <div class="row">
-      <div class="col-md">
-        <div class="regular-lg pb-4">
-					Now that we understood something about the developer user journey around getting access to APIs, we set out to reimagine it. We set up a design studio in which everyone would sketch concepts that would seed our initial designs. 
-				</div>
-        <div class="regular-lg pb-5" style="font-style: italic;">
-          (Read more about design studios <a href="serverless.html#designstudio" style="color:#0066cc; text-decoration: underline;">here</a>.)
-        </div>
-			</div>
-		</div>
-	</div>
-
-  <div class="container-fluid-content-02 overflow-hidden" style="max-width: 600px; padding-top:0px;">
-    <div class="row">
-      <div class="col-md">
-      	<div class="headline-small pb-4">
-          Finding Inspiration Outside Our Domain
-        </div>
-        <div class="regular-lg pb-4">
-					Everyone had a homework assignment: Find designs in different domains that do well what we want to do (find, analyse, test, wire) and present what they like and why. This exercise gets participants to think laterally. There were a couple highlights:
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container-fluid-content-02 overflow-hidden" style="max-width: 600px; padding-bottom:0px;">
-		<div class="row gx-4 pb-2 mb-3 border-bottom">
-	    <div class="col-3">
-	      <div class='mt-2 mb-1 text-center'>
-	        <img src="images/amazon.png" width=70 alt="Amazon logo">
-	      </div>
-	      <div class='mt-0 mb-2 text-center'>Amazon.com</div>
-	    </div>
-	    <div class="col-md">
-	      <div class='mt-0 mb-2 regular-lg'>Presenters pointed out name bands are important in evaluating quality when making a purchase decision on Amazon. This resonated with our research: Certain engineering teams who create APIs have reputations for creating high-quality code.</div>
-	    </div>
-	  </div>
-
-	  <div class="row gx-4 pb-5">
-	    <div class="col-3">
-	      <div class='mt-2 mb-0 text-center'><span class="material-icons md-72">downhill_skiing</span></div>
-	      <div class='mt-0 mb-2 text-center'>Ski demo day</div>
-	    </div>
-	    <div class="col-md">
-	      <div class='mt-0 mb-2 regular-lg'>These days, skiers can test out new skis during demo days at ski resorts. How is this relevant to APIs? The presenter explained there is no substitute for seeing how skis actually perform in different conditions like powder and groomed runs. Might the user “test drive” APIs? </div>
-	    </div>
-	  </div>
-	</div>
-
-	<div class="container-fluid-content-02" style="max-width: 1000px; padding-bottom:60px; padding-top:60px;">
-    <div class="row">
-      <div class="col-md p-3 pullquote">
-        Everyone had a homework assignment: Find designs in different domains that do well what we want to do.
-      </div>
-    </div>
-  </div>
-
-
-	<div class="container-fluid-content-02 overflow-hidden" style="max-width: 600px; padding-bottom:0px;">
-    <div class="row">
-      <div class="col-md">
-      	<div class="headline-small pb-4">
-          Sketching and Evaluating
-        </div>
-        <div class="regular-lg pb-5">
-					I read out a user scenario as a prompt, reviewed pain points and goals, and everyone started drawing. After than, we taped drawings to the wall and I facilitated a gallery walk in which everyone presented their ideas. We then dot voted and discussed our favorites.
-				</div>
-			</div>
-    </div>
-  </div>
-
-  <div class="container-fluid-content-02" style="max-width: 600px; padding-bottom:120px; padding-top:0px;">
-    <div class="row pb-4">
-      <div class="col-md">
-        <img src="images/console-33-01.png" class="img-fluid" alt="image">
-        <div class="caption pt-2">"Cheatsheets" I handed out reminding sketching participants about user goals and pain points.</div>
-      </div> 
-    </div> 
-    <div class="row pb-4">
-      <div class="col-md">
-        <img src="images/console-33-03.png" class="img-fluid" alt="image">
-        <div class="caption pt-2">Our design studio during a coffee break</div>
-      </div> 
-    </div>
-    <div class="row pb-0">
-      <div class="col-md">
-        <img src="images/console-33-02.png" class="img-fluid center-block d-block mx-auto" alt="image">
-        <div class="caption pt-2">Gallery walk. Participants studied concepts before dot voting.</div>
-      </div> 
-    </div>
-  </div>
--->
-
-<!--=============================================-->
-
-<!--
-  <div class="bg-dark-gray">
-    <div class="container-fluid-content-02 ps-5 pe-5" style="max-width: 600px; padding-bottom:60px; padding-top:240px;">
-      <div class="row">
-        <div class="col-md">
-          <div class="headline-medium pb-4 text-extra-light">
-            Up-Voted Ideas
-          </div> 
-          <div class="regular-lg text-light">
-            The value in ideation workshops is not in the sketches or other artifacts produced, but in the conversations about them. After everyone presented ideas, we dot voted, then discussed what we liked about the top ideas.
+          <div class="caption mb-4">
+            Detail showing tiers of causes for one of our top customer problems
+          </div>
+        
+          <div class="header-xsmall fw-5 mb-2">Down-Stream Effects</div>
+          <div class="line-height-m mb-3">     
+            We explored how problems often cascade into dysfunction, higher costs and frustration by asking ourselves "so what?" These down-stream effects link customer problems to value props.
+          </div>
+          <div class="mb-1 border-lt">
+            <img src="images/console-23-02.png" style="width:100%;" alt="Image"/>
+          </div>
+          <div class="caption mb-5">
+            This diagram links a "how might we?" solution (top) to value (at the bottom).
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid-content-02 ps-5 pe-5" style="max-width: 1200px; padding-bottom:120px; padding-top:0px;">
-      <div class="row pb-5 g-4">
-        <div class="col-lg">
-          <div class="mb-4" style="background-color: #444;">
-            <img src="images/console-34.png" class="img-fluid p-2" alt="image">
+    <!-- SOLUTIONING -->
+
+    <a id="nav-09"></a>
+    <div class="collapsable">
+      <div class="main  border-top mb-3">
+        <div class="content-narrow">
+          <div class="eyebrow color-red pt-2 mb-2">Solutioning</div>
+          <div class="header-small fw-6 mb-2">
+            How Might We?
           </div>
-          <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>Two-part search query</b></div>
-          <div class="regular-lg text-light ps-3 pe-3">
-            The most up-voted idea was a search field that prompts the user to complete the sentence, "I have..." In this case, a person. Once that is entered, the next field "I need..." is auto-populated with choices. This resonated with the engineers, who pointed out this is exactly how you think when looking for an API.
-          </div>
-        </div>
-        <div class="col-lg">
-          <div class="mb-4" style="background-color: #444;">
-            <img src="images/console-35.png" class="img-fluid p-2" alt="image">
-          </div>
-          <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>Machine-Learning search</b></div>
-          <div class="regular-lg text-light ps-3 pe-3">
-            The two-part search query was tied to a network database that learns over time how to best associate the "haves" and "needs".
+          <div class="mb-3">
+            <div class="line-height-m mb-2">
+              On Tuesday, after dot voting on root causes, we took the top problems and explored solution ideas with a “How might we?” exercise. We grouped ideas by theme, then discussed and dot-voted.
+            </div>
+            
+            <!--
+            <div class="line-height-m mb-1 see-more-wrapper">
+              <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red see-more-icon">expand_more</span></a>
+            </div>
+            -->
           </div>
         </div>
       </div>
-      <div class="row pb-4 g-4">
-        <div class="col-lg">
-          <div class="mb-4" style="background-color: #444;">
-            <img src="images/console-36.png" class="img-fluid p-2" alt="image">
-          </div>
-          <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>Usage metrics</b></div>
-          <div class="regular-lg text-light ps-3 pe-3">
-            Another idea showed usage data so the user can see if the API is in use. This resonated especially with the field engineers who explained that there tends to be a lot of "dead wood" when searching for APIs.
+
+      <div class="content-extra-wide mb-3">
+        <div class="mb-1 center">
+          <img src="images/console-24.png" style="width:100%;" alt="Image"/>
+        </div>
+        <div class="caption">
+          Morning review of the previous day's work (photo credit: Miguel Luna)
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="content-narrow">
+          <div class="header-xsmall fw-5 mb-2">Advisory Panel Feedback</div>
+          <div class="line-height-m mb-3">
+            On Wednesday we presented our top initial directions to the advisory panel and took notes. Two solution themes rose to the top. Both were under the question, “How might we allow more [tools] to be available?”.
           </div>
         </div>
-        <div class="col-lg">
-          <div class="mb-4" style="background-color: #444;">
-            <img src="images/console-37.png" class="img-fluid p-2" alt="image">
+        <div class="content-wide mb-4">
+          <div class="mb-1 center" style="max-width:800px;">
+            <img src="images/console-25.png" style="width:100%;" alt="Image"/>
           </div>
-          <div class="bold-5 text-extra-light ps-3 pe-3 pb-4 pt-2"><b>In-browser querries</b></div>
-          <div class="regular-lg text-light ps-3 pe-3">
-            This concept conveyed an easy way to test drive the API by querying it from the browser.
+          <div class="caption">
+            High-level solution directions that rose to the top.
           </div>
+        </div>
+        <div class="content-narrow">
+          <div class="header-xsmall fw-5 mb-2">How Might We?... Round Two</div>
+          <div class="line-height-m mb-3">
+            We had a clear direction from the advisory panel, but our concepts were very high-level, and we needed to drill into them them further. We did this by taking each concept (e.g., "Tiered SLAs") and expanding through more "how might we?" exercises.
+          </div>
+        </div>
+      </div>
+      <div class="content-extra-wide mb-5">
+        <div class="mb-1 border-lt pb-2">
+          <img src="images/console-26-01.png" style="width:100%;" alt="Image"/>
+        </div>
+        <div class="caption">
+          Diagram showing chains of solutions that originate from “How might we allow more tools to be available?”.
         </div>
       </div>
     </div>
-  
--->
 
-<!--***********************************************-->
+    <!-- PRODUCT VISION -->
 
-  <a id="nav-16"></a>
-  <a id="nav-17"></a>
-  <div class="container-fluid-content-01" style="padding-bottom:240px">
-    <section class="row">
-      <div class="col-md section-header-no-border pb-4">
-        Conclusion
-      </div>
-    </section>
-    <div class="row">
-      <div class="col-md">
-        <div class="headline-medium pb-5">
-          Impact
+    <a id="nav-10"></a>
+    <div class="collapsable">
+      <div class="main  border-top mb-3">
+        <div class="content-narrow">
+          <div class="eyebrow color-red pt-2 mb-2">Product Vision</div>
+          <div class="header-small fw-6 mb-2">
+            Tying the Story Together
+          </div>
+          <div class="mb-3">
+            <div class="header-xsmall fw-5 mb-2">Scenario writing</div>
+            <div class="line-height-m mb-2">
+              On Thursday, we took our top ideas and wrote scenarios describing a future in which our customers are enjoying the value of our not-yet-existent products. We were envisioning presenting a storyboard to the advisory panel on Friday and wanted our ideas to be approachable and expressive.
+            </div>
+            
+            <!--
+            <div class="line-height-m mb-1 see-more-wrapper">
+              <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red see-more-icon">expand_more</span></a>
+            </div>
+            -->
+          </div>
+          <div class="mb-1 center">
+            <img src="images/console-27.png" style="width:100%;" alt="Image"/>
+          </div>
+          <div class="caption mb-5">
+            Scenario writing session
+          </div>
+        </div>
+
+        <div class=" color-red pull-quote pb-5">
+          Our scenario writing didn't work out as planned. We would need to improvise.
         </div>
         
-        <div class="headline-small pb-4">
-          Design Sprint
+        <div class=" content-narrow">
+          <div class="header-xsmall fw-5 mb-2">A Misfire and Redress</div>
+          <div class="line-height-m mb-2">
+            “What is the point of scenario writing? Have we learned anything?”, asked an engineer on Friday morning. I probed the room. “What do we think?”, I asked.
+          </div>
+          <div class="line-height-m mb-2">
+            In short, our solution ideas were not solid enough technically for our engineers. For a lot of types of projects, safe assumptions can be made about the tech. That was not the case for us.
+          </div>
+          <div class="line-height-m mb-2">
+            We went back to the whiteboard and discussed. The solution was to group ideas into product concepts. Those allowed the engineers to envision the "how" to a level that was acceptable.
+          </div>
+          <div class="header-xsmall fw-5 mb-2">Idea Boards and Advisory Panel Feedback, Round Two</div>
+          <div class="line-height-m mb-2">
+            We still needed something to present to the advisory panel. We came up with idea boards. Idea boards describe product concepts, and tie together outcomes, evidence and personas.
+          </div>
+          <div class="line-height-m mb-2">
+            We created an idea board for each of our top concepts and presented to the advisory panel for feedback.
+          </div>
         </div>
-        <div class="regular-lg pb-5">
-          Our ideation session was the foundation for a compact, two-day design sprint. (I plan to include the sprint as a separate case study.)
-        </div> 
-        <div class="headline-small pb-4">
-          Research Impact
-        </div>
-        <div class="regular-lg pb-4">
-          Our research deck got a lot of attention. I presented it several times as part of our integration process. At several points there were dozens of people in the Google doc, including vice presidents. One PM told me she had been referring to the deck on a regular basis.
-        </div> 
-        <div class="regular-lg pb-5">
-          In addition, I later used the research findings to inform two other related projects.
-        </div> 
-        <div class="headline-small pb-4">
-          Design Practice Impact
-        </div>
-        <div class="regular-lg pb-5">
-          I documented the design process and presented it internally and externally, including two times for the U.K. Government Digital Services.
-        </div>
+      </div>
 
-        <div class="headline-small pb-4">
-          Learnings
+      <div class="content-extra-wide mb-1" style="background-color: #eee; max-width: 1200px;">
+        <div class="mb-1 center">
+          <img src="images/console-28-01.png" style="width:100%;" alt="Image"/>
         </div>
-        <div class="regular-lg pb-4">
-          <b>If something is not working, nip it in the bud and pivot:</b> 
-          <ul class="pt-4 regular-lg">
-            <li>Our initial scenario-based presentation didn't gel. We took the outcome we were after and came up with a solution that worked.</li>
-            <li class="pb-0">High trust enables critical feedback, which was necessary for us to recover from mistakes.</li>
-          </ul>
-        </div>
-        <div class="regular-lg pb-4">
-          <b>Transdisciplinary ideation is powerful:</b> 
-          <ul class="pt-4 regular-lg">
-            <li>We gained insights that only came about because designers, engineers and field engineers were working together on the same problem.</li>
-            <li class="pb-0">Marketing team members on our advisory panel had feedback that the rest of us would not have thought of.</li>
-          </ul>
-        </div>
-        <div class="regular-lg pb-0">
-          <b>Don't underestimate the impact of vision storyboards:</b> 
-          <ul class="pt-4 regular-lg">
-            <li>I got feedback that people had no idea of what we were up to until they saw the storyboard.</li>
-             <li class="pb-0">In large organizations, I've found people will hear about your project, assume worst-case scenario, and imagine conflict that doesn't exist. A good vision storyboard can dispell mistrust and open doors for collaboration.</li>
-          </ul>
+      </div>
+      <div class="caption mb-4">
+        Idea board example
+      </div>
+
+      <div class="content-extra-wide mb-4">
+        <div class=" content-wide">
+          <div class="grid grid-3">
+            <div class="card mb-1">
+              <div class="card-image center mb-1 border-lt">
+                <img src="images/console-28-01-01.png" style="width:100%;" alt="Image"/>
+              </div>
+              <div class=" card-header-xsmall fw-5 mb-1">INDEPENDENT SERVICE OFFERINGS</div>
+              <div class=" card-body">
+                Outcome: Operators can delegate the curation and management of services to non-operators, effectively increasing the offerings.
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image center mb-1 border-lt">
+                <img src="images/console-28-01-02.png" style="width:100%;" alt="Image"/>
+              </div>
+              <div class=" card-header-xsmall fw-5 mb-1">DIFFERENT LEVELS OF SUPPORT</div>
+              <div class=" card-body">
+                Outcome: Developers can provision a wider variety of tools that are not mission-critical (such as databases with lower uptime) and are managed by non-operators.
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image center mb-1 border-lt">
+                <img src="images/console-28-01-03.png" style="width:100%;" alt="Image"/>
+              </div>
+              <div class=" card-header-xsmall fw-5 mb-1">AUTOMATED TOOL INTEGRATION TESTS</div>
+              <div class=" card-body">
+                Outcome: Third-party tool providers have increased confidence in an integration before releasing it. Operators have increased confidence in an integration before managing it.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
+    <!-- STORYBOARD -->
 
-<!--=============================================-->
-  <!--
-  <div class="container-fluid-content-02 overflow-hidden" style="max-width: 600px; padding-bottom: 120px;">
-		
-	  <div class="row gx-4 pb-2 mb-3 border-bottom">
-	    <div class="col-md">
-	    	<div class="headline-small pb-4">
-          Ideas That Surfaced to the Top
+    <a id="nav-11"></a>
+    <div class="collapsable">
+      <div class="main  border-top mb-3">
+        <div class="content-narrow">
+          <div class="eyebrow color-red pt-2 mb-2">Storyboard</div>
+          <div class="header-small fw-6 mb-2">
+            Externalizing the Product Vision
+          </div>
+          <div class="mb-3">
+            <div class="line-height-m mb-2">
+              After ideation week, I worked with marketing and an illustrator to bring the prodct vision to life.
+            </div>
+            
+            <!--
+            <div class="line-height-m mb-1 see-more-wrapper">
+              <a onclick="seeMore(this)" class="see-more color-red fw-4">...see more<span class="material-symbols-outlined color-red see-more-icon">expand_more</span></a>
+            </div>
+            -->
+          </div>
         </div>
-        <div class='mb-4'>The most up-voted idea was a search field that prompts the user to complete the sentence, "I have..." In this case, a passport ID. Once that is entered, the next field "I need..." is auto-populated with possible results. </div>
-	      <div class='mt-1 mb-1 text-center'>
-	        <img src="images/console-35.png" class="img-fluid" alt="Amazon logo">
-	      </div>
-	      <div class='pt-4 mb-2'>This resonated with the engineers, who pointed out this is exactly how you think when looking for an API.</div>
-	    </div>
-	  </div>
+      </div>
 
-	  <div class="row gx-4 pb-2 mb-3 border-bottom">
-	    <div class="col-md">
-	      <div class='mt-1 mb-1 text-center'>
-	        <img src="images/console-36.png" class="img-fluid" alt="Amazon logo">
-	      </div>
-	    </div>
-	    <div class="col-md">
-	      <div class='mt-0 mb-2'>The above concept was tied to a network database that learns over time how to best associate the "haves" and "needs".</div>
-	    </div>
-	  </div>
+      <div class="content-extra-wide mb-3">
+        <div class="mb-1 center">
+          <img src="images/storyboard.png" style="width:100%;" alt="Image"/>
+        </div>
+      </div>
+    </div>
 
-	  <div class="row gx-4 pb-2 mb-3 border-bottom">
-	    <div class="col-md">
-	      <div class='mt-1 mb-1 text-center'>
-	        <img src="images/console-37.png" class="img-fluid" alt="Amazon logo">
-	      </div>
-	    </div>
-	    <div class="col-md">
-	      <div class='mt-0 mb-2'>Another idea showed usage data so the user can see if the API is in use.</div>
-	      <div class='mt-0 mb-2'>It also conveyed an easy way to test drive the API by querying it from the browser.</div>
-	    </div>
-	  </div>
+    <!-- CONCLUSION -->
 
-	  <div class="row gx-4 pb-2 mb-3 border-bottom">
-	    <div class="col-md">
-	      <div class='mt-1 mb-1 text-center'>
-	        <img src="images/console-34.png" class="img-fluid" alt="Amazon logo">
-	      </div>
-	    </div>
-	    <div class="col-md">
-	      <div class='mt-0 mb-2'>A number of ideas included metrics and charts showing historic performance against things like SLOs.</div>
-	    </div>
-	  </div>
-	</div>
--->
+    <a id="nav-12"></a>
+    <div class="collapsable">
+      <div class="main mb-5">
+        <div class="content-narrow">
+          <div class="eyebrow color-red pt-2 mb-2">Conclusion</div>
+          <div class="header-small fw-6 mb-2">
+            Impact
+          </div>
+          <div class="header-xsmall fw-6 mb-2">
+            Design Sprint
+          </div>
+          <div class="line-height-m mb-2">
+            Our ideation session was the foundation for a compact, two-day design sprint. (I plan to include the sprint as a separate case study.)
+          </div>
+          <div class="header-xsmall fw-6 mb-2">
+            Research Impact
+          </div>
+          <div class="mb-2 line-height-m">
+            Our research deck got a lot of attention. I presented it several times as part of our integration process. At several points there were dozens of people in the Google doc, including vice presidents. One PM told me she had been referring to the deck on a regular basis. In addition, I later used the research findings to inform two other related projects.
+          </div>
+          <div class="header-xsmall fw-6 mb-2">
+            Design Practice Impact
+          </div>
+          <div class="mb-2 line-height-m">
+            I documented the design process and presented it internally and externally, including two times for the U.K. Government Digital Services.
+          </div>
+          <div class="header-xsmall fw-6 mb-2">
+            Learnings
+          </div>
+          <ul class="mb-3 line-height-m">
+            <li><b>If something is not working, nip it in the bud and pivot:</b> Our initial scenario-based presentation didn't gel. We took the outcome we were after and came up with a solution that worked.</li> 
+            <li><b>High-trust between team members enables efficiency:</b> High trust enables critical feedback, which was necessary for us to recover from mistakes.</li>
+            <li><b>Transdisciplinary ideation is powerful:</b> We gained insights that only came about because designers, engineers and field engineers were working together on the same problem. Marketing team members on our advisory panel had feedback that the rest of us would not have thought of.</li>
+            <li><b>Storyboards are great tools for conveying vision:</b> I got feedback that people had no idea of what we were up to until they saw the storyboard. In large organizations, I've found people will hear about your project, assume worst-case scenario, and imagine conflict that doesn't exist. A good vision storyboard can dispell mistrust and open doors for collaboration.</li>
+          </ul>
+        </div>
+      </div>
+    </div>  
 
-</div>
+    <div id="menu" onClick="openNav()" style="background-color:rgba(255, 255, 255, 0.6);">
+      <span class="material-symbols-outlined" style="font-size:27px;">menu</span>
+    </div>
+
+    <div id="side-bar-nav" style="background-color:rgba(255, 255, 255, 0.7);">
+      <div style="height:91px; display:flex; flex-direction: row; margin:30px 0px 0px 0px;">
+        <div style="flex:1"></div>
+        <div onClick="closeNav()" style="cursor:pointer"><span class="material-symbols-outlined" style="font-size: 34; margin-right:-10">chevron_left</span></div>
+      </div>
+      <div class="" style ="line-height: 2.0em;">
+        <div class='side-nav nav-header'><a href="#nav-01" style="font-weight: 400;">Intro</a></div>
+        <div class='side-nav nav-header'><a href="#nav-02" style="font-weight: 400;">Role and Team</a></div>
+        <div class='side-nav nav-header'><a href="#nav-03" style="font-weight: 400;">Roadmapping</a></div>
+        <div class='side-nav nav-header'><a href="#nav-04" style="font-weight: 400;">Research</a></div>
+        <div class='side-nav nav-header'><a href="#nav-05" style="font-weight: 400;">Personas</a></div>
+        <div class='side-nav nav-header'><a href="#nav-06" style="font-weight: 400;">Workshop Prep</a></div>
+        <div class='side-nav nav-header'><a href="#nav-07" style="font-weight: 400;">Problem Prioritization</a></div>
+        <div class='side-nav nav-header'><a href="#nav-08" style="font-weight: 400;">Causal Mapping</a></div>
+        <div class='side-nav nav-header'><a href="#nav-09" style="font-weight: 400;">Solutioning</a></div>
+        <div class='side-nav nav-header'><a href="#nav-10" style="font-weight: 400;">Product Vision</a></div>
+        <div class='side-nav nav-header'><a href="#nav-11" style="font-weight: 400;">Storyboard</a></div>
+        <div class='side-nav nav-header'><a href="#nav-12" style="font-weight: 400;">Conclusion</a></div>
+
+      </div>
+    </div>
 
 
-
-<!--***********************************************-->
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
-  </body>
-</html>
+{% endblock content %}
